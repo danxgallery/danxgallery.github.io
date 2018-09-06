@@ -1,0 +1,78 @@
+/*This is the CSS page*/
+
+/*This code effects everything*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*This div is used for repositioning*/
+#container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+/*------------------ Body Page -------------------*/
+
+body {
+    width: 100%;
+    height: 100%;   
+    font-family: calibri, serif; /*set to Calibri font. If this font does not exist, than it will be a serif.*/
+    background-color: #fff; /*pure white*/
+    
+}
+
+li {
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+/*both of the tags only used for float*/
+#left_column {
+    float: left;
+    width: 320px;
+}
+
+#right_column {
+    float: right;
+    width: 500px;
+}
+
+/*This tag effects both columns*/
+#left_column, #right_column {
+    border: 3px solid black;
+
+
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+figure{
+    padding: 0 auto;
+} 
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+/*This tag effcts both the header and footer*/
+header, footer {
+    clear: both;
+    text-align: center;
+
+    border: 2px solid black;
+    padding: 2px 2px;
+}
+
+/*---------- links -----------*/
+a:hover {
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
