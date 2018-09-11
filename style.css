@@ -1,12 +1,15 @@
 /*This is the CSS page*/
 
 /*This code effects everything*/
+/*Set margin and padding to 0. Leaving no spaces for every object*/
 * {
     margin: 0;
     padding: 0;
 }
 
 /*This div is used for repositioning*/
+/*Width of the container div to 900px*/
+/*centering the whole page with margin*/
 #container {
     width: 900px;
     margin: 0 auto;
