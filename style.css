@@ -18,6 +18,9 @@
 
 /*------------------ Body Page -------------------*/
 
+/*This Body Tag extend the width and height by 100%*/
+/*Set the font famoly to Calibri*/
+/*Set the background color to pure white*/
 body {
     width: 100%;
     height: 100%;   
@@ -26,34 +29,39 @@ body {
     
 }
 
+/*Set all margins in the list items for top and bottom by 5px*/
+/*Remove the list style types  for all list items*/
 li {
     margin: 5px 0;
     list-style-type: none;
 }
 
-/*both of the tags only used for float*/
+/*Float left for left_column div and set width to 320px*/
 #left_column {
     float: left;
     width: 320px;
 }
 
+/*Float right for right_column and set width to 500px*/
 #right_column {
     float: right;
     width: 500px;
 }
 
-/*This tag effects both columns*/
+/*Both Columns have a border with given properties below*/
+/*Extend the borders with padding on all sides by 10px*/
+/*Set top and bottom margins by 5px*/
 #left_column, #right_column {
     border: 3px solid black;
-
-
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-figure{
-    padding: 0 auto;
+
+#image{
+    width: 100%;
+    margin: 0 auto;
 } 
 
 img{
