@@ -64,25 +64,34 @@ li {
     margin: 0 auto;
 } 
 
+/*Set the width and height for the picture of myself to 50%*/
 img{
     width: 50%;
     height: 50%;
 }
 
-/*This tag effcts both the header and footer*/
+/*clear both sides of the header and footer when effected by float*/
+/*Set Text-Align to Center*/
+/*Set the borders with the properties below*/
+/*Extend the border by set the padding on all sides by 2px*/
 header, footer {
     clear: both;
     text-align: center;
 
     border: 2px solid black;
-    padding: 2px 2px;
+    padding: 2px;
 }
 
 /*---------- links -----------*/
+
+/*all a tags set to bold when the mouse is hovering over the links in
+the assignments and projects*/
 a:hover {
     font-weight: bold;
 }
 
+/*all links have a set color to black and removed the text decoration. Even when 
+the links have already been visited*/
 a:link, a:visited {
     color: black;
     text-decoration: none;
