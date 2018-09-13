@@ -58,10 +58,11 @@ li {
     margin-bottom: 5px;
 }
 
-
+/*Set the figure tag to a width of 500px and set margin to 30% on left and right*/
+/*Moving the picture towards the center*/
 #image{
-    width: 100%;
-    margin: 0 auto;
+    width: 500px;
+    margin: 0 30%;
 } 
 
 /*Set the width and height for the picture of myself to 50%*/
