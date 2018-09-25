@@ -1,0 +1,53 @@
+/*This is the stylesheet*/
+* {
+    box-sizing: border-box;
+}
+
+header, article, aside{
+    width: 100%;
+}
+
+header {
+    background-color: #e5e5e5;
+    padding: 8px;
+}
+
+aside {
+    background-color: #e5e5e5;
+    padding: 15px;
+
+    margin-top: 7px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+nav {
+    overflow: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3, nav a {
+    margin-top: 7px;
+    padding: 8px;
+    width: 100%;
+    display: block
+} 
+
+@media screen and (min-width: 620px) { 
+    aside, nav{
+        float: left;
+        width: 20%;
+    }
+
+    article {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+    }
+
+}
