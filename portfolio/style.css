@@ -1,7 +1,23 @@
 /*This is my stylesheet*/
 
+
+/*This code effects all of my codes.
+    This set my margins and padding to 0.
+    The Dominant Font Family is KoHo in the goole fonts*/
 * {
     margin: 0;
     padding: 0;
 
+    font-family: 'KoHo', sans-serif;
 }
+
+@media screen and (max-width: 1500px){
+    
+}
+
+/*This is the Responsive Design for Iphone 6 and below*/
+@media screen and (min-width: 1334px){
+    
+
+}
+
