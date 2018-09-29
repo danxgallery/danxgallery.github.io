@@ -11,13 +11,24 @@
     font-family: 'KoHo', sans-serif;
 }
 
+nav {
+    background-color: white;
+}
+
+/*--------------------- Resume ----------------------*/
+
+/*Change all link tags with no decoration and all black text*/
+a:link, a:visited {
+    color: #000000; /*Pure Black*/
+}
+
 @media screen and (max-width: 1500px){
-    
+
 }
 
 /*This is the Responsive Design for Iphone 6 and below*/
 @media screen and (min-width: 1334px){
     
-
+    
 }
 
