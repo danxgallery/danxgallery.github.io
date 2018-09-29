@@ -11,12 +11,18 @@
     font-family: 'KoHo', sans-serif;
 }
 
+/*-----------------------Gobal CSS-------------------------*/
+/*This section will affect all of my pages*/
+
 nav {
     background-color: white;
+    
 }
 
 /*--------------------- Resume ----------------------*/
-
+li {
+    list-style-type: none;
+}
 
 
 
