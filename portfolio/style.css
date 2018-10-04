@@ -17,9 +17,9 @@
 body {
     width: 100%;
     font-size: 12pt;
-
 }
 
+/* Set the max width to 1200px*/
 .wrapper {
     max-width: 1200px;
 }
@@ -34,59 +34,77 @@ footer {
 
 header {
     width: 100%;
-    height: 80px;
+    height: 100px;
 
-    background-color: #ffffff;
-    border-image: url(image/Border.svg);
+    background-color: #80a3d8;
+    /* border-image: url(image/Border.svg); */
 }
 
+/* - Set the navigation to inline-flex. This will allow the user to set the navigation from horizontal 
+     to vertical. 
+   - */
 nav {
     display: inline-flex;
     margin-left: 25%;
+
+    padding: 35px 0;
+    float: right;
+
+    /* background-color: #80a3d8; */
 }
 
 
-/*This allows the whole navigation text and logo to drop down by 32px.*/
+/* - This allows the whole navigation text and logo to move the top padding by 32px.
+   - Spreading the navigation by padding left and right sides by 30px
+   - Change font size from 12pt to 16pt */
 nav a{
-
-    padding-top: 32px;
-    margin: 0 30px;
+    padding: 0 30px;
 
     font-size: 16pt;
 }
 
-.dropdown{
-    padding-top: 32px;
+nav a:hover{
+    border: 2px solid #000000;
 }
-
-
-
 .dropdown .subnav {
     display: none;
     position: absolute;
 }
 
-
 .dropdown:hover .subnav {
     display: inline-block;
     width: 350px;
-    height: 500px;
+    height: 300px;
 
     /* margin-top: 72px; */
     padding-bottom: 16px;   
-    background-color: #3422ac;
+    background-color: #ffffff;
+    border: 4px solid #000000;
+}
+
+.subnav a:hover{
+    background-color: #80a3d8;
+    color: #ffffff;
 }
 
 .subnav a{
+    display: block;
+
+    text-align: center;
     padding: 40px 0;
+
+    border-bottom: 2px solid #000000;
 }
 
-a img{
-    width: 80px;
-    height: 90px; 
+img{
+    float: left;
 
-    padding-top: 32px;
-    margin: 0 30px;
+    width: 137px;
+    height: 100px; 
+
+    padding-left: 10px;
+    /* padding-top: 32px;
+    margin: 0 30px; */
 }
 
 
