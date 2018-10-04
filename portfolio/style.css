@@ -32,27 +32,62 @@ footer {
 }
 /*--------------------- Navigation ------------------------*/
 
-nav {
+header {
     width: 100%;
-    height: 72px;
+    height: 80px;
 
-    background-color: grey;
+    background-color: #ffffff;
+    border-image: url(image/Border.svg);
 }
 
-nav a{
-    float: right;
+nav {
     display: inline-flex;
+    margin-left: 25%;
+}
 
-    padding: 20px;
+
+/*This allows the whole navigation text and logo to drop down by 32px.*/
+nav a{
+
+    padding-top: 32px;
+    margin: 0 30px;
+
     font-size: 16pt;
 }
+
+.dropdown{
+    padding-top: 32px;
+}
+
 
 
 .dropdown .subnav {
     display: none;
+    position: absolute;
 }
 
-.dropdown 
+
+.dropdown:hover .subnav {
+    display: inline-block;
+    width: 350px;
+    height: 500px;
+
+    /* margin-top: 72px; */
+    padding-bottom: 16px;   
+    background-color: #3422ac;
+}
+
+.subnav a{
+    padding: 40px 0;
+}
+
+a img{
+    width: 80px;
+    height: 90px; 
+
+    padding-top: 32px;
+    margin: 0 30px;
+}
 
 
 
