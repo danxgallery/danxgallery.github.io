@@ -45,7 +45,7 @@ header {
    - */
 nav {
     display: inline-flex;
-    margin-left: 25%;
+    margin-left: 25px;
 
     padding: 35px 0;
     float: right;
@@ -96,7 +96,10 @@ nav a:hover{
     border-bottom: 2px solid #000000;
 }
 
-img{
+/* - this will set the logo to the left side
+   - Set the width and height to 137px x 100px
+   - Set the padding left by 10px*/
+header img{
     float: left;
 
     width: 137px;
@@ -107,10 +110,22 @@ img{
     margin: 0 30px; */
 }
 
-
-
 /*--------------------- Resume ----------------------*/
 
+#wrapper_resume {
+    max-width: 1000px;
+    padding:0 10%;
+
+    line-height: 32pt;
+}
+
+#description {
+    margin: 40px 0;
+}
+
+#experience{
+    float: right;
+}
 
 /*------- Header--------*/
 
