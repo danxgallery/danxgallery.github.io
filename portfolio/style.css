@@ -58,22 +58,29 @@ nav {
    - Spreading the navigation by padding left and right sides by 30px
    - Change font size from 12pt to 16pt */
 nav a{
-    padding: 30px 30px;
+    padding: 0 30px;
 
     font-size: 16pt;
 }
 
 nav a:hover{
-    border: 2px solid #000000;
+    background-color: #3c60af;
+    color: #ffffff;
 }
 
-nav a, nav .dropdown{
-    margin-top: 35px;
+.nav_container {
+    padding-top: 35px;
 }
+
+/* nav a, nav .dropdown{
+    margin-top: 35px;
+} */
 
 .dropdown .subnav {
     display: none;
     position: absolute;
+
+    margin-top: 50px;
 }
 
 .dropdown:hover .subnav {
@@ -124,7 +131,7 @@ nav a, nav .dropdown{
     padding:0 10%;
 
     line-height: 32pt;
-    /* display: block; */
+    display: block;
 }
 
 #name {
