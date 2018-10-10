@@ -47,7 +47,7 @@ nav {
     display: inline-flex;
     margin-left: 25px;
 
-    padding: 35px 0;
+    /* padding: 35px 0; */
     float: right;
 
     /* background-color: #80a3d8; */
@@ -58,7 +58,8 @@ nav {
    - Spreading the navigation by padding left and right sides by 30px
    - Change font size from 12pt to 16pt */
 nav a{
-    padding: 0 30px;
+    padding: 30px 30px;
+    
 
     font-size: 16pt;
 }
@@ -66,6 +67,11 @@ nav a{
 nav a:hover{
     border: 2px solid #000000;
 }
+
+nav a, .dropdown{
+    margin-top: 35px;
+}
+
 .dropdown .subnav {
     display: none;
     position: absolute;
@@ -119,13 +125,38 @@ header img{
     line-height: 32pt;
 }
 
+#name {
+    height: 70px;
+    width: 1000px;
+
+    clear: both;
+
+    border-bottom: 5px solid #70d6c0;
+}
+
 #description {
     margin: 40px 0;
 }
 
-#experience{
-    float: right;
+#left_column{
+    max-width: 400px;
+    float: left;
 }
+
+#right_column{
+    max-width: 400px;
+    float: right;
+
+    display: block;
+}
+
+
+
+#link_resume {
+    color: #3c60af;
+    display: block;
+}
+
 
 /*------- Header--------*/
 
