@@ -7,18 +7,19 @@
 
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|KoHo" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
-    <link href="https://fontawesome.com/" rel="icons" />
 
-    <link href="myscript.js" rel="javascript" />
+    <script src="myscript.js"></script>
     
     <title>DanX Portfolio</title>
 </head>
 <body>
 
-<div class="wrapper"></div>
+<div class="wrapper">
+        
             <figure class="logo">
                 <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
             </figure>
+            
             <nav>
                 <div class="nav_container">
                     <div class="dropdown">
@@ -29,20 +30,23 @@
                                 <a href="">UI Design</a>
                             </div>
                     </div>
-                    <a href="about.html">About Me</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="#contact">Contact Me</a>
-                    <a href="">Notes</a>
+                    <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
+                        <a href="about.html">About Me</a>
+                        <a href="resume.html">Resume</a>
+                        <a href="#contact">Contact Me</a>
+                        <a href="">Notes</a>
+                </div>
                 </div>
             </nav>
 
 
 
         <div id="wrapper_resume">
+                
+                <a href="resume.pdf" id="link_resume" onclick="window.open(this.href); return false;"
+                onkeypress="window.open(this, href); return false">Download my Resume Here</a>
+            
                 <header>
-                    <a href="resume.pdf" id="link_resume" onclick="window.open(this.href); return false;"
-                    onkeypress="window.open(this, href); return false">Download my Resume Here</a>
-
                     <div id="name">
                         <h1>David Zhao</h1>
                     
@@ -62,7 +66,7 @@
                         <p> Hello, I'm David Zhao (That is my Real Name). I'm a designer. I specialize in Visual Communication,
                             Design Strategy, and User Experience. I like to create new innocative design to share with the world.</p>
                     </div>
-                 </header>
+                </header>
 
             <div id="left_column">
                 <div id="education">
@@ -78,7 +82,7 @@
                 <div id="skill_set">
                     <h2>Skill Set:</h2>
                     
-                    <ul id="float_left_list">
+                    <ul class="float_left_list">
                         <li>Animation / Mograph</li>
                         <li>Storyboard</li>
                         <li>Illustration</li>
@@ -88,7 +92,7 @@
                         <li>Typography</li>
                     </ul>
                 
-                    <ul id="float_right_lsit">
+                    <ul class="float_right_list">
                             <li>Traditional Media</li>
                             <li>Sketching</li>
                             <li>UI Design</li>
@@ -98,36 +102,34 @@
                             <li>User Story</li>
                             <li>HTML / CSS</li>
                         </ul>
+                </div>       
+                
+            
+                <div id="programs">
+                    <h2>Programs:</h2>
+                    <ul class="float_left_list">
+                        <li>Photoshop</li>
+                        <li>After Effects</li>
+                        <li>InDesign</li>
+                        <li>Visuel Studio Code</li>
+                    </ul>
+                
+                    <ul class="float_right_list">
+                        <li>Illustrator</li>
+                        <li>Clip Studio</li>
+                        <li>Paint Tool Sai</li>
+                    </ul>
                 </div>
             
-                <h2>Programs:</h2>
-                <ul>
-                    <li>Photoshop</li>
-                    <li>After Effects</li>
-                    <li>InDesign</li>
-                    <li>Visuel Studio Code</li>
-                </ul>
             
-                <ul>
-                    <li>Illustrator</li>
-                    <li>Clip Studio</li>
-                    <li>Paint Tool Sai</li>
-                </ul>
-            
-                <h2>
-                    Team Projects:
-                </h2>
-                <p>
-                    Mavericks of the Magnificient West
-                </p>
-                <p>
-                    Role: Environmental Design
-                </p>
-            
-                <p>
-                    A team of three programers, five designers, and one sound-effects designer. Working on a game
-                    combining with Wild West and magic. I used photoshop to create sprites and layout of the design.
-                </p>
+                <div id="team_projects">
+                    <h2>Team Projects:</h2>
+                    <p>Mavericks of the Magnificient West</p>
+                    <p>Role: Environmental Design</p>
+                
+                    <p> A team of three programers, five designers, and one sound-effects designer. Working on a game
+                        combining with Wild West and magic. I used photoshop to create sprites and layout of the design.</p>
+                </div>
             </div>
         
             <div id="right_column">
@@ -142,10 +144,12 @@
                 Motion Graphics for her for the logo for the TV show, Kaleidoscope Me. I was also in charge of
                 some of the character design for the rough draft unitl some one take it over. </p>
             
-                <h3>Chipotle Mexican Grill</h3>
-                <p> May 2012 - Current</p>
-            
-                <p>Position: Kitchen Manager</p>
+                <div id="chipotle">
+                    <h3>Chipotle Mexican Grill</h3>
+                    <p> May 2012 - Current</p>
+                
+                    <p>Position: Kitchen Manager</p>
+                </div>
             </div>
         </div>
 
@@ -157,7 +161,7 @@
             <h2>Contact Me:</h2>
             <ul>
                 <li>Phone: 207-766-6625</li>
-                <li>Email: <MiyukProduction@gmail class="com"></MiyukProduction@gmail></li>
+                <li>Email: MiyukProduction@gmail</li>
             </ul> 
             <div class="icon">
                 <i class="fab fa-facebook"></i>
@@ -168,14 +172,14 @@
             <h2>Gallery</h2>
     
             <div id="social_gallery">
-    
+                <a href="#"><img id="deviant" src="#"/></a>
+                <!-- This code is created to: warkentien2
+                     See at: https://stackoverflow.com/questions/34011559/how-do-i-add-my-logo-to-my-website-using-html -->
             </div>
         </div>
 
     </footer>
 </div>
-    
-
 
 </body>
 </html>

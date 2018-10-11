@@ -14,20 +14,26 @@
 /*-----------------------Gobal CSS-------------------------*/
 /*This section will affect all of my pages*/
 
+
 body {
     width: 100%;
     font-size: 12pt;
 }
 
 /* Set the max width to 1200px*/
+/* Set everything to center*/
 .wrapper {
     max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* - This code makes the footer's background color near black.
+   - Changes the font color to white.
+   - Prevent floats from both side. */
 footer {
     clear: both;
 
-    background-color: black;
+    background-color: #141414; /*Near Black*/
     color: white;
 }
 
@@ -41,16 +47,14 @@ li {
      to vertical. 
    - */
 nav {
-    display: inline-flex;
-
-    width: 700px;
+    width: 900px;
     height: 100px;
 
     /* padding: 35px 0; */
     float: right;
 
     /*for Debugging only*/
-    background-color: #80a3d8;
+    /* background-color: #80a3d8; */
 }
 
 
@@ -58,29 +62,31 @@ nav {
    - Spreading the navigation by padding left and right sides by 30px
    - Change font size from 12pt to 16pt */
 nav a{
-    padding: 0 30px;
-
+    padding: 40px 30px;
     font-size: 16pt;
 }
 
+/* - This code change the background color to light blue.
+   - Change the text color to white */
 nav a:hover{
-    background-color: #3c60af;
-    color: #ffffff;
+    background-color: #3c60af; /*Light Blue*/
+    color: #ffffff; /*White*/
 }
 
+/*This class allows me to reposition my navigation without disrupting the whole navigation
+  - Have paddin-top by 35px which cause it to move down. 
+ */
 .nav_container {
     padding-top: 35px;
+    display: inline-flex;
+    float: right;
 }
-
-/* nav a, nav .dropdown{
-    margin-top: 35px;
-} */
 
 .dropdown .subnav {
     display: none;
     position: absolute;
 
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .dropdown:hover .subnav {
@@ -110,6 +116,7 @@ nav a:hover{
     border-bottom: 2px solid #000000;
 }
 
+
 /* - this will set the logo to the left side
    - Set the width and height to 137px x 100px
    - Set the padding left by 10px*/
@@ -124,15 +131,16 @@ nav a:hover{
     margin: 0 30px; */
 }
 
+
 /*--------------------- Resume ----------------------*/
 
 #wrapper_resume {
     max-width: 1000px;
-    padding:0 10%;
+    padding: 0 10%;
 
     line-height: 32pt;
-    display: block;
 }
+
 
 #name {
     height: 70px;
@@ -154,20 +162,42 @@ nav a:hover{
 #left_column{
     max-width: 400px;
     float: left;
+
+    display: block;
 }
 
 #right_column{
-    max-width: 400px;
+    width: 400px;
     float: right;
 
     display: block;
 }
 
+#education, #programs, #skill_set {
+    width: 400px;
+    padding-bottom: 16px;
+}
 
+#programs{
+    margin-bottom: 50px;
+}
+
+#team_project{
+    display: block;
+}
+
+.float_left_list {
+    float: left;
+    margin-right: 120px;
+}
+
+#chipotle {
+    margin-top: 28px;
+}
 
 #link_resume {
     color: #3c60af;
-    display: block;
+    display: inline-block;
 }
 
 /*Make my phone id float left*/
