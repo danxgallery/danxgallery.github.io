@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|KoHo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
+
 
     <script src="myscript.js"></script>
     
@@ -15,12 +16,12 @@
 <body>
 
 <div class="wrapper">
-        
+            <nav>
             <figure class="logo">
                 <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
             </figure>
             
-            <nav>
+            
                 <div class="nav_container">
                     <div class="dropdown">
                         <a href="">Works</a>
@@ -41,8 +42,7 @@
 
 
 
-        <div id="wrapper_resume">
-                
+        <div id="wrapper_resume">              
                 <a href="resume.pdf" id="link_resume" onclick="window.open(this.href); return false;"
                 onkeypress="window.open(this, href); return false">Download my Resume Here</a>
             
@@ -155,31 +155,39 @@
 
 
     
-
+    </div>
     <footer>
-        <div id="contact">
-            <h2>Contact Me:</h2>
-            <ul>
-                <li>Phone: 207-766-6625</li>
-                <li>Email: MiyukProduction@gmail</li>
-            </ul> 
-            <div class="icon">
-                <i class="fab fa-facebook"></i>
+        <div id="footer_wrapper">
+            <div id="contact">
+                <h2>Contact Me:</h2>
+                <ul>
+                    <li>Phone: 207-766-6625</li>
+                    <li>Email: MiyukProduction@gmail</li>
+                </ul> 
+                <div class="icon">
+                    <a href="#"><img id="facebook" src="" /></a>
+                </div>
             </div>
-        </div>
-
-        <div id="gallery">
-            <h2>Gallery</h2>
     
-            <div id="social_gallery">
-                <a href="#"><img id="deviant" src="#"/></a>
-                <!-- This code is created to: warkentien2
-                     See at: https://stackoverflow.com/questions/34011559/how-do-i-add-my-logo-to-my-website-using-html -->
+            <div class="gallery">
+                <h2>Gallery</h2>
+        
+                <div class="social_gallery">
+                    <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
+                    onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg"/></a>
+                   
+                    <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
+                    onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"/></a>
+                   
+                    <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
+                    onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"/></a>
+                    <!-- These image icons are made by Font Awesome --> 
+                </div>
             </div>
         </div>
 
     </footer>
-</div>
+
 
 </body>
 </html>

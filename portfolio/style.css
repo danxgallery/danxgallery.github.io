@@ -14,7 +14,9 @@
 /*-----------------------Gobal CSS-------------------------*/
 /*This section will affect all of my pages*/
 
-
+/* This CSS effects the body */
+/* - Set the width in 100% (or infinity)
+   - Set the font to 12pt */
 body {
     width: 100%;
     font-size: 12pt;
@@ -37,51 +39,59 @@ footer {
     color: white;
 }
 
+/* Remove all the list style type to none. */
 li {
     list-style-type: none;
 }
 /*--------------------- Navigation ------------------------*/
 
 
-/* - Set the navigation to inline-flex. This will allow the user to set the navigation from horizontal 
-     to vertical. 
-   - */
+/* - Set width to 900px 
+   - Set the Height to 70px
+   - Have the navigation to float right*/
 nav {
-    width: 900px;
-    height: 100px;
+    width: 1200px;
+    height: 70px;
 
-    /* padding: 35px 0; */
-    float: right;
 
     /*for Debugging only*/
     /* background-color: #80a3d8; */
+    /* padding: 35px 0; */
 }
 
+/*This class allows me to reposition my navigation without disrupting the whole navigation
+  - Have paddin-top by 35px which cause it to move down. 
+  - Set the display to inline-flex to set the navigation to horizontal
+  - Float the area to the right */
+ .nav_container {
+    padding-top: 35px;
+    display: inline-flex;
+    float: right;
+}
 
 /* - This allows the whole navigation text and logo to move the top padding by 32px.
    - Spreading the navigation by padding left and right sides by 30px
    - Change font size from 12pt to 16pt */
-nav a{
+.nav_container a{
     padding: 40px 30px;
     font-size: 16pt;
 }
 
 /* - This code change the background color to light blue.
    - Change the text color to white */
-nav a:hover{
+.nav_container a:hover{
     background-color: #3c60af; /*Light Blue*/
     color: #ffffff; /*White*/
 }
 
-/*This class allows me to reposition my navigation without disrupting the whole navigation
-  - Have paddin-top by 35px which cause it to move down. 
- */
-.nav_container {
-    padding-top: 35px;
-    display: inline-flex;
-    float: right;
-}
 
+
+/*---- Dropdown Navigation ----*/
+
+/* This code only applies to the "Works" Section of the Navigation */
+/* - Set the display of the dropdown nav to be remove completely
+   - Set the postion to absolute
+   - moving the dropdown nav below the main navigation */
 .dropdown .subnav {
     display: none;
     position: absolute;
@@ -89,24 +99,33 @@ nav a:hover{
     margin-top: 20px;
 }
 
+/* - When the dropdown class hovers:
+        - Display is set to inline-block (Making the subnav go vertical)
+        - Set the width to 350px
+        - Set the Height to 310px 
+        - Set the backgound color to white
+        - Set the Border around the subnav by: 4px solid and color is black*/   
 .dropdown:hover .subnav {
     display: inline-block;
     width: 350px;
-    height: 300px;
+    height: 310px;
 
-    /* margin-top: 72px; */
     padding-bottom: 16px;   
-    background-color: #ffffff;
-
-    /*Was ment for highlight*/
-    border: 4px solid #000000;
+    background-color: #ffffff; /*White*/
+    border: 4px solid #000000; /*Pure Black*/
 }
 
+/* - When the subnav links are hovering:
+        - Set background color to light blue
+        - Change font color to white */
 .subnav a:hover{
-    background-color: #80a3d8;
-    color: #ffffff;
+    background-color: #80a3d8; /*light Blue*/
+    color: #ffffff; /*White*/
 }
 
+/* - Center all the text to center top, bottom, left and right with padding and text align
+   - Give only bottom links a border by 2px solid and black 
+   - Seting all the subnav to block to make it vertical*/
 .subnav a{
     display: block;
 
@@ -123,17 +142,39 @@ nav a:hover{
 .logo img{
     float: left;
 
-    width: 137px;
-    height: 100px; 
+    width: 107px;
+    height: 70px; 
 
     padding-left: 10px;
     /* padding-top: 32px;
     margin: 0 30px; */
 }
+/*--------------------- Footer -----------------------*/
+footer{
+    height: 300px;
+}
 
+.gallery{
+    float: right;
+}
+
+.gallery .social_gallery a img{
+    width: 30px;
+    height: 30px;
+}
+
+.social_gallery {
+    margin-top: 5px;
+}
+
+.social_gallery a{
+    padding-right: 20px;
+}
 
 /*--------------------- Resume ----------------------*/
 
+/* - Set the Max-Width to 1000px
+   - Set the Line Height to 32pt */
 #wrapper_resume {
     max-width: 1000px;
     padding: 0 10%;
@@ -141,63 +182,91 @@ nav a:hover{
     line-height: 32pt;
 }
 
-
+/* - Set the height to 70px
+   - Prevent overlap by floats on both sides */
 #name {
     height: 70px;
-    width: 1000px;
-
     clear: both;
 
+    /*Placeholder*/
     border-bottom: 5px solid #70d6c0;
 }
 
+/* - Set the h1 to Center
+
+Note: the only reason why the rest of the text is not targeted 
+      is because it will set them to center as well */
 #name h1{
     text-align: center;
 }
 
+/* - Set the margin for top and bottom by 40px */
 #description {
     margin: 40px 0;
 }
 
+/* - Set the max-width to 400px
+   - Have the left side of the resume to float left 
+    
+   This column contains: Education, Skillsets, Programs, and Team Project*/
 #left_column{
     max-width: 400px;
     float: left;
 
-    display: block;
+    /* display: block; */
 }
 
+/* - Set the max-widt h to 400px
+   - Have the Rigth Side of the resume to float Right
+
+   This column contains: Experience. */
 #right_column{
-    width: 400px;
+    max-width: 400px;
     float: right;
 
-    display: block;
+    /* display: block; */
 }
 
+/* Seperate the education, programs and skill set with padding bottom by 16px */
 #education, #programs, #skill_set {
-    width: 400px;
     padding-bottom: 16px;
 }
 
+/* Push the team project section by 50px */
 #programs{
     margin-bottom: 50px;
 }
 
-#team_project{
-    display: block;
-}
-
+/* This is the inner float for Skill Set and Programs only
+    - This cause the left side to float left.
+    - Move the right side of the section with a margin of 120px */
 .float_left_list {
     float: left;
     margin-right: 120px;
 }
 
+/* - Move the Chipotle Section down by 28px
+     Note: Chipotle Section is under Experience Under Liza Savage-Katz Production */
 #chipotle {
     margin-top: 28px;
 }
 
+/* - Have the link to be blue
+   - Display to be inline-block so no overlap */
 #link_resume {
     color: #3c60af;
     display: inline-block;
+}
+
+/* Have the PDF Icon before the PDF Resume */
+#link_resume::before {
+    content: url(fontawesome_logo/file-pdf-regular.svg);
+
+    /* top: 20px;
+    left: 20px; */
+
+    /* This code is by this site:
+    https://css-tricks.com/almanac/selectors/a/after-and-before/ */
 }
 
 /*Make my phone id float left*/
@@ -214,20 +283,98 @@ nav a:hover{
     margin-top: 40px;
 }
 
-
 /*Change all link tags with no decoration and all black text*/
 a:link, a:visited {
     color: #000000; /*Pure Black*/
     text-decoration: none;
 }
 
-@media screen and (max-width: 1500px){
-
-}
+/**************************************************************
+        Media Query - Responsive Design
+***************************************************************/
 
 /*This is the Responsive Design for Iphone 6 and below*/
-@media screen and (min-width: 1334px){
+@media screen and (max-width: 375px){
+    body{
+        width: 100%;
+        line-height: 5px;
+        font-size: 10pt;
+    }
+
+    .wrapper{
+        max-width: 375px;
+    }
+    /*----------- Navigation ----------*/
+
+    nav{
+        max-width: 375px;
+        height: 400px;
+    }
+
+    .nav_container{
+        display: flex;
+        
+        float: left;
+        max-width: 375px;
+    }
+
+    .nav_container .dropdown .subnav{
+        display: none;
+    }
+
+    /* .nav_container.dropdown: {
+        
+    } */
+
+    .nav_container a{
+        display: inline-block;
+        text-align: left;
+
+        width: 100%;
+        margin: 5px 0;
+        
+        padding: 20px 0;
+
+        background-color: #3c60af;
+    }
     
+    #nav_wrapper{
+        display: block;
+    }
+
+    /* .nav_container .dropdown: */
+
+    .nav_container .dropdown .subnav {
+        padding: 10px 0;
+        max-width: 375px;
+        background-color: #797979;
+    }
+
+    /*------------- Resume -------------*/
+
+    #wrapper_resume{
+        max-width: 350px;
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    #right_column{
+        float: left;
+        display: block;
+
+        margin-right: 100px;
+    }
+    
+    .float_left_list {
+        margin-right: 80px;
+    }
+}
+
+@print (){
+    nav, footer{
+        display: none;
+    }
+
     
 }
 
