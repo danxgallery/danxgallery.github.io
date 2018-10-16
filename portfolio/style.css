@@ -29,15 +29,6 @@ body {
     margin: 0 auto;
 }
 
-/* - This code makes the footer's background color near black.
-   - Changes the font color to white.
-   - Prevent floats from both side. */
-footer {
-    clear: both;
-
-    background-color: #141414; /*Near Black*/
-    color: white;
-}
 
 /* Remove all the list style type to none. */
 li {
@@ -150,12 +141,29 @@ nav {
     margin: 0 30px; */
 }
 /*--------------------- Footer -----------------------*/
+
+/* - This code makes the footer's background color near black.
+   - Changes the font color to white.
+   - Prevent floats from both side. */
 footer{
+    width: 100%;
     height: 300px;
+    clear: both;
+
+    background-color: #141414; /*Near Black*/
+    color: white;
+}
+
+.footer_wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact{
+    padding-top: 32px;
 }
 
 .gallery{
-    float: right;
 }
 
 .gallery .social_gallery a img{
@@ -259,6 +267,7 @@ Note: the only reason why the rest of the text is not targeted
 }
 
 /* Have the PDF Icon before the PDF Resume */
+
 #link_resume::before{
     content: "";
     background: url(fontawesome_logo/file-pdf-regular.svg) no-repeat;
@@ -299,6 +308,7 @@ a:link, a:visited {
 
 /*This is the Responsive Design for Iphone 6 and below*/
 @media screen and (max-width: 375px){
+    
     body{
         width: 100%;
         line-height: 5px;
@@ -307,30 +317,37 @@ a:link, a:visited {
 
     .wrapper{
         max-width: 375px;
+        margin: 0 auto;
     }
     /*----------- Navigation ----------*/
 
     nav{
-        max-width: 375px;
         height: 400px;
+        width: 100%;
     }
 
     .nav_container{
-        display: flex;
+        display: inline-flex;
         
         float: left;
-        max-width: 375px;
+
     }
 
-    .nav_container .dropdown .subnav{
-        display: none;
+    .nav_container .dropdown a {
+        /* display: inline; */
+        /* margin-bottom: 200px; */
+        padding: 20px 0;
+    }
+
+    .nav_container .dropdown {
+        display: inline;
     }
 
     /* .nav_container.dropdown: {
         
     } */
 
-    .nav_container a{
+    .nav_container .nav-wrapper a{
         display: inline-block;
         text-align: left;
 
@@ -341,18 +358,54 @@ a:link, a:visited {
 
         background-color: #3c60af;
     }
-    
-    #nav_wrapper{
-        display: block;
-    }
 
     /* .nav_container .dropdown: */
 
     .nav_container .dropdown .subnav {
-        padding: 10px 0;
+  
         max-width: 375px;
+        height: 60px;
         background-color: #797979;
+        display: none;
     }
+
+    /* .nav-wrapper {
+        margin-top: 50px;
+    } */
+
+    .nav_container .dropdown .subnav a {
+
+        display: block;
+        padding: 20px 0;
+    }
+
+    /*-------------------- Footer ------------------*/
+    footer{
+        width: 100%;
+    }
+    
+    .footer_wrapper{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .footer_wrapper .contact ul{
+        padding-top: 32px;
+        padding-left: 30px;
+    }
+    
+    .footer_wrapper .contact ul li {
+        padding-bottom: 16px;
+    }
+
+    .footer_wrapper .gallery{
+        padding-top: 32px;
+    }
+
+    .social_gallery{
+        padding-top: 16px;
+    }
+
 
     /*------------- Resume -------------*/
 
@@ -372,6 +425,8 @@ a:link, a:visited {
     .float_left_list {
         margin-right: 80px;
     }
+
+
 }
 
 @print (){
