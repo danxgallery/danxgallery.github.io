@@ -34,6 +34,10 @@ body {
 li {
     list-style-type: none;
 }
+
+p {
+    padding-bottom: 16px;
+}
 /*--------------------- Navigation ------------------------*/
 
 
@@ -48,6 +52,14 @@ nav {
     /*for Debugging only*/
     /* background-color: #80a3d8; */
     /* padding: 35px 0; */
+}
+
+.indicator{
+
+    outline: 10px solid #141414;
+    outline-offset: -10px;
+    
+    
 }
 
 /*This class allows me to reposition my navigation without disrupting the whole navigation
@@ -140,6 +152,10 @@ nav {
     /* padding-top: 32px;
     margin: 0 30px; */
 }
+
+.mobile_nav {
+    display: none;
+}
 /*--------------------- Footer -----------------------*/
 
 /* - This code makes the footer's background color near black.
@@ -163,9 +179,6 @@ footer{
     padding-top: 32px;
 }
 
-.gallery{
-}
-
 .gallery .social_gallery a img{
     width: 30px;
     height: 30px;
@@ -177,6 +190,12 @@ footer{
 
 .social_gallery a{
     padding-right: 20px;
+}
+
+
+/*--------------------- Interior Works------------------*/
+figure img{
+    width: 50%;
 }
 
 /*--------------------- Resume ----------------------*/
@@ -306,7 +325,169 @@ a:link, a:visited {
         Media Query - Responsive Design
 ***************************************************************/
 
-/*This is the Responsive Design for Iphone 6 and below*/
+/******************************************************
+This is the Responsive Design for Ipad pro
+*****************************************************/
+@media screen and (max-width: 1024px){
+    
+    body{
+        width: 100%;
+        line-height: 5px;
+        font-size: 16pt;
+    }
+
+    .wrapper{
+        max-width: 1024px;
+        margin: 0 auto;
+  
+    }
+    /*----------- Navigation ----------*/
+
+    nav{
+        height: 400px;
+        width: 100%;
+
+        margin-bottom: 60px;
+    }
+
+    .nav_container{
+        display: block;
+        
+        float: none;
+
+    }
+
+    .nav_container .nav-wrapper a{
+        display: block;
+        text-align: left;
+        max-width: 1024px;
+        margin: 5px 0;
+        
+        padding: 20px 0;
+        padding-left: 30px;
+
+        background-color: #3c60af;
+    }
+
+    /* .nav_container .dropdown: */
+
+    .mobile_nav #subnav_mobile{
+        
+        display: none;
+        height: 120px;
+        float: none;
+        background-color: #797979;
+    }
+
+    .mobile_nav #subnav_mobile a{
+
+        display: block;
+        padding: 20px 0;
+    }
+
+    /* .nav-wrapper {
+        margin-top: 50px;
+    } */ 
+
+    #mobile_button{
+        
+        width: 100%;
+        font-size: 16pt;
+
+        padding: 10px 0;
+        text-align: left;
+        text-indent: 20px;
+
+        background-color: #c0d0e4;
+        border: none;
+    }
+
+    .mobile_nav{
+        display: block;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+
+    /*-------------------- Footer ------------------*/
+    footer{
+        width: 100%;
+    }
+    
+    .footer_wrapper{
+        max-width: 992px;
+        margin: 0 auto;
+    }
+
+    .footer_wrapper .contact ul{
+        padding-top: 32px;
+        padding-left: 30px;
+    }
+    
+    .footer_wrapper .contact ul li {
+        padding-bottom: 16px;
+    }
+
+    .footer_wrapper .gallery{
+        padding-top: 32px;
+    }
+
+    .social_gallery{
+        padding-top: 16px;
+    }
+
+
+    /*------------- Resume -------------*/
+
+    #wrapper_resume{
+        max-width: 992px;
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    #right_column{
+        float: right;
+        display: block;
+
+        margin-right: 100px;
+    }
+    
+    .float_left_list {
+        margin-right: 80px;
+    }
+
+
+}
+
+/******************************************************
+This is the Responsive Design for Ipad
+*****************************************************/
+@media screen and (max-width: 768px){
+    
+    /*------------- Resume -------------*/
+
+    #right_column{
+        float: none;
+        display: block;
+    }
+    
+    .float_left_list {
+        margin-right: 90px;
+    }
+
+    .footer_wrapper{
+        max-width: 736px;
+        margin: 0 auto;
+    }
+
+
+}
+
+/****************************************************
+This is the Responsive Design for Iphone 6 and below
+*******************************************************/
 @media screen and (max-width: 375px){
     
     body{
@@ -318,6 +499,7 @@ a:link, a:visited {
     .wrapper{
         max-width: 375px;
         margin: 0 auto;
+        display: block;
     }
     /*----------- Navigation ----------*/
 
@@ -327,57 +509,85 @@ a:link, a:visited {
     }
 
     .nav_container{
-        display: inline-flex;
+        display: block;
         
-        float: left;
+        float: none;
 
     }
-
-    .nav_container .dropdown a {
-        /* display: inline; */
-        /* margin-bottom: 200px; */
-        padding: 20px 0;
-    }
-
-    .nav_container .dropdown {
-        display: inline;
-    }
-
-    /* .nav_container.dropdown: {
-        
-    } */
 
     .nav_container .nav-wrapper a{
-        display: inline-block;
+        display: block;
         text-align: left;
-
-        width: 100%;
+        max-width: 375px;
         margin: 5px 0;
         
         padding: 20px 0;
+        padding-left: 30px;
 
         background-color: #3c60af;
     }
 
     /* .nav_container .dropdown: */
 
-    .nav_container .dropdown .subnav {
-  
-        max-width: 375px;
-        height: 60px;
-        background-color: #797979;
+    .mobile_nav #subnav_mobile{
+        
         display: none;
+        height: 120px;
+        float: none;
+        background-color: #797979;
+    }
+
+    .mobile_nav #subnav_mobile a{
+        display: block;
+        padding: 20px 0;
     }
 
     /* .nav-wrapper {
         margin-top: 50px;
+    } */ 
+
+    #mobile_button{
+        width: 100%;
+        font-size: 16pt;
+
+        padding: 10px 0;
+        text-align: left;
+        text-indent: 20px;
+    }
+
+    .mobile_nav{
+        display: block;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    /*this was used before I tried with button for mobile*/
+    /* .nav_container .dropdown a {
+        display: inline; */
+        /* margin-bottom: 200px;
+
+        display: inline-block;
+        width: 100%;
+
+        padding: 20px 0;
+        padding-left: 30px;
+
+        background-color: #3c60af;
+    }
+
+    .nav_container .dropdown{
+        display: inline-flex;
+ 
+        margin-top: 50px;
+        margin-bottom: 5px;
+         margin-bottom: 320px;
     } */
 
-    .nav_container .dropdown .subnav a {
-
-        display: block;
-        padding: 20px 0;
-    }
+    /* .nav_container.dropdown: {
+        
+    } */
 
     /*-------------------- Footer ------------------*/
     footer{
@@ -410,16 +620,16 @@ a:link, a:visited {
     /*------------- Resume -------------*/
 
     #wrapper_resume{
-        max-width: 350px;
+        max-width: 330px;
         padding: 0;
         margin: 0 20px;
     }
 
     #right_column{
-        float: left;
+        float: none;
         display: block;
 
-        margin-right: 100px;
+        width: 100%;
     }
     
     .float_left_list {

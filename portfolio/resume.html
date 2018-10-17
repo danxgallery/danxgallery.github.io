@@ -23,7 +23,7 @@
             
             
                 <div class="nav_container">
-                    <div class="dropdown">
+                    <div class="dropdown" >
                         <a href="">Works</a>
                             <div class="subnav">
                                 <a href="">Animation / Motion Graphic</a>
@@ -31,9 +31,22 @@
                                 <a href="">UI Design</a>
                             </div>
                     </div>
+
+                    <!-- To Be used on mobile-->
+        
+                    <div class="mobile_nav">
+                        <button id="mobile_button" onclick="myFunction()">Works</button>
+                        <div id="subnav_mobile">
+                            <a href="">Animation / Motion Graphic</a>
+                            <a href="">Illustration</a>
+                            <a href="">UI Design</a>
+                        </div>
+                    </div>
+                    
+
                     <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
                         <a href="about.html">About Me</a>
-                        <a href="resume.html">Resume</a>
+                        <a href="resume.html" class="indicator">Resume</a>
                         <a href="#contact">Contact Me</a>
                         <a href="">Notes</a>
                 </div>
@@ -187,6 +200,9 @@
         </div>
 
     </footer>
+
+    
+    
 
 
 </body>
