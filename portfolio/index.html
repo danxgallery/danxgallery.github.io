@@ -1,60 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" />
 
-    <link href="myscript.js" rel="javascript" />
-    <title>DanX Portfolio</title>
-</head>
-<body>
-
-    <header>
+        <script src="/script/jquery.plugin.js"></script>
+        <script src="/script/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="script/customcript.js"></script>
         
-
+        <title>DanX Portfolio</title>
+    </head>
+    <body>
         <nav>
-            <ul>
-                <li><a href="">Works</a></li>
-                    <ul id="subnav">
-                        <li><a href="">Animation / Motion Graphic</a></li>
-                        <li><a href="">Illustration</a></li>
-                        <li><a href="">UI Design</a></li>
-                    </ul>
-                <li><a href="">About Me</a></li>
+        <figure class="logo">
+            <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
+        </figure>
+                        
+                    <div class="nav_container">
+                        <div class="dropdown" >
+                            <a href="">Works</a>
+                                <div class="subnav">
+                                    <a href="animation.html">Animation / Motion Graphic</a>
+                                    <a href="illustation.html">Illustration</a>
+                                    <a href="ui.html">UI Design</a>
+                                </div>
+                        </div>
 
-                
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="">Notes</a></li>
-            </ul>
+                        <!-- To Be used on mobile-->
+            
+                        <div class="mobile_nav">
+                            <button id="mobile_button" onclick="myFunction()">Works</button>
+                            <div id="subnav_mobile">
+                                <a href="animation.html">Animation / Motion Graphic</a>
+                                <a href="illustration.html">Illustration</a>
+                                <a href="ui.html">UI Design</a>
+                            </div>
+                        </div>
+                        
+
+                        <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
+                            <a href="index.html#about">About Me</a>
+                            <!-- This code is by: John Conde
+                                Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
+                            <a href="resume.html">Resume</a>
+                            <a href="#contact">Contact Me</a>
+                            <a href="note.html">Notes</a>
+                    </div>
+            </div>
         </nav>
-    </header>
 
 
->
-        <video controls autoplay>
-            <source src="homevideo.mp4" type="video/mp4">
-        </video>
-
-        <div id="aboutme">
-                Hello, I'm David Zhao (That is my Real Name). I'm a designer. I specialize in Visual Communication,
-    Design Strategy, and User Experience for design. I like to create new innocative design to share with
-    the world.
-
-        </div>
-
-    <footer>
-        <h2>Contact Me:</h2>
-        <ul>
-            <li>Phone: 207-766-6625</li>
-            <li>Email: <MiyukProduction@gmail class="com"></MiyukProduction@gmail></li>
-        </ul>
-    </footer>
+        <img class="animation" src="png_sequence/homescreen000.png" alt="villainous empire title card" />
     
 
+    <footer>
+            <div class="footer_wrapper">
+                <div id="contact">
+                    <h2>Contact Me:</h2>
+                    <ul>
+                        <li>Phone: 207-766-6625</li>
+                        <li>Email: MiyukProduction@gmail</li>
+                    </ul> 
+                    <!-- <div class="icon">
+                        <a href="#"><img id="facebook" src="" alt="" /></a>
+                    </div> -->
+                </div>
+        
+                <div class="gallery">
+                    <h2>Gallery</h2>
+            
+                    <div class="social_gallery">
+                        <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
+                    
+                        <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"  alt="behance"/></a>
+                    
+                        <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"  alt="deviantart"/></a>
+                        <!-- These image icons are made by Font Awesome --> 
+                    </div>
+                </div>
+            </div>
 
-</body>
-</html>
+        </footer>
+
+    </body>
+    </html>
