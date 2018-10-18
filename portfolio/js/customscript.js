@@ -21,11 +21,15 @@ function myFunction() {
 // Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
 
+/***********************************************************
+------------------- JQuery --------------------------------
+*****************************************************************/
+
 
 const $element = $('.animation');
 const imagePath = '/png_sequence';
 const totalFrames = 600;
-const animationDuration = 600;
+const animationDuration = 1300;
 const timePerFrame = animationDuration / totalFrames;
 let timeWhenLastUpdate;
 let timeFromLastUpdate;
@@ -49,5 +53,6 @@ function step(startTime) {
 
   requestAnimationFrame(step);
 }
-
+//This JQuery is made by: sitepoint
+//Source: https://www.sitepoint.com/frame-by-frame-animation-css-javascript/
 
