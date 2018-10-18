@@ -11,7 +11,9 @@
     font-family: 'Overpass', sans-serif;
 }
 
-/*-----------------------Gobal CSS-------------------------*/
+/*******************************************************************
+                        Gobal CSS
+********************************************************************/
 /*This section will affect all of my pages*/
 
 /* This CSS effects the body */
@@ -35,10 +37,13 @@ li {
     list-style-type: none;
 }
 
+/*all p tags will have a bottom padding of 16px*/
 p {
     padding-bottom: 16px;
 }
-/*--------------------- Navigation ------------------------*/
+/*******************************************************************
+                            Navigation
+********************************************************************/
 
 
 /* - Set width to 900px 
@@ -80,15 +85,26 @@ nav {
 }
 
 /* - This code change the background color to light blue.
-   - Change the text color to white */
+   - Change the text color to white 
+   - give a 2 seconds animation of fade in fade out background color and text color*/
 .nav_container a:hover{
-    background-color: #3c60af; /*Light Blue*/
-    color: #ffffff; /*White*/
+
+    /*Was used before animation was played*/
+    /* background-color: #3c60af; Light Blue */
+    /* color: #ffffff; White */
+
+    animation: mainHover .2s linear both;
 }
 
-
-
-/*---- Dropdown Navigation ----*/
+@keyframes mainHover{
+    from {background-color: #ffffff;
+          color: #000000;}
+    to {background-color: #3c60af;
+        color: #ffffff}
+}
+/*******************************************************************
+                        Dropdown Navigation
+********************************************************************/
 
 /* This code only applies to the "Works" Section of the Navigation */
 /* - Set the display of the dropdown nav to be remove completely
@@ -119,10 +135,15 @@ nav {
 
 /* - When the subnav links are hovering:
         - Set background color to light blue
-        - Change font color to white */
+        - Change font color to white 
+        - When hovered, color from both text and background color will fade in for .2 seconds*/
 .subnav a:hover{
-    background-color: #80a3d8; /*light Blue*/
-    color: #ffffff; /*White*/
+
+    /*Was used before the animation was implamented*/
+    /* background-color: #80a3d8; light Blue */
+    /* color: #ffffff; White */
+
+    animation: subHover .2s linear both;
 }
 
 /* - Center all the text to center top, bottom, left and right with padding and text align
@@ -137,6 +158,12 @@ nav {
     border-bottom: 2px solid #000000;
 }
 
+@keyframes subHover{
+    from {background-color: #ffffff;
+          color: #000000;}
+    to {background-color: #80a3d8;
+        color: #ffffff}
+}
 
 /* - this will set the logo to the left side
    - Set the width and height to 137px x 100px
@@ -152,11 +179,14 @@ nav {
     margin: 0 30px; */
 }
 
+/* Make the Mobile Navigation for dropdown completely invisible */
 .mobile_nav {
     display: none;
 }
 
-/*--------------------- Footer -----------------------*/
+/*******************************************************************
+                            Footer
+********************************************************************/
 
 /* - This code makes the footer's background color near black.
    - Changes the font color to white.
@@ -179,6 +209,10 @@ footer{
     padding-top: 32px;
 }
 
+.gallery{
+    margin-top: 16px;
+}
+
 .gallery .social_gallery a img{
     width: 30px;
     height: 30px;
@@ -192,18 +226,98 @@ footer{
     padding-right: 20px;
 }
 
-/*-------------------- Homepage ------------------------*/
+/*******************************************************************
+                            HomePage
+********************************************************************/
 .animation{
     width: 100%;
 }
 
-
-/*--------------------- Interior Works------------------*/
-figure img{
-    width: 50%;
+#about{
+    max-width: 100%;
+    background-image: url(image/illustation/lifeofdanx/about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 800px;
 }
 
-/*--------------------- Resume ----------------------*/
+#about #about_wrapper{
+    width: 400px;
+    margin-left: 16px;
+    padding-top: 60px;
+}
+
+#about h2{
+    margin-bottom: 16px;
+}
+
+/* #about img{
+    width:  100%;
+    display: inline-flex;
+} */
+
+/*******************************************************************
+                        Works
+********************************************************************/
+.grid-container{
+    display: grid;
+    grid-gap: 20px 10px;
+    grid-template-columns: auto auto auto auto;
+
+    font-size: 16pt;
+    text-align: center;
+
+    padding-top: 16px;
+}
+
+.grid-container .grid-item img{
+    width: 250px;
+    height: 250px;
+    border: 10px solid #3b4653;
+}
+
+.grid-container .grid-item{
+    transition: all .2s ease-in-out;
+}
+
+.grid-container .grid-item:hover{
+    transform: scale(1.1);
+}
+
+.grid-container .grid-item p{
+    padding-bottom: 16px;
+}
+
+/*******************************************************************
+                        Interior Works
+********************************************************************/
+
+/* This tag only effects inside of all of my works and none of the grids
+        - It only reduce the width of the images to the max-width of the interior wrapper
+*/
+figure img{
+    width: 100%;
+}
+
+.interior_wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.interior_wrapper figure {
+    padding-bottom: 32px;
+}
+
+
+.interior_wrapper h2{
+    line-height: 16pt;
+}
+
+
+/*******************************************************************
+                            Resume
+********************************************************************/
 
 /* - Set the Max-Width to 1000px
    - Set the Line Height to 32pt */
@@ -398,6 +512,9 @@ This is the Responsive Design for Ipad pro
         border-top: 2px solid #000000;
 
         padding: 20px 0;
+
+        font-size: 12pt;
+        text-indent: 40px;
     }
 
     /* .nav-wrapper {
@@ -453,6 +570,23 @@ This is the Responsive Design for Ipad pro
         padding-top: 16px;
     }
 
+    /*--------------- Works ----------------*/
+    #work_title{
+        padding-left: 40px;
+        margin-bottom: 32px;
+    }
+
+    .grid-container{
+        grid-template-columns: auto auto auto;
+        grid-gap: 5px 5px;
+    }
+    .grid-container .grid-item p{
+        padding-top: 18px;
+    }
+
+    .grid-container .grid-item:hover{
+        transform: none;   
+    }
 
     /*------------- Resume -------------*/
 
@@ -497,6 +631,11 @@ This is the Responsive Design for Ipad
         margin: 0 auto;
     }
 
+    /*-------------------- Works -----------------*/
+    .grid-container{
+        grid-template-columns: auto auto;
+        grid-gap: 5px 5px;
+    }
 
 }
 
@@ -545,13 +684,8 @@ This is the Responsive Design for Iphone 6 and below
     .mobile_nav #subnav_mobile{
         
         display: none;
-        height: 120px;
+        height: 140px;
         float: none;
-    }
-
-    .mobile_nav #subnav_mobile a{
-        display: block;
-        padding: 20px 0;
     }
 
     /* .nav-wrapper {
@@ -628,6 +762,25 @@ This is the Responsive Design for Iphone 6 and below
         padding-top: 16px;
     }
 
+    /*-------------- Homepage ----------------*/
+    #about #about_wrapper{
+        width: 300px;
+        padding-top: 15px;
+        padding-bottom: 350px;
+    }
+
+    #about{
+
+        line-height: 25px;
+        background-position-x: -240px;
+        max-height: 500px;
+    }
+
+        /*-------------------- Works -----------------*/
+        .grid-container{
+            grid-template-columns: auto;
+            grid-gap: 25px 5px;
+        }
 
     /*------------- Resume -------------*/
 
