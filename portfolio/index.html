@@ -8,86 +8,100 @@
         <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
         <link href="style.css" rel="stylesheet" />
 
-        <script src="/script/jquery.plugin.js"></script>
-        <script src="/script/jquery.min.js"></script>
-        <script language="JavaScript" type="text/javascript" src="script/customcript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- This code is made by Liep Nguyen
+            Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
+
+
+        <!-- <script src="/js/jquery-3.3.1.min.js"></script> -->
+        <script language="JavaScript" type="text/javascript" src="js/customscript.js"></script>
         
         <title>DanX Portfolio</title>
     </head>
     <body>
-        <nav>
-        <figure class="logo">
-            <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-        </figure>
-                        
-                    <div class="nav_container">
-                        <div class="dropdown" >
-                            <a href="">Works</a>
-                                <div class="subnav">
-                                    <a href="animation.html">Animation / Motion Graphic</a>
-                                    <a href="illustation.html">Illustration</a>
-                                    <a href="ui.html">UI Design</a>
-                                </div>
-                        </div>
-
-                        <!-- To Be used on mobile-->
-            
-                        <div class="mobile_nav">
-                            <button id="mobile_button" onclick="myFunction()">Works</button>
-                            <div id="subnav_mobile">
-                                <a href="animation.html">Animation / Motion Graphic</a>
-                                <a href="illustration.html">Illustration</a>
-                                <a href="ui.html">UI Design</a>
+            <div class="wrapper">
+                <nav>
+                <figure class="logo">
+                    <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
+                </figure>
+                                
+                        <div class="nav_container">
+                            <div class="dropdown" >
+                                    <a href="">Works</a>
+                                        <div class="subnav">
+                                            <a href="animation.html">Animation / Motion Graphic</a>
+                                            <a href="illustration.html">Illustration</a>
+                                            <a href="ui.html">UI Design</a>
+                                        </div>
                             </div>
-                        </div>
-                        
-
-                        <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
-                            <a href="index.html#about">About Me</a>
-                            <!-- This code is by: John Conde
-                                Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
-                            <a href="resume.html">Resume</a>
-                            <a href="#contact">Contact Me</a>
-                            <a href="note.html">Notes</a>
-                    </div>
-            </div>
-        </nav>
-
-
-        <img class="animation" src="png_sequence/homescreen000.png" alt="villainous empire title card" />
-    
-
-    <footer>
-            <div class="footer_wrapper">
-                <div id="contact">
-                    <h2>Contact Me:</h2>
-                    <ul>
-                        <li>Phone: 207-766-6625</li>
-                        <li>Email: MiyukProduction@gmail</li>
-                    </ul> 
-                    <!-- <div class="icon">
-                        <a href="#"><img id="facebook" src="" alt="" /></a>
-                    </div> -->
-                </div>
         
-                <div class="gallery">
-                    <h2>Gallery</h2>
+                                <!-- To Be used on mobile-->
+                    
+                                <div class="mobile_nav">
+                                    <button id="mobile_button" onclick="myFunction()">Works</button>
+                                    <div id="subnav_mobile">
+                                        <a href="animation.html">Animation / Motion Graphic</a>
+                                        <a href="illustration.html">Illustration</a>
+                                        <a href="ui.html">UI Design</a>
+                                    </div>
+                                </div>
+                                
+        
+                            <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
+                                    <a href="index.html#about">About Me</a>
+                                    <!-- This code is by: John Conde
+                                        Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
+                                    <a href="resume.html">Resume</a>
+                                    <a href="#contact">Contact Me</a>
+                                    <a href="note.html">Notes</a>
+                            </div>
+                    </div>
+                </nav>
+            </div>
+    
+    
+            <img class="animation" src="png_sequence/homescreen000.png" alt="villainous empire title card" />
+            <div id="about">
+                <div id="about_wrapper">
+                    <h2>About Me:</h2>
+                    <p>Hello,I’m David Zhao. I’m a designer. I specialize in Visual Communication, Design Strategy, and 
+                        User Experience. I like to create new innovative designs to share with the whole world.</p>
+                </div>
+
+                <!-- <img src="image/illustation/lifeofdanx/about.png" alt="about" /> -->
+            </div>
+    
+        <footer>
+                <div class="footer_wrapper">
+                    <div id="contact">
+                        <h2>Contact Me:</h2>
+                        <ul>
+                            <li>Phone: 207-766-6625</li>
+                            <li>Email: MiyukProduction@gmail</li>
+                        </ul> 
+                        <!-- <div class="icon">
+                            <a href="#"><img id="facebook" src="" alt="" /></a>
+                        </div> -->
+                    </div>
             
-                    <div class="social_gallery">
-                        <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
-                        onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
-                    
-                        <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
-                        onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"  alt="behance"/></a>
-                    
-                        <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
-                        onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"  alt="deviantart"/></a>
-                        <!-- These image icons are made by Font Awesome --> 
+                    <div class="gallery">
+                        <h2>Gallery</h2>
+                
+                        <div class="social_gallery">
+                            <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
+                            onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
+                        
+                            <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
+                            onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"  alt="behance"/></a>
+                        
+                            <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
+                            onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"  alt="deviantart"/></a>
+                            <!-- These image icons are made by Font Awesome --> 
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </footer>
+    
+            </footer>
 
     </body>
     </html>
