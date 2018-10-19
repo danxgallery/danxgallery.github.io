@@ -9,7 +9,7 @@
     <link href="style.css" rel="stylesheet" />
 
 
-    <script language="JavaScript" type="text/javascript" src="js/customscript.js"></script>
+    <script src="js/customscript.js"></script>
     
     <title>DanX Portfolio - Villainous Empire</title>
 </head>
@@ -24,7 +24,7 @@
                 <!-- To be used on PC -->
                 <div class="nav_container">
                     <div class="dropdown" >
-                        <a href="" class="indicator">Works</a>
+                        <a class="indicator">Works</a>
                             <div class="subnav">
                                 <a href="animation.html">Animation / Motion Graphic</a>
                                 <a href="illustration.html">Illustration</a>
@@ -34,8 +34,8 @@
 
                     <!-- To Be used on mobile and tablet -->
                     <div class="mobile_nav">
-                        <button id="mobile_button" onclick="myFunction()">Works</button>
-                        <div id="subnav_mobile">
+                        <button id="mobile_button" class="indicator"  onclick="myFunction()">Works</button>
+                        <div id="subnav_mobile" style="display: none;">
                             <a href="animation.html">Animation / Motion Graphic</a>
                             <a href="illustation.html">Illustration</a>
                             <a href="ui.html">UI Design</a>
@@ -44,7 +44,7 @@
                     
 
                     <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
-                        <a href="about.html#about">About Me</a>
+                        <a href="index.html#about">About Me</a>
                         <!-- This code is by: John Conde
                              Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
                         <a href="resume.html">Resume</a>
@@ -59,19 +59,20 @@
                 <h1>Villainous Empire</h1>
                 <h2>Self Project</h2>
                 
-                <p> May 2017 - Current</p>
+                <p><strong>May 2017 - Current</strong></p>
             
                 <p>Villainous Empire is a four part saga that is about corruption of laws, rulers, and religion that occures
-                in the country of Hestia. There are two young future rulers name Emil and Amelia. Emil gets kidnapped and Amelia gets distarut. This Project
+                in the country of Hestia. Three Empires Hotaru, Adelaide and Baslieus are currently in a civil war due to control of laws, land, and 
+                religion. There are two young future rulers name Emil and Amelia. Emil gets kidnapped and Amelia gets distarut. This Project
                 is being worked on.</p>
             
-                <p><em>Part 1:</em> The Beginning - Amelia Side. This saga is about Amelia begging her father to find her brother, but he
+                <p><strong>Part 1: The Beginning: Amelia Side</strong> - This saga is about Amelia begging her father to find her brother, but he
                 makes some attempts to find his own son, but no results. Amelia later breaks out of her own castle
                 just to find her own brother but the attempts failed. One of failed attempts she meets a girl in
                 the same age as her. As the saga gose on, she becomes more aggressive,
                 more selfish, and more emotional.</p>
             
-                <p><em>Part 2:</em> The Beginning - Merlinus Side. This saga is about Merlinus woke up in an abandoned fort. There
+                <p><strong>Part 2: The Beginning: Merlinus Side</strong> - This saga is about Merlinus woke up in an abandoned fort. There
                 he was discovered by a raiders in ragged clothing. Some with decayed armour. They look really creepy
                 and was about to do horrible things to him. But he was saved by a middle-age man name
                 Althelbeorn Ryokou. Althelbeorn tells Merlinus that he is at Fort Shimoda. Althelbeorn later takes
@@ -80,20 +81,100 @@
                 Merlinus is shown with love and compassion by Althelbeorn.</p>
                 
             
-                <p><em>Part 3:</em> A New Ruler and the Fall - Ten Years after "The Beginning" Amelia and Merlinus reunited.</p>
+                <p><strong>Part 3: A New Ruler and the Fall</strong> - Ten Years after "The Beginning" Amelia and Merlinus reunited.</p>
             
-                <p><em>Part 4:</em> Regret -</p> 
+                <p><strong>Part 4: Regret</strong> -</p> 
 
-                <h2 id="section1">Title Card</h2>
+                <h2 class="section">Title Card</h2>
                 <figure>
-                    <img src="image/illustation/villain/titlecard_v2.png" alt="title_card">
+                    <img src="image/illustation/villain/titlecard_v2.png" alt="title_card V2">
                     <figcaption>This is the final version of the vol.1 title card.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/titlecard_sketch_v2.png" alt="title_card Sketch V2">
+                    <figcaption>This is the sketch of version 2.</figcaption>
                 </figure>
     
                 <figure>
-                        <img src="image/illustation/villain/titlecard_v1.png" alt="title_card">
-                        <figcaption>This is the first version of vol.1 title card.</figcaption>
-                    </figure>
+                    <img src="image/illustation/villain/titlecard_v1.png" alt="title_card V1">
+                    <figcaption>This is the first version of vol.1 title card.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/titlecard_sketch_v1.png" alt="title_card Sketch V1">
+                    <figcaption>This is the sketch of version 1.</figcaption>
+                </figure>
+
+                <h2 class="section">Icon Design</h2>
+                <figure>
+                    <img src="image/illustation/villain/logo_v2_gallery.png" alt="Icon V2">
+                    <figcaption>Final Design of the Logo.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/logo_final_sketch.png" alt="Icon Sketch V2">
+                    <figcaption>Blueprint and sketch of the Logo.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/icon_v1.png" alt="Icon Sketch V1">
+                    <figcaption>First version of the Logo.</figcaption>
+                </figure>
+
+                <h2 class="section">Character Design</h2>
+                <h3 class="sub_section">Amelia Cruella</h3>
+
+                <p>Amelia Cruella is one of the four main characters in this saga. She is also known as the "Queen of Evil."
+                    Unlike the other three main characters, she grow up to be more to be evil, selfish, spoiled, and cowardice.
+                    As a child, she used to hang out with her twin brother Emil. Unfortunately, her brother has been kidnapped by raiders.
+                    They were ambushed at Lux Forest. All the guards were killed, along kidnapping a maid. Amelia was able to struggle her way
+                    out. She was about to be killed but was saved by a Mysterious Girl. She quickly flees. The Hotaru Soldiers arrived just 
+                    after the mysterious girl leaves. Running towards Amelia is a group of soldiers and the lead strategist, Lanka Sage.</p>
+
+                <p>As the current Queen of Hotaru, she was not properly trained to handel politics so she abuses the power for herself. These 
+                    decision will cause her to regret the worst decision she makes.</p>
+                <figure>
+                    <img src="image/illustation/villain/amelia_color.png" alt="Amelia">
+                    <figcaption>Final Rendering of Amelia Cruella at the age of Eighteen.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/amelia_v4.png" alt="Amelia Sketch V4">
+                    <figcaption>Sketch of Amelia version 4 (Possibly More).</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/amelia_char_sheet.png" alt="Amelia Character Sheet">
+                    <figcaption>Character Sheet of Amelia version 4 (Possibly More).</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="image/illustation/villain/amelia_v3.png" alt="Icon Sketch">
+                    <figcaption>Sketch of Amelia version 3 (Possibly More)</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/amelia_regret_adelaide.png" alt="Amelia Adelaide Outfit">
+                    <figcaption>Sketch of Amelia in Part 4: Regret. This is her wearing Adelaide Outfit</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/amelia_regret_adalaide_v2.png" alt="Amelia Adelaide Outfit">
+                    <figcaption>Sketch of Amelia in Part 4: Regret. This is her wearing Adelaide Outfit. Different Angle.</figcaption>
+                </figure>
+
+                <h3 class="sub_section">Kid Amelia Cruella</h3>
+                <figure>
+                    <img src="image/illustation/villain/amelia_kid_v1.png" alt="Kid Amelia">
+                    <figcaption>Sketch of Kid Amelia Version 1.</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="image/illustation/villain/amelia_kid_v2.png" alt="Kid Amelia">
+                    <figcaption>Sketch of Kid Amelia Version 2.</figcaption>
+                </figure>
+                
             </div>
 
 

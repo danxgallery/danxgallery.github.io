@@ -131,6 +131,8 @@ nav {
     padding-bottom: 16px;   
     background-color: #ffffff; /*White*/
     border: 4px solid #000000; /*Pure Black*/
+
+    animation: opacityAnimation .2s linear both;
 }
 
 /* - When the subnav links are hovering:
@@ -163,6 +165,11 @@ nav {
           color: #000000;}
     to {background-color: #80a3d8;
         color: #ffffff}
+}
+
+@keyframes opacityAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 /* - this will set the logo to the left side
@@ -305,15 +312,13 @@ figure img{
     margin: 0 auto;
 }
 
+.interior_wrapper h2{
+    padding-bottom: 16px;
+}
+
 .interior_wrapper figure {
     padding-bottom: 32px;
 }
-
-
-.interior_wrapper h2{
-    line-height: 16pt;
-}
-
 
 /*******************************************************************
                             Resume
@@ -476,12 +481,6 @@ This is the Responsive Design for Ipad pro
 
     }
 
-    .nav_container .nav-wrapper .indicator {
-        outline: none;
-        background-color: #3c60af;
-        color: #ffffff;
-    }
-
     .nav_container .nav-wrapper a{
         display: block;
         text-align: left;
@@ -493,8 +492,6 @@ This is the Responsive Design for Ipad pro
 
         background-color: #c0d0e4;
     }
-
-
 
     /* .nav_container .dropdown: */
 
@@ -533,6 +530,13 @@ This is the Responsive Design for Ipad pro
         background-color: #c0d0e4;
         border: none;
     }
+
+    .nav_container .nav-wrapper .indicator, .indicator {
+        outline: none;
+        background-color: #3c60af;
+        color: #ffffff;
+    }
+
 
     .mobile_nav{
         display: block;
@@ -588,6 +592,34 @@ This is the Responsive Design for Ipad pro
         transform: none;   
     }
 
+    /*-------------- Interior Works --------------*/
+    .interior_wrapper{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .interior_wrapper h2{
+        padding-top: 40px;
+        padding-bottom: 24px;
+    }
+
+    .interior_wrapper p {
+        line-height: 32px;
+    }
+
+    .interior_wrapper figure {
+        padding-bottom: 64px;
+    }
+
+    .interior_wrapper figcaption{
+        padding-top: 16px;
+    }
+
+    .interior_wrapper h3{
+        padding: 32px 0;
+    }
+    
+
     /*------------- Resume -------------*/
 
     #wrapper_resume{
@@ -637,6 +669,11 @@ This is the Responsive Design for Ipad
         grid-gap: 5px 5px;
     }
 
+    .interior_wrapper{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
 }
 
 /****************************************************
@@ -670,7 +707,6 @@ This is the Responsive Design for Iphone 6 and below
     }
 
     .nav_container .nav-wrapper a{
-        display: block;
         text-align: left;
         max-width: 375px;
         margin: 5px 0;
@@ -776,11 +812,26 @@ This is the Responsive Design for Iphone 6 and below
         max-height: 500px;
     }
 
-        /*-------------------- Works -----------------*/
-        .grid-container{
-            grid-template-columns: auto;
-            grid-gap: 25px 5px;
-        }
+    /*-------------------- Works -----------------*/
+    .grid-container{
+        grid-template-columns: auto;
+        grid-gap: 25px 5px;
+    }
+
+
+    .interior_wrapper{
+        max-width: 325px;
+        margin: 0 auto;
+    }
+
+    .interior_wrapper figure{
+        padding-bottom: 15px;
+    }
+
+    .interior_wrapper figcaption{
+        padding-top: 5px;
+        line-height: 20pt;
+    }
 
     /*------------- Resume -------------*/
 
