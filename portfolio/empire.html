@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- This code is made by Liep Nguyen
+        Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
     <script src="js/customscript.js"></script>
     
     <title>DanX Portfolio - Villainous Empire</title>
@@ -54,9 +56,17 @@
                 </div>
             </nav>
 
+            <div class="jumpList">
+                <a href="#description">Description</a>
+                <a href="#titleCard">Title Card</a>
+                <a href="#characterDesign">Character Design</a>
+                <div class="sub_section">
+                    <a href="#amelia">Amelia Cruella</a>
+                </div>
+            </div>
 
             <div class="interior_wrapper">
-                <h1>Villainous Empire</h1>
+                <h1 id="description">Villainous Empire</h1>
                 <h2>Self Project</h2>
                 
                 <p><strong>May 2017 - Current</strong></p>
@@ -69,8 +79,8 @@
                 <p><strong>Part 1: The Beginning: Amelia Side</strong> - This saga is about Amelia begging her father to find her brother, but he
                 makes some attempts to find his own son, but no results. Amelia later breaks out of her own castle
                 just to find her own brother but the attempts failed. One of failed attempts she meets a girl in
-                the same age as her. As the saga gose on, she becomes more aggressive,
-                more selfish, and more emotional.</p>
+                the same age as her. As the saga gose on, she becomes more aggressive, more selfish, and more emotional, because
+                she is often gets abused by her trainer and her father, and neglected by her father and mother.</p>
             
                 <p><strong>Part 2: The Beginning: Merlinus Side</strong> - This saga is about Merlinus woke up in an abandoned fort. There
                 he was discovered by a raiders in ragged clothing. Some with decayed armour. They look really creepy
@@ -81,11 +91,13 @@
                 Merlinus is shown with love and compassion by Althelbeorn.</p>
                 
             
-                <p><strong>Part 3: A New Ruler and the Fall</strong> - Ten Years after "The Beginning" Amelia and Merlinus reunited.</p>
+                <p><strong>Part 3: A New Ruler and the Fall</strong> - Ten Years after "The Beginning" Amelia and Emil reunited. Amelia is really 
+                happy.</p>
             
-                <p><strong>Part 4: Regret</strong> -</p> 
+                <p><strong>Part 4: Regret</strong> - After a death of her dearest brother, she wonder around the now deserted country of Hotaru.
+                </p> 
 
-                <h2 class="section">Title Card</h2>
+                <h2 id="titleCard">Title Card</h2>
                 <figure>
                     <img src="image/illustation/villain/titlecard_v2.png" alt="title_card V2">
                     <figcaption>This is the final version of the vol.1 title card.</figcaption>
@@ -122,15 +134,15 @@
                     <figcaption>First version of the Logo.</figcaption>
                 </figure>
 
-                <h2 class="section">Character Design</h2>
-                <h3 class="sub_section">Amelia Cruella</h3>
+                <h2 id="#characterDesign">Character Design</h2>
+                <h3 id="#amelia">Amelia Cruella</h3>
 
                 <p>Amelia Cruella is one of the four main characters in this saga. She is also known as the "Queen of Evil."
                     Unlike the other three main characters, she grow up to be more to be evil, selfish, spoiled, and cowardice.
                     As a child, she used to hang out with her twin brother Emil. Unfortunately, her brother has been kidnapped by raiders.
-                    They were ambushed at Lux Forest. All the guards were killed, along kidnapping a maid. Amelia was able to struggle her way
-                    out. She was about to be killed but was saved by a Mysterious Girl. She quickly flees. The Hotaru Soldiers arrived just 
-                    after the mysterious girl leaves. Running towards Amelia is a group of soldiers and the lead strategist, Lanka Sage.</p>
+                    They were ambushed at Lux Forest. All the guards were killed, along kidnapping a maid. Amelia was mistaken as a boy and did
+                    not get kidnapped. The Hotaru Soldiers arrived just after the mysterious girl leaves. Running towards Amelia is a group of 
+                    soldiers and the lead strategist, Lanka Sage.</p>
 
                 <p>As the current Queen of Hotaru, she was not properly trained to handel politics so she abuses the power for herself. These 
                     decision will cause her to regret the worst decision she makes.</p>
@@ -155,6 +167,11 @@
                 </figure>
 
                 <figure>
+                    <img src="image/illustation/villain/amelia_regret.png" alt="Regret Amelia">
+                    <figcaption>Sketch of Amelia in Regret.</figcaption>
+                </figure>
+
+                <figure>
                     <img src="image/illustation/villain/amelia_regret_adelaide.png" alt="Amelia Adelaide Outfit">
                     <figcaption>Sketch of Amelia in Part 4: Regret. This is her wearing Adelaide Outfit</figcaption>
                 </figure>
@@ -171,10 +188,87 @@
                 </figure>
                 
                 <figure>
+                    <img src="image/illustation/villain/amelia_kid_data.png" alt="Kid Amelia Database">
+                    <figcaption>Sketch of Kid Amelia Version 1 Database.</figcaption>
+                </figure>
+                
+                <figure>
                     <img src="image/illustation/villain/amelia_kid_v2.png" alt="Kid Amelia">
                     <figcaption>Sketch of Kid Amelia Version 2.</figcaption>
                 </figure>
-                
+
+                <h3 class="sub_section">Merlinus Daimhin</h3>
+
+                <p>Merlinus Daimhin is one of the four main characters in the series. He is extremly loyal to his family and to his sister,
+                    Amelia. He hides his real name "Emil" becasue he will die by his own people in both Adelaide and Hotaru Empire. If Adelaide knows
+                    that he is the "Prince of Hotaru", they would kidnapped him and abuse that power from Hotaru to get what they want, and then kill him
+                    (or so they thought). In the Hotaru Empire, he is very difficult to manipulate because he has knowledge in both Hotaru and Adelaide Empire 
+                    causing a big threat to the Empire. He will take down his own Empire and run the empire how he wants it.
+                </p>
+    
+                <p>As a kid, Merlinus was located in Fort Shimoda, an abandoned fortess for about thirty-two years. He was laying inside of the barrack
+                    by himself. 
+                </p>
+                <figure>
+                    <img src="image/illustation/villain/merlinus_servant.png" alt="Merlinus Final">
+                    <figcaption>Merlinus as a Hotaru Servant.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_v1.png" alt="Merlinus V1">
+                    <figcaption>Version 1 Sketch of Merlinus.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_v2.png" alt="Merlinus V2">
+                    <figcaption>Version 2 Sketch of Merlinus.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_v3.png" alt="Merlinus V3">
+                    <figcaption>Version 3 Sketch of Merlinus.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_hotaru_servant.png" alt="Merlinus V4">
+                    <figcaption>Version 4 Sketch of Merlinus.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_queen.png" alt="Merlinus Queen">
+                    <figcaption>Sketch of Merlinus. Posed as Amelia Cruella.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_char_hotaru.png" alt="Merlinus Kid">
+                    <figcaption>Database of his Hotaru Outfit.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_training.png" alt="Merlinus Kid">
+                    <figcaption>Sketch of Merlinus as a kid in Swordsman Training Outfit.</figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="image/illustation/villain/merlinus_char_default.png" alt="Merlinus Kid">
+                    <figcaption>Swordsman Database.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_school.png" alt="Merlinus Kid">
+                    <figcaption>Sketch of Merlinus as a kid in Adelaide School Uniform.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_char_school.png" alt="Merlinus Kid">
+                    <figcaption>Database of Adelaide School Uniform.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_data.png" alt="Merlinus Kid">
+                    <figcaption>Sketch of Merlinus as a kid version 1</figcaption>
+                </figure>
+
             </div>
 
 

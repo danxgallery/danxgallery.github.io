@@ -320,6 +320,9 @@ figure img{
     padding-bottom: 32px;
 }
 
+.jumpList{
+    position: fixed;
+}
 /*******************************************************************
                             Resume
 ********************************************************************/
@@ -464,6 +467,7 @@ This is the Responsive Design for Ipad pro
         max-width: 1024px;
         margin: 0 auto;
   
+        /* overflow: visible; */
     }
     /*----------- Navigation ----------*/
 
@@ -471,7 +475,7 @@ This is the Responsive Design for Ipad pro
         height: 400px;
         width: 100%;
 
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
     }
 
     .nav_container{
@@ -596,10 +600,12 @@ This is the Responsive Design for Ipad pro
     .interior_wrapper{
         max-width: 800px;
         margin: 0 auto;
+
+        overflow: initial;
     }
 
     .interior_wrapper h2{
-        padding-top: 40px;
+        /* padding-top: 40px; */
         padding-bottom: 24px;
     }
 
@@ -618,6 +624,26 @@ This is the Responsive Design for Ipad pro
     .interior_wrapper h3{
         padding: 32px 0;
     }
+
+    .grid-wrapper{
+        
+    }
+
+    .jumpList{
+        float: left;
+        text-align: left;
+
+        width: 200px;
+        /* height: 100%; */
+
+        overflow: scroll;   
+        position: fixed;
+    }
+
+    /* .jumpList ul li{
+        position: fixed;
+    } */
+
     
 
     /*------------- Resume -------------*/
@@ -695,7 +721,7 @@ This is the Responsive Design for Iphone 6 and below
     /*----------- Navigation ----------*/
 
     nav{
-        height: 400px;
+        height: 350px;
         width: 100%;
     }
 
