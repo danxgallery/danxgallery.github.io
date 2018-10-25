@@ -86,13 +86,18 @@ nav {
 
 /* - This code change the background color to light blue.
    - Change the text color to white 
-   - give a 2 seconds animation of fade in fade out background color and text color*/
+   - give a .2 seconds animation of fade in fade out background color and text color*/
 .nav_container a:hover{
     animation: mainHover .2s linear both;
 
     /*Was used before animation was played*/
     /* background-color: #3c60af; Light Blue */
     /* color: #ffffff; White */
+}
+
+.logo a img{
+    width: 150px;
+    height: 130px;
 }
 
 /* - This code is the animation of the navigation hover
@@ -152,7 +157,7 @@ nav {
 
 /* - Center all the text to center top, bottom, left and right with padding and text align
    - Give only bottom links a border by 2px solid and black 
-   - Seting all the subnav to block to make it vertical*/
+   - Seting all the subnav to block to make it vertical */
 .subnav a{
     display: block;
 
@@ -169,6 +174,8 @@ nav {
         color: #ffffff}
 }
 
+/* This keyframe animation is only used on the dropdown menu on screen; not on mobile
+   - This animation starts the opacity from 0 to 100% */
 @keyframes opacityAnimation {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -322,55 +329,90 @@ figure img{
     padding-bottom: 32px;
 }
 
-.jump_wrapper img{
-    width: 50px;
-    height: 50px;
+/*------------------- Side Nav ------------------*/
+
+#side_sub img{
+    width: 70px;
+    height: 70px;
     float: right;
+    /* position: fixed; */
+    transition: .3s linear;
+
+    /* display: inline-flex; */
+    padding-top: 100px;
 }
 
-.jumpList{
-    position: fixed;
-    float: left;
-    width: 300px;
-    height: 90%;
-    padding-top: 32px;
-    padding-right: 16px;
-    border-right:  5px solid #3c60af;
-
-    overflow-y: hidden;
-    line-height: 24pt;
-    padding-left: 16px;
-    /* padding-top: 32px; */    
-  
-
-    background-color: #ffffff;
-    left: -330px;  
-    transition: .3s ease-out;
-
-}
-
-.jumpList:hover{
+#side_sub:hover{
     left:0;
-    overflow-y: scroll;
+    transition: .3s ease-out;
 }
 
-.jumpList a{
-    display: block; 
-    padding-left: 16px;
+#back_button {
+    display: none;
 }
 
-.jumpList a:hover{
-    font-weight: bold;
-    color: #bd1b1b;
-}
+#side_sub{
+    left: -330px;  
 
-.jumpList h4{
-    padding-left: 16px;
-}
+    width: 400px;
 
-.section_1 .sub_sec_button{
-    padding: 10px;
+    position: fixed;
     float: right;
+
+    height: 100%;
+
+    line-height: 24pt;
+    
+    transition: .3s ease-out;
+}
+
+#side_sub .list{
+    width: 325px;
+    height: 100%;
+
+    overflow-y: scroll;
+    border-right:  5px solid #3c60af;
+    background-color: #ffffff;
+}
+
+.list a{
+    display: block; 
+    text-indent: 20px;
+
+    padding: 24px 0;
+    border-bottom: 2px solid #000000;
+}
+
+.list a:hover, .list h4:hover{
+
+    animation: subHover .2s linear both;
+}
+
+.list h4{
+    text-indent: 16px;
+    /* color: #243f79; */
+}
+
+#drop_menu0 #section0 a, #drop_menu1 #section1 a, #drop_menu2 #section2 a, #drop_menu3 #section3 a{
+    text-indent: 30px;
+}
+
+.section_1 #sub_sec_button{
+    padding: 16px;
+    float: right;
+}
+
+#sub_sec_button{
+    background-color: #ffffff;
+    background-image: url(gallery_icon/arrow.svg);
+
+    background-repeat: no-repeat;
+    border: none;
+}
+
+@keyframes rotate_button{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(90deg);}
 }
 /*******************************************************************
                             Resume
@@ -524,7 +566,7 @@ This is the Responsive Design for Ipad pro
         height: 400px;
         width: 100%;
 
-        /* margin-bottom: 60px; */
+        margin-bottom: 60px;
     }
 
     .nav_container{
@@ -644,6 +686,7 @@ This is the Responsive Design for Ipad pro
     .grid-container .grid-item:hover{
         transform: none;   
     }
+    
 
     /*-------------- Interior Works --------------*/
     .interior_wrapper{
@@ -674,33 +717,36 @@ This is the Responsive Design for Ipad pro
         padding: 32px 0;
     }
 
-    .grid-wrapper{
-        
+    #side_sub{
+        line-height:64px;
     }
 
-    .jumpList{
-        float: left;
-        text-align: left;
-
-        width: 200px;
-        /* height: 100%; */
-
-        overflow: scroll;   
-        position: fixed;
+    #back_button {
+        display: block;
+        padding: 30px;
     }
 
-    /* .jumpList ul li{
-        position: fixed;
-    } */
+    /*--------------- Homepage --------------------------*/
+    #about #about_wrapper{
+        width: 50%;
+        padding-top: 15px;
+        padding-bottom: 350px;
+    }
 
-    
+    #about{
+        line-height: 32px;
+        max-height: 500px;
+
+        font-size: 24pt;
+    }
 
     /*------------- Resume -------------*/
 
-    #wrapper_resume{
+    #moving #wrapper_resume{
         max-width: 992px;
         padding: 0;
         margin: 0 20px;
+
     }
 
     #right_column{
@@ -908,6 +954,35 @@ This is the Responsive Design for Iphone 6 and below
         line-height: 20pt;
     }
 
+    #side_sub{
+        left: -180px;  
+    
+        width: 230px;
+    
+        position: fixed;
+        float: right;
+    
+        height: 100%;
+    
+        line-height: 24pt;
+        
+        transition: .3s ease-out;
+    }
+    
+    #side_sub .list{
+        width: 175px;
+        height: 100%;
+    
+        overflow-y: scroll;
+        border-right:  5px solid #3c60af;
+        background-color: #ffffff;
+    }
+
+    #side_sub img{
+        width: 50px;
+        height: 50px;
+    }
+
     /*------------- Resume -------------*/
 
     #wrapper_resume{
@@ -930,8 +1005,8 @@ This is the Responsive Design for Iphone 6 and below
 
 }
 
-@print (){
-    nav, footer{
+@media print{
+    nav, footer, #side_sub{
         display: none;
     }
 
