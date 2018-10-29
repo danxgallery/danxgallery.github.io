@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- This code is made by Liep Nguyen
+        Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
+    <script src="js/customscript.js"></script>
+    
+    <title>DanX Portfolio - Pikmin Fan Animation</title>
+</head>
+<body>
+        <div id="top"></div>
+        <div id="side_sub">
+
+                <img src="gallery_icon/side_bar.svg" onclick="section_button()" alt="side_bar">
+
+                <div class="list"> 
+                    <!-- <button id="back_button" onclick="back()"></button>-->
+                    <!-- Tried to use the back button but it does not want to work-->
+                    <h3><a href="#description">Description</a></h3>
+                    <h3><a href="#titleCard">Animation</a></h3>
+                    <h3><a href="#antimatic">Antimatic</a></h3>
+                    <h3><a href="#styleframe">Animatic Drawings</a></h3>
+                    <h3><a href="#characters">Characters</a></h3>
+
+                    <h3><a href="#background">Background</a></h3>
+
+                    <h3><a href="#storyboard">Storyboard</a></h3>
+
+    
+                </div>
+        </div>
+
+        <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
+<div class="wrapper">
+            <nav>
+            <figure class="logo">
+                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
+            </figure>
+            
+                <!-- To be used on PC -->
+                <div class="nav_container">
+                    <div class="dropdown" >
+                        <a class="indicator">Works</a>
+                            <div class="subnav">
+                                <a href="animation.html">Animation / Motion Graphic</a>
+                                <a href="illustration.html">Illustration</a>
+                                <a href="ui.html">UI Design</a>
+                            </div>
+                    </div>
+
+                    <!-- To Be used on mobile and tablet -->
+                    <div class="mobile_nav">
+                        <button id="mobile_button" class="indicator"  onclick="myFunction()">Works</button>
+                        <div id="subnav_mobile" style="display: none;">
+                            <a href="animation.html">Animation / Motion Graphic</a>
+                            <a href="illustation.html">Illustration</a>
+                            <a href="ui.html">UI Design</a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
+                        <a href="index.html#about">About Me</a>
+                        <!-- This code is by: John Conde
+                             Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
+                        <a href="resume.html">Resume</a>
+                        <a href="#contact">Contact Me</a>
+                        <a href="note.html">Notes</a>
+                </div>
+                </div>
+            </nav>
+</div>
+
+           
+
+            <div id="moving">
+                <div class="interior_wrapper">
+                    <h1 id="description">Pikmin Fan Animation</h1>
+                    
+                    <p><strong>Feburary 2018 - March 2018</strong></p>
+                
+                    <p>This is a fan animation of a Nintendo Game Series named Pikmin.</p>
+                    <p><em>The Music and original character design belong to Nintendo.</em></p>
+                    <p>I made the Pikmins in my style.</p>
+
+                    <!-- *********************** Title Card *************************** -->
+                    <h2 id="titleCard">Animation</h2>
+                    <figure>
+                        <video controls src="image/animation/pikmin_fan_animation/animation_final.mp4">
+                        This video does not support your current version</video>
+                        <figcaption>This is the animation version</figcaption>
+                    </figure>
+
+                    <h2 id="antimatic">Animatic</h2>
+                    <figure>
+                        <video controls src="image/animation/pikmin_fan_animation/animatic.mp4">
+                        This video does not support your current version</video>
+                        <figcaption>This is the animatic version</figcaption>
+                    </figure>
+
+                    <h2 id="styleframe">Animatic Drawings</h2>
+                    <p>Thes are all the styleframes of "Queen of Evil"</p>
+                    <figure>
+                        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic1.png" alt="styleframe 1">
+                        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic2.png" alt="styleframe 2">
+                        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic3.png" alt="styleframe 3">
+                        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic4part0.png" alt="styleframe 2">
+                        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic5.png" alt="styleframe 2">
+                        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic6.png" alt="styleframe 2">
+                        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic7.png" alt="styleframe 2">
+                        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic10.png" alt="styleframe 2">
+                    </figure>
+
+                    <h2 id="characters">Characters</h2>
+                    <figure>
+                        <img src="image/animation/pikmin_fan_animation/pikmin_assets.png" alt="Assets">
+                        <figcaption>All the Pikmins and the Yellow Spectralids.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="image/animation/pikmin_fan_animation/pikmin_sketch.png" alt="evil red queen">
+                        <figcaption>Sketch of the Yellow Pikmin. The Red, Yellow, and Blue Pikmin all have the
+                            same body shape.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="image/animation/pikmin_fan_animation/Yellow_spectralids.png" alt="evil red queen">
+                        <figcaption>Sketch of the Yellow Spectralids.</figcaption>
+                    </figure>
+
+                    <figure class="structure-image">
+                        <img src="image/animation/pikmin_fan_animation/red_pikmin_jump.gif" alt="styleframe 1">
+                        <img src="image/animation/pikmin_fan_animation/red_pikmin_jump_lift_off.gif" alt="styleframe 2">
+                        <img src="image/animation/pikmin_fan_animation/red_pikmin_question.gif" alt="styleframe 3">
+                        <img src="image/animation/pikmin_fan_animation/red_pikmin_running.gif" alt="styleframe 2">
+                        <img src="image/animation/pikmin_fan_animation/yellow_pikmin_question.gif" alt="styleframe 2">
+                        <img src="image/animation/pikmin_fan_animation/yellow_spetrialid.gif" alt="styleframe 2">
+                    </figure>
+                    <p>These are all the animation for the Pikmin.</p>
+                    
+
+                    <h2 id="background">Background</h2>
+                    <figure>
+                        <img src="image/animation/pikmin_fan_animation/Assets.png" alt="Logo">
+                        <figcaption>Sketh of all the assets used in this animation.</figcaption>
+                    </figure>
+
+                    <h3 id="storyboard">Storyboard</h3>
+
+                    <p>This is the stoyboard that I used to help make the animation.</p>
+
+                    <figure>
+                        <img src="image/animation/pikmin_fan_animation/Storyboard.png" alt="Green Maiden Hero">
+                    </figure>
+                        
+                </div>
+             </div>
+    <footer>
+        <div class="footer_wrapper">
+            <div id="contact">
+                <h2>Contact Me:</h2>
+                <ul>
+                    <li>Phone: 207-766-6625</li>
+                    <li>Email: MiyukProduction@gmail</li>
+                </ul> 
+                <!-- <div class="icon">
+                    <a href="#"><img id="facebook" src="" /></a>
+                </div> -->
+            </div>
+    
+            <div class="gallery">
+                <h2>Gallery</h2>
+        
+                <div class="social_gallery">
+                        <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
+                    
+                        <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"  alt="behance"/></a>
+                    
+                        <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"  alt="deviantart"/></a>
+                        <!-- These image icons are made by Font Awesome --> 
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    
+    
+
+
+</body>
+</html>

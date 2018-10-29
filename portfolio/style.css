@@ -162,6 +162,9 @@ nav {
     border-bottom: 2px solid #000000;
 }
 
+/* This is the animation for the Sub Navigation
+   - From white background to light blue background
+   - Font gose from black to white */
 @keyframes subHover{
     from {background-color: #ffffff;
           color: #000000;}
@@ -298,6 +301,33 @@ footer{
 
 .grid-container .grid-item p{
     padding-bottom: 16px;
+}
+
+.structure-image{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px 10px;
+}
+
+.structure-image2{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.structure-img2 img{
+    width: 100%;
+}
+
+.structure-image img{
+    width: 250px;
+}
+
+video {
+    width: 100%;
+}
+
+#tower img{
+    width: 10%;
 }
 
 /*******************************************************************
@@ -730,10 +760,9 @@ This is the Responsive Design for Ipad pro
         line-height:64px;
     }
 
-    #back_button {
-        display: block;
-        padding: 30px;
-    }
+
+
+    
 
     /*--------------- Homepage --------------------------*/
     #about #about_wrapper{
@@ -803,7 +832,24 @@ This is the Responsive Design for Ipad
         max-width: 600px;
         margin: 0 auto;
     }
+    
+    .structure-image2 img{
+        width: 300px;
+    }
+    
+    .structure-image img{
+        width: 200px;
+    }
 
+    #back-to-top{
+        width: 70px;
+        height: 70px;
+
+        left: 87%;
+        top: 87%;
+    }
+
+    
 }
 
 /****************************************************
@@ -987,10 +1033,26 @@ This is the Responsive Design for Iphone 6 and below
         background-color: #ffffff;
     }
 
+    #back-to-top{
+        left: 83%;
+        top: 85%;
+
+    }
+
     #side_sub img{
         width: 50px;
         height: 50px;
     }
+
+    .structure-image img{
+        width: 110px;
+    }
+
+    .structure-image2 img{
+        width: 150px;
+    }
+
+
 
     /*------------- Resume -------------*/
 
