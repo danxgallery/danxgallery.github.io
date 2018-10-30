@@ -220,10 +220,14 @@ footer{
     color: white;
 }
 
+/* - this class only affects the interior of the footer
+   - set the max width to 1000px
+   - center the whole interior footer (footer wrapper) with margin */
 .footer_wrapper {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 
 #contact{
     padding-top: 32px;
