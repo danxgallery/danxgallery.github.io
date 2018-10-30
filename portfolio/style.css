@@ -41,6 +41,12 @@ li {
 p {
     padding-bottom: 16px;
 }
+
+/*all non-specific a tags will have a highlight color of blue and make them bold*/
+p a:hover{
+    color: #3c60af; /*light Blue*/
+    font-weight: bold;
+}
 /*******************************************************************
                             Navigation
 ********************************************************************/
