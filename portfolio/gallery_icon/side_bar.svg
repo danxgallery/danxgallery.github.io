@@ -3,11 +3,15 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#D9D9DB;}
-	.st1{fill:#6C6E7A;}
+	.st0{fill:#2C4266;}
+	.st1{fill:#B7B74F;}
+	.st2{fill:#C3CDDD;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#E1EAA0;}
 </style>
 <rect class="st0" width="50" height="50"/>
-<path class="st1" d="M37.8,15.1H12.2c-2.2,0-4-1.8-4-4v0c0-2.2,1.8-4,4-4h25.7c2.2,0,4,1.8,4,4v0C41.8,13.3,40,15.1,37.8,15.1z"/>
-<path class="st1" d="M37.8,42.8H12.2c-2.2,0-4-1.8-4-4v0c0-2.2,1.8-4,4-4h25.7c2.2,0,4,1.8,4,4v0C41.8,41,40,42.8,37.8,42.8z"/>
-<path class="st1" d="M37.8,29H12.2c-2.2,0-4-1.8-4-4v0c0-2.2,1.8-4,4-4h25.7c2.2,0,4,1.8,4,4v0C41.8,27.2,40,29,37.8,29z"/>
+<polygon class="st1" points="42.4,38.4 5.8,38.4 5.8,15.2 7.4,15.3 8.9,11.6 23.5,11.6 24.7,15.2 42.4,15.2 "/>
+<rect x="16.8" y="9.5" class="st2" width="18.5" height="25.9"/>
+<rect x="11.1" y="11.6" transform="matrix(0.8387 -0.5446 0.5446 0.8387 -9.4317 14.8768)" class="st3" width="18.5" height="23.5"/>
+<path class="st4" d="M5.8,38.4c0,0,6.3-20,6.5-20s33.5,0,33.5,0l-3.5,20H5.8z"/>
 </svg>
