@@ -53,7 +53,6 @@
     // if we find a previously set name value, display it
     if (storedName) {
         nameField.value = storedName;
-        h1.style.color = colorSelect; // My placement of the Color
     } else {
         nameField.value = "Turbo"; // a default value if `nameField` is not found
     }
@@ -69,8 +68,8 @@
     nameField.onchange = e => { localStorage.setItem(nameKey, e.target.value); };
     colorSelect.onchange = e => { localStorage.setItem(colorKey, e.target.value); };
 
-
-
+    document.style.backgroundColor = colorSelect;// My placement of the Color for background color.
+    
 
 </script>
 </body>
