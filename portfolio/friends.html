@@ -33,10 +33,29 @@
     <!-- This code is made by Liep Nguyen
         Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
     <script src="js/customscript.js"></script>
-    <title>DanX Portfolio - Animation / Motion Graphite</title>
+    
+    <title>DanX Portfolio - Friends</title>
 </head>
 <body>
+        <div id="top"></div>
+        <div id="side_sub">
 
+                <img src="gallery_icon/side_bar.svg" onclick="section_button()" alt="side_bar">
+
+                <div class="list"> 
+                    <!-- <button id="back_button" onclick="back()"></button>-->
+                    <!-- Tried to use the back button but it does not want to work-->
+                    <h3><a href="#1">Img 1</a></h3>
+                    <h3><a href="#2">Img 2</a></h3>
+                    <h3><a href="#3">Img 3</a></h3>
+                    <h3><a href="#4">Img 4</a></h3>
+                    <h3><a href="#5">Img 5</a></h3>
+                    <h3><a href="#6">Img 6</a></h3>
+                    <h3><a href="#8">Img 7</a></h3>
+                </div>
+        </div>
+
+        <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
 <div class="wrapper">
             <nav>
             <figure class="logo">
@@ -56,10 +75,10 @@
 
                     <!-- To Be used on mobile and tablet -->
                     <div class="mobile_nav">
-                        <button id="mobile_button" class="indicator" onclick="myFunction()">Works</button>
+                        <button id="mobile_button" class="indicator"  onclick="myFunction()">Works</button>
                         <div id="subnav_mobile" style="display: none;">
                             <a href="animation.html">Animation / Motion Graphic</a>
-                            <a href="illustration.html">Illustration</a>
+                            <a href="illustation.html">Illustration</a>
                             <a href="ui.html">UI Design</a>
                         </div>
                     </div>
@@ -75,39 +94,33 @@
                 </div>
                 </div>
             </nav>
-                <div id="moving">
-                <h1 id="work_title">Animation</h1>
-                
-                <main class="grid-container">
-                
-                <!-- <a href="endless.html" class="grid-item">
-                <img src="gallery_icon/score.png" alt="Score">
-                <p>Endless Score <br/> Fan Animation</p></a> -->
-                
-                <a href="struggle.html" class="grid-item">
-                <img src="gallery_icon/stuggle_icon.png" alt="kaleidocope">
-                <p>Struggle</p></a>
-                
-                <a href="pikmin.html" class="grid-item">
-                <img src="gallery_icon/pikmin_logo.svg" alt="Villainous Empire">
-                <p>Pikmin <br/> Fan Animation</p></a>
-                
-                <a href="story.html" class="grid-item">
-                <img src="gallery_icon/story.png" alt="Villainous Empire">
-                <p>Don't Give Up</p></a>
-                
-                <a href="queen.html" class="grid-item">
-                <img src="gallery_icon/evilicon.png" alt="Villainous Empire">
-                <p>Queen of Evil</p></a>
-                
-                <a href="oldicon.html" class="grid-item">
-                <img src="gallery_icon/old_icon.png" alt="Villainous Empire">
-                <p>Old Icon Animation</p></a>
-                
-                </main>
-                </div>
+</div>
 
-    </div>
+           
+
+            <div id="moving">
+                <div class="interior_wrapper">
+                    <h1 id="description">Friends</h1>
+                    
+                    <p><strong>2016 - Current</strong></p>
+                
+                    <p>These are all are my friends who I did drawing on.</p>
+                    <p>Due to privacy reasons, I cannot display their names.</p>
+
+                    <!-- *********************** Title Card *************************** -->
+                    <figure>
+                        <img id="1" src="image/illustation/friends/roshi.png" alt="Assets">
+                        <img id="2" src="image/illustation/friends/shayla.png" alt="Assets">
+                        <img id="3" src="image/illustation/friends/brandon.png" alt="Assets">
+                        <img id="4" src="image/illustation/friends/thina.jpg" alt="Assets">
+                        <img id="5" src="image/illustation/friends/bomee-v1.jpg" alt="Assets">
+                        <img id="6" src="image/illustation/friends/bomee-V2.jpg" alt="Assets">
+                        <img id="8" src="image/illustation/friends/kosel.jpg" alt="Assets">
+                    </figure>
+
+                    
+
+            </div>       
     <footer>
         <div class="footer_wrapper">
             <div id="contact">

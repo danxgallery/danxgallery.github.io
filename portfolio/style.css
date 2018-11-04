@@ -228,24 +228,31 @@ footer{
     margin: 0 auto;
 }
 
-
+/* - This only effects the contact info.
+   - Gives more space from the top by 32px away from border */
 #contact{
     padding-top: 32px;
 }
 
+/* - This only effects the footer gallery (not the main gallery)
+   - Seperate from the contact by 16px with margin top. */
 .gallery{
     margin-top: 16px;
 }
 
+/* - All Font Awesome Logo will have 30px in width and height regardless of the size of the screen*/
 .gallery .social_gallery a img{
     width: 30px;
     height: 30px;
 }
 
+/* - All Font Awesome Icon with the div of "class="social_gallery" will have to seperation of the
+     text by 5px; */ 
 .social_gallery {
     margin-top: 5px;
 }
 
+/* - Give the Font Awesome Icon with the div of "class="social_gallery" in between space of 20px*/
 .social_gallery a{
     padding-right: 20px;
 }
@@ -253,10 +260,16 @@ footer{
 /*******************************************************************
                             HomePage
 ********************************************************************/
+
+/* The PNG Sequence will have a that will fit the wrapper*/
 .animation{
     width: 100%;
 }
 
+/*This only applies to the about section of the homepage
+  - Max-width is 100%
+  - Set background with an image: no-repeat
+  - height: 800px*/
 #about{
     max-width: 100%;
     background-image: url(image/illustation/lifeofdanx/about.png);
@@ -264,18 +277,30 @@ footer{
     background-size: cover;
     color: #ffffff;
     height: 800px;
+
+    font-size: 24px;
+
+
 }
 
+/*This code controls the whole text of the about page
+  - set width to 400px
+  - give space for top by 60px
+  - position is relative so repositioning makes it easy */
 #about #about_wrapper{
     width: 400px;
-    margin-left: 16px;
     padding-top: 60px;
+    position: relative;
+
+    /*left: -800px;*/
 }
 
+/* Set the margin between h2 and p tag by 16px*/
 #about h2{
     margin-bottom: 16px;
 }
 
+/*Used for testing*/
 /* #about img{
     width:  100%;
     display: inline-flex;
@@ -284,6 +309,15 @@ footer{
 /*******************************************************************
                         Works
 ********************************************************************/
+
+/*This grid-container class sets the base for the works page.
+  The works page are: Animation/Mograph, Illustration, and UI Design.
+   - Display as grid
+   - Give section.
+   - give 20px gap in vertical, and 10px in horizontal
+   - set text-align to center.
+   - set font-size to 16pt.
+   - give space from grid base and h2 by 16px */
 .grid-container{
     display: grid;
     grid-gap: 20px 10px;
@@ -295,24 +329,91 @@ footer{
     padding-top: 16px;
 }
 
+/*This code controls the indivdual grid item images.
+  - Set the width and height by 250px
+  - Set the border by 10px */
 .grid-container .grid-item img{
     width: 250px;
     height: 250px;
-    border: 10px solid #3b4653;
+    border: 10px solid #3b4653; /*Saturated Dark Blue*/
 }
 
+/*This applies to the grid items animation
+  - give ease-in ease-out animation
+  - only last for 0.2 seconds */
 .grid-container .grid-item{
     transition: all .2s ease-in-out;
 }
 
+/* Set the grid-item to increase size when hovering */
 .grid-container .grid-item:hover{
     transform: scale(1.1);
 }
 
+/* Seperate the grid item and the p tag by 16px */
 .grid-container .grid-item p{
     padding-bottom: 16px;
 }
 
+/*******************************************************************
+                        Interior Works
+********************************************************************/
+
+/* This tag only effects inside of all of my works and none of the grids
+    - It only reduce the width of the images to the max-width of the interior wrapper */
+figure img{
+    width: 100%;
+}
+
+/* The interior_wrapper class only effects the imges and videos
+    - Set the max width by 800px
+    - Set everyting to center with margin */
+.interior_wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seperate the title and the whole image and video in on group by 16px */
+.interior_wrapper h2{
+    padding-bottom: 16px;
+}
+
+/* Seperate other figure div by 32px at the botttom */
+.interior_wrapper figure {
+    padding-bottom: 32px;
+}
+
+/* Bring the user back to the top of the whole page.
+    - Set this icon to 50px on width and height
+    - Set this to the bottom right corner
+    - Position stays. Does not move at all*/
+#back-to-top{
+    width: 50px;
+    height: 50px;
+
+    left: 94%;
+    top: 90%;
+
+    position: fixed;
+    /*fill: #3c60af;*/
+}
+
+/* #back-to-top:hover{
+    fill: #213b72;
+} */
+
+/* Set all video tags by 100% because of the interior_wrapper class */
+video {
+    width: 100%;
+}
+
+/* This only effects on one image in the "Queen of Evil" page */
+#tower img{
+    width: 10%;
+}
+
+
+/*------------------- Grid Structure -------------------*/
 .structure-image{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -332,52 +433,6 @@ footer{
     width: 250px;
 }
 
-video {
-    width: 100%;
-}
-
-#tower img{
-    width: 10%;
-}
-
-/*******************************************************************
-                        Interior Works
-********************************************************************/
-
-/* This tag only effects inside of all of my works and none of the grids
-        - It only reduce the width of the images to the max-width of the interior wrapper
-*/
-figure img{
-    width: 100%;
-}
-
-.interior_wrapper{
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.interior_wrapper h2{
-    padding-bottom: 16px;
-}
-
-.interior_wrapper figure {
-    padding-bottom: 32px;
-}
-
-#back-to-top{
-    width: 50px;
-    height: 50px;
-
-    left: 94%;
-    top: 90%;
-
-    position: fixed;
-    fill: #3c60af;
-}
-
-#back-to-top:hover{
-    fill: #213b72;
-}
 /*------------------- Side Nav ------------------*/
 
 #side_sub img{
@@ -1086,9 +1141,22 @@ This is the Responsive Design for Iphone 6 and below
 
 }
 
+/* This is used when user wants to print the resume*/
 @media print{
+    *{
+        font-size: 12pt;
+    }
+
     nav, footer, #side_sub{
         display: none;
+    }
+
+    #wrapper_resume a{
+        display: none;
+    }
+
+    #right_column{
+        float: none;
     }
 
     
