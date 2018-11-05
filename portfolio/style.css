@@ -47,6 +47,10 @@ p a:hover{
     color: #3c60af; /*light Blue*/
     font-weight: bold;
 }
+
+h2 {
+    padding-top: 16px;
+}
 /*******************************************************************
                             Navigation
 ********************************************************************/
@@ -410,6 +414,20 @@ video {
 /* This only effects on one image in the "Queen of Evil" page */
 #tower img{
     width: 10%;
+}
+
+table{
+    border: none;
+    text-align: left;   
+}
+
+td, th{
+    padding-bottom: 16px;
+    padding-right: 20px;
+}
+
+h3{
+    padding-bottom: 16px;
 }
 
 
