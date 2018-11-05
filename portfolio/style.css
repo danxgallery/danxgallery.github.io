@@ -296,6 +296,8 @@ footer{
     padding-top: 60px;
     position: relative;
 
+    padding-left: 20px;
+
     /*left: -800px;*/
 }
 
@@ -852,13 +854,15 @@ This is the Responsive Design for Ipad pro
         width: 50%;
         padding-top: 15px;
         padding-bottom: 350px;
+
+        font-size: 20px;
     }
 
     #about{
         line-height: 32px;
         max-height: 500px;
 
-        font-size: 24pt;
+        font-size: 16pt;
     }
 
     /*------------- Resume -------------*/
@@ -1069,6 +1073,8 @@ This is the Responsive Design for Iphone 6 and below
         line-height: 25px;
         background-position-x: -240px;
         max-height: 500px;
+
+        font-size: 10pt;
     }
 
     /*-------------------- Works -----------------*/
