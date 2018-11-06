@@ -414,43 +414,127 @@ video {
     width: 10%;
 }
 
+/* This applies only on the table tag.
+   - These table tags only apply to UI's User Story
+   - Remove any borders on the table
+   - All text are align left */
 table{
     border: none;
     text-align: left;   
 }
 
+/* Give space of 16px on the bottom and 20px on the right */
 td, th{
     padding-bottom: 16px;
     padding-right: 20px;
 }
 
+/* This only applies on h3 with this class
+   - Give botttom space by 16px. */
 .space{
     padding-bottom: 16px;
 }
 
+/******************************************************
+            Grid Structure for Assets
+*****************************************************/
 
-/*------------------- Grid Structure -------------------*/
+/*Note: These gird structure only applies to images that works well with grid structure
+        Example: Check on - Works > Animation > Queen of Evil > Assets.*/
+
+/* Display the whole structure as a grid for assets:
+    - Give three column grid structure
+    - With 10px on each side. */
 .structure-image{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px 10px;
 }
 
+
+/* Display the whole structure as a grid for assets and UI Pages:
+    - Give two column grid structure */
 .structure-image2{
     display: grid;
     grid-template-columns: auto auto;
 }
 
+/*set width structure to max*/
 .structure-img2 img{
     width: 100%;
 }
 
+/*set width images to 250px*/
 .structure-image img{
     width: 250px;
 }
 
-/*------------------- Side Nav ------------------*/
+/******************************************************
+                    Side Navigation
+*****************************************************/
 
+/*Move the things to the left side. This will stay hidden until this navigation is hoverd.
+  It's basically the wrapper of this whole navigation.
+
+  - Postion will remain fixed; it will stay in the same position.
+  - Height Extends to the end of the page.
+  - Width is 400px
+  - when hovered, it will have an ease out animation */
+#side_sub{
+    left: -330px;  
+    width: 400px;
+
+    position: fixed;
+    float: right;
+
+    height: 100%;
+    
+    transition: .3s ease-out;
+}
+
+/*All the list in the sub navigation will be implamented here.
+  - width is only 325px
+  - heigth is the same
+  - does have scrolling, but only to the y-axis
+  - border is only on the right to indicate were the border ends
+  - background color is white */
+#side_sub .list{
+    width: 325px;
+    height: 100%;
+
+    overflow-y: scroll;
+    border-right:  5px solid #3c60af;
+    background-color: #ffffff; /* White */
+}
+
+/* - all the a tag in this class will display vertically
+   - text indent is 20px to the right
+   - giving space of 24px on the top and bottom of the a tags
+   - border only appears at the bottom of 2px solid line black */
+.list a{
+    display: block; 
+    text-indent: 20px;
+
+    padding: 24px 0;
+    border-bottom: 2px solid #000000; /*Color Black*/
+}
+
+/*when hovering the a tag, this will hover with the background color from white to ligt blue on
+  the background color.
+
+  The font is from black to white
+
+  Check on @keyframe subHover on the sub navigation of this css page*/
+.list a:hover, .list h4:hover{
+    animation: subHover .2s linear both;
+}
+
+/* This side navigation only applies on the interior work page
+    Such as: "MyCourses Rework", "Future UI", "Struggle". All of them are works pages.
+
+    - set this icon to width and height of 70px
+    - float right because, this navigation is at the very left.
+    - moving the image down by 100px*/
 #side_sub img{
     width: 70px;
     height: 70px;
@@ -462,62 +546,48 @@ td, th{
     padding-top: 100px;
 }
 
+/* When this navigation is hovered, the whole thing will appear with the animation of ease-out.*/
 #side_sub:hover{
     left:0;
     transition: .3s ease-out;
 }
 
-#back_button {
-    display: none;
+/* This side navigation only applies on the interior work page
+    Such as: "MyCourses Rework", "Future UI", "Struggle". All of them are works pages.
+
+    - set this icon to width and height of 70px
+    - float right because, this navigation is at the very left.
+    - moving the image down by 100px */
+#side_sub img{
+    width: 70px;
+    height: 70px;
+    float: right;
+    padding-top: 100px;
+
+    /*Previous Codes*/
+    /* position: fixed; */
+    /* transition: .3s linear; */
+    /* display: inline-flex; */
 }
 
-#side_sub{
-    left: -330px;  
-
-    width: 400px;
-
-    position: fixed;
-    float: right;
-
-    height: 100%;
-
-    line-height: 24pt;
-    
+/*When hovering, the side navigation will move to the right with ease-out*/
+#side_sub:hover{
+    left:0;
     transition: .3s ease-out;
 }
 
-#side_sub .list{
-    width: 325px;
-    height: 100%;
-
-    overflow-y: scroll;
-    border-right:  5px solid #3c60af;
-    background-color: #ffffff;
-}
-
-.list a{
-    display: block; 
-    text-indent: 20px;
-
-    padding: 24px 0;
-    border-bottom: 2px solid #000000;
-}
-
-.list a:hover, .list h4:hover{
-
-    animation: subHover .2s linear both;
-}
-
-.list h4{
-    text-indent: 16px;
-    /* color: #243f79; */
-}
-
-#drop_menu0 #section0 a, #drop_menu1 #section1 a, #drop_menu2 #section2 a, #drop_menu3 #section3 a{
+/* #back_button {
+    display: none;
+} */
+    
+/* Text indent on the sub navigation is 30px */
+#section0 a, #section1 a, #section2 a, #section3 a{
     text-indent: 30px;
 }
 
-.section_1 #sub_sec_button{
+/* Was originally going to be used as a back button but I do not know how to do it correctly*/
+
+/* .section_1 #sub_sec_button{
     padding: 16px;
     float: right;
 }
@@ -533,7 +603,7 @@ td, th{
 @keyframes rotate_button{
     from{transform: rotate(0deg);}
     to{transform: rotate(90deg);}
-}
+} */
 /*******************************************************************
                             Resume
 ********************************************************************/
@@ -623,8 +693,8 @@ Note: the only reason why the rest of the text is not targeted
     display: inline-block;
 }
 
-/* Have the PDF Icon before the PDF Resume */
-
+/* - Have the PDF Icon before the PDF Resume
+   - width is 20px and height is 30px */
 #link_resume::before{
     content: "";
     background: url(fontawesome_logo/file-pdf-regular.svg) no-repeat;
@@ -632,7 +702,6 @@ Note: the only reason why the rest of the text is not targeted
     display: inline-block;
     padding-right: 10px;
     /* background-size:  */
-
 
     width: 20px;
     height: 30px;
@@ -648,6 +717,7 @@ Note: the only reason why the rest of the text is not targeted
     float: right;
 }
 
+/*float on the right side with the margin space of 40px on the top*/
 #experience {
     float: right;
     margin-top: 40px;
@@ -664,16 +734,20 @@ a:link, a:visited {
 ***************************************************************/
 
 /******************************************************
-This is the Responsive Design for Ipad pro
+This is the Responsive Design for Ipad Pro
 *****************************************************/
 @media screen and (max-width: 1024px){
     
+    /* - body will have a width of 100% and font size of 16pt
+       - Line height of 5pt;*/
     body{
         width: 100%;
-        line-height: 5px;
+        line-height: 5pt;
         font-size: 16pt;
     }
 
+    /* - Wrapper will have a max-width of 1024px.
+       - Everything in this div centered*/
     .wrapper{
         max-width: 1024px;
         margin: 0 auto;
@@ -1119,9 +1193,11 @@ This is the Responsive Design for Iphone 6 and below
     }
 
     #back-to-top{
-        left: 83%;
+        left: 85%;
         top: 85%;
 
+        width: 40px;
+        height: 40px;
     }
 
     #side_sub img{

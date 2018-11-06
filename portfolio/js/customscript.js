@@ -1,7 +1,7 @@
 /*This is the Javascript*/
 
 /*This function allows the works to toggle the subnav when on mobile mode*/
-function myFunction() {
+function nav_button() {
     var x = document.getElementById("subnav_mobile");
 
     if (x.style.display === "none") {
@@ -121,33 +121,33 @@ function section_button() {
 *****************************************************************/
 
 
-const $element = $('.animation');
-const imagePath = '/png_sequence';
-const totalFrames = 600;
-const animationDuration = 1300;
-const timePerFrame = animationDuration / totalFrames;
-let timeWhenLastUpdate;
-let timeFromLastUpdate;
-let frameNumber = 1;
+// const $element = $('.animation');
+// const imagePath = '/png_sequence';
+// const totalFrames = 600;
+// const animationDuration = 1300;
+// const timePerFrame = animationDuration / totalFrames;
+// let timeWhenLastUpdate;
+// let timeFromLastUpdate;
+// let frameNumber = 1;
 
-function step(startTime) {
-  if (!timeWhenLastUpdate) timeWhenLastUpdate = startTime;
+// function step(startTime) {
+//   if (!timeWhenLastUpdate) timeWhenLastUpdate = startTime;
 
-  timeFromLastUpdate = startTime - timeWhenLastUpdate;
+//   timeFromLastUpdate = startTime - timeWhenLastUpdate;
 
-  if (timeFromLastUpdate > timePerFrame) {
-    $element.attr('src', imagePath + `/homescreen${frameNumber}.png`);
-    timeWhenLastUpdate = startTime;
+//   if (timeFromLastUpdate > timePerFrame) {
+//     $element.attr('src', imagePath + `/homescreen${frameNumber}.png`);
+//     timeWhenLastUpdate = startTime;
 
-    if (frameNumber >= totalFrames) {
-      frameNumber = 1;
-    } else {
-       frameNumber = frameNumber + 1;
-    }        
-  }
+//     if (frameNumber >= totalFrames) {
+//       frameNumber = 1;
+//     } else {
+//        frameNumber = frameNumber + 1;
+//     }        
+//   }
 
-  requestAnimationFrame(step);
-}
+//   requestAnimationFrame(step);
+// }
 //This JQuery is made by: sitepoint
 //Source: https://www.sitepoint.com/frame-by-frame-animation-css-javascript/
 
