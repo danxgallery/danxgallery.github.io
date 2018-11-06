@@ -279,8 +279,6 @@ footer{
     height: 800px;
 
     font-size: 24px;
-
-
 }
 
 /*This code controls the whole text of the about page
@@ -552,29 +550,6 @@ td, th{
     transition: .3s ease-out;
 }
 
-/* This side navigation only applies on the interior work page
-    Such as: "MyCourses Rework", "Future UI", "Struggle". All of them are works pages.
-
-    - set this icon to width and height of 70px
-    - float right because, this navigation is at the very left.
-    - moving the image down by 100px */
-#side_sub img{
-    width: 70px;
-    height: 70px;
-    float: right;
-    padding-top: 100px;
-
-    /*Previous Codes*/
-    /* position: fixed; */
-    /* transition: .3s linear; */
-    /* display: inline-flex; */
-}
-
-/*When hovering, the side navigation will move to the right with ease-out*/
-#side_sub:hover{
-    left:0;
-    transition: .3s ease-out;
-}
 
 /* #back_button {
     display: none;
@@ -718,7 +693,7 @@ Note: the only reason why the rest of the text is not targeted
 }
 
 /*float on the right side with the margin space of 40px on the top*/
-#experience {
+#right_column{
     float: right;
     margin-top: 40px;
 }
@@ -738,8 +713,13 @@ This is the Responsive Design for Ipad Pro
 *****************************************************/
 @media screen and (max-width: 1024px){
     
+     /******************************************************
+                        Global CSS
+    *****************************************************/
+
     /* - body will have a width of 100% and font size of 16pt
-       - Line height of 5pt;*/
+       - Line height of 5pt
+       - font size is set to 16pt*/
     body{
         width: 100%;
         line-height: 5pt;
@@ -754,8 +734,14 @@ This is the Responsive Design for Ipad Pro
   
         /* overflow: visible; */
     }
-    /*----------- Navigation ----------*/
 
+  /******************************************************
+                Navigation
+  *****************************************************/
+
+    /* - Set the height from 50px to 400px because this is the hamberger menu
+       - Width will always be at 100%
+       - set bottom margin of 60px */
     nav{
         height: 400px;
         width: 100%;
@@ -763,18 +749,21 @@ This is the Responsive Design for Ipad Pro
         margin-bottom: 60px;
     }
 
+    /* - Set the container to block
+       - Remove all float */
     .nav_container{
         display: block;
-        
         float: none;
-
     }
 
+    /* - set the naviation to a verticle hamberger menu
+       - all text are align at the left
+       - max-width at 1024px no less
+       - give space at 20px on top and bottom*/
     .nav_container .nav-wrapper a{
         display: block;
         text-align: left;
         max-width: 1024px;
-        margin: 5px 0;
         
         padding: 20px 0;
         padding-left: 30px;
@@ -784,16 +773,19 @@ This is the Responsive Design for Ipad Pro
 
     /* .nav_container .dropdown: */
 
-    .mobile_nav #subnav_mobile{
-        
-        display: none;
+    /* - set the height of 140px */
+    .mobile_nav #subnav_mobile{   
+        /* display: none; */
         height: 140px;
-        float: none;
         background-color: #dce4ee;
     }
 
+    /* - Set the mobile version sub navigation to block, making it visible
+       - border top at 2px solid black
+       - give space of 20px on top and bottom
+       - set font to 12pg
+       - text-indent to 40px; */
     .mobile_nav #subnav_mobile a{
-
         display: block;
         border-top: 2px solid #000000;
 
@@ -807,8 +799,11 @@ This is the Responsive Design for Ipad Pro
         margin-top: 50px;
     } */ 
 
+    /* - set the mobile button of 100% width
+       - font size of 16px
+       - text-align is set to left
+       - text indent is set to 20px*/
     #mobile_button{
-        
         width: 100%;
         font-size: 16pt;
 
@@ -820,59 +815,78 @@ This is the Responsive Design for Ipad Pro
         border: none;
     }
 
+    /* - remove outline
+       - Replace the indicator with the background color of light blue and font color of white. */
     .nav_container .nav-wrapper .indicator, .indicator {
         outline: none;
         background-color: #3c60af;
         color: #ffffff;
     }
 
-
+    /*set the mobile version of the navigation to block*/
     .mobile_nav{
         display: block;
     }
 
+    /* Remove dropdown menu to prevent hovering */
     .dropdown{
         display: none;
     }
 
 
-    /*-------------------- Footer ------------------*/
+    /******************************************************
+                        Footer
+    *****************************************************/
+
+    /* - set the base width to 100% */
     footer{
         width: 100%;
     }
     
+    /* - set the max-width to 992px
+    /* - center with the margin */
     .footer_wrapper{
         max-width: 992px;
         margin: 0 auto;
     }
 
+    /* - give space for the font-awesome icon on the top by 32px */
     .footer_wrapper #contact ul{
         padding-top: 32px;
-        padding-left: 30px;
     }
-    
+    /* - seperate the li by 16px */
     .footer_wrapper #contact ul li {
         padding-bottom: 16px;
     }
 
+    /* - give space for gallery by 32px at the top*/
     .footer_wrapper .gallery{
         padding-top: 32px;
     }
 
+    /* - seperate from h2 and icon by 16px at the top */
     .social_gallery{
         padding-top: 16px;
     }
 
-    /*--------------- Works ----------------*/
+     /******************************************************
+                        Works
+    *****************************************************/
+
+    /*set give space from the left of 40px and the bottom of 32px*/
     #work_title{
         padding-left: 40px;
         margin-bottom: 32px;
     }
 
+    /* - change the grid from four columns to three columns 
+       - Give gaps of all side by 5px*/
     .grid-container{
         grid-template-columns: auto auto auto;
         grid-gap: 5px 5px;
     }
+
+    /* giving space between h2 and grid area by 18px at the top area */
     .grid-container .grid-item p{
         padding-top: 18px;
     }
@@ -882,52 +896,65 @@ This is the Responsive Design for Ipad Pro
     }
     
 
-    /*-------------- Interior Works --------------*/
+     /******************************************************
+                        Interior Works
+    *****************************************************/
+    
+    /* - set the max-width to 800px
+       - set area to center with margin */
     .interior_wrapper{
         max-width: 800px;
         margin: 0 auto;
 
-        overflow: initial;
+        /* overflow: initial; */
     }
 
+    /* - seperate the bottom between h2 and content by 24px */
     .interior_wrapper h2{
         /* padding-top: 40px; */
         padding-bottom: 24px;
     }
 
+    /* - use line-height on all p tags by 32px*/
     .interior_wrapper p {
         line-height: 32px;
     }
 
+    /* - seperate each figure by 64px */
     .interior_wrapper figure {
         padding-bottom: 64px;
     }
 
+    /* - give space between img and figcaption by 16px */
     .interior_wrapper figcaption{
         padding-top: 16px;
     }
 
+    /* seperate h3 with other tags by 32px */
     .interior_wrapper h3{
         padding: 32px 0;
     }
 
+    /* give text individual space by 64px */
     #side_sub{
-        line-height:64px;
+        line-height: 64px;
     }
 
-
-
+     /******************************************************
+                        Homepage
+    *****************************************************/
     
-
-    /*--------------- Homepage --------------------------*/
+    /* - set the width by 50%
+       - give space by 15px on the top and 350px at the bottom */
     #about #about_wrapper{
         width: 50%;
         padding-top: 15px;
         padding-bottom: 350px;
-
-        font-size: 20px;
     }
 
+    /* - give the line-height of 32px
+       - max-height of 500px
+       - font size of 16pt */
     #about{
         line-height: 32px;
         max-height: 500px;
@@ -935,22 +962,27 @@ This is the Responsive Design for Ipad Pro
         font-size: 16pt;
     }
 
-    /*------------- Resume -------------*/
+     /******************************************************
+                        about page
+    *****************************************************/
 
+    /* - set the max width of 992px
+       - set padding to 0 to rearrange the resume
+       - set margin by 20px on left and right side */
     #moving #wrapper_resume{
         max-width: 992px;
         padding: 0;
         margin: 0 20px;
-
     }
 
+    /* - set the display to verticle (or block)
+       - set the max-width to 500px */
     #right_column{
-        float: right;
         display: block;
-
-        margin-right: 100px;
+        max-width: 500px;
     }
     
+    /* - seperate the list of skill set and program list with margin by 80px */
     .float_left_list {
         margin-right: 80px;
     }
@@ -963,41 +995,65 @@ This is the Responsive Design for Ipad
 *****************************************************/
 @media screen and (max-width: 768px){
     
-    /*------------- Resume -------------*/
+    
+     /******************************************************
+                        Resume
+    *****************************************************/
 
+    /* - remove float for experience
+       - set the display to block */
     #right_column{
         float: none;
         display: block;
     }
     
-    .float_left_list {
+    /* Not Needed */
+    /* .float_left_list {
         margin-right: 90px;
-    }
+    } */
 
+
+     /******************************************************
+                        Footer
+    *****************************************************/
+
+    /* - change the max width to 736px */
     .footer_wrapper{
         max-width: 736px;
-        margin: 0 auto;
     }
 
-    /*-------------------- Works -----------------*/
+    
+     /******************************************************
+                        Interior Works
+    *****************************************************/
+    
+    /* change from the three grid column to two grid column */
     .grid-container{
         grid-template-columns: auto auto;
-        grid-gap: 5px 5px;
     }
 
+    /* set the max width in this wrapper by 600px */
     .interior_wrapper{
         max-width: 600px;
-        margin: 0 auto;
     }
     
+     /******************************************************
+                        Interior Works
+    *****************************************************/
+
+    /* set the width for this asset grid by 300px */
     .structure-image2 img{
         width: 300px;
     }
     
+    /* set the width for this asset grid by 200px */
     .structure-image img{
         width: 200px;
     }
 
+    /* - width and height is 70px
+       - set at the bottom left regardless of position.
+       - adjusted differently from the pc screen*/
     #back-to-top{
         width: 70px;
         height: 70px;
@@ -1014,30 +1070,40 @@ This is the Responsive Design for Iphone 6 and below
 *******************************************************/
 @media screen and (max-width: 375px){
     
+    /******************************************************
+                        Gobal CSS
+    *****************************************************/
+    
+    /* - width is set to 100%
+       - set the line-height to 5px
+       - font size is 10pt */
     body{
         width: 100%;
         line-height: 5px;
         font-size: 10pt;
     }
 
+    /* - set max width to 375px
+       - set display to block */
     .wrapper{
         max-width: 375px;
-        margin: 0 auto;
         display: block;
     }
-    /*----------- Navigation ----------*/
 
+    /******************************************************
+                        Navigation
+    *****************************************************/
+
+    /* set the height to 350px */
     nav{
         height: 350px;
-        width: 100%;
     }
 
-    .nav_container{
+    /* Not needed due to ipad code is the same */
+    /* .nav_container{
         display: block;
-        
         float: none;
-
-    }
+    } */
 
     .nav_container .nav-wrapper a{
         text-align: left;
@@ -1048,18 +1114,19 @@ This is the Responsive Design for Iphone 6 and below
         padding-left: 30px;
     }
 
-    /* .nav_container .dropdown: */
+    /* Not needed but this was worked on first before I got to the other mobile device*/
+
+    /* .nav_container .dropdown:
 
     .mobile_nav #subnav_mobile{
-        
         display: none;
         height: 140px;
         float: none;
     }
 
-    /* .nav-wrapper {
+    .nav-wrapper {
         margin-top: 50px;
-    } */ 
+    
 
     #mobile_button{
         width: 100%;
@@ -1076,7 +1143,7 @@ This is the Responsive Design for Iphone 6 and below
 
     .dropdown{
         display: none;
-    }
+    } */
 
     /*this was used before I tried with button for mobile*/
     /* .nav_container .dropdown a {
@@ -1098,48 +1165,61 @@ This is the Responsive Design for Iphone 6 and below
         margin-top: 50px;
         margin-bottom: 5px;
          margin-bottom: 320px;
-    } */
+    }
 
-    /* .nav_container.dropdown: {
+    .nav_container.dropdown: {
         
     } */
 
-    /*-------------------- Footer ------------------*/
-    footer{
+    /******************************************************
+                        Interior Works
+    *****************************************************/
+    /* footer{
         width: 100%;
-    }
-    
+    }*/
+
+    /* set the max width to 350px */
     .footer_wrapper{
         max-width: 350px;
-        margin: 0 auto;
     }
 
+    /* give space to seperate the ul from the h2 by 32px */
     .footer_wrapper #contact ul{
         padding-top: 32px;
-        padding-left: 30px;
     }
     
+    /* seperate the li by 16px each (at the bottom) */
     .footer_wrapper #contact ul li {
         padding-bottom: 16px;
     }
 
+    /* seperate the font-awesome icon and h2 by 32px */
     .footer_wrapper .gallery{
         padding-top: 32px;
     }
 
+    /* add space for this div by 16px */
     .social_gallery{
         padding-top: 16px;
     }
 
-    /*-------------- Homepage ----------------*/
+    /******************************************************
+                        About
+    *****************************************************/
+
+    /* - set the width to 300px
+       - set the space on the top by 15px and bottom by 350px */
     #about #about_wrapper{
         width: 300px;
         padding-top: 15px;
         padding-bottom: 350px;
     }
 
+    /* - set the line heigh by 25px
+       - move the background to the left by 240px
+       - set max height to 500px
+       - font size is 10pt */
     #about{
-
         line-height: 25px;
         background-position-x: -240px;
         max-height: 500px;
@@ -1147,34 +1227,46 @@ This is the Responsive Design for Iphone 6 and below
         font-size: 10pt;
     }
 
-    /*-------------------- Works -----------------*/
+    /******************************************************
+                        Interior Works
+    *****************************************************/
+
+    /* - set the grid columns from two to one
+       - set the gaps for 25px on row and 5px on column */
     .grid-container{
         grid-template-columns: auto;
         grid-gap: 25px 5px;
     }
 
-
+    /* - set the max width to 325px */
     .interior_wrapper{
         max-width: 325px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
+    /* - seperate the figure images by 15px */
     .interior_wrapper figure{
         padding-bottom: 15px;
     }
 
+    /* - seperate the figcaption and image by 5px
+       - set line hight to 20pt */
     .interior_wrapper figcaption{
         padding-top: 5px;
         line-height: 20pt;
     }
 
+    /* - change the width to 230px
+       - reduce the left to -180 instead of -330
+       - height is 100%
+       - line height is set to 24pt
+       - position is fixed (will never move)
+       - animation is ease out */
     #side_sub{
-        left: -180px;  
-    
+        left: -180px;
         width: 230px;
     
         position: fixed;
-        float: right;
     
         height: 100%;
     
@@ -1183,15 +1275,23 @@ This is the Responsive Design for Iphone 6 and below
         transition: .3s ease-out;
     }
     
+    /* - set the width to 175px
+       - height is 100%
+       - scrolling is set to y only */
+
     #side_sub .list{
         width: 175px;
         height: 100%;
     
         overflow-y: scroll;
-        border-right:  5px solid #3c60af;
-        background-color: #ffffff;
+
+        /* not needed */
+        /* border-right:  5px solid #3c60af;
+        background-color: #ffffff; */
     }
 
+    /* - adjust the bottom right location of not go off screeen
+       - set the width and height to 40px */
     #back-to-top{
         left: 85%;
         top: 85%;
@@ -1200,57 +1300,58 @@ This is the Responsive Design for Iphone 6 and below
         height: 40px;
     }
 
+    /* - change the width and height to 50px */
     #side_sub img{
         width: 50px;
         height: 50px;
     }
 
+    /* set the width to 110px */
     .structure-image img{
         width: 110px;
     }
 
+    /* set the width to 150px */
     .structure-image2 img{
         width: 150px;
     }
 
+    /******************************************************
+                        Resume
+    *****************************************************/
 
-
-    /*------------- Resume -------------*/
-
+    /* - set the max width to 300px
+       - set padding to 0 to make adjustment easier
+       - set margin on left and right side by 20px */
     #wrapper_resume{
         max-width: 330px;
         padding: 0;
         margin: 0 20px;
     }
 
+    /* - remove float completely
+       - set the display to block */
     #right_column{
         float: none;
         display: block;
-
-        width: 100%;
     }
-    
-    .float_left_list {
-        margin-right: 80px;
-    }
-
 
 }
 
 /* This is used when user wants to print the resume*/
 @media print{
+
+    /*change all fonts to 12pt when printed*/
     *{
         font-size: 12pt;
     }
 
-    nav, footer, #side_sub{
+    /*remove these following divs*/
+    nav, footer, #side_sub, #wrapper_resume a{
         display: none;
     }
 
-    #wrapper_resume a{
-        display: none;
-    }
-
+    /*remove float*/
     #right_column{
         float: none;
     }
