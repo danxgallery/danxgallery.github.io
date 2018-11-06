@@ -47,10 +47,6 @@ p a:hover{
     color: #3c60af; /*light Blue*/
     font-weight: bold;
 }
-
-.space {
-    padding-top: 16px;
-}
 /*******************************************************************
                             Navigation
 ********************************************************************/
@@ -428,7 +424,7 @@ td, th{
     padding-right: 20px;
 }
 
-h3{
+.space{
     padding-bottom: 16px;
 }
 
