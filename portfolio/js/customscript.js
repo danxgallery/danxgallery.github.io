@@ -23,78 +23,74 @@ function nav_button() {
 
 /*This function allows the works to toggle the side bar of the 
 Main Characters when on mobile mode*/
-function side_bar() {
-  var x = document.getElementById("sub_section");
+ function side_bar() {
+   var x = document.getElementById("sub_section");
 
-
-  if (x.style.display === "none") {
-      x.style.display = "block";
-  } 
+   if (x.style.display === "none") {
+       x.style.display = "block";
+   } 
   
-  else {
-      x.style.display = "none";
-  }
-}
-// This code is created by w3schools.
-// Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+   else {
+       x.style.display = "none";
+   }
+ }
+// // This code is created by w3schools.
+// // Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
 function section_button() {
-    var x = document.getElementById("section0");
-  
-  
+    var x = document.getElementById("section")
     if (x.style.display === "none") {
         x.style.display = "block";
-    } 
-    
+    }  
     else {
         x.style.display = "none";
     }
   }
-  // This code is created by w3schools.
-  // Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+//   // This code is created by w3schools.
+//   // Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
-  function section_button1() {
-    var x = document.getElementById("section1");
+//   function section_button1() {
+//     var x = document.getElementById("section1");
   
   
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } 
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } 
     
-    else {
-        x.style.display = "none";
-    }
-  }
-  // This code is created by w3schools.
-  // Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+//     else {
+//         x.style.display = "none";
+//     }
+//   }
+//   // This code is created by w3schools.
+//   // Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
-  function section_button2() {
-    var x = document.getElementById("section2");
+//   function section_button2() {
+//     var x = document.getElementById("section2");
   
   
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } 
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } 
     
-    else {
-        x.style.display = "none";
-    }
-  }
-  // This code is created by w3schools.
-  // Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+//     else {
+//         x.style.display = "none";
+//     }
+//   }
+//   // This code is created by w3schools.
+//   // Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
-  function section_button3() {
-    var x = document.getElementById("section3");
+//   function section_button3() {
+//     var x = document.getElementById("section3");
   
   
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } 
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     } 
     
-    else {
-        x.style.display = "none";
-    }
-  }
+//     else {
+//         x.style.display = "none";
+//     }
+//   }
   // This code is created by w3schools.
   // Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
@@ -119,6 +115,14 @@ function section_button() {
 /***********************************************************
 ------------------- JQuery --------------------------------
 *****************************************************************/
+
+$(document).ready(function(){
+
+    $(".toggle_button").click(function(){
+        $(".section" ).toggle(300);
+
+    });
+});
 
 
 // const $element = $('.animation');

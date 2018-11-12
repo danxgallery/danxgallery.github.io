@@ -47,6 +47,7 @@ p a:hover{
     color: #3c60af; /*light Blue*/
     font-weight: bold;
 }
+    
 /*******************************************************************
                             Navigation
 ********************************************************************/
@@ -402,6 +403,10 @@ figure img{
     fill: #213b72;
 } */
 
+.section{
+    display: none;
+}
+
 /* Set all video tags by 100% because of the interior_wrapper class */
 video {
     width: 100%;
@@ -433,6 +438,10 @@ td, th{
     padding-bottom: 16px;
 }
 
+.ui_utility img{
+    width: 200px;
+}
+
 /******************************************************
             Grid Structure for Assets
 *****************************************************/
@@ -451,10 +460,17 @@ td, th{
 
 
 /* Display the whole structure as a grid for assets and UI Pages:
-    - Give two column grid structure */
+    - Give two column grid structure
+    - Add 10px of space for every grid row. */
 .structure-image2{
     display: grid;
     grid-template-columns: auto auto;
+    grid-row-gap: 10px; 
+}
+
+/* set the width by 90% for the goals only*/
+.structure-image2 div{
+    width: 90%;
 }
 
 /*set width structure to max*/
@@ -466,6 +482,17 @@ td, th{
 .structure-image img{
     width: 250px;
 }
+
+/* Display the whole structure as a grid for assets and UI Pages:
+- Give two column grid structure. One side is 280px
+- Add 10px of space for every grid row. */
+.structure-wireframe{
+    display: grid;
+    grid-template-columns: 280px auto;
+    grid-row-gap: 10px; 
+    grid-column-gap: 10px;
+}
+
 
 /******************************************************
                     Side Navigation
