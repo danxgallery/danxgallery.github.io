@@ -123,7 +123,7 @@ nav {
     display: none;
     position: absolute;
 
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* - When the dropdown class hovers:
@@ -438,10 +438,6 @@ td, th{
     padding-bottom: 16px;
 }
 
-.ui_utility img{
-    width: 200px;
-}
-
 /******************************************************
             Grid Structure for Assets
 *****************************************************/
@@ -493,6 +489,10 @@ td, th{
     grid-column-gap: 10px;
 }
 
+.ui_utility img{
+    width: 200px;
+}
+
 
 /******************************************************
                     Side Navigation
@@ -541,7 +541,8 @@ td, th{
     text-indent: 20px;
 
     padding: 24px 0;
-    border-bottom: 2px solid #000000; /*Color Black*/
+    /* border-bottom: 2px solid #3a3a3a; */
+     /*Color Black*/
 }
 
 /*when hovering the a tag, this will hover with the background color from white to ligt blue on
@@ -583,8 +584,13 @@ td, th{
 } */
     
 /* Text indent on the sub navigation is 30px */
-#section0 a, #section1 a, #section2 a, #section3 a{
-    text-indent: 30px;
+#section1 a, #section2 a, #section3 a{
+    text-indent: 60px;
+}
+
+#toggle_button1 a, #toggle_button2 a, #toggle_button3 a{
+    text-indent: 40px;
+    font-weight: 400;
 }
 
 /* Was originally going to be used as a back button but I do not know how to do it correctly*/

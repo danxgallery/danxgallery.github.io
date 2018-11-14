@@ -1,25 +1,21 @@
 /*This is the Javascript*/
 
 /*This function allows the works to toggle the subnav when on mobile mode*/
-function nav_button() {
-    var x = document.getElementById("subnav_mobile");
 
+
+function nav_button() {
+    var x = document.getElementById("subnav_mobile"); //Grab the subnav for mobile
     if (x.style.display === "none") {
         x.style.display = "block";
 
-       document.getElementById("moving").style.paddingTop = "150px";
-       
+       document.getElementById("moving").style.paddingTop = "150px";    
 
-    } 
-    
+    }  
     else {
         x.style.display = "none";
         document.getElementById("moving").style.paddingTop = "0";
     }
 }
-// This code is created by w3schools.
-// Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-
 
 /*This function allows the works to toggle the side bar of the 
 Main Characters when on mobile mode*/
@@ -34,18 +30,17 @@ Main Characters when on mobile mode*/
        x.style.display = "none";
    }
  }
-// // This code is created by w3schools.
-// // Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
-function section_button() {
-    var x = document.getElementById("section")
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    }  
-    else {
-        x.style.display = "none";
-    }
-  }
+
+// function section_button() {
+//     var x = document.getElementById("section")
+//     if (x.style.display === "none") {
+//         x.style.display = "block";
+//     }  
+//     else {
+//         x.style.display = "none";
+//     }
+//  }
 //   // This code is created by w3schools.
 //   // Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
@@ -116,10 +111,27 @@ function section_button() {
 ------------------- JQuery --------------------------------
 *****************************************************************/
 
+//This JQuery allow to animate toggle on my side bar.
 $(document).ready(function(){
 
-    $(".toggle_button").click(function(){
-        $(".section" ).toggle(300);
+    /*$("#mobile_button").click(function(){
+        $("#subnav_mobile" ).toggle(300);
+
+    });*/
+    $("#toggle_button1").click(function(){
+        $("#section1" ).toggle(300);
+
+    });
+    $("#toggle_button2").click(function(){
+        $("#section2" ).toggle(300);
+
+    });
+    $("#toggle_button3").click(function(){
+        $("#section3" ).toggle(300);
+
+    });
+    $("#toggle_button4").click(function(){
+        $("#section4" ).toggle(300);
 
     });
 });
