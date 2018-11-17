@@ -3,33 +3,33 @@
 /*This function allows the works to toggle the subnav when on mobile mode*/
 
 
-function nav_button() {
-    var x = document.getElementById("subnav_mobile"); //Grab the subnav for mobile
-    if (x.style.display === "none") {
-        x.style.display = "block";
-
-       document.getElementById("moving").style.paddingTop = "150px";    
-
-    }  
-    else {
-        x.style.display = "none";
-        document.getElementById("moving").style.paddingTop = "0";
-    }
-}
+//function nav_button() {
+//    var x = document.getElementById("subnav_mobile"); //Grab the subnav for mobile
+//    if (x.style.display === "none") {
+//        x.style.display = "block";
+//
+//       document.getElementById("moving").style.paddingTop = "150px";    
+//
+//    }  
+//    else {
+//        x.style.display = "none";
+//        document.getElementById("moving").style.paddingTop = "0";
+//    }
+//}
 
 /*This function allows the works to toggle the side bar of the 
 Main Characters when on mobile mode*/
- function side_bar() {
-   var x = document.getElementById("sub_section");
-
-   if (x.style.display === "none") {
-       x.style.display = "block";
-   } 
-  
-   else {
-       x.style.display = "none";
-   }
- }
+ //function side_bar() {
+ //  var x = document.getElementById("sub_section");
+//
+ //  if (x.style.display === "none") {
+ //      x.style.display = "block";
+ //  } 
+ // 
+ //  else {
+ //      x.style.display = "none";
+ //  }
+ //}
 
 
 // function section_button() {
@@ -114,26 +114,60 @@ Main Characters when on mobile mode*/
 //This JQuery allow to animate toggle on my side bar.
 $(document).ready(function(){
 
-    /*$("#mobile_button").click(function(){
+
+    $("#mobile_button").click(function(){
         $("#subnav_mobile" ).toggle(300);
 
-    });*/
+        /*if(!$(this).hasTag('nav')){
+
+            //This code is made by: OptimusCrime
+            //Source: https://stackoverflow.com/questions/7806637/jquery-animate-margin-top
+            $(this).find('nav').animate({'margin-bottom': '250px', opacity: 0.5 }, 1000);
+            console.log("It works");
+        }
+
+        else{
+            $(this).find('nav').animate({'margin-bottom': '0', opacity: 0.5 }, 1000);
+            console.log("It works again");
+        }*/
+
+    });
+
+
+
+    /* This is used for the side bar */
+
     $("#toggle_button1").click(function(){
         $("#section1" ).toggle(300);
-
     });
+
     $("#toggle_button2").click(function(){
         $("#section2" ).toggle(300);
-
     });
+
     $("#toggle_button3").click(function(){
         $("#section3" ).toggle(300);
-
     });
+
     $("#toggle_button4").click(function(){
         $("#section4" ).toggle(300);
-
     });
+
+    /* Scrolling animation */
+    
+    //This code is credited by: Joseph Silber
+    //Source: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+    $(document).on('click', 'a[href^="#"]', function (event) { //this tells the user, For every
+                                                               // a tag that links to an
+                                                               //id, use this function
+        event.preventDefault(); //Prevent default from happening
+    
+        $('html, body').animate({ //Use animation
+            scrollTop: $($.attr(this, 'href')).offset().top //Scrolling at an attribute this with link
+        }, 500);
+    });
+
+    
 });
 
 
