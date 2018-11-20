@@ -47,9 +47,9 @@
                     <!-- Tried to use the back button but it does not want to work-->
                     <h3><a href="#description">Description</a></h3>
                     <h3><a href="#titleCard">Title Card</a></h3>
-    
+                    <h3><a href="#logo">Logo Design</a></h3>
                     
-                    <h3><a onclick="side_bar()">Character Design</a></h3>
+                    <h3 id="toggle_button0"><a>Character Design</a></h3>
                 
                         <div id="sub_section" style="display: none;">
                             <div id="toggle_button1"><a>Main Characters</a></div>
@@ -67,7 +67,7 @@
                             <a href="#cindra">Cindra Kynthos</a>
                             <a href="#aiko">Harmoinia Aiko</a>
                             <a href="#daisy">Daisy Lily</a>
-                            <a href="#atlante">Atalante</a>
+                            <a href="#atalante">Atalante</a>
                             <a href="#lanka">Lanka Sage</a>
                             <a href="#joan">Joan Jones</a>
                             <a href="#jove">Jove Aaritz</a>
@@ -88,19 +88,23 @@
                             <a href="#kristen">Kristen Azazel</a>
                             </div>
         
-                            <div id="toggle_button4"><a>Kingdom of Baslieus</a></div>
+                            <div id="toggle_button4"><a>Kingdom of Basileus</a></div>
                             <div id="section4" style="display: none;">
-                            <a href="#arthur">Arthur Baslieus</a>
-                            <a href="#edgar">Edgar Baslieus</a>
-                            <a href="#reana">Reana Baslieus</a>
+                            <a href="#arthur">Arthur Basileus</a>
+                            <a href="#edgar">Edgar Basileus</a>
+                            <a href="#reana">Reana Basileus</a>
                             <a href="#mallory">Mallory Romilda</a>
                             <a href="#meri">Odysseia Meri</a>
                             <a href="#dan">Dan Daniel Gabriel</a>
                             </div>
-                        </div>
 
-                    <h3><a href="#logo">Logo Design</a></h3>
-                    <h3><a href="#other">Others</a></h3>
+                            <div id="toggle_button5"><a>Other Characters</a></div>
+                            <div id="section5" style="display: none;">
+                            <a href="#arthur">Hasial</a>
+                            <a href="#edgar">Beatrice Chayna</a>
+                            </div>
+                        </div>
+                    <h3><a href="#other">Other Illustration</a></h3>
     
                 </div>
         </div>
@@ -148,205 +152,558 @@
 
            
                 <div class="interior_wrapper">
-                    <!-- *********************** Description *************************** -->
-                    <div id="description">
-                    <h1>Villainous Empire</h1>
-                    <h2>Self Project</h2>
-                    
-                    <p><strong>May 2016 - Current</strong></p>
-                    
-                    <p>Villainous Empire is a four part saga that is about corruption of laws, rulers, and religion that occures
-                    in the country of Hestia. Three Empires Hotaru, Adelaide and Baslieus are currently in a civil war due to control of laws, land, and
-                    religion. There are two young future rulers name Emil and Amelia. Emil gets kidnapped and Amelia gets distarut. This Project
-                    is being worked on.</p>
-                    
-                    <p><strong>Part 1: The Beginning: Amelia Side</strong> - This saga is about Amelia begging her father to find her brother, but he
-                    makes some attempts to find his own son, but no results. Amelia later breaks out of her own castle
-                    just to find her own brother but the attempts failed. One of failed attempts she meets a girl in
-                    the same age as her. As the saga gose on, she becomes more aggressive, more selfish, and more emotional, because
-                    she is often gets abused by her trainer and her father, and neglected by her father and mother.</p>
-                    
-                    <p><strong>Part 2: The Beginning: Merlinus Side</strong> - This saga is about Merlinus woke up in an abandoned fort. There
-                    he was discovered by a raiders in ragged clothing. Some with decayed armour. They look really creepy
-                    and was about to do horrible things to him. But he was saved by a middle-age man name
-                    Althelbeorn Ryokou. Althelbeorn tells Merlinus that he is at Fort Shimoda. Althelbeorn later takes
-                    him in to his house. His house is in the east of the abandoned Fort Shimoda. He introduced Merlinus to:
-                    Althea, his wife; Herminuius, his adopted son; and Ulfa, his adopted daughter.
-                    Merlinus is shown with love and compassion by Althelbeorn.</p>
-                    
-                    
-                    <p><strong>Part 3: A New Ruler and the Fall</strong> - Ten Years after "The Beginning" Amelia and Emil reunited. Amelia is really
-                    happy.</p>
-                    
-                    <p><strong>Part 4: Regret</strong> - After a death of her dearest brother, she wonder around the now deserted country of Hotaru.
-                    </p>
-                    </div>
+                <!-- *********************** Description *************************** -->
+                <div id="description" class="grid-space">
+                <h1 class="space">Villainous Empire</h1>
+                <h2>Self Project</h2>
+                
+                <p><strong>May 2016 - Current</strong></p>
+                
+                <p>Villainous Empire is a four part saga that is about corruption of laws, rulers, and religion that occures
+                in the country of Hestia. Three Empires Hotaru, Adelaide and Baslieus are currently in a civil war due to control of laws, land, and
+                religion. There are two young future rulers name Emil and Amelia. Emil gets kidnapped and Amelia gets distarut. This Project
+                is being worked on.</p>
+                
+                <p><strong>Part 1: The Beginning: Amelia Side</strong> - This saga is about Amelia begging her father to find her brother, but he
+                makes some attempts to find his own son, but no results. Amelia later breaks out of her own castle
+                just to find her own brother but the attempts failed. One of failed attempts she meets a girl in
+                the same age as her. As the saga gose on, she becomes more aggressive, more selfish, and more emotional, because
+                she is often gets abused by her trainer and her father, and neglected by her father and mother.</p>
+                
+                <p><strong>Part 2: The Beginning: Merlinus Side</strong> - This saga is about Merlinus woke up in an abandoned fort. There
+                he was discovered by a raiders in ragged clothing. Some with decayed armour. They look really creepy
+                and was about to do horrible things to him. But he was saved by a middle-age man name
+                Althelbeorn Ryokou. Althelbeorn tells Merlinus that he is at Fort Shimoda. Althelbeorn later takes
+                him in to his house. His house is in the east of the abandoned Fort Shimoda. He introduced Merlinus to:
+                Althea, his wife; Herminuius, his adopted son; and Ulfa, his adopted daughter.
+                Merlinus is shown with love and compassion by Althelbeorn.</p>
+                
+                
+                <p><strong>Part 3: A New Ruler and the Fall</strong> - Ten Years after "The Beginning" Amelia and Emil reunited. Unfortunately,
+                    Amelia does not know who Merlinus is. She uses her as a loyal servant without knowing that it was
+                her own twin brother the entire time. Herminuius and Ulfa now works for the Adelaide Empire as Scouts to 
+                watch over the Hotaru Empire. Merlinus as a servant does anything to protect his twin sister. Even if it means
+                turning into "Evil". </p> 
+                
+                <p>One day, Merlinus was walking around the Adelaide Empire to do shopping for him and his foster
+                brother and sister, but he bumps into a girl and all of his food drop to the floor along with himself. He meets a former
+                classmate, Sophia Kyoko. She is the current princess of the Adelaide Empire. Sophia is very delight to see Merlinus and 
+                gives him a hug.</p>
+                
+                <p><strong>Part 4: Regret</strong> - After a death of her dearest brother, she wonder around the now deserted country of Hotaru.
+                    She kept on hiding from everyone. She somehow was able to buy food cause she is still in Merlinus's Outfit.
+                </p>
+                </div>
     
-                    <!-- ----------------------------Title Card------------------------------------------ -->
-                    <h2 id="titleCard" class="space">Title Card</h2>
-                    <div><p>This is the final version of the vol.1 title card.</p>
-                    <p>This design is heavily inspired to anime style with the combination of gothic 
-                        architecture and manuscripts.</p></div>
-                    
-                    <figure>
-                    <img src="image/illustation/villain/titlecard_v2.png" alt="title_card V2">
-                    </figure>
+                <!-- ----------------------------Title Card V2------------------------------------------ -->
+                <h2 id="titleCard" class="tabs">Title Card</h2>
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>This is the final version of the vol.1 title card. This is image is meant to show 
+                    of how Amelia (left) and Merlinus (right) missed each other as kids. This also show that 
+                    both of them live in two different lives.</p>
 
-                    <p>This is the sketch of version 2.</p>
-                    <figure>
-                    <img src="image/illustation/villain/titlecard_sketch_v2.png" alt="title_card Sketch V2">
-                    </figure>
+                <p>This design is heavily inspired by Japanese anime style with the combination of Gothic 
+                    Architecture and manuscripts.</p>
+                <p><em>Finished in September 25, 2018</em></p>
+                </div>
+                
+                <figure>
+                <img src="image/illustation/villain/titlecard_v2.png" alt="title_card V2">
+                </figure>
+
+                <!-- ----------------------------Title Card V2 Sketch------------------------------------------ -->
+                <div><p>This is the sketch of this version. It started out as a sketch before I did
+                the digital art.</p>
+                
+                <p><em>Finished on: August 18, 2018</em></p>
+                </div>
+                
+                <figure>
+                <img src="image/illustation/villain/titlecard_sketch_v2.png" alt="title_card Sketch V2">
+                </figure>
+                
+                <!-- ----------------------------Title Card V1------------------------------------------ -->
+                <div>
+                <h3 class="space">Version 1</h3>    
+                <p>This is the first version of vol.1 title card.</p>
+                <p>This time, Amelia and Merlinus are holding hands instead of touching each others hands.</p>
+            
+                <p><em>Finished on: June 24, 2017</em></p>
+                </div>
+
+                <figure>
+                <img src="image/illustation/villain/titlecard_v1.png" alt="title_card V1">
+                </figure>
+
+                <!-- ----------------------------Title Card V1 Sketch------------------------------------------ -->
+                <div><p>This is the sketch of version 1. Difference between the digital art and this sketch is the
+                rose window.</p>
+            
+                <p><em>Finished on: September 1, 2016</em></p>
+                </div>
+                
+                <figure>
+                <img src="image/illustation/villain/titlecard_sketch_v1.png" alt="title_card Sketch V1">
+                </figure>
+
+                <!-- ----------------------------Icon Design------------------------------------------ -->
+                <h2 id="logo" class="tabs">Icon Design</h2>
+                
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Final Design of the Logo.</p>
+                    <p><em>Finished on: October 7, 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/logo_v2_gallery.png" alt="Icon V2">
+                </figure>
+
+                <!-- ----------------------------Icon Design Sketch------------------------------------------ -->
+                <div>
+                    <p>Blueprint and sketch of the Logo.</p>
+                    <p><em>Finished on: 2017</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/logo_final_sketch.png" alt="Icon Sketch V2">
+                </figure>
+
+                <!-- ----------------------------Icon Design Version 1------------------------------------------ -->
+                <div>
+                    <p>First version of the Logo.</p>
+                    <p><em>Finished on: October 2017</em></p>
+                </div>
+                <figure>
+                    <img src="image/illustation/villain/icon_v1.png" alt="Icon Sketch V1">
+                </figure>
+                
+                <!-- ----------------------------Character Design------------------------------------------ -->
+                <h2 class="tabs">Character Design</h2>
+                <!-- ----------------------------Amelia Cruella------------------------------------------ -->
+                
+                <h2 class="grid-space">Main Characters</h2>
+
+                <div class="grid-space">
+                <h3 id="amelia" class="space">Amelia Cruella</h3>
+
+                <p>Amelia Cruella is one of the four main characters in this saga. She is also known as the "Queen of Evil."
+                Unlike the other three main characters, she grow up to be more to be evil, selfish, spoiled, and cowardice.
+                As a child, she used to hang out with her twin brother Emil. Unfortunately, her brother has been kidnapped by raiders.
+                They were ambushed at Lux Forest. All the guards were killed, along kidnapping a maid. Amelia was mistaken as a boy and did
+                not get kidnapped. The Hotaru Soldiers arrived just after the mysterious girl leaves. Running towards Amelia is a group of
+                soldiers and the lead strategist, Lanka Sage.</p>
+
+                <p>Because of this event, she is tramitized. She is willing to risk her life just to get her brother back in any means.
+                    The results always ended up in failure because of her weak stamina and constantly get pulled back by 
+                     her head maid, and soldiers of Hotaru.
+                </p>
+
+                <p>As a kid, Amelia is a gullible. Because of that, she was easily manipulate by her father. Willing to believe him on anything. 
+                    She was also poorly educated, very sheltered, and spoiled. She is often abandoned by her parents. Her father and mother always give her 
+                    whatever she want just to have her to go away. Only two people that show her love is her Head Maid, Aiko Harmonia and 
+                    the Prince of Basileus Kingdom, Arthur Basileus.</p>
+                
+                <p>In "A New Ruler and the Fall", as the current Queen of Hotaru, she was not properly trained to handel politics due to poor education of her parents.
+                    So she abuses the power for herself. These decision will cause her to regret the worst decision she makes. These decision </p></div>
+                
+                <!-- ---------------------------- Amelia Final ------------------------------------------ -->
+                <div>
+                <h3 class="space">Current Version</h3>
+                
+                <p>This is Amelia Cruella at the age of Eighteen in her default Queen Outfit.</p>
+                <p><em>Finished on: March 9, 2018</em></p>
+                </div>
+                
+                <figure>
+                    <img src="image/illustation/villain/amelia_color.png" alt="Amelia">
+                </figure>
+
+                <!-- ---------------------------- Amelia Version 1 ------------------------------------------ -->
+                <div>
+                <h3 class="space">Version 1</h3>
+                
+                <p>This is the very first version of Amelia</p>
+
+                <p>This very first approch was to make it look like a simplified, and moderan vicorian style.
+                    Skirt was made shorter intentally just to explore different styles.
+                </p>
+
+                <p><em>Finished on: 2016</em></p>
+                </div>
+                
+                <figure>
+                    <img src="image/illustation/villain/amelia_v1.png" alt="Amelia">
+                </figure>
+
+                <!-- ---------------------------- Amelia Version 2 ------------------------------------------ -->
+                <div>
+                <h3 class="space">Version 2</h3>
+                
+                <p>This is the second version of Amelia</p>
+                <p><em>Finished on: 2016</em></p>
+                </div>
+                
+                <figure>
+                    <img src="image/illustation/villain/amelia_v2.png" alt="Amelia">
+                </figure>
+
+                <!-- ---------------------------- Amelia Version 3 ------------------------------------------ -->
+                <div>
+                <h3 class="space">Version 3</h3>
+                
+                <p>This is the third version of Amelia</p>
+                <p><em>Finished on: April 14, 2016</em></p>
+                </div>
+                
+                <figure>
+                    <img src="image/illustation/villain/amelia_v3.png" alt="Amelia">
+                </figure>
+
+                <!-- ---------------------------- Amelia Version 4------------------------------------------ -->
+                <div>
+                <h3 class="space">Version 4</h3>
+                
+                <p>This is the forth version of Amelia.</p>
+                <p><em>Finished on: April 15, 2016</em></p>
+                </div>
+                
+                <figure>
+                    <img src="image/illustation/villain/amelia_v4.png" alt="Amelia">
+                </figure>                
+
+                <!-- ---------------------------- Amelia Version 5 ------------------------------------------ -->
+                <div>
+                <h3 class="space">Version 5</h3>
+                 
+                <p>This is the fifth version of Amelia.</p>
+                <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/amelia_v5.png" alt="Amelia Character Sheet">
+                </figure>
+
+                
+                <!-- ---------------------------- Amelia Version 6 ------------------------------------------ -->
+                <div>
+                <h3 class="space">Version 6</h3>
+                 
+                <p>This is the sixth version of Amelia.</p>
+                <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/amelia_v6.png" alt="Amelia Character Sheet">
+                </figure>
+
+                
+                <!-- ---------------------------- Amelia Version 7 Final ------------------------------------------ -->
+                <div>
+                <h3 class="space">Version 7</h3>
+                 
+                <p>This is the final version of Amelia.</p>
+
+                <p>This is also the only version that has a color pallet.</p>
+                <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/amelia_v7.png" alt="Amelia Character Sheet">
+                </figure>
+
+                
+                <!-- ---------------------------- Amelia Character Sheet ------------------------------------------ -->
+                <div>
+                <h3 class="space">Character Sheet - Queen of Evil</h3>
+                 
+                <p>This is the Character Sheet of Amelia.</p>
+                <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/amelia_char_sheet.png" alt="Amelia Character Sheet">
+                </figure>
+            
+                <!-- ---------------------------- Amelia Regret Adelaide ------------------------------------------ -->
+                <div>
+                <h3 class="space">Old Style Adeladian Outfit - Version 1</h3>
+                 
+                <p>Using version 4 Amelia. This is her Adeladian Outfit.</p>
+
+                <p>This was givin by a nun named Beatrice Chayna.</p>
+                <p><em>Finished on: 2016</em></p>
+
+                </div>
+             
+                <figure>
+                    <img src="image/illustation/villain/amelia_regret_adelaide.png" alt="Amelia Adelaide Outfit">
+                </figure>
+
+                <!-- ---------------------------- Amelia Regret Adelaide------------------------------------------ -->
+                <div>
+                <h3 class="space">Old Style Adeladian Outfit - Version 2</h3>
+                 
+                <p>Using version 7 Amelia. This is her Adeladian Outfit.</p>
+
+                <p>This was givin by a nun named Beatrice Chayna.</p>
+                <p><em>Finished on: 2016</em></p>
+
+                </div>               
+
+                <figure>
+                    <img src="image/illustation/villain/amelia_regret_adalaide_v2.png" alt="Amelia Adelaide Outfit">
+                </figure>
+
+                <!-- ---------------------------- Amelia Regret Servant ------------------------------------------ -->
+                <div>
+                <h3 class="space">Character Sheet - Regret</h3>
+                 
+                <p>This is the Character Sheet of Amelia.</p>
+                <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/amelia_regret.png" alt="Regret Amelia">
+                    <figcaption>Sketch of Amelia in Regret.</figcaption>
+                </figure>
+
+            
+                <!-- ---------------------------- Amelia Regret v1 ------------------------------------------ -->
+                <div>
+                <h3 class="space">Regret Outfit - Version 1</h3>
+                 
+                <p>Amelia wearing her twin brother's outfit. Fortunatly, people surrounding her do know realize that
+                    she is still alive.
+                </p>
+
+                <p>This was givin by Merlinus before his death.</p>
+                <p><em>Finished on: 2016</em></p>
+                </div>
+                
+                <figure>
+                    <img src="image/illustation/villain/amelia_regret_v1.png" alt="Kid Amelia">
+
+                </figure>
+                <!-- ---------------------------- Amelia Regret v2 ------------------------------------------ -->
+                <div>
+                <h3 class="space">Regret Outfit - Version 1</h3>
+                 
+                <p>Amelia wearing her twin brother's outfit. Fortunatly, people surrounding her do know realize that
+                    she is still alive.
+                </p>
+
+                <p>This was givin by Merlinus before his death.</p>
+                <p><em>Finished on: 2016</em></p>
+                </div>
+                
+                <!-- ---------------------------- Kid Amelia ------------------------------------------ -->
+
+                <figure>
+                    <img src="image/illustation/villain/amelia_regret_v2.png" alt="Kid Amelia">
+
+                </figure>
+
+                <div><h3 class="space">Kid Amelia Cruella</h3>
+                <p>Sketch of Kid Amelia Version 1.</p></div>
+                <figure>
+                    <img src="image/illustation/villain/amelia_kid_v1.png" alt="Kid Amelia">
+                </figure>
+
+                <!-- ---------------------------- Kid Amelia Database ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Database</h3>
+                    <p>Sketch of Kid Amelia Version 1 Database.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+                <figure>
+                    <img src="image/illustation/villain/amelia_kid_data.png" alt="Kid Amelia Database">
+                </figure>
+                
+                <!-- ---------------------------- Kid Amelia v2 ------------------------------------------ -->
+                
+                <div><h3 class="space">Kid Amelia - Version 2</h3>
+                <p>Sketch of Kid Amelia Version 2.</p>
+                <p><em>Finished on: 2016</em></p>
+                </div>
                     
-                    <figure>
-                    <img src="image/illustation/villain/titlecard_v1.png" alt="title_card V1">
-                    <figcaption>This is the first version of vol.1 title card.</figcaption>
-                    </figure>
-                    
-                    <figure>
-                    <img src="image/illustation/villain/titlecard_sketch_v1.png" alt="title_card Sketch V1">
-                    <figcaption>This is the sketch of version 1.</figcaption>
-                    </figure>
-                    
-    
-    
-                    <!-- ----------------------------Character Design------------------------------------------ -->
-                    <h2 class="space">Character Design</h2>
-                    <!-- ----------------------------Amelia Cruella------------------------------------------ -->
-                    <h3 id="amelia">Amelia Cruella</h3>
-    
-                    <p>Amelia Cruella is one of the four main characters in this saga. She is also known as the "Queen of Evil."
-                        Unlike the other three main characters, she grow up to be more to be evil, selfish, spoiled, and cowardice.
-                        As a child, she used to hang out with her twin brother Emil. Unfortunately, her brother has been kidnapped by raiders.
-                        They were ambushed at Lux Forest. All the guards were killed, along kidnapping a maid. Amelia was mistaken as a boy and did
-                        not get kidnapped. The Hotaru Soldiers arrived just after the mysterious girl leaves. Running towards Amelia is a group of 
-                        soldiers and the lead strategist, Lanka Sage.</p>
-    
-                    <p>As the current Queen of Hotaru, she was not properly trained to handel politics so she abuses the power for herself. These 
-                        decision will cause her to regret the worst decision she makes.</p>
-                    <figure>
-                        <img src="image/illustation/villain/amelia_color.png" alt="Amelia">
-                        <figcaption>Final Rendering of Amelia Cruella at the age of Eighteen.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/amelia_v4.png" alt="Amelia Sketch V4">
-                        <figcaption>Sketch of Amelia version 4 (Possibly More).</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/amelia_char_sheet.png" alt="Amelia Character Sheet">
-                        <figcaption>Character Sheet of Amelia version 4 (Possibly More).</figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <img src="image/illustation/villain/amelia_v3.png" alt="Icon Sketch">
-                        <figcaption>Sketch of Amelia version 3 (Possibly More)</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/amelia_regret.png" alt="Regret Amelia">
-                        <figcaption>Sketch of Amelia in Regret.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/amelia_regret_adelaide.png" alt="Amelia Adelaide Outfit">
-                        <figcaption>Sketch of Amelia in Part 4: Regret. This is her wearing Adelaide Outfit</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/amelia_regret_adalaide_v2.png" alt="Amelia Adelaide Outfit">
-                        <figcaption>Sketch of Amelia in Part 4: Regret. This is her wearing Adelaide Outfit. Different Angle.</figcaption>
-                    </figure>
-    
-                    <h3 class="sub_section">Kid Amelia Cruella</h3>
-                    <figure>
-                        <img src="image/illustation/villain/amelia_kid_v1.png" alt="Kid Amelia">
-                        <figcaption>Sketch of Kid Amelia Version 1.</figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <img src="image/illustation/villain/amelia_kid_data.png" alt="Kid Amelia Database">
-                        <figcaption>Sketch of Kid Amelia Version 1 Database.</figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <img src="image/illustation/villain/amelia_kid_v2.png" alt="Kid Amelia">
-                        <figcaption>Sketch of Kid Amelia Version 2.</figcaption>
-                    </figure>
-    
-                    <!-- ----------------------------Merlinus Daimhin------------------------------------------ -->
-                    <h3 id="merlinus">Merlinus Daimhin</h3>
+                <figure>
+                    <img src="image/illustation/villain/amelia_kid_v2.png" alt="Kid Amelia">
+                </figure>
+
+                <!-- ----------------------------Merlinus Daimhin------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="merlinus" class="space">Merlinus Daimhin</h3>
     
                     <p>Merlinus Daimhin is one of the four main characters in the series. He is extremly loyal to his family and to his sister,
                         Amelia. He hides his real name "Emil" becasue he will die by his own people in both Adelaide and Hotaru Empire. If Adelaide knows
                         that he is the "Prince of Hotaru", they would kidnapped him and abuse that power from Hotaru to get what they want, and then kill him
-                        (or so they thought). In the Hotaru Empire, he is very difficult to manipulate because he has knowledge in both Hotaru and Adelaide Empire 
-                        causing a big threat to the Empire. He will take down his own Empire and run the empire how he wants it.
+                        (or so they thought). The Hotaru Empire have their own motive of killing him and that is his intelligents. Due to the fact his
+                        life that he lived in a well raised area, and well educated, he is extremly difficult to manipulate.
                     </p>
-        
+    
                     <p>As a kid, Merlinus was located in Fort Shimoda, an abandoned fortess for about thirty-two years. He was laying inside of the barrack
-                        by himself. 
-                    </p>
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_servant.png" alt="Merlinus Final">
-                        <figcaption>Merlinus as a Hotaru Servant.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_v1.png" alt="Merlinus V1">
-                        <figcaption>Version 1 Sketch of Merlinus.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_v2.png" alt="Merlinus V2">
-                        <figcaption>Version 2 Sketch of Merlinus.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_v3.png" alt="Merlinus V3">
-                        <figcaption>Version 3 Sketch of Merlinus.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_v7.png" alt="Merlinus V4">
-                        <figcaption>Version 4 Sketch of Merlinus.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_queen.png" alt="Merlinus Queen">
-                        <figcaption>Sketch of Merlinus. Posed as Amelia Cruella.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_char_hotaru.png" alt="Merlinus Kid">
-                        <figcaption>Database of his Hotaru Outfit.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_training.png" alt="Merlinus Kid">
-                        <figcaption>Sketch of Merlinus as a kid in Swordsman Training Outfit.</figcaption>
-                    </figure>
-        
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_char_default.png" alt="Merlinus Kid">
-                        <figcaption>Swordsman Database.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_school.png" alt="Merlinus Kid">
-                        <figcaption>Sketch of Merlinus as a kid in Adelaide School Uniform.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_char_school.png" alt="Merlinus Kid">
-                        <figcaption>Database of Adelaide School Uniform.</figcaption>
-                    </figure>
-    
-                    <figure>
-                        <img src="image/illustation/villain/merlinus_data.png" alt="Merlinus Kid">
-                        <figcaption>Sketch of Merlinus as a kid version 1</figcaption>
-                    </figure>
-                    <!-- ----------------------------Herminuius Rue------------------------------------------ -->
+                        by himself. He was found by a man named Althelbeorn Kaigai Ryokou.</p>
+                </div>
+
+                <!-- ---------------------------- Merlinus Daimhin Current Version ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Merlinus as a Hotaru Servant.</p>
+
+                    <p><em>Finished on: August 2, 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_servant.png" alt="Merlinus Final">
+                </figure>
+
+                 <!-- ---------------------------- Merlinus Daimhin Version 1 ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Version 1</h3>
+                    <p>Merlinus as a Hotaru Servant. Version 1</p>
+
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_v1.png" alt="Merlinus V1">
+                </figure>
+
+                 <!-- ---------------------------- Merlinus Daimhin Version 2 ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Version 2</h3>
+
+                    <p>Version 2 Sketch of Merlinus.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_v2.png" alt="Merlinus V2">
+                </figure>
+
+                <!-- ---------------------------- Merlinus Daimhin Version 3------------------------------------------ -->
+                <div>
+                    <h3 class="space">Version 3</h3>
+                    <p>Version 3 Sketch of Merlinus.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+                <figure>
+                    <img src="image/illustation/villain/merlinus_v3.png" alt="Merlinus V3">
+                </figure>
+
+                <!-- ---------------------------- Merlinus Daimhin Version 3------------------------------------------ -->
+                <div>
+                    <h3 class="space">Version 4</h3>
+                    <p>Version 3 Sketch of Merlinus.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+                <figure>
+                    <img src="image/illustation/villain/merlinus_v4.png" alt="Merlinus V3">
+                </figure>
+
+                <!-- ---------------------------- Merlinus Daimhin Version 3------------------------------------------ -->
+                <div>
+                    <h3 class="space">Version 5</h3>
+                    <p>Version 3 Sketch of Merlinus.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+                <figure>
+                    <img src="image/illustation/villain/merlinus_v5.png" alt="Merlinus V3">
+                </figure>
+
+                 <!-- ---------------------------- Merlinus Daimhin Version 6 ------------------------------------------ -->
+                 <div>
+                     <h3 class="space">Version 6</h3>
+                     <p>This is the final version of Merlinus.</p>
+                     <p><em>Finished on: 2016</em></p>
+                 </div>
+                <figure>
+                    <img src="image/illustation/villain/merlinus_v6.png" alt="Merlinus V4">
+                </figure>
+
+                <!-- ---------------------------- Merlinus Daimhin as Amelia - Version 1 ------------------------------------------ -->
+                <div>
+                    <p>Sketch of Merlinus. Posed as Amelia Cruella.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+                
+                <figure>
+                    <img src="image/illustation/villain/merlinus_queen_v1.png" alt="Merlinus Queen">
+                </figure>
+
+                <!-- ---------------------------- Merlinus Daimhin as Amelia - Version 2 ------------------------------------------ -->
+                <div>
+                    <p>Current version of Merlinus. Posed as Amelia Cruella.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+                
+                <figure>
+                    <img src="image/illustation/villain/merlinus_queen_v2.png" alt="Merlinus Queen">
+                </figure>
+                
+                <!-- ---------------------------- Kid Merlinus Daimhin - Version 1 ------------------------------------------ -->
+                <div>
+                	<p>Sketch of Merlinus as a kid version 1</p>
+                	<p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_data.png" alt="Merlinus Kid">
+                </figure>
+
+                <!-- ---------------------------- Merlinus Daimhin wearing Hotaru Outfit------------------------------------------ -->
+                <div>
+                    <p>Database of his Hotaru Outfit.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_char_hotaru.png" alt="Merlinus Kid">
+                </figure>
+
+                <!-- ---------------------------- Merlinus Daimhin - Training Outfit ------------------------------------------ -->
+                <div>
+                    <p>Sketch of Merlinus as a kid in Swordsman Training Outfit.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_training.png" alt="Merlinus Kid">
+                </figure>
+                <!-- ---------------------------- Merlinus Daimhin - Training Database ------------------------------------------ -->
+                <div>
+                    <p>Swordsman Database.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_char_default.png" alt="Merlinus Kid">
+                </figure>
+
+                <!-- ---------------------------- Merlinus Daimhin - School Uniform ------------------------------------------ -->
+                <div>
+                    <p>Sketch of Merlinus as a kid in Adelaide School Uniform.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_school.png" alt="Merlinus Kid">
+                </figure>
+
+                <!-- ---------------------------- Merlinus Daimhin - School Uniform Database ------------------------------------------ -->
+                <div>
+                    <p>Database of Adelaide School Uniform.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/merlinus_char_school.png" alt="Merlinus Kid">
+                </figure>
+
+                <!-- ----------------------------Herminuius Rue------------------------------------------ -->
+                <div class="grid-space">
                     <h3 id="herminuius">Herminuius Rue</h3>
                     
                     <p>Herminuius Rue is born in another Country with his sister Ulfa. Their family were killed by raiders who sell 
@@ -354,41 +711,799 @@
                         He fought for survival for himself and his sister. One harsh bizzard day, he is struggling to move while making
                         sure his sister is warm. He faints.
                     </p>
+                    <p>He woke up inside of a medical room in the Military Base. He saw his sister next to him on the same bed. He hears
+                        a voice of a man in his 20s. He took him in his lift to take good care or them. He was named Althelbeorn Kaigai Ryokou.
+                    </p>
 
-                    <p>He woke up and </p>
-            
-                    <figure>
-                        <img src="image/illustation/villain/herminuius_color.png" alt="Herminuius Rue">
-                        <figcaption>Herminuius in Armour.</figcaption>
-                    </figure>
+                    <p>When he was six-years-old another person came to his life to be a part of his family. He introduced himself as 
+                        Merlinus Daimhin. Herminuis and his sister were carefree people. They show him around the house, share toys, books and 
+                        comics. All of them went to the same school in the Adelaide Empire.
+                    </p>
+                </div>
+        
+                <!-- ---------------------------- Herminuius Current Version ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Herminuius in Armour givin by his aunt Maia.</p>
+                    <p><em>Finished on: 2017</em></p>
+                </div>
 
-                    <figure>
-                        <img src="image/illustation/villain/herminuius-armour-v1.png" alt="Merlinus Final">
-                        <figcaption>Sketch of Herminuius in Armour Version 1.</figcaption>
-                    </figure>
+                <figure>
+                    <img src="image/illustation/villain/herminuius_color.png" alt="Herminuius Rue">
+                </figure>
 
-                    <figure>
-                        <img src="image/illustation/villain/herminuius-armour-v2.png" alt="Merlinus Final">
-                        <figcaption>Sketch of Herminuius in Armour Version 2.</figcaption>
-                    </figure>
-                    <!-- ----------------------------Icon Design------------------------------------------ -->
-                    <h2 id="logo">Icon Design</h2>
-                    <figure>
-                        <img src="image/illustation/villain/logo_v2_gallery.png" alt="Icon V2">
-                        <figcaption>Final Design of the Logo.</figcaption>
-                    </figure>
+                <!-- ---------------------------- Herminuius Version 1 ------------------------------------------ -->
+                <div>
+                    <p>Sketch of Herminuius in Armour Version 1.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/herminuius-armour-v1.png" alt="Merlinus Final">
+                </figure>
+
+                 <!-- ---------------------------- Herminuius Version 2 ------------------------------------------ -->
+                <div>
+                    <p>Sketch of Herminuius in Armour Version 2.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/herminuius-armour-v2.png" alt="Merlinus Final">
+                </figure>
+
+                 <!-- ---------------------------- Herminuius Version 3 ------------------------------------------ -->
+                <div>
+                    <p>Final version of the Sketch for Herminuius.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/herminuius-armour-v3.png" alt="Merlinus Final">
+                </figure>
+
+                 <!-- ---------------------------- Herminuius Training ------------------------------------------ -->
+                <div>
+                    <p>Herminuius in his training outfit. It is also his default outfit.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/herminuius-training-v1.png" alt="Merlinus Final">
+                </figure>
+
+                 <!-- ---------------------------- Herminuius Training CHaracter Sheet------------------------------------------ -->
+                <div>
+                    <p>Herminuius in his training outfit. It is also his default outfit.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/herminuius-char-training.png" alt="Merlinus Final">
+                </figure>
+
+                 <!-- ---------------------------- Kid Herminuius School Uniform------------------------------------------ -->
+                <div>
+                    <h3 class="space">Training Outfit</h3>
+                    <p>Herminuius in his training outfit. It is also his default outfit.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/herminuius-adelaide-school-uniform.png" alt="Merlinus Final">
+                </figure>
+
+                 <!-- ---------------------------- Kid Herminuius School Character Sheet------------------------------------------ -->
+                <div>
+                    <h3 class="space">Training Outfit Character Sheet</h3>
+                    <p>Herminuius in his school uniform.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/herminuius-char-school.png" alt="Merlinus Final">
+                </figure>
+
+                <!-- ----------------------------Ulfa Rue------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="ulfa" class="space">Ulfa Rue</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+
+                    <p>When she was four-years-old another person came to his life to be a part of his family. He introduced himself as 
+                        Merlinus Daimhin. Herminuis and his sister were carefree people. They show him around the house, share toys, booksand 
+                        comics. All of them went to the same school in the Adelaide Empire.
+                    </p>
+                </div>
+
+                <!-- ---------------------------- Ulfa Rue Current Version ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Ulfa in the Adelaidian Armour. She is working for Empress Elizebeth.</p>
+                    <p><em>Finished on: August 31, 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/ulfa_color.png" alt="Merlinus Final">
+                </figure>                
+
+                <!-- ---------------------------- Ulfa Rue Version 1 ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Version 1</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>Originally, she would have an armour that her father, Althelbeorn world give her.</p>
+                    <p><em>Finished on: 2016</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/ulfa_v1.png" alt="Merlinus Final">
+                </figure>                
+
+                <!-- ---------------------------- Ulfa Rue Version 2 ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Version 2</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/ulfa_adelaide_armour.png" alt="Merlinus Final">
+                </figure>                
+
+                <!-- ----------------------------Kid Ulfa Rue - Default ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Kid Ulfa Rue - Version 1</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/ulfa_kid_v1.png" alt="Merlinus Final">
+                </figure>                
+
+                <!-- ----------------------------Kid Ulfa Rue - Default Character Sheet ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Kid Ulfa Rue - Version 1 Character Sheet</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/ulfa_default.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Kid Ulfa Rue - School ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Kid Ulfa Rue School Uniform - Character Sheet</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/ulfa_school.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Kid Ulfa Rue - Training Character Sheet ------------------------------------------ -->
+                <div>
+                    <h3 class="space">Kid Ulfa Rue Training - Character Sheet</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/ulfa_training.png" alt="Merlinus Final">
+                </figure>       
+
+                <h2 class="grid-space">Hotaru Empire Characters</h2>
+                                
+                <!-- ----------------------------Attlia Cruella------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="attila" class="space">Attila Cruella</h3>
+                    
+                    <p>He is the emperor of the Hotaru Emprie during Amelia's Child days. She 
+                </div>
+                
+                
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Thana Omisha.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/attila.png" alt="Attila">
+                </figure>    
+                <!-- ----------------------------Persephone Cruella------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="persephone" class="space">Persephone Cruella</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+
+                    <p>When she was four-years-old another person came to his life to be a part of his family. He introduced himself as 
+                        Merlinus Daimhin. Herminuis and his sister were carefree people. They show him around the house, share toys, booksand 
+                        comics. All of them went to the same school in the Adelaide Empire.
+                    </p>
+                </div>
+
+                
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Thana Omisha.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/persephone_v1.png" alt="Persephone">
+                </figure>    
+
+                <!-- ----------------------------Cindra Kynthos------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="cindra" class="space">Cindra Kynthos</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+
+                </div>
+
+                
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/cindra_v2.png" alt="Cindra">
+                </figure>    
+                                
+                <!-- ----------------------------Harmoinia Aiko------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="aiko" class="space">Harmonia Aiko</h3>
+                    
+                    <p>Harmonia Aiko is the head maid of the Hotaru Castle. She loves taking care of kids and treats them as her
+                        own. Despite the face that these kids are not her own.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>This is the final sketch of her.</p>
+                    <p>She is modeled after Ellen Baker.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/aiko_v2.png" alt="Aiko">
+                </figure>    
+                
+                <!-- ----------------------------Daisy Lily------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="daisy" class="space">Daisy Lily</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+
+                    <p>When she was four-years-old another person came to his life to be a part of his family. He introduced himself as 
+                        Merlinus Daimhin. Herminuis and his sister were carefree people. They show him around the house, share toys, booksand 
+                        comics. All of them went to the same school in the Adelaide Empire.
+                    </p>
+                </div>
+                
+                
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Thana Omisha.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/daisy.png" alt="Daisy">
+                </figure>    
+                <!-- ----------------------------Atalante------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="atalante" class="space">Atalante</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+
+                </div>
+
+                
+                <div>
+                    <h3 class="space">Hotaru Armour</h3>
+                    <p>Sketch of Thana Omisha.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/atalante_v2.png" alt="Atalante">
+                </figure>    
+                
+                <!-- ----------------------------Joan Jones------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="joan" class="space">Joan Jones</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+
+                    <p>When she was four-years-old another person came to his life to be a part of his family. He introduced himself as 
+                        Merlinus Daimhin. Herminuis and his sister were carefree people. They show him around the house, share toys, booksand 
+                        comics. All of them went to the same school in the Adelaide Empire.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Thana Omisha.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/joan_v1.png" alt="Joan">
+                </figure>    
+                <!-- ----------------------------Jove Aaritz------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="jove" class="space">Jove Aaritz</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+
+                    <p>When she was four-years-old another person came to his life to be a part of his family. He introduced himself as 
+                        Merlinus Daimhin. Herminuis and his sister were carefree people. They show him around the house, share toys, booksand 
+                        comics. All of them went to the same school in the Adelaide Empire.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Thana Omisha.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
     
-                    <figure>
-                        <img src="image/illustation/villain/logo_final_sketch.png" alt="Icon Sketch V2">
-                        <figcaption>Blueprint and sketch of the Logo.</figcaption>
-                    </figure>
+                <figure>
+                    <img src="image/illustation/villain/jove.png" alt="Jove">
+                </figure>    
+                <!-- ----------------------------Thana Omisha------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="thana" class="space">Thana Omisha</h3>
+                    
+                    <p>Thana Omisha is well known as the "The Executioner Reaper". Not many people know that she has a split personality.
+                        One side 
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Thana Omisha.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+
+                <figure>
+                    <img src="image/illustation/villain/thana.png" alt="Thana Omisha">
+                </figure>       
+                
+                <!-- ----------------------------Jove Aaritz------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="fortenza" class="space">Fortenza</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Thana Omisha.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
     
-                    <figure>
-                        <img src="image/illustation/villain/icon_v1.png" alt="Icon Sketch V1">
-                        <figcaption>First version of the Logo.</figcaption>
-                    </figure>
+                <figure>
+                    <img src="image/illustation/villain/fortenza.png" alt="Thana Omisha">
+                </figure>       
+
+                
+                
+                <!-- ----------------------------Metis Lumalia------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="metis" class="space">Metis Lumalia</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+
+                    <p>When she was four-years-old another person came to his life to be a part of his family. He introduced himself as 
+                        Merlinus Daimhin. Herminuis and his sister were carefree people. They show him around the house, share toys, booksand 
+                        comics. All of them went to the same school in the Adelaide Empire.
+                    </p>
+                </div>
+
+               <!-- ---------------------------- Adelaide Empire ------------------------------------------ -->
+
+                <h2 class="grid-space">Adelaide Empire Characters</h2>
+
+                <!-- ----------------------------Kendra Judas------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="kendra" class="space">Kendra Judas</h3>
+                    
+                    <p>Kendra Judas runs a training school in swords, spears, axe, bow and arrow, and unarmed. He trains 
+                        Merlinus Daimhin, Herminuius and Ulfa Rue. He always sees those three as his top students. He does shouts 
+                        just to add dramatic effects. He always tell them not to take it personal. He just wants to see them improve
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch Kendra Judas.</p>
+                    <p>He is modeled after a 16 Michelin Stars Chef, Gordon Ramsay.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
     
-                </div>   
+                <figure>
+                    <img src="image/illustation/villain/kendra_judas_35.png" alt="Merlinus Final">
+                </figure>      
+                 
+                <!-- ----------------------------Althelbeorn------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="althelbeorn" class="space">Althelbeorn Kaigai Ryokou</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/althebeorn.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Althea------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="althea" class="space">Althea Ryokou</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/althea_pose_2.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Sophia Kyoko------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="sophia" class="space">Sophia Kyoko</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/sophia.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Elizebeth Kyoko------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="elizebeth" class="space">Elizebeth Kyoko</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/elisabeth_kyoko.png" alt="Merlinus Final">
+                </figure>
+                
+                <!-- ---------------------------------Lucy Mayu------------------------------------- -->
+                <div class="grid-space">
+                    <h3 id="lucy" class="space">Lucy Mayu</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/lucy_mayu.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Astraea------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="astraea" class="space">Astraea</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Teen Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/astraes_teen.png" alt="Merlinus Final">
+                </figure>       
+
+                <div>
+                    <h3 class="space">Kid Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/astraes_kid.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Kristen------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="kristen" class="space">Kristen Azazel</h3>
+                    
+                    <p>Kristen Azazel is a serial killer in Hestia. At the age of ten, she caused a parricide
+                         She had one mother and father, one older brother, two younger sisters, and three of her 
+                         sibling's friends. Her family did terrible things to her. This includes: rape, torture, 
+                         and prostitution. The main reason was because the mother was jeleous of how Kristen looks pretter than
+                         herself When the military police found out there was a murder, Kristen was out in 
+                         the open covered in blood. The police though Kristen was traumatized of the murder. Kristen 
+                         was considered not suspicious because they believe a ten year old cannot commit that kind of 
+                         murder, so the mystery of the murder remained unsolved. Both the crime and the trial takes
+                          place South East of the Capital of Adelaide. It’s a mid-populated city named, Salben.
+                        </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>This is her at the age of 38.</p>
+                    <p>The inspiration of her design is by a character name GUMI (or Megpoid).</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/kristen_38.png" alt="Merlinus Final">
+                </figure>
+
+                
+                <h2 class="grid-space">Kingdom of Basileus Characters</h2>
+
+                <!-- ----------------------------Arthur Basileus------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="arthur" class="space">Arthur Basileus</h3>
+                    
+                    <p>	Arthur Basileus is the current prince of Kingdom of Basileus. His ancestry 
+                        goes back to King James Basileus IV in 231 AD. James Basileus was well known for 
+                        conquering a part of Hestia to make the country his. With this he is the one who enforces 
+                        rules to make Hestia a better place to live in. These rules become laws, and these laws are things
+                         people warship to make a religion to follow the Omni Goddess of Justice and Peace, Hasial.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/arthur_king.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Edgar Basileus------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="edgar" class="space">Edgar Basileus</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/edgar.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Reana Basileus------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="reana" class="space">Reana Basileus</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/reana.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Mallory Romilda------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="mallory" class="space">Mallory Romilda</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/mallory.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Odysseia Meri------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="meri" class="space">Oddysseia Meri</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, 
+                        her brother was struggling to move while making sure his sister is warm. Her brother faints. 
+                        Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to 
+                        resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/meri_v2.png" alt="Merlinus Final">
+                </figure>       
+
+                <div>
+                    <h3 class="space">Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/meri_v2.png" alt="Merlinus Final">
+                </figure>       
+
+                <!-- ----------------------------Edgar Basileus------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="dan" class="space">Dan Daniel Gabriel</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Current Version</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/dan.png" alt="Merlinus Final">
+                </figure>       
+
+                <h2 id="other" class="tabs">Others</h2>
+                <!-- ----------------------------Edgar Basileus------------------------------------------ -->
+                <div class="grid-space">
+                    <h3 id="kendra" class="space">Hasial</h3>
+                    
+                    <p>Herminuius Rue is born in another Country with his brother Herminuius. Their family were killed by raiders who sell 
+                        people for slavery. She was one-years-old at that time. Unlike her brother, she was too young to understand 
+                        the stutuation. Her brother fought for survival for himself and for her. One harsh bizzard day, her brother was struggling to move while making sure his sister is warm. Her brother faints. Ulfa tries to wake him up. When he didn't wake up, she starts crying. Another man came in to resceu both of them and lead them to a army base.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="space">Hasiel</h3>
+                    <p>Sketch of Ulfa in a Hotaru Armour.</p>
+                    <p>This is the final sketch of her.</p>
+                    <p><em>Finished on: 2018</em></p>
+                </div>
+    
+                <figure>
+                    <img src="image/illustation/villain/hasiel_v1.png" alt="Merlinus Final">
+                </figure>       
+
+            </div>
     </div>
     <footer>
         <div class="footer_wrapper">

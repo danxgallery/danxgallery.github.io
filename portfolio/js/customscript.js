@@ -116,7 +116,7 @@ $(document).ready(function(){
 
 
     $("#mobile_button").click(function(){
-        $("#subnav_mobile" ).toggle(300);
+        $("#subnav_mobile").toggle(300);
 
         /*if(!$(this).hasTag('nav')){
 
@@ -133,24 +133,30 @@ $(document).ready(function(){
 
     });
 
-
+    $("#toggle_button0").click(function(){
+        $("#sub_section").toggle(300);
+    });
 
     /* This is used for the side bar */
 
     $("#toggle_button1").click(function(){
-        $("#section1" ).toggle(300);
+        $("#section1").toggle(300);
     });
 
     $("#toggle_button2").click(function(){
-        $("#section2" ).toggle(300);
+        $("#section2").toggle(300);
     });
 
     $("#toggle_button3").click(function(){
-        $("#section3" ).toggle(300);
+        $("#section3").toggle(300);
     });
 
     $("#toggle_button4").click(function(){
-        $("#section4" ).toggle(300);
+        $("#section4").toggle(300);
+    });
+
+    $("#toggle_button5").click(function(){
+        $("#section4").toggle(300);
     });
 
     /* Scrolling animation */

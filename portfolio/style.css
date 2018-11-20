@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
 
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Overpass', 'arial', sans-serif;
 }
 
 /*******************************************************************
@@ -364,20 +364,20 @@ footer{
     - Set the max width by 800px
     - Set everyting to center with margin */
     .interior_wrapper{
+        max-width: 1000px;
+
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto 65%;
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+
         margin: 0 auto;
     }
 
-    #description, #titleCard{
+    .grid-space{
         width: 100%;
         grid-column: span 2;
         }
-    
-    /* Seperate the title and the whole image and video in on group by 16px */
-    .interior_wrapper h2{
-        padding-bottom: 16px;
-    }
     
     /* Seperate other figure div by 32px at the botttom */
     .interior_wrapper figure {
@@ -436,6 +436,16 @@ td, th{
 
 /* This only applies on h3 with this class
    - Give botttom space by 16px. */
+.tabs{
+    width: 100%;
+    grid-column: span 2;
+
+    padding: 16px;
+
+    background-color: #c2b1b1;
+    color: #ffffff;
+}
+
 .space{
     padding-bottom: 16px;
 }
@@ -753,11 +763,9 @@ This is the Responsive Design for Ipad Pro
     *****************************************************/
 
     /* - body will have a width of 100% and font size of 16pt
-       - Line height of 5pt
        - font size is set to 16pt*/
     body{
         width: 100%;
-        line-height: 5pt;
         font-size: 16pt;
     }
 
@@ -1070,11 +1078,8 @@ This is the Responsive Design for Ipad
     /* set the max width in this wrapper by 600px */
     .interior_wrapper{
         max-width: 600px;
-    }
-    
-     /******************************************************
-                        Interior Works
-    *****************************************************/
+        display: block;
+    }   
 
     /* set the width for this asset grid by 300px */
     .structure-image2 img{
@@ -1276,6 +1281,7 @@ This is the Responsive Design for Iphone 6 and below
     /* - set the max width to 325px */
     .interior_wrapper{
         max-width: 250px;
+        display: block;
         /* margin: 0 auto; */
     }
 
