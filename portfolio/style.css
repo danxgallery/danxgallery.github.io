@@ -35,6 +35,7 @@ body {
 /* Remove all the list style type to none. */
 li {
     list-style-type: none;
+    padding-bottom: 16px;
 }
 
 /*all p tags will have a bottom padding of 16px*/
@@ -57,11 +58,15 @@ p a:hover{
    - Set the Height to 100px
    - Have the navigation to float right*/
 nav {
-    max-width: 1200px;
+    width: 100%;
     height: 120px;
 
     margin-bottom: 16px;
+    position: fixed;
 
+    background-color: #ffffffcc;
+
+    transition: .3s ease-out;
     /*for Debugging only*/
     /* background-color: #80a3d8; */
     /* padding: 35px 0; */
@@ -264,7 +269,19 @@ footer{
 
 /* The PNG Sequence will have a that will fit the wrapper*/
 .animation{
+    grid-column: span 2;
     width: 100%;
+}
+
+#index_wrapper{
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+
+    margin: 0 auto;
 }
 
 /*This only applies to the about section of the homepage
@@ -364,16 +381,20 @@ footer{
     - Set the max width by 800px
     - Set everyting to center with margin */
     .interior_wrapper{
-        max-width: 1000px;
+        max-width: 900px;
 
         display: grid;
-        grid-template-columns: auto 65%;
+        grid-template-columns: auto 60%;
         grid-column-gap: 20px;
         grid-row-gap: 30px;
 
         margin: 0 auto;
+        padding-top: 150px;
     }
 
+    section ul li{
+        list-style-type: circle;
+    }
     .grid-space{
         width: 100%;
         grid-column: span 2;
@@ -440,9 +461,11 @@ td, th{
     width: 100%;
     grid-column: span 2;
 
-    padding: 16px;
+    padding: 16px 0;
 
-    background-color: #c2b1b1;
+    text-indent: 16px;
+
+    background-color: #5f6272;
     color: #ffffff;
 }
 
@@ -596,11 +619,11 @@ td, th{
 } */
     
 /* Text indent on the sub navigation is 30px */
-#section1 a, #section2 a, #section3 a, #section4 a{
+#section1 a, #section2 a, #section3 a, #section4 a, #section5 a{
     text-indent: 60px;
 }
 
-#toggle_button1 a, #toggle_button2 a, #toggle_button3 a, #toggle_button4 a{
+#toggle_button1 a, #toggle_button2 a, #toggle_button3 a, #toggle_button4 a, #toggle_button5 a{
     text-indent: 40px;
     font-weight: bold;
 }
