@@ -58,18 +58,18 @@ p a:hover{
    - Set the Height to 100px
    - Have the navigation to float right*/
 nav {
-    width: 100%;
-    height: 120px;
+    width: 1200px;
+    height: 100px;
 
-    margin-bottom: 16px;
     position: fixed;
-
-    background-color: #ffffffcc;
-
+    margin-bottom: 16px;
+     
+    background-color: #ffffff;
     transition: .3s ease-out;
     /*for Debugging only*/
     /* background-color: #80a3d8; */
     /* padding: 35px 0; */
+
 }
 
 /* - Allow the user to know which page they are currently in */
@@ -82,7 +82,7 @@ nav {
   - Have paddin-top by 35px which cause it to move down. 
   - Set the display to inline-flex to set the navigation to horizontal
   - Float the area to the right */
- .nav_container {
+ .cpu_nav {
     padding-top: 35px;
     display: inline-flex;
     float: right;
@@ -91,7 +91,7 @@ nav {
 /* - This allows the whole navigation text and logo to move the top padding by 32px.
    - Spreading the navigation by padding left and right sides by 30px
    - Change font size from 12pt to 16pt */
-.nav_container a{
+.cpu_nav a{
     padding: 40px 30px;
     font-size: 16pt;
 }
@@ -116,6 +116,14 @@ nav {
     to {background-color: #3c60af; /*Light Blue*/
         color: #ffffff}
 }
+
+#hamberger_button{
+    display: none;
+}
+
+/* .cpu_nav{
+    display: block;
+} */
 /*******************************************************************
                         Dropdown Navigation
 ********************************************************************/
@@ -197,8 +205,8 @@ nav {
 .logo img{
     float: left;
 
-    width: 150px;
-    height: 120px; 
+    width: 120px;
+    height: 100px; 
 
     padding-left: 10px;
     /* padding-top: 32px;
@@ -207,6 +215,10 @@ nav {
 
 /* Make the Mobile Navigation for dropdown completely invisible */
 .mobile_nav {
+    display: none;
+}
+
+#dropdown_mobile{
     display: none;
 }
 
@@ -221,6 +233,8 @@ footer{
     width: 100%;
     height: 300px;
     clear: both;
+
+    position: absolute;
 
     background-color: #141414; /*Near Black*/
     color: white;
@@ -380,55 +394,50 @@ footer{
 /* The interior_wrapper class only effects the imges and videos
     - Set the max width by 800px
     - Set everyting to center with margin */
-    .interior_wrapper{
-        max-width: 900px;
+.interior_wrapper{
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: auto 60%;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
 
-        display: grid;
-        grid-template-columns: auto 60%;
-        grid-column-gap: 20px;
-        grid-row-gap: 30px;
-
-        margin: 0 auto;
-        padding-top: 150px;
+section ul li{
+    list-style-type: circle;
+}
+.grid-space{
+    width: 100%;
+    grid-column: span 2;
     }
 
-    section ul li{
-        list-style-type: circle;
-    }
-    .grid-space{
-        width: 100%;
-        grid-column: span 2;
-        }
-    
-    /* Seperate other figure div by 32px at the botttom */
-    .interior_wrapper figure {
-        padding-bottom: 32px;
-    }
-    
-    /* Bring the user back to the top of the whole page.
-        - Set this icon to 50px on width and height
-        - Set this to the bottom right corner
-        - Position stays. Does not move at all*/
-    #back-to-top{
-        width: 50px;
-        height: 50px;
-    
-        left: 94%;
-        top: 90%;
-    
-        position: fixed;
-        /*fill: #3c60af;*/
-    }
+/* Seperate other figure div by 32px at the botttom */
+.interior_wrapper figure {
+    padding-bottom: 32px;
+}
+
+/* Bring the user back to the top of the whole page.
+    - Set this icon to 50px on width and height
+    - Set this to the bottom right corner
+    - Position stays. Does not move at all*/
+#back-to-top{
+    width: 50px;
+    height: 50px;
+
+    left: 94%;
+    top: 90%;
+
+    position: fixed;
+    /*fill: #3c60af;*/
+}
 /*------ Grid Layout -----*/
-
 
 /* This tag only effects inside of all of my works and none of the grids
     - It only reduce the width of the images to the max-width of the interior wrapper */
 figure img{
     width: 100%;
 }
-
-
 
 /* Set all video tags by 100% because of the interior_wrapper class */
 video {
@@ -455,20 +464,20 @@ td, th{
     padding-right: 20px;
 }
 
-/* This only applies on h3 with this class
-   - Give botttom space by 16px. */
 .tabs{
     width: 100%;
     grid-column: span 2;
-
+    
     padding: 16px 0;
-
+    
     text-indent: 16px;
-
+    
     background-color: #5f6272;
     color: #ffffff;
 }
 
+/* This only applies on h3 with this class
+   - Give botttom space by 16px. */
 .space{
     padding-bottom: 16px;
 }
@@ -562,6 +571,8 @@ td, th{
     width: 325px;
     height: 100%;
 
+    margin-top: 100px;
+
     overflow-y: scroll;
     border-right:  5px solid #3c60af;
     background-color: #ffffff; /* White */
@@ -604,7 +615,7 @@ td, th{
     transition: .3s linear;
 
     /* display: inline-flex; */
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 /* When this navigation is hovered, the whole thing will appear with the animation of ease-out.*/
@@ -612,7 +623,6 @@ td, th{
     left:0;
     transition: .3s ease-out;
 }
-
 
 /* #back_button {
     display: none;
@@ -750,7 +760,6 @@ Note: the only reason why the rest of the text is not targeted
     height: 30px;
 }
 
-
 /*Make my phone id float left*/
 #phone {
     float: left;
@@ -796,6 +805,7 @@ This is the Responsive Design for Ipad Pro
        - Everything in this div centered*/
     .wrapper{
         max-width: 1024px;
+        height: 100px;
         margin: 0 auto;
   
         /* overflow: visible; */
@@ -809,7 +819,7 @@ This is the Responsive Design for Ipad Pro
        - Width will always be at 100%
        - set bottom margin of 60px */
     nav{
-        height: 400px;
+        height: 100px;
         width: 100%;
 
         margin-bottom: 60px;
@@ -817,34 +827,69 @@ This is the Responsive Design for Ipad Pro
 
     /* - Set the container to block
        - Remove all float */
-    .nav_container{
+    .mobile_nav{
         display: block;
         float: none;
+        margin-top: 100px;
+        background-color: rgba(255, 255, 255, 0.945);
     }
 
     /* - set the naviation to a verticle hamberger menu
        - all text are align at the left
        - max-width at 1024px no less
        - give space at 20px on top and bottom*/
-    .nav_container .nav-wrapper a{
+    .mobile_nav .nav-wrapper a{
         display: block;
-        text-align: left;
+        font-size: 36pt;    
         max-width: 1024px;
         
-        padding: 20px 0;
-        padding-left: 30px;
+        margin-top: 0;
 
-        background-color: #c0d0e4;
+        padding: 80px 0;
+        text-align: center;
+
+        background-color: rgba(255, 255, 255, 0.945);
+
+        transition: 3s ease-in-out;
     }
 
-    /* .nav_container .dropdown: */
-
+    /* - This affects the dropdown menu in the works section */
     /* - set the height of 140px */
     .mobile_nav #subnav_mobile{   
         /* display: none; */
-        height: 140px;
-        background-color: #dce4ee;
+        height: 560px;
     }
+
+    #hamberger_button{
+        display: block;
+        width: 50px;
+        height: 50px;
+
+        float: right;
+        margin-right: 20px;
+
+        background-image: url(gallery_icon/hamberger_bar.svg);
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+
+        border: none;
+    }
+
+    /* - set the mobile button of 100% width
+       - font size of 16px
+       - text-align is set to left
+       - text indent is set to 20px*/
+    #mobile_button{
+        width: 100%;
+        font-size: 32pt;
+
+        padding: 60px;
+        text-align: center;
+
+        background-color: rgba(255, 255, 255, 0.945);
+        border: none;
+    }
+
 
     /* - Set the mobile version sub navigation to block, making it visible
        - border top at 2px solid black
@@ -855,31 +900,18 @@ This is the Responsive Design for Ipad Pro
         display: block;
         border-top: 2px solid #000000;
 
-        padding: 20px 0;
 
-        font-size: 12pt;
-        text-indent: 40px;
+        background-color: rgba(255, 255, 255, 0.945);
+        padding: 60px 0;
+
+        font-size: 36pt;
+        text-align: center;
     }
 
     /* .nav-wrapper {
         margin-top: 50px;
     } */ 
 
-    /* - set the mobile button of 100% width
-       - font size of 16px
-       - text-align is set to left
-       - text indent is set to 20px*/
-    #mobile_button{
-        width: 100%;
-        font-size: 16pt;
-
-        padding: 10px 0;
-        text-align: left;
-        text-indent: 20px;
-
-        background-color: #c0d0e4;
-        border: none;
-    }
 
     /* - remove outline
        - Replace the indicator with the background color of light blue and font color of white. */
@@ -889,9 +921,10 @@ This is the Responsive Design for Ipad Pro
         color: #ffffff;
     }
 
+
     /*set the mobile version of the navigation to block*/
-    .mobile_nav{
-        display: block;
+    .cpu_nav{
+        display: none;
     }
 
     /* Remove dropdown menu to prevent hovering */
@@ -989,16 +1022,6 @@ This is the Responsive Design for Ipad Pro
     /* - seperate each figure by 64px */
     .interior_wrapper figure {
         padding-bottom: 64px;
-    }
-
-    /* - give space between img and figcaption by 16px */
-    .interior_wrapper figcaption{
-        padding-top: 16px;
-    }
-
-    /* seperate h3 with other tags by 32px */
-    .interior_wrapper h3{
-        padding: 32px 0;
     }
 
     /* give text individual space by 64px */
@@ -1114,6 +1137,10 @@ This is the Responsive Design for Ipad
         width: 200px;
     }
 
+    .tabs{
+        margin-bottom: 30px;
+    }
+
     /* - width and height is 70px
        - set at the bottom left regardless of position.
        - adjusted differently from the pc screen*/
@@ -1124,14 +1151,12 @@ This is the Responsive Design for Ipad
         left: 87%;
         top: 87%;
     }
-
-    
 }
 
 /****************************************************
 This is the Responsive Design for Iphone 6 and below
 *******************************************************/
-@media screen and (max-width: 375px){
+@media screen and (max-width: 415px){
     
     /******************************************************
                         Gobal CSS
@@ -1149,7 +1174,7 @@ This is the Responsive Design for Iphone 6 and below
     /* - set max width to 375px
        - set display to block */
     .wrapper{
-        max-width: 375px;
+        max-width: 415px;
         display: block;
     }
 
@@ -1159,7 +1184,29 @@ This is the Responsive Design for Iphone 6 and below
 
     /* set the height to 350px */
     nav{
-        height: 350px;
+        height: 50px;
+        margin-bottom: 0;
+    }
+
+
+    #hamberger_button{
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* - this will set the logo to the left side
+   - Set the width and height to 137px x 100px
+   - Set the padding left by 10px*/
+    .logo img{
+        float: left;
+
+        width: 70px;
+        height: 50px;
+
+        padding-left: 10px;
+        /* padding-top: 32px;
+        margin: 0 30px; */
     }
 
     /* Not needed due to ipad code is the same */
@@ -1167,14 +1214,48 @@ This is the Responsive Design for Iphone 6 and below
         display: block;
         float: none;
     } */
-
-    .nav_container .nav-wrapper a{
-        text-align: left;
+    .mobile_nav .nav-wrapper a{
         max-width: 375px;
-        margin: 5px 0;
         
         padding: 20px 0;
         padding-left: 30px;
+        font-size: 16pt;
+    }
+    .mobile_nav{
+        margin-top: 0;
+    }
+    
+    /* - set the mobile button of 100% width
+       - font size of 16px
+       - text-align is set to left
+       - text indent is set to 20px*/
+       #mobile_button{
+        width: 100%;
+        font-size: 16pt;
+
+        padding: 20px;
+        text-align: center;
+
+        background-color: rgba(255, 255, 255, 0.945);
+        border: none;
+    }
+
+
+    /* - Set the mobile version sub navigation to block, making it visible
+       - border top at 2px solid black
+       - give space of 20px on top and bottom
+       - set font to 12pg
+       - text-indent to 40px; */
+    .mobile_nav #subnav_mobile a{
+        display: block;
+        border-top: 2px solid #000000;
+
+
+        background-color: rgba(255, 255, 255, 0.945);
+        padding: 40px 0;
+
+        font-size: 16pt;
+        text-align: center;
     }
 
     /* Not needed but this was worked on first before I got to the other mobile device*/
@@ -1237,13 +1318,13 @@ This is the Responsive Design for Iphone 6 and below
     /******************************************************
                         Footer
     *****************************************************/
-    /* footer{
-        width: 100%;
-    }*/
+    footer{
+        max-width: 415px;
+    }
 
     /* set the max width to 350px */
     .footer_wrapper{
-        max-width: 350px;
+        max-width: 320px;
     }
 
     /* give space to seperate the ul from the h2 by 32px */
@@ -1352,6 +1433,14 @@ This is the Responsive Design for Iphone 6 and below
         /* not needed */
         /* border-right:  5px solid #3c60af;
         background-color: #ffffff; */
+    }
+
+    article{
+        margin-bottom: 40px;
+    }
+
+    figure img{
+        margin-bottom: 30px;
     }
 
     /* - adjust the bottom right location of not go off screeen

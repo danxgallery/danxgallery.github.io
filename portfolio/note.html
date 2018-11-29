@@ -39,46 +39,57 @@
 <body>
 
 <div class="wrapper">
-            <nav>
-            <figure class="logo">
-                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-            </figure>
-            
+        <nav>
+                <figure class="logo">
+                    <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
+                </figure>
+                <button id="hamberger_button" type="button" onclick="nav_button()"></button>
+                
                 <!-- To be used on PC -->
                 <div class="nav_container">
-                    <div class="dropdown" >
-                        <a class="indicator">Works</a>
-                            <div class="subnav">
-                                <a href="animation.html">Animation / Motion Graphic</a>
-                                <a href="illustration.html">Illustration</a>
-                                <a href="ui.html">UI Design</a>
+                        <div class="cpu_nav">
+                            <div class="dropdown" >
+                                <a class="indicator">Works</a>
+                                <div class="subnav">
+                                    <a href="animation.html">Animation / Motion Graphic</a>
+                                    <a href="illustration.html">Illustration</a>
+                                    <a href="ui.html">UI Design</a>
+                                </div>
                             </div>
-                    </div>
-
-                    <!-- To Be used on mobile and tablet -->
-                    <div class="mobile_nav">
-                        <button id="mobile_button" class="indicator"  onclick="nav_button()">Works</button>
-                        <div id="subnav_mobile" style="display: none;">
-                            <a href="animation.html">Animation / Motion Graphic</a>
-                            <a href="illustation.html">Illustration</a>
-                            <a href="ui.html">UI Design</a>
+                            
+                            <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
+                            <a href="index.html#about">About Me</a>
+                            <!-- This code is by: John Conde
+                                Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
+                                <a href="resume.html">Resume</a>
+                                <a href="#contact">Contact Me</a>
+                                <a href="note.html">Notes</a>
+                            </div>
                         </div>
+                            <!-- To Be used on mobile and tablet -->
+                            
+                <div class="mobile_nav" style="display: none;">
+                        <button id="mobile_button">Works</button>
+                        <div id="subnav_mobile" style="display: none;">
+                        <a href="animation.html">Animation / Motion Graphic</a>
+                        <a href="illustation.html">Illustration</a>
+                        <a href="ui.html">UI Design</a>
                     </div>
-                    
-
-                    <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
+        
+                    <div class="nav-wrapper">
                         <a href="index.html#about">About Me</a>
                         <!-- This code is by: John Conde
                              Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
                         <a href="resume.html">Resume</a>
                         <a href="#contact">Contact Me</a>
                         <a href="note.html">Notes</a>
+                    </div>
                 </div>
+                
+        
                 </div>
             </nav>
 
-
-            <div id="moving">
                 <div class="interior_wrapper">
                     <p>I always start out with a sketch of this site.</p>
     
@@ -94,7 +105,6 @@
     
     
                 </div>
-            </div>
     </div>
     <footer>
         <div class="footer_wrapper">
