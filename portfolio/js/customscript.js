@@ -2,6 +2,35 @@
 
 /*This function allows the works to toggle the subnav when on mobile mode*/
 
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+     document.querySelector(".cpu_nav").style.top = "-50px";
+     //document.querySelector(".nav_container").style.paddingTop = "30px";
+   } 
+  
+   else {
+     document.querySelector(".cpu_nav").style.top = "0";
+     //document.querySelector(".nav_container").style.paddingTop = "40px";
+   }
+ }
+
+function nav_button() {
+    let x = document.querySelector(".mobile_nav"); //Grab the subnav for mobile
+    if (x.style.display === "none") {
+        x.style.display = "block";  
+
+    }  
+    else {
+        x.style.display = "none";
+    }
+}
+
+
+//---------------------------------------------------------------------------------
+//These bottom code was used before adding jquery just for the animation.
+//-------------------------------------------------------------------------------
 
 //function nav_button() {
 //    var x = document.getElementById("subnav_mobile"); //Grab the subnav for mobile
@@ -116,7 +145,7 @@ $(document).ready(function(){
 
 
     $("#mobile_button").click(function(){
-        $("#subnav_mobile").toggle(300);
+        $("#subnav_mobile").toggle(300);});
 
         /*if(!$(this).hasTag('nav')){
 
@@ -131,33 +160,27 @@ $(document).ready(function(){
             console.log("It works again");
         }*/
 
-    });
+   
 
     $("#toggle_button0").click(function(){
-        $("#sub_section").toggle(300);
-    });
+        $("#sub_section").toggle(300);});
 
     /* This is used for the side bar */
 
     $("#toggle_button1").click(function(){
-        $("#section1").toggle(300);
-    });
+        $("#section1").toggle(300);});
 
     $("#toggle_button2").click(function(){
-        $("#section2").toggle(300);
-    });
+        $("#section2").toggle(300);});
 
     $("#toggle_button3").click(function(){
-        $("#section3").toggle(300);
-    });
+        $("#section3").toggle(300);});
 
     $("#toggle_button4").click(function(){
-        $("#section4").toggle(300);
-    });
+        $("#section4").toggle(300);});
 
     $("#toggle_button5").click(function(){
-        $("#section4").toggle(300);
-    });
+        $("#section5").toggle(300);});
 
     /* Scrolling animation */
     
@@ -172,9 +195,8 @@ $(document).ready(function(){
             scrollTop: $($.attr(this, 'href')).offset().top //Scrolling at an attribute this with link
         }, 500);
     });
-
-    
 });
+    
 
 
 // const $element = $('.animation');
