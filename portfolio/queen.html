@@ -43,7 +43,7 @@
         <div id="top"></div>
         <div id="side_sub">
 
-                <img src="gallery_icon/side_bar.svg" onclick="section_button()" alt="side_bar">
+                <img src="gallery_icon/side_bar.svg" alt="side_bar">
 
                 <div class="list"> 
                     <!-- <button id="back_button" onclick="back()"></button>-->
@@ -53,7 +53,7 @@
                     <h3><a href="#antimatic">Antimatic</a></h3>
                     <h3><a href="#storyboard">Storyboard</a></h3>
                     <h3><a href="#styleframe">Styleframe</a></h3>
-                    <h3><a onclick="section_button1()">Characters</a></h3>
+                    <h3><a id="toggle_button1">Characters</a></h3>
                     <div id="section1" style="display: none;">
                         <a href="#queen">Evil Red Queen</a>
                         <a href="#hero">Green Maiden Hero</a>
@@ -61,12 +61,12 @@
                         <a href="#army">Evil Red Army</a>
                     </div>
 
-                    <h3><a onclick="section_button2()">Assets</a></h3>
+                    <h3><a id="toggle_button2">Assets</a></h3>
                     <div id="section2" style="display: none;">
-                        <h4><a href="#icon">Icon Design</a></h4>
-                        <h4><a href="#weapons">Weapons</a></h4>
-                        <h4><a href="#castle">Castle</a></h4>
-                        <h4><a href="#village">Village</a></h4>
+                        <a href="#icon">Icon Design</a>
+                        <a href="#weapons">Weapons</a>
+                        <a href="#castle">Castle</a>
+                        <a href="#village">Village</a>
                     </div>    
                 </div>
         </div>
@@ -125,53 +125,54 @@
             </nav>
 </div>
 
-           
-
-            <div id="moving">
                 <div class="interior_wrapper">
 
                     <!-- *********************** Description *************************** -->
-                    <h1 id="description">Queen of Evil</h1>
+                    <article class="grid-space">
+                        <h1 id="description">Queen of Evil</h1>
+                        
+                        <p><strong>September 2017 - October 2017</strong></p>
                     
-                    <p><strong>September 2017 - October 2017</strong></p>
-                
-                    <p>This is a story of an evil red queen killing and torturing her own citizen. Green Maiden Hero, their 
-                        savior, created a resistance to kill the queen.
-                    </p>
-
-                    <p>The Song "Daughter of Evil" belongs to Akuno_MothyP (mothy_悪ノP)</p>
-                    
-                    <p>Check out on his Channel on:</p> 
-                    <p>YouTube - <a href="https://www.youtube.com/channel/UCSmHk3xH3nkWqF0nm9z2-2Q" onclick="window.open(this.href); return false;"
-                        onkeypress="window.open(this, href)">https://www.youtube.com/channel/UCSmHk3xH3nkWqF0nm9z2-2Q</a></p>
-
-                    <p>Nico Nico Douga - <a href="https://www.nicovideo.jp/user/907343" onclick="window.open(this.href); return false;"
-                        onkeypress="window.open(this, href)">https://www.nicovideo.jp/user/907343</a></p>
-                    
-
-                    <p>I'm plan to keep working on it.</p>
+                        <p>This is a story of an evil red queen killing and torturing her own citizen. Green Maiden Hero, their 
+                            savior, created a resistance to kill the queen.
+                        </p>
+    
+                        <p>The Song "Daughter of Evil" belongs to Akuno_MothyP (mothy_悪ノP)</p>
+                        
+                        <p>Check out on his Channel on:</p> 
+                        <p>YouTube - <a href="https://www.youtube.com/channel/UCSmHk3xH3nkWqF0nm9z2-2Q" onclick="window.open(this.href); return false;"
+                            onkeypress="window.open(this, href)">https://www.youtube.com/channel/UCSmHk3xH3nkWqF0nm9z2-2Q</a></p>
+    
+                        <p>Nico Nico Douga - <a href="https://www.nicovideo.jp/user/907343" onclick="window.open(this.href); return false;"
+                            onkeypress="window.open(this, href)">https://www.nicovideo.jp/user/907343</a></p>
+                        
+    
+                        <p>I'm plan to keep working on it.</p>
+                    </article>
 
                     <!-- *********************** Title Card *************************** -->
-                    <h2 id="titleCard">Animation</h2>
-                    <figure>
+                    <h2 id="titleCard" class="tabs">Animation</h2>
+                    <figure class="grid-space">
                         <video controls src="image/animation/storyofevil/story_of_evil_animation.mp4">
                         This video does not support your current version</video>
                         <figcaption>This is the animation version</figcaption>
                     </figure>
 
                     <!-- *********************** antimatic *************************** -->
-                    <h2 id="antimatic">Animatic</h2>
-                    <figure>
+                    <h2 id="antimatic" class="tabs">Animatic</h2>
+                    <figure class="grid-space">
                         <video controls src="image/animation/storyofevil/animatic.mp4">
                         This video does not support your current version</video>
                         <figcaption>This is the animatic version</figcaption>
                     </figure>
 
-                    <h3 id="storyboard">Storyboard</h3>
+                    <h3 id="storyboard" class="tabs">Storyboard</h3>
 
-                    <p>This is the stoyboard that I used to help make the animation.</p>
+                    <article class="grid-space">
+                        <p>This is the stoyboard that I used to help make the animation.</p>
+                    </article>
 
-                    <figure>
+                    <figure class="grid-space">
                         <img src="image/animation/storyofevil/story/storyboard1.png" alt="Green Maiden Hero">                        
                         <img src="image/animation/storyofevil/story/storyboard2.png" alt="Green Maiden Hero">
                         <img src="image/animation/storyofevil/story/storyboard3.png" alt="Green Maiden Hero">
@@ -179,181 +180,210 @@
 
                     <h2 id="styleframe">Styleframe</h2>
                     <p>Thes are all the styleframes of "Queen of Evil"</p>
-                    <figure>
+                    <figure class="grid-space">
                         <img src="image/animation/storyofevil/styleframe/styleframe_1.png" alt="styleframe 1">
-                    </figure>
-
-                    <figure>
                         <img src="image/animation/storyofevil/styleframe/styleframe_2.png" alt="styleframe 2">
-                    </figure>
-
-                    <figure>
                         <img src="image/animation/storyofevil/styleframe/styleframe_3.png" alt="styleframe 3">
-                    </figure>
-
-                    <figure>
                         <img src="image/animation/storyofevil/styleframe/styleframe_4.png" alt="styleframe 4">
-                    </figure>
-
-                    <figure>
                         <img src="image/animation/storyofevil/styleframe/styleframe_5.png" alt="styleframe 5">
-                    </figure>
-
-                    <figure>
                         <img src="image/animation/storyofevil/styleframe/styleframe_6.png" alt="styleframe 6">
-                    </figure>
-
-                    <figure>
                         <img src="image/animation/storyofevil/styleframe/styleframe_7.png" alt="styleframe 7">
-                    </figure>
-
-                    <figure>
                         <img src="image/animation/storyofevil/styleframe/styleframe_8.png" alt="styleframe 8">
-                    </figure>
-
-                    <figure>
                         <img src="image/animation/storyofevil/styleframe/styleframe_9.png" alt="styleframe 9">
                     </figure>
 
                     <!-- *********************** Characters *************************** -->
-                    <h2>Characters</h2>
-                    <h3 id="queen">Evil Red Queen</h3>
+                    <h2 class="tabs">Characters</h2>
+
+                    <!-- *********************** Evil Red Queen *************************** -->
+                    <h2 id="queen" class="grid-space">Evil Red Queen</h2>
+                    <article class="grid-space">
+                        <p>Queen of Evil is the one terrorizing the land. She would kill her own people just for fun.</p>
+                    </article>
+
+                    <!-- *********************** Current *************************** -->
+                    <section>
+                        <h3 class="space">Current Version</h3>
+                        <p>This is the Evil Red Queen.</p>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/character/evilqueen.png" alt="evil red queen">
-                        <figcaption>This is the Evil Red Queen.</figcaption>
                     </figure>
 
+                    <!-- *********************** Sketch *************************** -->
+                    <section>
+                        <p>This is the sketch of Evil Red Queen in all perspective.</p>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/sketch/evilqueenfull.png" alt="evil red queen">
-                        <figcaption>This is the sketch of Evil Red Queen in all perspective.</figcaption>
                     </figure>
 
+                    <!-- *********************** Sketch *************************** -->
+                    <section>
+                        <p>This is the sketch of Evil Red Queen.</p>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/sketch/evilqueen.png" alt="evil red queen">
-                        <figcaption>This is the sketch of Evil Red Queen.</figcaption>
                     </figure>
 
-                    <h3 id="hero">Green Maiden Hero</h3>
+                    <!-- *********************** Green Maiden Hero *************************** -->
+                    <h2 id="hero" class="grid-space">Green Maiden Hero</h2>
+                    <article class="grid-space">Green Maiden Hero is the main protagonist. She is the one
+                        who create a resistance to go against the Evil Red Queen.
+                    </article>
+
+                    <!-- *********************** Sketch *************************** -->
+                    <section>
+                        <h3 class="space">Current Version</h3>
+                        <p>This is Green Maiden hero.</p>
+                    </section>
 
                     <figure>
                         <img src="image/animation/storyofevil/character/greenmaiden.png" alt="Green Maiden Hero">
-                        <figcaption>This is Green Maiden hero.</figcaption>
                     </figure>
 
+                    <!-- *********************** Sketch *************************** -->
+                    <section>
+                        <p>This is the sketch of Green Maiden Hero.</p>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/sketch/greenmaidenhero.png" alt="Green Maiden Hero Sketch">
-                        <figcaption>This is the sketch of Green Maiden Hero.</figcaption>
+                    </figure>
+                    
+                    <!-- *********************** Citizens *************************** -->
+                    <h2 id="citizen" class="tabs">Citizens</h2>
+
+                    <!-- *********************** female front *************************** -->
+                    <section>
+                        <p>These are the citizen female.</p>
+                    </section>
+                    <figure>
+                       <img src="image/animation/storyofevil/character/citizen-front.png" alt="Green Maiden Hero">
                     </figure>
 
-                    <h3 id="citizen">Ciltizens</h3>
-                    <figure class="structure-image">
-                       <img src="image/animation/storyofevil/character/f-citizen1.png" alt="Green Maiden Hero">
-                       <img src="image/animation/storyofevil/character/f-citizen2.png" alt="Green Maiden Hero">
-                       <img src="image/animation/storyofevil/character/f-citizen3.png" alt="Green Maiden Hero">
-                       <figcaption>These are the citizen female.</figcaption>
+                    <!-- *********************** female side view *************************** -->
+                    <section>
+                        <p>These are the citizen female. Side View.</p>
+                    </section>
+                    <figure>
+                        <img src="image/animation/storyofevil/character/citizen-side.png" alt="Green Maiden Hero">
                     </figure>
 
-                    <figure class="structure-image">
-                        <img src="image/animation/storyofevil/character/f-citizen1-side.png" alt="Green Maiden Hero">
-                        <img src="image/animation/storyofevil/character/f-citizen2-side.png" alt="Green Maiden Hero">
-                        <img src="image/animation/storyofevil/character/f-citizen3-side.png" alt="Green Maiden Hero">
+                    <!-- *********************** male *************************** -->
+                    <section>
+                        <p>These are the citizen Male. </p>
+                    </section>
+                    <figure >
+                        <img src="image/animation/storyofevil/character/citizen-male.png" alt="Green Maiden Hero">
                     </figure>
-                    <p>These are the citizen female. Side View.</p>
 
-                    <figure class="structure-image2">
-                            <img src="image/animation/storyofevil/character/m-citizen.png" alt="Green Maiden Hero">
-                            <img src="image/animation/storyofevil/character/m-citizen-side.png" alt="Green Maiden Hero">
-                        </figure>
-                    <p>These are the citizen Male. </p>
+                    <!-- *********************** Evil Red Army *************************** -->
+                    <h2 id="army" class="grid-space">Evil Red Army</h2>
 
-                    <h3 id="army">Evil Red Army</h3>
-
+                    <section>
+                        <p>This is the Evil Army.</p>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/character/evilarmy.png" alt="Green Maiden Hero">
-                        <figcaption>This is the Evil Army.</figcaption>
                     </figure>
 
+                    <section>
+                        <p>An Evil Soldier holding a shield.</p>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/character/evilarmywithshield.png" alt="Green Maiden Hero">
-                         <figcaption>An Evil Soldier holding a shield.</figcaption>
                     </figure>
 
+                    <section>
+                        <p>This is the sketch of the army.</p>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/sketch/army.png" alt="Green Maiden Hero">
-                        <figcaption>This is the sketch of the army.</figcaption>
                     </figure>
 
                     <!-- *********************** Assets *************************** -->
-                    <h2>Assets</h2>
-                    <h3 id="icons">Icons</h3>
+                    <h2 class="tabs">Assets</h2>
+                    <h2 id="icons" class="grid-space">Icons</h2>
+
+                    <!-- *********************** Logo Design *************************** -->
+                    <section>
+                        <figcaption>Logo Design for the Castle</figcaption>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/castle_assets/castle_logo.png" alt="Logo">
-                        <figcaption>Logo Design for the Castle</figcaption>
                     </figure>
 
+                    <!-- *********************** Flower Icon *************************** -->
+                    <section>
+                        <figcaption>Flower Icon</figcaption>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/sketch/flower_icon.png" alt="Logo">
-                        <figcaption>Flower Icon</figcaption>
                     </figure>
 
+                    <!-- *********************** Rug Logo *************************** -->
+                    <section>
+                        <figcaption>This is a logo for the rugs</figcaption>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/sketch/icon.png" alt="Logo">
-                        <figcaption>This is a logo for the rugs</figcaption>
                     </figure>
 
-
-                    <h3 id="weapons">Weapons</h3>
+                    <!-- *********************** Weapons *************************** -->
+                    <h2 id="weapons" class="grid-space">Weapons</h2>
+                    <section>
+                        <figcaption>These are weapons I design for.</figcaption>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/weaponry/weaponry.png" alt="Green Maiden Hero">
-                        <figcaption>These are weapons I design for.</figcaption>
                     </figure>
 
-                    <h3 id="castle">Castle</h3>
+                    <h2 id="castle" class="grid-space">Castle</h2>
+                    <section>
+                        <figcaption>This is the castle.</figcaption>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/location/castle.png" alt="Green Maiden Hero">
-                        <figcaption>This is the castle.</figcaption>
                     </figure>
 
+                    <section>
+                        <figcaption>This is the sketch of the castle.</figcaption>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/sketch/castlesktech.png" alt="Green Maiden Hero">
-                        <figcaption>This is the sketch of the castle.</figcaption>
                     </figure>
 
-                    <h4>Interior Design for Castle</h4>
-                    <figure class="structure-image">
+                    <section>
+                        <h3>Interior Design for Castle</h3>
+                        <figcaption>These are all the assets used for the interior design of the castle.</figcaption>
+                    </section>
+                    <figure>
                        <img src="image/animation/storyofevil/castle_assets/assets.png" alt="assets">
-                       <figcaption>These are all the assets used for the interior design of the castle.</figcaption>
                     </figure>
 
-                    <h3 id="village">Village</h3>
+                    <h2 id="village" class="grid-space">Village</h2>
+                    <section>
+                        <figcaption>This is the location of the Village.</figcaption>
+                    </section>
                     <figure>
                         <img src="image/animation/storyofevil/location/village.png" alt="Green Maiden Hero">
-                        <figcaption>This is the location of the Village.</figcaption>
                     </figure>
 
-                    <figure class="structure-image">
-                        <img src="image/animation/storyofevil/house/house_1.png" alt="house1">
-                        <img src="image/animation/storyofevil/house/house_2.png" alt="house2">
-                        <img src="image/animation/storyofevil/house/house_3.png" alt="house3">
-                        <img src="image/animation/storyofevil/house/house_4.png" alt="house4">
-                        <img src="image/animation/storyofevil/house/house_5.png" alt="house5">
-                        <img src="image/animation/storyofevil/house/house_6.png" alt="house6">
-                        <img src="image/animation/storyofevil/house/house_7.png" alt="house7">
-                        <img src="image/animation/storyofevil/house/house_8.png" alt="house8">
-                        <img src="image/animation/storyofevil/house/house_9.png" alt="house9">
-                        <img src="image/animation/storyofevil/house/house_10.png" alt="house10">
-                        <img src="image/animation/storyofevil/house/house_11.png" alt="house11">
-                        <img src="image/animation/storyofevil/house/house_12.png" alt="house12">
+                    <section>
+                        <p>Housese on the village</p>
+                    </section>
+                    <figure>
+                        <img src="image/animation/storyofevil/house/house.png" alt="house1">
                     </figure>
-                    <p>Housese on the village</p>
-
-                    <figure id="tower">
-                        <img src="image/animation/storyofevil/house/tower.png" alt="Tower">
+                    
+                    <section>
                         <figcaption>The tower where the Green Maiden Hero Stand.</figcaption>
+                    </section>
+                    <figure class="size">
+                        <img src="image/animation/storyofevil/house/tower.png" alt="Tower">
                     </figure>
 
                 </div>
-             </div>
     <footer>
         <div class="footer_wrapper">
             <div id="contact">

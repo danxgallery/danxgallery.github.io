@@ -33,6 +33,16 @@
     <!-- This code is made by Liep Nguyen
         Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
     <script src="js/customscript.js"></script>
+
+    <style>
+        figure img{
+            border: 5px solid #424452; /*Dark Grey Blue*/
+        }
+
+        .size img{
+            width: 50%;
+        }
+    </style>
     
     <title>DanX Portfolio - MyCourses</title>
 </head>
@@ -110,12 +120,12 @@
 
         
                 <div class="interior_wrapper">
-                    <article>
+                    <article class="grid-space">
                         <h1 id="description">Rework MyCourses</h1>
                         
                         <p><strong>August 2017 - November 2017</strong></p>
                     
-                        <h2>Summary</h2>
+                        <h2 class="space">Summary</h2>
                         <p>The summary of this project is to improve MyCourses. However, this project is 
                             mainly focus on two pages of Mycourses, the Homepage, and the GUI page. Some students
                              do not like the overall design of the Mycourses and other functions that are in MyCourses.</p>
@@ -124,178 +134,199 @@
                     <!-- *********************** Title Card *************************** -->
                     <h2 id="goal" class="tabs" >Goal</h2>
                     <section class="grid-space">
-                        <div class="structure-image2">
-                            <div><h3>Communication</h3>
+                        <div class="grid-structure">
+                            <article>
+                            <h3>Communication</h3>
                             <p>Make communication easier between
                             students to professors, and students
-                            to other student.</p></div>
+                            to other student.</p>
+                            </article>
         
-                            <div><h3>Navigation</h3>
+                            <article>
+                            <h3>Navigation</h3>
                             <p>Users has a hard time finding their
-                            ways to navigate their destination.</p></div>
+                            ways to navigate their destination.</p>
+                            </article>
         
-                            <div><h3>Utility</h3>
+                            <article>
+                            <h3>Utility</h3>
                             <p>The utility are very under that barley
-                            anyone uses them or even notice them.</p></div>
+                            anyone uses them or even notice them.</p>
+                            </article>
         
-                            <div><h3>Layout</h3>
+                            <article>
+                            <h3>Layout</h3>
                             <p>Some students may like the new
                             design of MyCourses, but most of the
                             older students do not like the new
-                            design because of too much whitespace.</p></div>
+                            design because of too much whitespace.</p>
+                            </article>
                         </div>
                     </section>
 
 
                     <!-- *********************** Sketches *************************** -->
                     <h2 id="taxnolomy" class="tabs">Taxnolomy</h2>
-                    <figure>
+                    <figure class="grid-space">
                         <figcaption>This is the flow of MyCourses Currently.</figcaption>
                         <img src="image/ui/mycoursesremake/taxnolomy/taxnolomy-current.png" alt="sketch 1">
                     </figure>
 
-                    <figure>
+                    <figure class="grid-space">
                         <figcaption>This is my version of MyCourses.</figcaption>
                         <img src="image/ui/mycoursesremake/taxnolomy/taxnolomy-now.png" alt="achivement sketch">
                     </figure>
 
                     <!-- *********************** UI Research *************************** -->
-                    <h2 id="research_comp">Competitive Research</h2>
+                    <h2 id="research_comp" class="tabs">Competitive Research</h2>
 
+                    <!-- *********************** Facebook *************************** -->
+                    <section>
                     <h3 class="space">Facebook Messanger</h3>
-                    <div class="structure-wireframe">
-                        <div>
-                        <p>Facebook is a social media that post images, comment on post, and message to
-                        other users in the Facebook community. With the Facebook Messenger, and
-                        the layout of the Facebook page, it would help the users in MyCourses to make 
-                        an easy communication between students to other students and students to
-                        professors.</p>
-                        </div>
+                 
+                    <p>Facebook is a social media that post images, comment on post, and message to
+                    other users in the Facebook community. With the Facebook Messenger, and
+                    the layout of the Facebook page, it would help the users in MyCourses to make 
+                    an easy communication between students to other students and students to
+                    professors.</p>
+                    </section>
 
-                        <figure>
-                            <img src="image/ui/mycoursesremake/research/facebook.png" alt="facebook" >
-                        </figure>
-                    </div>
-
+                    <figure>
+                        <img src="image/ui/mycoursesremake/research/facebook.png" alt="facebook" >
+                    </figure>
+                    
+                    <!-- *********************** Twitter *************************** -->
+                    <section>
                     <h3 class="space">Twitter</h3>
-                    <div class="structure-wireframe">
-                        <div><p>Twitter has a better layout than Facebook, but the message system in Twitter
+                        <p>Twitter has a better layout than Facebook, but the message system in Twitter
                         can be useful as well. Because of the full screen of the messenger if the user
-                        wants to. Their navigation system is also easy to use and understand.</p></div>
+                        wants to. Their navigation system is also easy to use and understand.</p>
+                    </section>
 
-                        <figure>
-                            <img src="image/ui/mycoursesremake/research/twitter.png" alt="facebook" >
-                        </figure>
+                    <figure>
+                        <img src="image/ui/mycoursesremake/research/twitter.png" alt="facebook" >
+                    </figure>
 
-                    </div>
+                
+                    <!-- *********************** UI Research *************************** -->
+                    <h2 id="research_analytical" class="tabs">Analytical Research</h2>
 
-                    <h2 id="research_anal">Analytical Research</h2>
-
+                    <!-- *********************** Dropbox Paper *************************** -->
+                    <section>
                     <h3 class="space">Dropbox Paper</h3>
-                    <div class="structure-wireframe">
-                        <div><p>Dropbox Paper has a unique comment system. This comment system
-                        allows the user to comment a whole section, to a sentence to just one word.</p></div>
-
-                        <figure>
-                            <img src="image/ui/mycoursesremake/research/dropbox.png" alt="facebook" >
-                        </figure>
-                    </div>
-
-                    <h3 class="space">Stack</h3>
-                    <div class="structure-wireframe">
-                        <div><p>Stack allows the user to message people in a more buisness way. Allowing the users to group
-                        other people to work on one project.</p></div>
-
-                        <figure>
-                            <img src="image/ui/mycoursesremake/research/slack.png" alt="facebook" >
-                        </figure>
-                    </div>
+                        <p>Dropbox Paper has a unique comment system. This comment system
+                        allows the user to comment a whole section, to a sentence to just one word.</p>
+                    </section>
+                            
+                    <figure>
+                        <img src="image/ui/mycoursesremake/research/dropbox.png" alt="facebook" >
+                    </figure>
+                    
+                    <!-- *********************** Stack *************************** -->
+                    <section>
+                        <h3 class="space">Slack</h3>
+                        <p>Slack allows the user to message people in a more buisness way. Allowing the users to group
+                            other people to work on one project.</p>
+                    </section>
+                            
+                    <figure>
+                        <img src="image/ui/mycoursesremake/research/slack.png" alt="facebook" >
+                    </figure>
 
                     <!-- *********************** User Flow *************************** -->
+                    <h2 id="flow" class="tabs">User Flow</h2>
 
-                    <h2>User Flow</h2>
-                    <table>
-                        <tr>
-                            <th>Name:</th>
-                            <td>Manov Mistrees</td>
-                        </tr>
-                        <tr>
-                            <th>User:</th> 
-                            <td>Casual User</td>
-                        </tr>
-                        <tr> 
-                            <th>Gender:</th>
-                            <td>Male</td>
-                        </tr>
-                        <tr>
-                            <th>Age:</th>
-                            <td>18</td>
-                        </tr>
-                    </table>
-                    
-                    <p>Manov Mistrees is a casual user. He would normally go to MyCourses just to check
-                    on content, look at the notification, check on homework assignment and looking up on quizzes.
-                    He would quickly get the quizzes and homework over with as quickly as possible.</p>
+                    <!-- *********************** Manov *************************** -->
+                    <section>
+                        <table>
+                            <tr>
+                                <th>Name:</th>
+                                <td>Manov Mistrees</td>
+                            </tr>
+                            <tr>
+                                <th>User:</th> 
+                                <td>Casual User</td>
+                            </tr>
+                            <tr> 
+                                <th>Gender:</th>
+                                <td>Male</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>18</td>
+                            </tr>
+                        </table>
+                        
+                        <p>Manov Mistrees is a casual user. He would normally go to MyCourses just to check
+                        on content, look at the notification, check on homework assignment and looking up on quizzes.
+                        He would quickly get the quizzes and homework over with as quickly as possible.</p>
+                    </section>
 
                     <figure>
                         <img src="image/ui/mycoursesremake/user_flow/manov.png" alt="user flow" >
                     </figure>
 
-                    <table>
-                        <tr>
-                            <th>Name:</th>
-                            <td>Elizabeth Doodletones</td>
-                        </tr>
-                        <tr>
-                            <th>User:</th> 
-                            <td>Casual User</td>
-                        </tr>
-                        <tr> 
-                            <th>Gender:</th>
-                            <td>Female</td>
-                        </tr>
-                        <tr>
-                            <th>Age:</th>
-                            <td>19</td>
-                        </tr>
-                    </table>
-                    
-                    <p>Elizabeth Doodletones hate the design layout every time she logs in. She have a hard time locating her classes when she log in. When she looks
-                    for her content, she will get angry that the teacher would either not give the right content, being too vague to understand or not posting any
-                    content at all. When she needs help she needs to ether get out of the way by emailing to the professors, or posting it at the discussion page. The
-                    problem with the discussion page is that all of her professors never checks on that page. With email, if she did not log in or did log in but quit the
-                    Internet program, she would have to log in which frustrates her even more. She wants an easier way of to communicate with her professors.</p>
+                    <!-- *********************** Elizabeth *************************** -->
+                    <section>
+                        <table>
+                            <tr>
+                                <th>Name:</th>
+                                <td>Elizabeth Doodletones</td>
+                            </tr>
+                            <tr>
+                                <th>User:</th> 
+                                <td>Casual User</td>
+                            </tr>
+                            <tr> 
+                                <th>Gender:</th>
+                                <td>Female</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>19</td>
+                            </tr>
+                        </table>
+                        
+                        <p>Elizabeth Doodletones hate the design layout every time she logs in. She have a hard time locating her classes when she log in. When she looks
+                        for her content, she will get angry that the teacher would either not give the right content, being too vague to understand or not posting any
+                        content at all. When she needs help she needs to ether get out of the way by emailing to the professors, or posting it at the discussion page. The
+                        problem with the discussion page is that all of her professors never checks on that page. With email, if she did not log in or did log in but quit the
+                        Internet program, she would have to log in which frustrates her even more. She wants an easier way of to communicate with her professors.</p>
+                    </section>
                     
                     <figure>
                         <img src="image/ui/mycoursesremake/user_flow/doddletones.png" alt="user flow" >
                     </figure>
                     
-                    <table>
-                        <tr>
-                            <th>Name:</th>
-                            <td>Manga Kamen</td>
-                        </tr>
-                        <tr>
-                            <th>User:</th> 
-                            <td>Power User</td>
-                        </tr>
-                        <tr> 
-                            <th>Gender:</th>
-                            <td>Male</td>
-                        </tr>
-                        <tr>
-                            <th>Age:</th>
-                            <td>24</td>
-                        </tr>
-                    </table>
-                    
-                    <p>Manga Kaman likes the new design of the MyCourses. What he likes about the new design of the MyCourses is: refined notification system, the
-                    Starfish App, and the Calendar App. With the refined notification system, he abuses it by looking at the first thing when he log in. He would check
-                    on it to see if his professors post any new content, assignments that will be due soon, and any past post on the notification system. With Starfish,
-                    he would make an appointment with his advisor. With the Calendar, he can make important dates for events and assignment.</p>
-                   
-                    <p>But he does have a hard time finding his own classes in the Navigation system because all the images look the same and it does not fit in the
-                    theme of the classes. Other than that, he does not really have much problems with the new MyCourses</p>
+                    <!-- *********************** Manga *************************** -->
+                    <section>
+                        <table>
+                            <tr>
+                                <th>Name:</th>
+                                <td>Manga Kamen</td>
+                            </tr>
+                            <tr>
+                                <th>User:</th> 
+                                <td>Power User</td>
+                            </tr>
+                            <tr> 
+                                <th>Gender:</th>
+                                <td>Male</td>
+                            </tr>
+                            <tr>
+                                <th>Age:</th>
+                                <td>24</td>
+                            </tr>
+                        </table>
+                        
+                        <p>Manga Kaman likes the new design of the MyCourses. What he likes about the new design of the MyCourses is: refined notification system, the
+                        Starfish App, and the Calendar App. With the refined notification system, he abuses it by looking at the first thing when he log in. He would check
+                        on it to see if his professors post any new content, assignments that will be due soon, and any past post on the notification system. With Starfish,
+                        he would make an appointment with his advisor. With the Calendar, he can make important dates for events and assignment.</p>
+                       
+                        <p>But he does have a hard time finding his own classes in the Navigation system because all the images look the same and it does not fit in the
+                        theme of the classes. Other than that, he does not really have much problems with the new MyCourses</p>
+                    </section>
 
                     <figure>
                         <img src="image/ui/mycoursesremake/user_flow/manov.png" alt="user flow" >
@@ -303,115 +334,436 @@
 
                     
                     <!-- *********************** Sketch *************************** -->
-                
-                    <h2 id="sketch">Sketch</h2>
-                    <p>These are the very first sketches of rework MyCourses.</p>
+                    <h2 id="sketch" class="tabs">Sketch</h2>
+
+                    <!-- *********************** 1 *************************** -->
+                    <section>
+                        <p>These are the very first sketches of rework MyCourses.</p>
+                    </section>
 
                     <figure>
                         <img src="image/ui/mycoursesremake/sketch/first_sketch.png" alt="user flow" >
                     </figure>
 
-                    <p>These sketches will help me analyze the web.</p>
+                    <!-- *********************** 2 *************************** -->
+                    <section>
+                        <p>These sketches will help me analyze the web.</p>
+                    </section>
+
                     <figure>
                         <img src="image/ui/mycoursesremake/sketch/mycourses_homepage.png" alt="user flow" >
                     </figure>
+
+                    <!-- *********************** 3 *************************** -->
+                    <section>
+                        <p>section here</p>
+                    </section>
 
                     <figure>
                         <img src="image/ui/mycoursesremake/sketch/mycourses_GUI.png" alt="user flow" >
                     </figure>
 
-                    <p>Sketches for the Mobile Side.</p>
+                    <!-- *********************** mobile *************************** -->
+                    <section>
+                        <p>Sketches for the Mobile Side.</p>
+                    </section>
                     <figure>
                         <img src="image/ui/mycoursesremake/sketch/mycourses_mobile_messanger.jpg" alt="user flow" >
                     </figure>
 
+                    <!-- *********************** mobile *************************** -->
+                    <section>
+                        <p>Section here</p>
+                    </section>
                     <figure>
                         <img src="image/ui/mycoursesremake/sketch/mobile_sketch.png" alt="user flow" >
                     </figure>
 
                     
                     <!-- *********************** Wireframe *************************** -->
+                    <h2 id="wireframe" class="tabs">Hi-Fi Wireframe</h2>
 
-                    <h2 id="wireframe">Hi-Fi Wireframe</h2>
-
-                    
+                    <h2 class="grid-space">Homepage</h2>
                     <!-- *********************** Homepage *************************** -->
+                    <section>
+                    <h3 class="space">Version 1</h3>
+                        <p>This is the first version of the homepage. 
+                        There will be some diagnal borders. So it will let 
+                        the user know that there are more content at the bottom.</p>
+                    </section>
 
-                    <h3 class="space">Homepage</h3>
-                    <div class="structure-wireframe">
-                        <div>
-                            <p>This is the first version of the homepage. 
-                            There will be some diagnal borders. So it will let 
-                            the user know that there are more content at the bottom.</p>
-                        </div>
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/homepage_v1_scren_size.png" alt="user flow" >
+                    </figure>
 
-                        <figure>
-                            <img src="image/ui/mycoursesremake/hi-fi-v1/homepage_v1_scren_size.png" alt="user flow" >
-                        </figure>
-                    </div>
+                    <!-- *********************** Homepage Fullpage *************************** -->
+                    <section>
+                        <p>This is the full page of the homepage</p>
+                    </section>
 
-                    <div class="structure-wireframe">
-                        <div>
-                            <p>This is the full page of the homepage</p>
-                        </div>
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/homepage_v1_full.png" alt="user flow" >
+                    </figure>
 
-                        <figure>
-                            <img src="image/ui/mycoursesremake/hi-fi-v1/homepage_v1_full.png" alt="user flow" >
-                        </figure>
-                    </div>
+                    <!-- *********************** V2 *************************** -->
+                    <section>
+                        <h3 class="space">Version 2</h3>
+                        <p>This is the second version for the home screen. With this version, all the unnessary
+                            information is not in this site. Everything looks more clean than the previous one.
+                            The only thing that is there is the utility and the class selection.
+                        </p>
+                    </section>
 
-                    <div class="structure-wireframe">
-                        <div>
-                            <p>This is the second version for the home screen. With this version, all the unnessary
-                                information is not in this site. Everything looks more clean than the previous one.
-                                The only thing that is there is the utility and the class selection.
-                            </p>
-                        </div>
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v2/homepage1.png" alt="user flow" >
+                    </figure>
 
-                        <figure>
-                            <img src="image/ui/mycoursesremake/hi-fi-v2/homepage1.png" alt="user flow" >
-                        </figure>
-                    </div>
+                    <!-- *********************** GUI *************************** -->
+                    <h2 class="grid-space">Graphic UI Page (GUI)</h2>
+     
+                    <!-- *********************** v1 *************************** -->
+                    <section>
+                        <h3 class="space">Version 1</h3>
+                        <p>On the right side of the screen, there is a utility section. This allows the
+                            user to message other students in the same class as you, chat in groups without
+                            relaying on outside source to contact each other.
+                        </p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/gui_page.png" alt="user flow" >
+                    </figure>
+     
+                    <!-- *********************** v2 *************************** -->
+                    <section>
+                        <h3 class="space">Version 2</h3>
+                        <p>On the right side of the screen, there is a utility section. This allows the
+                            user to message other students in the same class as you, chat in groups without
+                            relaying on outside source to contact each other.
+                        </p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v2/GUI_page.png" alt="user flow" >
+                    </figure>
 
                     <!-- *********************** Utility *************************** -->
-                    <h3 class="space">Utilty</h3>
-                    <div class="structure-wireframe">
-                        <div>
-                            <p>On the right side of the screen, there is a utility section. This allows the
-                                user to message other students in the same class as you, chat in groups without
-                                relaying on outside source to contact each other.
-                            </p>
-                        </div>
+                    <h2 class="grid-space">Utilty</h2>
+     
+                    <section>
+                        <h3 class="space">Location</h3>
+                        <p>On the right side of the screen, there is a utility section. This allows the
+                            user to message other students in the same class as you, chat in groups without
+                            relaying on outside source to contact each other.
+                        </p>
+                    </section>
 
-                        <figure>
-                            <img src="image/ui/mycoursesremake/hi-fi-v1/utility_1.png" alt="user flow" >
-                        </figure>
-                    </div>
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/utility_1.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** Utility *************************** -->
+                    <section>
+                        <h3 class="space">Location</h3>
+                        <p>This is the open version of the utility Bar.</p>
+                    </section>
 
-                    <div class="structure-wireframe">
-                        <div>
-                            <p>This is the open version of the utility Bar.
-                            </p>
-                        </div>
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/utility_1_open.png" alt="user flow" >
+                    </figure>
+            
+                    <!-- *********************** Utility *************************** -->
+                    <section>
+                        <h3 class="space">Indept</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
 
-                        <figure>
-                            <img src="image/ui/mycoursesremake/hi-fi-v1/utility_1_open.png" alt="user flow" >
-                        </figure>
-                    </div>
+                    <figure class="size">
+                        <img src="image/ui/mycoursesremake/hi-fi-v2/homepage2_utility_both.png" alt="user flow" >
+                    </figure>
 
-                    <div class="structure-wireframe">
-                        <div>
-                            <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                                it looks like a tags hanging outside of the bar.
-                            </p>
-                        </div>
+                    <!-- *********************** Upload *************************** -->
+                    <h2 class="grid-space">Communication Section</h2>
 
-                        <figure class="ui_utility">
-                            <img src="image/ui/mycoursesremake/hi-fi-v2/homepage2_utility_both.png" alt="user flow" >
-                        </figure>
-                    </div>
-             </div>
-    <footer>
+                    <!-- *********************** Messagner Single *************************** -->
+                    <section>
+                        <h3 class="space">Messanger - Single Person</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/message.png" alt="user flow" >
+                    </figure>
+
+                    <!-- *********************** Messagner Group *************************** -->
+                    <section>
+                        <h3 class="space">Messanger - Group</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/team_project.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** main *************************** -->
+                    <section>
+                        <h3 class="space">Main Screen</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/upload_screen.png" alt="user flow" >
+                    </figure>
+
+                    <!-- *********************** google drive *************************** -->
+                    <section>
+                        <h3 class="space">Google Drive</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/google_drive.png" alt="user flow" >
+                    </figure>
+
+                    <!-- *********************** Locker *************************** -->
+                    <section>
+                        <h3 class="space">Locker</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/locker.png" alt="user flow" >
+                    </figure>
+
+                    <!-- *********************** upload CPU *************************** -->
+                    <section>
+                        <h3 class="space">Upload From CPU</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/drap_2.png" alt="user flow" >
+                    </figure>
+
+                    <!-- *********************** upload CPU - messanger *************************** -->
+                    <section>
+                        <h3 class="space">Upload From CPU - To Messanger</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v1/drag_1.png" alt="user flow" >
+                    </figure>            
+
+                    <!-- *********************** Location *************************** -->
+                    <section>
+                        <h3 class="space">Location</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v2/importing_files_complete.png" alt="user flow" >
+                    </figure>
+
+                    <!-- *********************** Create a group *************************** -->
+                    <section>
+                        <h3 class="space">Create a Group</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v2/group.png" alt="user flow" >
+                    </figure>
+
+                    <!-- *********************** CPU *************************** -->
+                    <section>
+                        <h3 class="space">Commenting</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v2/comment1.png" alt="user flow" >
+                    </figure>
+
+                    <!-- *********************** CPU *************************** -->
+                    <section>
+                        <h3 class="space">Comment Created</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+
+                    <figure>
+                        <img src="image/ui/mycoursesremake/hi-fi-v2/comment2.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** Main *************************** -->
+                    <h2 class="tabs">Main Design</h2>
+                    
+                    <!-- *********************** Homepage *************************** -->
+                    <section>
+                        <h3 class="space">Homepage</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/main_homepage.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** GUI Page *************************** -->
+                    <section>
+                        <h3 class="space">GUI Page</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/main_gui.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** Utility *************************** -->
+                    <h2 class="grid-space">Communication Section</h2>
+
+                    <!-- *********************** Classmates *************************** -->
+                    <section>
+                        <h3 class="space">Search Classmates / professors</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure class="size">
+                        <img src="image/ui/mycoursesremake/main/search_classmate.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** Utility closed *************************** -->
+                    <section>
+                        <h3 class="space">Closed</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/side_bar_closed.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** Utility open *************************** -->
+                    <section>
+                        <h3 class="space">Open</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/side_bar_open.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** Communication*************************** -->
+                    <h2 class="grid-space">Communication</h2>
+
+                    <!-- *********************** Commenting *************************** -->
+                    <section>
+                        <h3 class="space">Commenting</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/gui_comment.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** Commenting 2 *************************** -->
+                    <section>
+                        <h3 class="space">Commenting 2</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/comment.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** Commenting 2 *************************** -->
+                    <section>
+                        <h3 class="space">Messanger</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/messanger.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** Commenting *************************** -->
+                    <h2 class="grid-space">Upload</h2>
+
+                    <!-- *********************** Main Page *************************** -->
+                    <section>
+                        <h3 class="space">Main Page</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/upload_main.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** Google Drive *************************** -->
+                    <section>
+                        <h3 class="space">Google Drive</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/upload_google_drive_horizontal.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** Locker *************************** -->
+                    <section>
+                        <h3 class="space">Locker</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/upload_locker.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** CPU Upload *************************** -->
+                    <section>
+                        <h3 class="space">CPU Upload</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/upload_drag.png" alt="user flow" >
+                    </figure>
+                    
+                    <!-- *********************** CPU Upload *************************** -->
+                    <section>
+                        <h3 class="space">CPU Upload 2</h3>
+                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
+                            it looks like a tags hanging outside of the bar.</p>
+                    </section>
+    
+                    <figure>
+                        <img src="image/ui/mycoursesremake/main/messanger_upload.png" alt="user flow" >
+                    </figure>
+
+                </div>
+                <footer>
         <div class="footer_wrapper">
             <div id="contact">
                 <h2>Contact Me:</h2>

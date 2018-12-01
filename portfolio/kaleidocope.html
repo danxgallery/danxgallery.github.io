@@ -14,6 +14,12 @@
     <script src="js/customscript.js"></script>
     
     <title>DanX Portfolio - Fan Art</title>
+
+    <style>
+        figure img{
+            border: 5px solid #424452; /*Dark Grey Blue*/
+        }
+    </style>
 </head>
 <body>
         <div id="top"></div>
@@ -26,7 +32,7 @@
                     <!-- Tried to use the back button but it does not want to work-->
                     <h3><a href="#description">Description</a></h3>
                                         
-                    <h3><a onclick="section_button1()">Character</a></h3>
+                    <h3><a id="toggle_button1">Character</a></h3>
                     <div id="section1" style="display: none;">
                     <a href="#ace">Ace</a>
                     <a href="#max">Max</a>
@@ -113,122 +119,191 @@
                 <!-- *********************** Characters*************************** -->
                 <h2 class="tabs">Character</h2>
         
-                <h3 id="ace">Ace</h3>
-                <section>
+                <!-- *********************** Ace *************************** -->
+                <h2 id="ace" class="grid-space">Ace</h2>
+                <article class="grid-space">
                     <p>Ace is a hyper active character. He loves drinking water and always promote people 
                         to drink water.
                     </p>
+                </article>
+
+                <section>
+                    <h3 class="space">Card Version</h3>
+                    <p>This is the card version of Ace</p>
                 </section>
 
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/ace.png" alt="ace">
                 </figure>
 
-                <h3 id="max">Max</h3>
+                <!-- *********************** Max *************************** -->
+                <h2 id="max" class="grid-space">Max</h2>
+                <section>
+                    <h3 class="space">Card Version</h3>
+                    <p>This is the card version of Max.</p>
+                </section>
                 
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/max.png" alt="sand_planet">
                 </figure>
-
+                
+                <section>
+                    <p>Sketch of Max.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/max_sketch.png" alt="sand_planet">
-                    <figcaption>Sketch of Max.</figcaption>
                 </figure>
+                
+                <section>
+                    <p>Sketch of Max.</p>
+                </section>
 
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/max_sketch_2.png" alt="sand_planet">
-                    <figcaption>Sketch of Max.</figcaption>
                 </figure>
 
-                <h3 id="clara">Clara</h3>
+                <!-- *********************** Clara *************************** -->
+                <h2 id="clara" class="grid-space">Clara</h2>
+
+                <section>
+                    <h3 class="space">Card Version</h3>
+                    <p>This is the card version of Clara</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/clare.png" alt="sand_planet">
                 </figure>
 
+                <!-- *********************** Sketch *************************** -->
+                <section>
+                    <p>Sketch of Clara.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/clara_sketch1.png" alt="sand_planet">
-                    <figcaption>Sketch of Clara.</figcaption>
                 </figure>
+
+                <!-- *********************** Sketch *************************** -->
+                <section>
+                    <p>Sketch of Clara.</p>
+                </section>
 
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/clara_sketch2.png" alt="sand_planet">
-                    <figcaption>Sketch of Clara.</figcaption>
                 </figure>
-
+                <!-- *********************** Sketch *************************** -->
+                <section>
+                    <p>Sketch of Clara.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/clara_sketch_3.png" alt="sand_planet">
-                    <figcaption>Sketch of Clara.</figcaption>
                 </figure>
                 
-
-                <h3 id="grace">Grace</h3>
+                <!-- *********************** Grace *************************** -->
+                <h2 id="grace" class="grid-space">Grace</h2>
+                <section>
+                    <h3 class="space">Card Version</h3>
+                    <p>This is the card version of Grace.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/grace.png" alt="sand_planet">
                 </figure>
+                
+                <section>
+                    <p>Sketch of Grace.</p>
+                </section>
 
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/grace_v1.png" alt="sand_planet">
-                    <figcaption>Sketch of Grace.</figcaption>
                 </figure>
+
+                <section>
+                    <p>Sketch of Grace.</p>
+                </section>
 
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/graceV2.png" alt="sand_planet">
-                    <figcaption>Sketch of Grace.</figcaption>
                 </figure>
 
-                <h3 id="theo">Theo</h3>
+                <!-- *********************** Theo *************************** -->
+                <h2 id="theo" class="grid-space">Theo</h2>
+                <section>
+                    <h3 class="space">Card Version</h3>
+                    <p>This is the card version of Theo.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/theo.png" alt="sand_planet">
                 </figure>
 
+                <section>
+                    <p>Sketch of Theo.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/theo_sketch1.png" alt="sand_planet">
-                    <figcaption>Sketch of Theo.</figcaption>
                 </figure>
 
+                <section>
+                    <p>Sketch of Theo.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/theo_sketch2.png" alt="sand_planet">
-                    <figcaption>Sketch of Theo.</figcaption>
                 </figure>
 
+                <section>
+                    <p>Sketch of Theo.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/theo_sketch3.png" alt="sand_planet">
-                    <figcaption>Sketch of Theo.</figcaption>
                 </figure>
 
-                <h3 id="joy">Joy</h3>
+                <!-- *********************** Joy *************************** -->
+                <h2 id="joy" class="grid-space">Joy</h2>
+                <section>
+                    <h3 class="space">Card Version</h3>
+                    <p>This is the card version of Joy.</p>
+                    <p>She is also the very first card design I made.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/joy.png" alt="sand_planet">
                 </figure>
 
+                <section>
+                    <h3 class="space">Face Expression</h3>
+                    <p>Sketch of Joy's Face Expression.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/joy_scketch.png" alt="sand_planet">
-                    <figcaption>Sketch of Joy's Face Expression.</figcaption>
                 </figure>
 
+                <section>
+                    <p>Sketch of Joy.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/joy_sketch.png" alt="sand_planet">
-                    <figcaption>Sketch of Joy.</figcaption>
                 </figure>
                 
-                <h3 id="violet">Violet</h3>
+                <!-- *********************** Grace *************************** -->
+                <h2 id="violet" class="grid-space">Violet</h2>
+                <section>
+                    <h3 class="space">Card Version</h3>
+                    <p>This is the card version of Violet.</p>
+                </section>
                 <figure>
                     <img src="image/illustation/kaleidoscope_me/violet.png" alt="sand_planet">
                 </figure>
 
-                <!-- *********************** Vocaloid *************************** -->
+                <!-- *********************** Animation *************************** -->
                 <h2 id="animation">Animation</h2>
         
-                <figure>
+                <figure class="grid-space">
                     <video controls src="image/illustation/kaleidoscope_me/animation-30fps.mp4">
                     This animation does not support your browser</video>
                     <figcaption>Animation for the show in 30fps.</figcaption>
                 </figure>
 
-                <figure>
+                <figure class="grid-space">
                     <video controls src="image/illustation/kaleidoscope_me/sizzle_reel_animation.mp4">
                     This animation does not support your browser</video>
                     <figcaption>Sizzle Reel for Kaleidoscope ME.</figcaption>
+                    <figcaption>I did not make this music. That belongs to my Boss Liza.</figcaption>
                 </figure>
                 
                 

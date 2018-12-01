@@ -121,6 +121,9 @@ nav {
     display: none;
 }
 
+.logo img{
+    border: none;
+}
 /* .cpu_nav{
     display: block;
 } */
@@ -358,7 +361,11 @@ footer{
     font-size: 16pt;
     text-align: center;
 
-    padding-top: 16px;
+    padding-top: 150px;
+}
+
+article p, section p{
+    line-height: 24px;
 }
 
 /*This code controls the indivdual grid item images.
@@ -387,6 +394,11 @@ footer{
     padding-bottom: 16px;
 }
 
+.grid-structure{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px 50px;
+}
 /*******************************************************************
                         Interior Works
 ********************************************************************/
@@ -395,7 +407,7 @@ footer{
     - Set the max width by 800px
     - Set everyting to center with margin */
 .interior_wrapper{
-    max-width: 900px;
+    max-width: 800px;
     display: grid;
     grid-template-columns: auto 60%;
     grid-column-gap: 20px;
@@ -482,62 +494,10 @@ td, th{
     padding-bottom: 16px;
 }
 
-/******************************************************
-            Grid Structure for Assets
-*****************************************************/
-
-/*Note: These gird structure only applies to images that works well with grid structure
-        Example: Check on - Works > Animation > Queen of Evil > Assets.*/
-
-/* Display the whole structure as a grid for assets:
-    - Give three column grid structure
-    - With 10px on each side. */
-.structure-image{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px 10px;
+.size img{
+    width: 20%;
+    float: right;
 }
-
-
-/* Display the whole structure as a grid for assets and UI Pages:
-    - Give two column grid structure
-    - Add 10px of space for every grid row. */
-.structure-image2{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-row-gap: 10px; 
-}
-
-/* set the width by 90% for the goals only*/
-.structure-image2 div{
-    width: 90%;
-}
-
-/*set width structure to max*/
-.structure-img2 img{
-    width: 100%;
-}
-
-/*set width images to 250px*/
-.structure-image img{
-    width: 250px;
-}
-
-/* Display the whole structure as a grid for assets and UI Pages:
-- Give two column grid structure. One side is 280px
-- Add 10px of space for every grid row. */
-.structure-wireframe{
-    display: grid;
-    grid-template-columns: 280px auto;
-    grid-row-gap: 10px; 
-    grid-column-gap: 10px;
-}
-
-.ui_utility img{
-    width: 200px;
-}
-
-
 /******************************************************
                     Side Navigation
 *****************************************************/
@@ -556,7 +516,7 @@ td, th{
     position: fixed;
     float: right;
 
-    height: 100%;
+    height: 80%;
     
     transition: .3s ease-out;
 }
@@ -1008,12 +968,6 @@ This is the Responsive Design for Ipad Pro
         /* overflow: initial; */
     }
 
-    /* - seperate the bottom between h2 and content by 24px */
-    .interior_wrapper h2{
-        /* padding-top: 40px; */
-        padding-bottom: 24px;
-    }
-
     /* - use line-height on all p tags by 32px*/
     .interior_wrapper p {
         line-height: 32px;
@@ -1380,6 +1334,8 @@ This is the Responsive Design for Iphone 6 and below
     .grid-container{
         grid-template-columns: auto;
         grid-gap: 25px 5px;
+
+        margin-top: 20px;
     }
 
     /* - set the max width to 325px */
@@ -1436,7 +1392,7 @@ This is the Responsive Design for Iphone 6 and below
     }
 
     article{
-        margin-bottom: 40px;
+        margin-bottom: 16px;
     }
 
     figure img{
