@@ -36,6 +36,8 @@ body {
 li {
     list-style-type: none;
     padding-bottom: 16px;
+
+    line-height: 36px;
 }
 
 /*all p tags will have a bottom padding of 16px*/
@@ -57,12 +59,12 @@ p a:hover{
 /* - Set width to 900px 
    - Set the Height to 100px
    - Have the navigation to float right*/
-nav {
-    width: 1200px;
+#cpu {
+    max-width: 1200px;
+    width: 100%;
     height: 100px;
 
     position: fixed;
-    margin-bottom: 16px;
      
     background-color: #ffffff;
     transition: .3s ease-out;
@@ -70,6 +72,10 @@ nav {
     /* background-color: #80a3d8; */
     /* padding: 35px 0; */
 
+}
+
+#mobile{
+    display: none;
 }
 
 /* - Allow the user to know which page they are currently in */
@@ -83,8 +89,9 @@ nav {
   - Set the display to inline-flex to set the navigation to horizontal
   - Float the area to the right */
  .cpu_nav {
+    /* max-width: 800px; */
     padding-top: 35px;
-    display: inline-flex;
+    display: flex;
     float: right;
 }
 
@@ -237,10 +244,12 @@ footer{
     height: 300px;
     clear: both;
 
-    position: absolute;
+    /* position: absolute; */
 
     background-color: #141414; /*Near Black*/
     color: white;
+
+    margin-top: 150px;
 }
 
 /* - this class only affects the interior of the footer
@@ -354,6 +363,7 @@ footer{
    - set font-size to 16pt.
    - give space from grid base and h2 by 16px */
 .grid-container{
+
     display: grid;
     grid-gap: 20px 10px;
     grid-template-columns: auto auto auto auto;
@@ -361,7 +371,14 @@ footer{
     font-size: 16pt;
     text-align: center;
 
+    padding-top: 50px;
+}
+
+#grid-wrapper{
+    max-width: 1200px;
+    
     padding-top: 150px;
+    margin: 0 auto;
 }
 
 article p, section p{
@@ -628,6 +645,7 @@ td, th{
     padding: 0 10%;
 
     line-height: 32pt;
+    padding-top: 150px;
 }
 
 /* - Set the height to 70px
@@ -765,7 +783,7 @@ This is the Responsive Design for Ipad Pro
        - Everything in this div centered*/
     .wrapper{
         max-width: 1024px;
-        height: 100px;
+        height: 50px;
         margin: 0 auto;
   
         /* overflow: visible; */
@@ -778,20 +796,22 @@ This is the Responsive Design for Ipad Pro
     /* - Set the height from 50px to 400px because this is the hamberger menu
        - Width will always be at 100%
        - set bottom margin of 60px */
-    nav{
-        height: 100px;
+    #mobile{
+        height: 50px;
         width: 100%;
-
-        margin-bottom: 60px;
+        display: block;
+        position: fixed;
     }
 
+    #cpu{
+        display: none;
+    }
     /* - Set the container to block
        - Remove all float */
     .mobile_nav{
         display: block;
         float: none;
-        margin-top: 100px;
-        background-color: rgba(255, 255, 255, 0.945);
+        background-color: #ffffff;
     }
 
     /* - set the naviation to a verticle hamberger menu
@@ -800,24 +820,21 @@ This is the Responsive Design for Ipad Pro
        - give space at 20px on top and bottom*/
     .mobile_nav .nav-wrapper a{
         display: block;
-        font-size: 36pt;    
+        font-size: 24pt;    
         max-width: 1024px;
-        
-        margin-top: 0;
 
-        padding: 80px 0;
+        padding: 30px 0;
         text-align: center;
 
-        background-color: rgba(255, 255, 255, 0.945);
-
-        transition: 3s ease-in-out;
+        background-color: #ffffff;
+        transition: .3s ease-in-out;
     }
 
     /* - This affects the dropdown menu in the works section */
     /* - set the height of 140px */
     .mobile_nav #subnav_mobile{   
-        /* display: none; */
-        height: 560px;
+        display: block;
+        height: 300px;
     }
 
     #hamberger_button{
@@ -841,12 +858,12 @@ This is the Responsive Design for Ipad Pro
        - text indent is set to 20px*/
     #mobile_button{
         width: 100%;
-        font-size: 32pt;
+        font-size: 24pt;
 
-        padding: 60px;
+        padding: 30px;
         text-align: center;
 
-        background-color: rgba(255, 255, 255, 0.945);
+        background-color: #ffffff;
         border: none;
     }
 
@@ -861,11 +878,14 @@ This is the Responsive Design for Ipad Pro
         border-top: 2px solid #000000;
 
 
-        background-color: rgba(255, 255, 255, 0.945);
-        padding: 60px 0;
+        background-color: #d8d8d8;
+        padding: 30px 0;
 
-        font-size: 36pt;
+        font-size: 24pt;
         text-align: center;
+    }
+    .mobile_nav .nav-wrapper a:nth-child(4){
+        border-bottom: 5px #3c60af solid;
     }
 
     /* .nav-wrapper {
@@ -881,11 +901,6 @@ This is the Responsive Design for Ipad Pro
         color: #ffffff;
     }
 
-
-    /*set the mobile version of the navigation to block*/
-    .cpu_nav{
-        display: none;
-    }
 
     /* Remove dropdown menu to prevent hovering */
     .dropdown{
@@ -983,6 +998,11 @@ This is the Responsive Design for Ipad Pro
         line-height: 64px;
     }
 
+    .grid-structure{
+        grid-template-columns: auto;
+        grid-row-gap: 15px;
+    }
+
      /******************************************************
                         Homepage
     *****************************************************/
@@ -1055,7 +1075,92 @@ This is the Responsive Design for Ipad
         margin-right: 90px;
     } */
 
+    /******************************************************
+                        Navigation
+    *****************************************************/
 
+        /* set the height to 350px */
+        #mobile{
+            height: 50px;
+            margin-bottom: 0;
+            position: fixed;
+    
+            display: block;
+        }
+    
+    
+        #hamberger_button{
+            display: block;
+            width: 50px;
+            height: 50px;
+        }
+    
+        /* - this will set the logo to the left side
+       - Set the width and height to 137px x 100px
+       - Set the padding left by 10px*/
+        .logo img{
+            float: left;
+    
+            width: 70px;
+            height: 50px;
+    
+            padding-left: 10px;
+            display: block;
+            /* padding-top: 32px;
+            margin: 0 30px; */
+        }
+    
+    
+        /* Not needed due to ipad code is the same */
+        /* .nav_container{
+            display: block;
+            float: none;
+        } */
+        .mobile_nav .nav-wrapper a{
+            max-width: 768px;
+            padding: 20px 0;
+            font-size: 16pt;
+    
+            background-color: #ffffff;
+        }
+        
+        .mobile_nav .nav-wrapper a:nth-child(4){
+            border-bottom: 5px #3c60af solid;
+        }
+
+        .mobile_nav #subnav_mobile a{
+            display: block;
+            border-top: 2px solid #000000;
+    
+    
+            background-color: #d8d8d8;
+            padding: 30px 0;
+    
+            font-size: 16pt;
+            text-align: center;
+        }
+
+        .mobile_nav #subnav_mobile{   
+            display: block;
+            height: 260px;
+        }
+    
+        
+        /* - set the mobile button of 100% width
+           - font size of 16px
+           - text-align is set to left
+           - text indent is set to 20px*/
+        #mobile_button{
+            width: 100%;
+            font-size: 16pt;
+    
+            padding: 20px;
+            text-align: center;
+    
+    
+            border: none;
+        }
+    
      /******************************************************
                         Footer
     *****************************************************/
@@ -1129,7 +1234,6 @@ This is the Responsive Design for Iphone 6 and below
        - set display to block */
     .wrapper{
         max-width: 415px;
-        display: block;
     }
 
     /******************************************************
@@ -1137,9 +1241,12 @@ This is the Responsive Design for Iphone 6 and below
     *****************************************************/
 
     /* set the height to 350px */
-    nav{
+    #mobile{
         height: 50px;
         margin-bottom: 0;
+        position: fixed;
+
+        display: block;
     }
 
 
@@ -1159,9 +1266,11 @@ This is the Responsive Design for Iphone 6 and below
         height: 50px;
 
         padding-left: 10px;
+        display: block;
         /* padding-top: 32px;
         margin: 0 30px; */
     }
+
 
     /* Not needed due to ipad code is the same */
     /* .nav_container{
@@ -1169,14 +1278,15 @@ This is the Responsive Design for Iphone 6 and below
         float: none;
     } */
     .mobile_nav .nav-wrapper a{
-        max-width: 375px;
-        
+        max-width: 415px;
         padding: 20px 0;
-        padding-left: 30px;
         font-size: 16pt;
+
+        background-color: #ffffff;
     }
-    .mobile_nav{
-        margin-top: 0;
+    
+    .mobile_nav .nav-wrapper a:nth-child(4){
+        border-bottom: 5px #3c60af solid;
     }
     
     /* - set the mobile button of 100% width
@@ -1190,10 +1300,9 @@ This is the Responsive Design for Iphone 6 and below
         padding: 20px;
         text-align: center;
 
-        background-color: rgba(255, 255, 255, 0.945);
+
         border: none;
     }
-
 
     /* - Set the mobile version sub navigation to block, making it visible
        - border top at 2px solid black
@@ -1204,70 +1313,11 @@ This is the Responsive Design for Iphone 6 and below
         display: block;
         border-top: 2px solid #000000;
 
-
-        background-color: rgba(255, 255, 255, 0.945);
         padding: 40px 0;
 
         font-size: 16pt;
         text-align: center;
     }
-
-    /* Not needed but this was worked on first before I got to the other mobile device*/
-
-    /* .nav_container .dropdown:
-
-    .mobile_nav #subnav_mobile{
-        display: none;
-        height: 140px;
-        float: none;
-    }
-
-    .nav-wrapper {
-        margin-top: 50px;
-    
-
-    #mobile_button{
-        width: 100%;
-        font-size: 16pt;
-
-        padding: 10px 0;
-        text-align: left;
-        text-indent: 20px;
-    }
-
-    .mobile_nav{
-        display: block;
-    }
-
-    .dropdown{
-        display: none;
-    } */
-
-    /*this was used before I tried with button for mobile*/
-    /* .nav_container .dropdown a {
-        display: inline; */
-        /* margin-bottom: 200px;
-
-        display: inline-block;
-        width: 100%;
-
-        padding: 20px 0;
-        padding-left: 30px;
-
-        background-color: #3c60af;
-    }
-
-    .nav_container .dropdown{
-        display: inline-flex;
- 
-        margin-top: 50px;
-        margin-bottom: 5px;
-         margin-bottom: 320px;
-    }
-
-    .nav_container.dropdown: {
-        
-    } */
 
     /******************************************************
                         Footer
@@ -1366,10 +1416,11 @@ This is the Responsive Design for Iphone 6 and below
     #side_sub{
         left: -200px;
         width: 250px;
+        top: -50px;
     
         position: fixed;
     
-        height: 100%;
+        height: 90%;
     
         line-height: 24pt;
         
@@ -1386,13 +1437,14 @@ This is the Responsive Design for Iphone 6 and below
     
         overflow-y: scroll;
 
+
         /* not needed */
         /* border-right:  5px solid #3c60af;
         background-color: #ffffff; */
     }
 
     article{
-        margin-bottom: 16px;
+        margin-bottom: 0;
     }
 
     figure img{
