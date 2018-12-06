@@ -1,0 +1,114 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid darkblue;
+}
+
+/**************
+Your Formatting
+***************/
+#yourgrid{
+    width: 90%;
+    max-width: 1000px;
+    min-height: 100%;
+    margin: 0 auto;
+    display: grid;
+
+    grid-template-columns: 33% 67%;
+    grid-template-rows: 75px 30px 1fr 2fr 50px;
+
+    grid-template-areas: "a a" "b b" "d c" "d c" "e e";
+}
+
+header{
+    background-color: lightpink;
+    grid-area: a;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+nav{
+    background-color: lavenderblush;
+    grid-area: b;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.mainmenu{
+    margin: 0 6rem;
+    padding: 0 40px;
+    background-color: #ccc;
+}
+.submenu{
+    background-color: #ddd;
+    margin: 0;
+    padding: 0;
+    display: none;
+    list-style-type: none;
+}
+
+.submenu li{
+    padding-left: .25rem;
+}
+
+
+article{
+    background-color: lightcyan;
+    grid-area: c;
+}
+
+aside{
+    background-color: lightblue;
+    grid-area: d;
+}
+
+footer{
+    background-color: lightpink;
+    grid-area: e;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+@media screen and (max-width: 415px){
+    #yourgrid{
+        grid-template-columns: auto;
+        grid-template-areas: "a" "b" "c" "d" "e";
+        max-width: 415px;
+        width: 100%
+    }
+
+}
