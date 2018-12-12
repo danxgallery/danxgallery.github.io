@@ -5,15 +5,16 @@
  window.onscroll = function() {scrollFunction()};
 
  function scrollFunction() {
-   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-     document.querySelector(".cpu_nav").style.top = "-50px";
+   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 80) {
+     document.querySelector("#cpu").style.top = "-90px";
      //document.querySelector(".nav_container").style.paddingTop = "30px";
    } 
   
    else {
-     document.querySelector(".cpu_nav").style.top = "0";
+     document.querySelector("#cpu").style.top = "0";
      //document.querySelector(".nav_container").style.paddingTop = "40px";
    }
+
  }
 
 function nav_button() {
@@ -27,6 +28,9 @@ function nav_button() {
     }
 }
 
+
+// This code is created by w3schools.
+// Source: https://www.w3schools.com/howto/howto_js_slideshow.asp
 
 //---------------------------------------------------------------------------------
 //These bottom code was used before adding jquery just for the animation.
@@ -147,40 +151,14 @@ $(document).ready(function(){
     $("#mobile_button").click(function(){
         $("#subnav_mobile").toggle(300);});
 
-        /*if(!$(this).hasTag('nav')){
-
-            //This code is made by: OptimusCrime
-            //Source: https://stackoverflow.com/questions/7806637/jquery-animate-margin-top
-            $(this).find('nav').animate({'margin-bottom': '250px', opacity: 0.5 }, 1000);
-            console.log("It works");
-        }
-
-        else{
-            $(this).find('nav').animate({'margin-bottom': '0', opacity: 0.5 }, 1000);
-            console.log("It works again");
-        }*/
-
-   
-
     $("#toggle_button0").click(function(){
         $("#sub_section").toggle(300);});
+   
+
+    $(".toggle_button").click(function(){
+        $(this).next(".section").slideToggle(300);});
 
     /* This is used for the side bar */
-
-    $("#toggle_button1").click(function(){
-        $("#section1").toggle(300);});
-
-    $("#toggle_button2").click(function(){
-        $("#section2").toggle(300);});
-
-    $("#toggle_button3").click(function(){
-        $("#section3").toggle(300);});
-
-    $("#toggle_button4").click(function(){
-        $("#section4").toggle(300);});
-
-    $("#toggle_button5").click(function(){
-        $("#section5").toggle(300);});
 
     /* Scrolling animation */
     
