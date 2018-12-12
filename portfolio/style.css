@@ -296,18 +296,116 @@ footer{
 ********************************************************************/
 
 /* The PNG Sequence will have a that will fit the wrapper*/
-.animation{
+/* .animation{
     grid-column: span 2;
     width: 100%;
-}
+} */
+
+/* ------------------- Slideshow container------------------  */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15pt;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    margin-bottom: 200px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 auto;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+/*----------- Everything in the slide show is not owned by me. This is credited to w2schools. --------------*/
+/* Source: https://www.w3schools.com/howto/howto_js_slideshow.asp */
 
 #index_wrapper{
     padding-top: 150px;
     max-width: 800px;
 
     display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
     grid-row-gap: 30px;
 
     margin: 0 auto;
@@ -430,9 +528,10 @@ article p, section p{
     - Set the max width by 800px
     - Set everyting to center with margin */
 .interior_wrapper{
-    max-width: 800px;
+    max-width:800px;
     display: grid;
-    grid-template-columns: auto 60%;
+    grid-template-columns: 1fr 65%;
+
     grid-column-gap: 20px;
     grid-row-gap: 30px;
     margin: 0 auto;
@@ -442,6 +541,7 @@ article p, section p{
 section ul li{
     list-style-type: circle;
 }
+
 .grid-space{
     width: 100%;
     grid-column: span 2;
@@ -501,7 +601,7 @@ td, th{
 
 .tabs{
     width: 100%;
-    grid-column: span 2;
+    grid-column:  span 2;
     
     padding: 16px 0;
     
@@ -533,8 +633,8 @@ td, th{
   - Width is 400px
   - when hovered, it will have an ease out animation */
 #side_sub{
-    left: -330px;  
-    width: 400px;
+    left: -230px;  
+    width: 295px;
 
     z-index: 2;
     position: fixed;
@@ -552,13 +652,12 @@ td, th{
   - border is only on the right to indicate were the border ends
   - background color is white */
 #side_sub .list{
-    width: 325px;
+    width: 225px;
     height: 100%;
 
     margin-top: 100px;
 
     overflow-y: scroll;
-    border-right:  5px solid #3c60af;
     background-color: #ffffff; /* White */
 }
 
@@ -613,11 +712,11 @@ td, th{
 } */
     
 /* Text indent on the sub navigation is 30px */
-#section1 a, #section2 a, #section3 a, #section4 a, #section5 a{
+.section a{
     text-indent: 60px;
 }
 
-#toggle_button1 a, #toggle_button2 a, #toggle_button3 a, #toggle_button4 a, #toggle_button5 a{
+.toggle_button a{
     text-indent: 40px;
     font-weight: bold;
 }
