@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- This code is made by Liep Nguyen
+        Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
+    <script src="js/customscript.js"></script>
+    
+    <title>DanX Portfolio - Life of DanX</title>
+</head>
+<body>
+        <div id="top"></div>
+        <div id="side_sub">
+
+                <img src="gallery_icon/side_bar.svg" alt="side_bar">
+
+                <div class="list"> 
+                    <!-- <button id="back_button" onclick="back()"></button>-->
+                    <!-- Tried to use the back button but it does not want to work-->
+                    <h3><a href="#description">Description</a></h3>
+    
+                    <h3><a class="toggle_button">Characters</a></h3>
+                    <div class="section" style="display: none;">
+                    <a href="#danx">DanX</a>
+                    <a href="#miku">Hatsune Miku</a>
+                    <a href="#natalie">Natalie Overture</a>
+                    <a href="#sanni">Sanni Dei</a>
+                    <a href="#yuri">Yuri Konpyutaa</a>
+                    </div>
+
+                    <h3><a href="#logo">Logo Design</a></h3>
+                </div>
+            </div>
+
+        <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
+<div class="wrapper">
+        <nav id="cpu">
+                <figure class="logo">
+                    <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
+                </figure>
+                
+                <!-- To be used on PC -->
+                <div class="nav_container">
+                        <div class="cpu_nav">
+                            <div class="dropdown" >
+                                <a class="indicator">Works</a>
+                                <div class="subnav">
+                                    <a href="animation.html">Animation / Motion Graphic</a>
+                                    <a href="illustration.html">Illustration</a>
+                                    <a href="ui.html">UI Design</a>
+                                </div>
+                            </div>
+                            
+                            <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
+                                <a href="about.html">About Me</a>
+                                <a href="resume.html">Resume</a>
+                                <a href="#contact">Contact Me</a>
+                                <a href="note.html">Notes</a>
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+    
+                <!-- To Be used on mobile and tablet -->  
+                <nav id="mobile">
+                <figure class="logo">
+                    <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
+                </figure>
+                <button id="hamberger_button" type="button" onclick="nav_button()"></button>
+    
+                <div class="mobile_nav" style="display: none;">
+                        <button id="mobile_button">Works</button>
+                    <div id="subnav_mobile" style="display: none;">
+                        <a href="animation.html">Animation / Motion Graphic</a>
+                        <a href="illustation.html">Illustration</a>
+                        <a href="ui.html">UI Design</a>
+                    </div>
+            
+                    <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
+                        <a href="about.html">About Me</a>
+                        <a href="resume.html">Resume</a>
+                        <a href="#contact">Contact Me</a>
+                        <a href="note.html">Notes</a>
+                    </div>
+                </div>
+                
+            
+                </nav>
+        </div>
+
+                <div class="interior_wrapper">
+                <!-- *********************** Description *************************** -->
+                <article class="grid-space">
+                    <h1 id="description" class="space">Life of DanX</h1>
+                    <h3 class="space">Self Project</h3>
+                    
+                    <p><strong>May 2016 - Current</strong></p>
+             
+                    <p>Life of DanX is a series of hi-jinks that an Manga Artist and Animator, DanX have to deal with 
+                        Hatsune Miku, self-proclaim queen of his world, and Ravian his adopted daughter. It's basically, my 
+                        dumping ground for ideas that I rejected.
+                    </p>
+        
+                </article>
+    
+                <!-- ----------------------------Character Design------------------------------------------ -->
+                <h2 class="tabs">Characters</h2>
+                <!-- ---------------------------- Dan X ------------------------------------------ -->
+                <h3 id="danx" class="space">DanX</h3>
+    
+                <article class="grid-space">
+                    <p>DanX is an Manga Artist and Animator. He has a personality of an average person with a very negative
+                         personality. Always self-doubting himself, and punishing himself when he does something wrong.
+                         However, he still does his best to make him and his friends happy.
+                    </p>
+
+                    <p>Nobody know his name till this day. Unless you check on the "Abouts Page".</p>
+                </article>
+                 
+                <!-- *********************** Current *************************** -->
+                <section>
+                    <h3 class="space">Current Version</h3>
+                    <p>Final Rendering of DanX.</p>
+                    <p>The whole point of this avater is to make it look how I was represented.</p>
+                    <p>The mask is a fan made of one of my favorite characters of all time. His name 
+                        is Godot (full name: Diego Armando) in "Ace Attorney, Trials and Trbulation".
+                    </p>
+                    <p>The outfit is inspired by Apollo Justice's Outfit in "Ace Attorney, Duel Destiny" </p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/lifeofdanx/me_colored.png" alt="danx">
+                </figure>
+
+                <!-- *********************** Version 1 *************************** -->
+                <section>
+                    <h3 class="space">Version 1</h3>
+                    <p>Sketches of DanX version 1.</p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/lifeofdanx/me_v2.png" alt="sketch 1">
+                </figure>
+
+                <!-- *********************** Version 2 *************************** -->
+                <section>
+                    <h3 class="space">Version 2</h3>
+                    <p>Sketches of DanX version 2.</p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/lifeofdanx/me_v3.png" alt="sketch 2" >
+                </figure>
+
+                <!-- *********************** Version 3 *************************** -->
+                <section>
+                    <h3 class="space">Version 3</h3>
+                    <p>Sketch of DanX version 3.</p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/lifeofdanx/me_v4.png" alt="sketch 3" >
+                </figure>
+
+                <!-- *********************** Version 3 Colored *************************** -->
+                <section>
+                    <h3 class="space">Version 3 Colored</h3>
+                    <p>DanX version 3. Colored.</p>
+                    <p>The color with this was more inspired with "Persona 5". Just experementing of finding the right style
+                        for myself.
+                    </p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/lifeofdanx/self.png" alt="sketch 4" >
+                </figure>
+    
+  
+                <!-- ---------------------------- Hatsune Miku ------------------------------------------ -->
+                <article class="grid-space">
+                    <h3 id="miku" class="space">Hatsune Miku</h3>
+    
+                    <p>She once posed as Aidorune Niru to fool DanX. Miku is a narcissist, egotisical, and crazy girl who picks on DanX
+                    very often. She does not get punished for anything she does because she makes an excuse that she is cute and 
+                    report him for abuse. Her job is to sing for DanX as his partner, but it usually ended up Miku becoming the dominant
+                    one.</p>
+                </article>
+                
+                <section>
+                    <h3 class="space">Version 1</h3>
+                    <p>This is the very first version of Aidorune Niru.</p>
+                    <p>The name "Aidoru" is a how you would say Idle in "Katakana" (another form in Japanese).</p>
+                    <p>The rest is to purposly rhyme with Miku.</p>
+                </section>
+                <figure>
+                    <img src="image/illustation/lifeofdanx/adorune_niru_v1.png" alt="aidorune 1">
+                </figure>
+
+                <section>
+                    <h3 class="space">Version 2</h3>
+                    <p>Hatsune Miku as Aidorune Niru. Final version.</p>
+                </section>
+                <figure>
+                    <img src="image/illustation/lifeofdanx/adorune_niru_v2.png" alt="aidorune 2">
+                </figure>
+
+                <section>
+                    <h3 class="space">Version 1 - Miku</h3>
+                    <p>Sketch of Hatsune Miku.</p>
+                </section>
+                <figure>
+                    <img src="image/illustation/lifeofdanx/hatsune_miku_life_of_danX.png" alt="Merlinus Final">
+                </figure>
+                
+                <section>
+                    <p>A sketch involve with these two.</p>
+                </section>
+                <figure>
+                    <img src="image/illustation/lifeofdanx/sketch_miku_me.png" alt="Merlinus Final">
+                </figure>
+
+                    <!-- ---------------------------- Natalie ------------------------------------------ -->
+                    <article class="grid-space">
+                        <h3 id="natalie" class="space">Natalie Overture</h3>
+                        <p>Natalie Overture is an intern for DanX. She is obsessed with ".Last Note" because it's her favorite band of all time.
+                            She is only seventeen years old and gose to school, but like Miku, she ofen goes to his apartment.
+                            One day, she wants to be a manga artist.  She is ruthless, and short-tempered. But, she it not very intellegent.
+                        </p>
+                    </article>
+                    
+                    <section>
+                        <h3 class="space">Colored Version</h3>
+                        <p>This is the colored version of Natalie Overture.</p>
+                        <p>She is inspired by a character "Eruna Ichinomiya" from "Mikagura School Suite".</p>
+
+                        <p>Her first name is named after "Natalie Blake" from Hell's Kitchen Season 9.</p>
+                        <p>Her last name is referencing a song by ".Last Note" named "Overture".</p>
+                    </section>
+                    <figure>
+                        <img src="image/illustation/lifeofdanx/natalie.png" alt="Natalie">
+                    </figure>
+
+                    <section>
+                        <h3 class="space">Version 1</h3>
+                        <p>Natalie Overture first sketch.</p>
+                    </section>
+                    <figure>
+                        <img src="image/illustation/lifeofdanx/natalie_overtue_v1.png" alt="Sketch">
+                    </figure>
+
+                    <section>
+                        <h3 class="space">Version 2</h3>
+                        <p>Natalie Overture in a different pose.</p>
+                    </section>
+                    <figure>
+                        <img src="image/illustation/lifeofdanx/natalie_different_pose.png" alt="Sketch">
+                    </figure>
+
+                    <section>
+                        <h3 class="space">Angry Video Game Natalie</h3>
+                        <p>Natalie Overture cosplaying as Angry Video Game Nerd.</p>
+                    </section>
+                    <figure>
+                        <img src="image/illustation/lifeofdanx/natalie_angry_video_game_nerd.png" alt="AVGN">
+                    </figure>
+
+                    <!-- ---------------------------- Sanni Dei ------------------------------------------ -->
+                    <article class="grid-space">
+                        <h3 id="sanni" class="space">Sanni Dei</h3>
+                        <p>Sanni Dei is the current president of her own club and the school owner's daughter. She dresses 
+                            elegantly. She seems to attract other boys and Natalie Overture. Her personality is describe as
+                            pure and innocent.
+                        </p>
+                    </article>
+        
+                    <section>
+                        <h3 class="space">Version 1</h3>
+                        <p>Sanni Dei.</p>
+                        <p>She is inspired by "Seisa Mikagura" from "Mikagura School Suite"</p>
+                        <p>Her name is a pun. It means Sunny Day.</p>
+                    </section>
+                    <figure>
+                        <img src="image/illustation/lifeofdanx/sanni_dei_sketch.png" alt="Sanni">
+                    </figure>
+                    
+                    <!-- ---------------------------- Yuri ------------------------------------------ -->
+                    <article class="grid-space">
+                        <h3 id="yuri" class="space">Yuri Konpyutaa</h3>
+                        <p>Yuri Konpyutaa is a lesbian who often flirts with DanX as a target practice. She is also DanX's technician
+                            when something goes wrong. She is currently dating with another girl.</p>
+                    </article>
+                    
+                    <section>
+                        <h3 class="space">Version 1</h3>
+                        <p>Yuri Konpyutaa.</p>
+                    </section>
+                    <figure>
+                        <img src="image/illustation/lifeofdanx/yuri-sketch1.png" alt="Merlinus Final">
+                    </figure>
+
+                    <section>
+                        <h3 class="space">Database</h3>
+                        <p>Yuri Konpyutaa.</p>
+                    </section>
+                    <figure>
+                        <img src="image/illustation/lifeofdanx/yuri-sketch2.png" alt="Merlinus Final">
+                    </figure>
+                    
+                    <h2 id="logo" class="tabs">Logo Design</h2>
+                    
+                    <section>
+                        <h3 class="space">Current Version</h3>
+                        <p>This is the current version for this series.</p>
+                    </section>
+                    <figure>
+                        <img src="gallery_icon/life_of_danX.svg" alt="Merlinus Final">
+                    </figure>
+    </div>
+
+    <footer>
+        <div class="footer_wrapper">
+            <div id="contact">
+                <h2>Contact Me:</h2>
+                <ul>
+                    <li>Phone: 207-766-6625</li>
+                    <li>Email: MiyukProduction@gmail</li>
+                </ul> 
+                <!-- <div class="icon">
+                    <a href="#"><img id="facebook" src="" /></a>
+                </div> -->
+            </div>
+    
+            <div class="gallery">
+                <h2>Gallery</h2>
+        
+                <div class="social_gallery">
+                        <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
+                    
+                        <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"  alt="behance"/></a>
+                    
+                        <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"  alt="deviantart"/></a>
+                        <!-- These image icons are made by Font Awesome --> 
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>

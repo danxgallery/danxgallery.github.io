@@ -1,0 +1,1629 @@
+/*This is my stylesheet*/
+
+
+/*This code effects all of my codes.
+    This set my margins and padding to 0.
+    The Dominant Font Family is Overpass in the goole fonts*/
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Overpass', 'arial', sans-serif;
+}
+
+/*******************************************************************
+                        Gobal CSS
+********************************************************************/
+/*This section will affect all of my pages*/
+
+/* This CSS effects the body */
+/* - Set the width in 100% (or infinity)
+   - Set the font to 12pt */
+body {
+    width: 100%;
+    font-size: 12pt;
+}
+
+/* Set the max width to 1200px*/
+/* Set everything to center*/
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Remove all the list style type to none. */
+li {
+    list-style-type: none;
+    padding-bottom: 16px;
+
+    line-height: 36px;
+}
+
+/*all p tags will have a bottom padding of 16px*/
+p {
+    padding-bottom: 16px;
+}
+
+/*all non-specific a tags will have a highlight color of blue and make them bold*/
+p a:hover{
+    color: #3c60af; /*light Blue*/
+    font-weight: bold;
+}
+    
+/*******************************************************************
+                            Navigation
+********************************************************************/
+
+
+/* - Set width to 900px 
+   - Set the Height to 100px
+   - Have the navigation to float right*/
+#cpu {
+    max-width: 1200px;
+    width: 100%;
+    height: 100px;
+
+    z-index: 3;
+    position: fixed;
+     
+    background-color: #ffffff;
+    transition: .3s ease-out;
+    /*for Debugging only*/
+    /* background-color: #80a3d8; */
+    /* padding: 35px 0; */
+
+}
+
+#mobile{
+    display: none;
+}
+
+/* - Allow the user to know which page they are currently in */
+.indicator{
+    outline: 10px solid #141414;
+    outline-offset: -10px;
+}
+
+/*This class allows me to reposition my navigation without disrupting the whole navigation
+  - Have paddin-top by 35px which cause it to move down. 
+  - Set the display to inline-flex to set the navigation to horizontal
+  - Float the area to the right */
+ .cpu_nav {
+    /* max-width: 800px; */
+    padding-top: 35px;
+    display: flex;
+    float: right;
+}
+
+/* - This allows the whole navigation text and logo to move the top padding by 32px.
+   - Spreading the navigation by padding left and right sides by 30px
+   - Change font size from 12pt to 16pt */
+.cpu_nav a{
+    padding: 40px 30px;
+    font-size: 16pt;
+}
+
+/* - This code change the background color to light blue.
+   - Change the text color to white 
+   - give a .2 seconds animation of fade in fade out background color and text color*/
+.nav_container a:hover{
+    animation: mainHover .2s linear both;
+
+    /*Was used before animation was played*/
+    /* background-color: #3c60af; Light Blue */
+    /* color: #ffffff; White */
+}
+
+/* - This code is the animation of the navigation hover
+   - Change font color to white
+   - Change background color to light blue */
+@keyframes mainHover{
+    from {background-color: #ffffff;
+          color: #000000;}
+    to {background-color: #3c60af; /*Light Blue*/
+        color: #ffffff}
+}
+
+#hamberger_button{
+    display: none;
+}
+
+.logo img{
+    border: none;
+}
+/* .cpu_nav{
+    display: block;
+} */
+/*******************************************************************
+                        Dropdown Navigation
+********************************************************************/
+
+/* This code only applies to the "Works" Section of the Navigation */
+/* - Set the display of the dropdown nav to be remove completely
+   - Set the postion to absolute
+   - moving the dropdown nav below the main navigation */
+.dropdown .subnav {
+    display: none;
+    position: absolute;
+
+    z-index: 1;
+    margin-top: 30px;
+}
+
+/* - When the dropdown class hovers:
+        - Display is set to inline-block (Making the subnav go vertical)
+        - Set the width to 350px
+        - Set the Height to 310px 
+        - Set the backgound color to white
+        - Set the Border around the subnav by: 4px solid and color is black*/   
+.dropdown:hover .subnav {
+    display: inline-block;
+    width: 350px;
+    height: 310px;
+
+    padding-bottom: 16px;   
+    background-color: #ffffff; /*White*/
+    border: 4px solid #000000; /*Pure Black*/
+
+    animation: opacityAnimation .2s linear both;
+}
+
+/* - When the subnav links are hovering:
+        - Set background color to light blue
+        - Change font color to white 
+        - When hovered, color from both text and background color will fade in for .2 seconds*/
+.subnav a:hover{
+
+    /*Was used before the animation was implamented*/
+    /* background-color: #80a3d8; light Blue */
+    /* color: #ffffff; White */
+
+    animation: subHover .2s linear both;
+}
+
+/* - Center all the text to center top, bottom, left and right with padding and text align
+   - Give only bottom links a border by 2px solid and black 
+   - Seting all the subnav to block to make it vertical */
+.subnav a{
+    display: block;
+
+    text-align: center;
+    padding: 40px 0;
+
+    border-bottom: 2px solid #000000;
+}
+
+/* This is the animation for the Sub Navigation
+   - From white background to light blue background
+   - Font gose from black to white */
+@keyframes subHover{
+    from {background-color: #ffffff;
+          color: #000000;}
+    to {background-color: #80a3d8;
+        color: #ffffff}
+}
+
+/* This keyframe animation is only used on the dropdown menu on screen; not on mobile
+   - This animation starts the opacity from 0 to 100% */
+@keyframes opacityAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* - this will set the logo to the left side
+   - Set the width and height to 137px x 100px
+   - Set the padding left by 10px*/
+.logo img{
+    float: left;
+
+    width: 120px;
+    height: 100px; 
+
+    padding-left: 10px;
+    /* padding-top: 32px;
+    margin: 0 30px; */
+}
+
+/* Make the Mobile Navigation for dropdown completely invisible */
+.mobile_nav {
+    display: none;
+}
+
+#dropdown_mobile{
+    display: none;
+}
+
+/*******************************************************************
+                            Footer
+********************************************************************/
+
+/* - This code makes the footer's background color near black.
+   - Changes the font color to white.
+   - Prevent floats from both side. */
+footer{
+    width: 100%;
+    height: 300px;
+    clear: both;
+
+    /* position: absolute; */
+
+    background-color: #141414; /*Near Black*/
+    color: white;
+
+    margin-top: 150px;
+}
+
+/* - this class only affects the interior of the footer
+   - set the max width to 1000px
+   - center the whole interior footer (footer wrapper) with margin */
+.footer_wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* - This only effects the contact info.
+   - Gives more space from the top by 32px away from border */
+#contact{
+    padding-top: 32px;
+}
+
+/* - This only effects the footer gallery (not the main gallery)
+   - Seperate from the contact by 16px with margin top. */
+.gallery{
+    margin-top: 16px;
+}
+
+/* - All Font Awesome Logo will have 30px in width and height regardless of the size of the screen*/
+.gallery .social_gallery a img{
+    width: 30px;
+    height: 30px;
+}
+
+/* - All Font Awesome Icon with the div of "class="social_gallery" will have to seperation of the
+     text by 5px; */ 
+.social_gallery {
+    margin-top: 5px;
+}
+
+/* - Give the Font Awesome Icon with the div of "class="social_gallery" in between space of 20px*/
+.social_gallery a{
+    padding-right: 20px;
+}
+
+/*******************************************************************
+                            HomePage
+********************************************************************/
+
+/* The PNG Sequence will have a that will fit the wrapper*/
+/* .animation{
+    grid-column: span 2;
+    width: 100%;
+} */
+
+/* ------------------- Slideshow container------------------  */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15pt;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    margin-bottom: 200px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 auto;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+/*----------- Everything in the slide show is not owned by me. This is credited to w2schools. --------------*/
+/* Source: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+#index_wrapper{
+    padding-top: 150px;
+    max-width: 800px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+
+    margin: 0 auto;
+}
+
+/*This only applies to the about section of the homepage
+  - Max-width is 100%
+  - Set background with an image: no-repeat
+  - height: 800px*/
+#about{
+    max-width: 100%;
+    background-image: url(image/illustation/lifeofdanx/about.png);
+    background-position-y: 150px;
+    background-position-x: -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 800px;
+
+    padding-top: 250px;
+    font-size: 24px;
+}
+
+/*This code controls the whole text of the about page
+  - set width to 400px
+  - give space for top by 60px
+  - position is relative so repositioning makes it easy */
+#about #about_wrapper{
+    width: 400px;
+    padding-top: 60px;
+    position: relative;
+
+    padding-left: 20px;
+
+    /*left: -800px;*/
+}
+
+/* Set the margin between h2 and p tag by 16px*/
+#about h2{
+    margin-bottom: 16px;
+}
+
+/*Used for testing*/
+/* #about img{
+    width:  100%;
+    display: inline-flex;
+} */
+
+/*******************************************************************
+                        Works
+********************************************************************/
+
+/*This grid-container class sets the base for the works page.
+  The works page are: Animation/Mograph, Illustration, and UI Design.
+   - Display as grid
+   - Give section.
+   - give 20px gap in vertical, and 10px in horizontal
+   - set text-align to center.
+   - set font-size to 16pt.
+   - give space from grid base and h2 by 16px */
+.grid-container{
+
+    display: grid;
+    grid-gap: 20px 10px;
+    grid-template-columns: auto auto auto auto;
+
+    font-size: 16pt;
+    text-align: center;
+
+    padding-top: 50px;
+}
+
+#grid-wrapper{
+    max-width: 1200px;
+    
+    padding-top: 150px;
+    margin: 0 auto;
+}
+
+article p, section p{
+    line-height: 24px;
+}
+
+/*This code controls the indivdual grid item images.
+  - Set the width and height by 250px
+  - Set the border by 10px */
+.grid-container .grid-item img{
+    width: 250px;
+    height: 250px;
+    border: 10px solid #3b4653; /*Saturated Dark Blue*/
+}
+
+/*This applies to the grid items animation
+  - give ease-in ease-out animation
+  - only last for 0.2 seconds */
+.grid-container .grid-item{
+    transition: all .2s ease-in-out;
+}
+
+/* Set the grid-item to increase size when hovering */
+.grid-container .grid-item:hover{ 
+    transform: scale(1.1);
+}
+
+/* Seperate the grid item and the p tag by 16px */
+.grid-container .grid-item p{
+    padding-bottom: 16px;
+}
+
+.grid-structure{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px 50px;
+}
+/*******************************************************************
+                        Interior Works
+********************************************************************/
+
+/* The interior_wrapper class only effects the imges and videos
+    - Set the max width by 800px
+    - Set everyting to center with margin */
+.interior_wrapper{
+    max-width:800px;
+    display: grid;
+    grid-template-columns: 1fr 65%;
+
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+section ul li{
+    list-style-type: circle;
+}
+
+.grid-space{
+    width: 100%;
+    grid-column: span 2;
+    }
+
+/* Seperate other figure div by 32px at the botttom */
+.interior_wrapper figure {
+    padding-bottom: 32px;
+}
+
+/* Bring the user back to the top of the whole page.
+    - Set this icon to 50px on width and height
+    - Set this to the bottom right corner
+    - Position stays. Does not move at all*/
+#back-to-top{
+    width: 50px;
+    height: 50px;
+
+    left: 94%;
+    top: 90%;
+
+    position: fixed;
+    /*fill: #3c60af;*/
+}
+/*------ Grid Layout -----*/
+
+/* This tag only effects inside of all of my works and none of the grids
+    - It only reduce the width of the images to the max-width of the interior wrapper */
+figure img{
+    width: 100%;
+}
+
+/* Set all video tags by 100% because of the interior_wrapper class */
+video {
+    width: 100%;
+}
+
+/* This only effects on one image in the "Queen of Evil" page */
+#tower img{
+    width: 10%;
+}
+
+/* This applies only on the table tag.
+   - These table tags only apply to UI's User Story
+   - Remove any borders on the table
+   - All text are align left */
+table{
+    border: none;
+    text-align: left;   
+}
+
+/* Give space of 16px on the bottom and 20px on the right */
+td, th{
+    padding-bottom: 16px;
+    padding-right: 20px;
+}
+
+.tabs{
+    width: 100%;
+    grid-column:  span 2;
+    
+    padding: 16px 0;
+    
+    text-indent: 16px;
+    
+    background-color: #5f6272;
+    color: #ffffff;
+}
+
+/* This only applies on h3 with this class
+   - Give botttom space by 16px. */
+.space{
+    padding-bottom: 16px;
+}
+
+.size img{
+    width: 20%;
+    float: right;
+}
+/******************************************************
+                    Side Navigation
+*****************************************************/
+
+/*Move the things to the left side. This will stay hidden until this navigation is hoverd.
+  It's basically the wrapper of this whole navigation.
+
+  - Postion will remain fixed; it will stay in the same position.
+  - Height Extends to the end of the page.
+  - Width is 295px
+  - when hovered, it will have an ease out animation */
+#side_sub{
+    left: -230px;  
+    width: 295px;
+
+    z-index: 2;
+    position: fixed;
+    float: right;
+
+    height: 80%;
+    
+    transition: .3s ease-out;
+}
+
+/*All the list in the sub navigation will be implamented here.
+  - width is only 325px
+  - heigth is the same
+  - does have scrolling, but only to the y-axis
+  - border is only on the right to indicate were the border ends
+  - background color is white */
+#side_sub .list{
+    width: 225px;
+    height: 100%;
+
+    margin-top: 100px;
+
+    overflow-y: scroll;
+    background-color: #ffffff; /* White */
+}
+
+/* - all the a tag in this class will display vertically
+   - text indent is 20px to the right
+   - giving space of 24px on the top and bottom of the a tags
+   - border only appears at the bottom of 2px solid line black */
+.list a{
+    display: block; 
+    text-indent: 20px;
+
+    padding: 24px 0;
+    /* border-bottom: 2px solid #3a3a3a; */
+     /*Color Black*/
+}
+
+/*when hovering the a tag, this will hover with the background color from white to ligt blue on
+  the background color.
+
+  The font is from black to white
+
+  Check on @keyframe subHover on the sub navigation of this css page*/
+.list a:hover, .list h4:hover{
+    animation: subHover .2s linear both;
+}
+
+/* This side navigation only applies on the interior work page
+    Such as: "MyCourses Rework", "Future UI", "Struggle". All of them are works pages.
+
+    - set this icon to width and height of 70px
+    - float right because, this navigation is at the very left.
+    - moving the image down by 100px*/
+#side_sub img{
+    width: 70px;
+    height: 70px;
+    float: right;
+    /* position: fixed; */
+    transition: .3s linear;
+
+    /* display: inline-flex; */
+    padding-top: 150px;
+}
+
+/* When this navigation is hovered, the whole thing will appear with the animation of ease-out.*/
+#side_sub:hover{
+    left:0;
+    transition: .3s ease-out;
+}
+
+/* #back_button {
+    display: none;
+} */
+    
+/* Text indent on the sub navigation is 30px */
+.section a{
+    text-indent: 60px;
+}
+
+.toggle_button a{
+    text-indent: 40px;
+    font-weight: bold;
+}
+
+/* Was originally going to be used as a back button but I do not know how to do it correctly*/
+
+/* .section_1 #sub_sec_button{
+    padding: 16px;
+    float: right;
+}
+
+#sub_sec_button{
+    background-color: #ffffff;
+    background-image: url(gallery_icon/arrow.svg);
+
+    background-repeat: no-repeat;
+    border: none;
+}
+
+@keyframes rotate_button{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(90deg);}
+} */
+/*******************************************************************
+                            Resume
+********************************************************************/
+
+/* - Set the Max-Width to 1000px
+   - Set the Line Height to 32pt */
+#wrapper_resume {
+    max-width: 1000px;
+    padding: 0 10%;
+
+    line-height: 32pt;
+    padding-top: 150px;
+}
+
+/* - Set the height to 70px
+   - Prevent overlap by floats on both sides */
+#name {
+    height: 70px;
+    clear: both;
+
+    /*Placeholder*/
+    border-bottom: 5px solid #70d6c0;
+}
+
+/* - Set the h1 to Center
+
+Note: the only reason why the rest of the text is not targeted 
+      is because it will set them to center as well */
+#name h1{
+    text-align: center;
+}
+
+/* - Set the margin for top and bottom by 40px */
+#description {
+    margin: 40px 0;
+}
+
+/* - Set the max-width to 400px
+   - Have the left side of the resume to float left 
+    
+   This column contains: Education, Skillsets, Programs, and Team Project*/
+#left_column{
+    max-width: 400px;
+    float: left;
+
+    /* display: block; */
+}
+
+/* - Set the max-widt h to 400px
+   - Have the Rigth Side of the resume to float Right
+
+   This column contains: Experience. */
+#right_column{
+    max-width: 400px;
+    float: right;
+
+    /* display: block; */
+}
+
+/* Seperate the education, programs and skill set with padding bottom by 16px */
+#education, #programs, #skill_set {
+    padding-bottom: 16px;
+}
+
+/* Push the team project section by 50px */
+#programs{
+    margin-bottom: 50px;
+}
+
+/* This is the inner float for Skill Set and Programs only
+    - This cause the left side to float left.
+    - Move the right side of the section with a margin of 120px */
+.float_left_list {
+    float: left;
+    margin-right: 120px;
+}
+
+/* - Move the Chipotle Section down by 28px
+     Note: Chipotle Section is under Experience Under Liza Savage-Katz Production */
+#chipotle {
+    margin-top: 28px;
+}
+
+/* - Have the link to be blue
+   - Display to be inline-block so no overlap */
+#link_resume {
+    color: #3c60af;
+    display: inline-block;
+}
+
+/* - Have the PDF Icon before the PDF Resume
+   - width is 20px and height is 30px */
+#link_resume::before{
+    content: "";
+    background: url(fontawesome_logo/file-pdf-regular.svg) no-repeat;
+
+    display: inline-block;
+    padding-right: 10px;
+    /* background-size:  */
+
+    width: 20px;
+    height: 30px;
+}
+
+/*Make my phone id float left*/
+#phone {
+    float: left;
+}
+/*Make my phone tag float right*/   
+#email {
+    float: right;
+}
+
+/*float on the right side with the margin space of 40px on the top*/
+#right_column{
+    float: right;
+    margin-top: 40px;
+}
+
+/*Change all link tags with no decoration and all black text*/
+a:link, a:visited {
+    color: #000000; /*Pure Black*/
+    text-decoration: none;
+}
+
+/**************************************************************
+        Media Query - Responsive Design
+***************************************************************/
+
+/******************************************************
+This is the Responsive Design for Ipad Pro
+*****************************************************/
+@media screen and (max-width: 1024px){
+    
+     /******************************************************
+                        Global CSS
+    *****************************************************/
+
+    /* - body will have a width of 100% and font size of 16pt
+       - font size is set to 16pt*/
+    body{
+        width: 100%;
+        font-size: 16pt;
+    }
+
+    /* - Wrapper will have a max-width of 1024px.
+       - Everything in this div centered*/
+    .wrapper{
+        max-width: 1024px;
+        height: 50px;
+        margin: 0 auto;
+  
+        /* overflow: visible; */
+    }
+
+  /******************************************************
+                Navigation
+  *****************************************************/
+
+    /* - Set the height from 50px to 400px because this is the hamberger menu
+       - Width will always be at 100%
+       - set bottom margin of 60px */
+    #mobile{
+        height: 50px;
+        width: 100%;
+        display: block;
+        position: fixed;
+    }
+
+    #cpu{
+        display: none;
+    }
+    /* - Set the container to block
+       - Remove all float */
+    .mobile_nav{
+        display: block;
+        float: none;
+        background-color: #ffffff;
+        transition: .3s ease-in-out;
+    }
+
+    /* - set the naviation to a verticle hamberger menu
+       - all text are align at the left
+       - max-width at 1024px no less
+       - give space at 20px on top and bottom*/
+    .mobile_nav .nav-wrapper a{
+        display: block;
+        font-size: 24pt;    
+        max-width: 1024px;
+
+        padding: 30px 0;
+        text-align: center;
+
+        background-color: #ffffff;
+        
+    }
+
+    /* - This affects the dropdown menu in the works section */
+    /* - set the height of 140px */
+    .mobile_nav #subnav_mobile{   
+        display: block;
+        height: 300px;
+    }
+
+    #hamberger_button{
+        display: block;
+        width: 50px;
+        height: 50px;
+
+        float: right;
+        margin-right: 20px;
+
+        background-image: url(gallery_icon/hamberger_bar.svg);
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+
+        border: none;
+    }
+
+    /* - set the mobile button of 100% width
+       - font size of 16px
+       - text-align is set to left
+       - text indent is set to 20px*/
+    #mobile_button{
+        width: 100%;
+        font-size: 24pt;
+
+        padding: 30px;
+        text-align: center;
+
+        background-color: #ffffff;
+        border: none;
+    }
+
+
+    /* - Set the mobile version sub navigation to block, making it visible
+       - border top at 2px solid black
+       - give space of 20px on top and bottom
+       - set font to 12pg
+       - text-indent to 40px; */
+    .mobile_nav #subnav_mobile a{
+        display: block;
+        border-top: 2px solid #000000;
+
+
+        background-color: #d8d8d8;
+        padding: 30px 0;
+
+        font-size: 24pt;
+        text-align: center;
+    }
+    .mobile_nav .nav-wrapper a:nth-child(4){
+        border-bottom: 5px #3c60af solid;
+    }
+
+    /* .nav-wrapper {
+        margin-top: 50px;
+    } */ 
+
+
+    /* - remove outline
+       - Replace the indicator with the background color of light blue and font color of white. */
+    .nav_container .nav-wrapper .indicator, .indicator {
+        outline: none;
+        background-color: #3c60af;
+        color: #ffffff;
+    }
+
+
+    /* Remove dropdown menu to prevent hovering */
+    .dropdown{
+        display: none;
+    }
+
+
+    /******************************************************
+                        Footer
+    *****************************************************/
+
+    /* - set the base width to 100% */
+    footer{
+        width: 100%;
+    }
+    
+    /* - set the max-width to 992px
+    /* - center with the margin */
+    .footer_wrapper{
+        max-width: 992px;
+        margin: 0 auto;
+    }
+
+    /* - give space for the font-awesome icon on the top by 32px */
+    .footer_wrapper #contact ul{
+        padding-top: 32px;
+    }
+    /* - seperate the li by 16px */
+    .footer_wrapper #contact ul li {
+        padding-bottom: 16px;
+    }
+
+    /* - give space for gallery by 32px at the top*/
+    .footer_wrapper .gallery{
+        padding-top: 32px;
+    }
+
+    /* - seperate from h2 and icon by 16px at the top */
+    .social_gallery{
+        padding-top: 16px;
+    }
+
+     /******************************************************
+                        Works
+    *****************************************************/
+
+    /*set give space from the left of 40px and the bottom of 32px*/
+    #work_title{
+        padding-left: 40px;
+        margin-bottom: 32px;
+    }
+
+    /* - change the grid from four columns to three columns 
+       - Give gaps of all side by 5px*/
+    .grid-container{
+        grid-template-columns: auto auto auto;
+        grid-gap: 5px 5px;
+    }
+
+    /* giving space between h2 and grid area by 18px at the top area */
+    .grid-container .grid-item p{
+        padding-top: 18px;
+    }
+
+    .grid-container .grid-item:hover{
+        transform: none;   
+    }
+    
+
+     /******************************************************
+                        Interior Works
+    *****************************************************/
+    
+    /* - set the max-width to 800px
+       - set area to center with margin */
+    .interior_wrapper{
+        max-width: 800px;
+        margin: 0 auto;
+
+        /* overflow: initial; */
+    }
+
+    /* - use line-height on all p tags by 32px*/
+    .interior_wrapper p {
+        line-height: 32px;
+    }
+
+    /* - seperate each figure by 64px */
+    .interior_wrapper figure {
+        padding-bottom: 64px;
+    }
+
+    /* give text individual space by 64px */
+    #side_sub{
+        line-height: 64px;
+    }
+
+    .grid-structure{
+        grid-template-columns: auto;
+        grid-row-gap: 15px;
+    }
+
+     /******************************************************
+                        Homepage
+    *****************************************************/
+    
+    /* - set the width by 50%
+       - give space by 15px on the top and 350px at the bottom */
+    #about #about_wrapper{
+        width: 50%;
+        padding-top: 15px;
+        padding-bottom: 350px;
+    }
+
+    /* - give the line-height of 32px
+       - max-height of 500px
+       - font size of 16pt */
+    #about{
+        line-height: 32px;
+        max-height: 500px;
+
+        font-size: 16pt;
+    }
+
+     /******************************************************
+                        about page
+    *****************************************************/
+
+    /* - set the max width of 992px
+       - set padding to 0 to rearrange the resume
+       - set margin by 20px on left and right side */
+    #moving #wrapper_resume{
+        max-width: 992px;
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    /* - set the display to verticle (or block)
+       - set the max-width to 500px */
+    #right_column{
+        display: block;
+        max-width: 500px;
+    }
+    
+    /* - seperate the list of skill set and program list with margin by 80px */
+    .float_left_list {
+        margin-right: 80px;
+    }
+
+
+}
+
+/******************************************************
+This is the Responsive Design for Ipad
+*****************************************************/
+@media screen and (max-width: 768px){
+    
+    
+     /******************************************************
+                        Resume
+    *****************************************************/
+
+    /* - remove float for experience
+       - set the display to block */
+    #right_column{
+        float: none;
+        display: block;
+    }
+    
+    /* Not Needed */
+    /* .float_left_list {
+        margin-right: 90px;
+    } */
+
+    /******************************************************
+                        Navigation
+    *****************************************************/
+
+        /* set the height to 350px */
+        #mobile{
+            height: 50px;
+            margin-bottom: 0;
+            position: fixed;
+    
+            display: block;
+        }
+    
+    
+        #hamberger_button{
+            display: block;
+            width: 50px;
+            height: 50px;
+        }
+    
+        /* - this will set the logo to the left side
+       - Set the width and height to 137px x 100px
+       - Set the padding left by 10px*/
+        .logo img{
+            float: left;
+    
+            width: 70px;
+            height: 50px;
+    
+            padding-left: 10px;
+            display: block;
+            /* padding-top: 32px;
+            margin: 0 30px; */
+        }
+    
+    
+        /* Not needed due to ipad code is the same */
+        /* .nav_container{
+            display: block;
+            float: none;
+        } */
+        .mobile_nav .nav-wrapper a{
+            max-width: 768px;
+            padding: 20px 0;
+            font-size: 16pt;
+    
+            background-color: #ffffff;
+        }
+        
+        .mobile_nav .nav-wrapper a:nth-child(4){
+            border-bottom: 5px #3c60af solid;
+        }
+
+        .mobile_nav #subnav_mobile a{
+            display: block;
+            border-top: 2px solid #000000;
+    
+    
+            background-color: #d8d8d8;
+            padding: 30px 0;
+    
+            font-size: 16pt;
+            text-align: center;
+        }
+
+        .mobile_nav #subnav_mobile{   
+            display: block;
+            height: 260px;
+        }
+    
+        
+        /* - set the mobile button of 100% width
+           - font size of 16px
+           - text-align is set to left
+           - text indent is set to 20px*/
+        #mobile_button{
+            width: 100%;
+            font-size: 16pt;
+    
+            padding: 20px;
+            text-align: center;
+    
+    
+            border: none;
+        }
+    
+     /******************************************************
+                        Footer
+    *****************************************************/
+
+    /* - change the max width to 736px */
+    .footer_wrapper{
+        max-width: 736px;
+    }
+
+    
+     /******************************************************
+                        Interior Works
+    *****************************************************/
+    
+    /* change from the three grid column to two grid column */
+    .grid-container{
+        grid-template-columns: auto auto;
+    }
+
+    /* set the max width in this wrapper by 600px */
+    .interior_wrapper{
+        max-width: 600px;
+        display: block;
+    }   
+
+    /* set the width for this asset grid by 300px */
+    .structure-image2 img{
+        width: 300px;
+    }
+    
+    /* set the width for this asset grid by 200px */
+    .structure-image img{
+        width: 200px;
+    }
+
+    .tabs{
+        margin-bottom: 30px;
+    }
+
+    /* - width and height is 70px
+       - set at the bottom left regardless of position.
+       - adjusted differently from the pc screen*/
+    #back-to-top{
+        width: 70px;
+        height: 70px;
+
+        left: 87%;
+        top: 87%;
+    }
+}
+
+/****************************************************
+This is the Responsive Design for Iphone 6 and below
+*******************************************************/
+@media screen and (max-width: 415px){
+    
+    /******************************************************
+                        Gobal CSS
+    *****************************************************/
+    
+    /* - width is set to 100%
+       - set the line-height to 5px
+       - font size is 10pt */
+    body{
+        width: 100%;
+        line-height: 5px;
+        font-size: 10pt;
+    }
+
+    /* - set max width to 375px
+       - set display to block */
+    .wrapper{
+        max-width: 415px;
+    }
+
+    /******************************************************
+                        Navigation
+    *****************************************************/
+
+    /* set the height to 350px */
+    #mobile{
+        height: 50px;
+        margin-bottom: 0;
+        position: fixed;
+
+        display: block;
+    }
+
+
+    #hamberger_button{
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* - this will set the logo to the left side
+   - Set the width and height to 137px x 100px
+   - Set the padding left by 10px*/
+    .logo img{
+        float: left;
+
+        width: 70px;
+        height: 50px;
+
+        padding-left: 10px;
+        display: block;
+        /* padding-top: 32px;
+        margin: 0 30px; */
+    }
+
+
+    /* Not needed due to ipad code is the same */
+    /* .nav_container{
+        display: block;
+        float: none;
+    } */
+    .mobile_nav .nav-wrapper a{
+        max-width: 415px;
+        padding: 20px 0;
+        font-size: 16pt;
+
+        background-color: #ffffff;
+    }
+    
+    .mobile_nav .nav-wrapper a:nth-child(4){
+        border-bottom: 5px #3c60af solid;
+    }
+    
+    /* - set the mobile button of 100% width
+       - font size of 16px
+       - text-align is set to left
+       - text indent is set to 20px*/
+       #mobile_button{
+        width: 100%;
+        font-size: 16pt;
+
+        padding: 20px;
+        text-align: center;
+
+
+        border: none;
+    }
+
+    /* - Set the mobile version sub navigation to block, making it visible
+       - border top at 2px solid black
+       - give space of 20px on top and bottom
+       - set font to 12pg
+       - text-indent to 40px; */
+    .mobile_nav #subnav_mobile a{
+        display: block;
+        border-top: 2px solid #000000;
+
+        padding: 40px 0;
+
+        font-size: 16pt;
+        text-align: center;
+    }
+
+    /******************************************************
+                        Footer
+    *****************************************************/
+    footer{
+        max-width: 415px;
+    }
+
+    /* set the max width to 350px */
+    .footer_wrapper{
+        max-width: 320px;
+    }
+
+    /* give space to seperate the ul from the h2 by 32px */
+    .footer_wrapper #contact ul{
+        padding-top: 32px;
+    }
+    
+    /* seperate the li by 16px each (at the bottom) */
+    .footer_wrapper #contact ul li {
+        padding-bottom: 16px;
+    }
+
+    /* seperate the font-awesome icon and h2 by 32px */
+    .footer_wrapper .gallery{
+        padding-top: 32px;
+    }
+
+    /* add space for this div by 16px */
+    .social_gallery{
+        padding-top: 16px;
+    }
+
+    /******************************************************
+                        About
+    *****************************************************/
+
+    /* - set the width to 300px
+       - set the space on the top by 15px and bottom by 350px */
+    #about #about_wrapper{
+        width: 300px;
+        padding-top: 15px;
+        padding-bottom: 350px;
+    }
+
+    /* - set the line heigh by 25px
+       - move the background to the left by 240px
+       - set max height to 500px
+       - font size is 10pt */
+    #about{
+        line-height: 25px;
+        background-position-x: -240px;
+        max-height: 500px;
+
+        font-size: 10pt;
+    }
+
+    /******************************************************
+                        Interior Works
+    *****************************************************/
+
+    /* - set the grid columns from two to one
+       - set the gaps for 25px on row and 5px on column */
+    .grid-container{
+        grid-template-columns: auto;
+        grid-gap: 25px 5px;
+
+        margin-top: 20px;
+    }
+
+    /* - set the max width to 325px */
+    .interior_wrapper{
+        max-width: 250px;
+        display: block;
+        /* margin: 0 auto; */
+    }
+
+    /* - seperate the figure images by 15px */
+    .interior_wrapper figure{
+        padding-bottom: 15px;
+    }
+
+    /* - seperate the figcaption and image by 5px
+       - set line hight to 20pt */
+    .interior_wrapper figcaption{
+        padding-top: 5px;
+        line-height: 20pt;
+    }
+
+    /* - change the width to 230px
+       - reduce the left to -180 instead of -330
+       - height is 100%
+       - line height is set to 24pt
+       - position is fixed (will never move)
+       - animation is ease out */
+    #side_sub{
+        left: -200px;
+        width: 250px;
+        top: -50px;
+    
+        position: fixed;
+    
+        height: 90%;
+    
+        line-height: 24pt;
+        
+        transition: .3s ease-out;
+    }
+    
+    /* - set the width to 175pcx
+       - height is 100%
+       - scrolling is set to y only */
+
+    #side_sub .list{
+        width: 195px;
+        height: 100%;
+    
+        overflow-y: scroll;
+
+
+        /* not needed */
+        /* border-right:  5px solid #3c60af;
+        background-color: #ffffff; */
+    }
+
+    article{
+        margin-bottom: 0;
+    }
+
+    figure img{
+        margin-bottom: 30px;
+    }
+
+    /* - adjust the bottom right location of not go off screeen
+       - set the width and height to 40px */
+    #back-to-top{
+        left: 85%;
+        top: 85%;
+
+        width: 40px;
+        height: 40px;
+    }
+
+    /* - change the width and height to 50px */
+    #side_sub img{
+        width: 50px;
+        height: 50px;
+    }
+
+    /* set the width to 110px */
+    .structure-image img{
+        width: 110px;
+    }
+
+    /* set the width to 150px */
+    .structure-image2 img{
+        width: 150px;
+    }
+
+    /******************************************************
+                        Resume
+    *****************************************************/
+
+    /* - set the max width to 300px
+       - set padding to 0 to make adjustment easier
+       - set margin on left and right side by 20px */
+    #wrapper_resume{
+        max-width: 330px;
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    /* - remove float completely
+       - set the display to block */
+    #right_column{
+        float: none;
+        display: block;
+    }
+
+}
+
+/* This is used when user wants to print the resume*/
+@media print{
+
+    /*change all fonts to 12pt when printed*/
+    *{
+        font-size: 12pt;
+    }
+
+    /*remove these following divs*/
+    nav, footer, #side_sub, #wrapper_resume a{
+        display: none;
+    }
+
+    /*remove float*/
+    #right_column{
+        float: none;
+    }
+
+    
+}
+
