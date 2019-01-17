@@ -210,6 +210,7 @@ p a:hover{
     height: 100px; 
 
     padding-left: 10px;
+    border: none;
 }
 
 /* Make the Mobile Navigation for dropdown completely invisible */
@@ -398,6 +399,10 @@ footer{
 
     margin: 0 auto;
 }
+
+/*******************************************************************
+                        About
+********************************************************************/
 
 /*This only applies to the about section of the homepage
   - Max-width is 100%
@@ -591,9 +596,14 @@ td, th{
     padding-right: 20px;
 }
 
-/* The tabs class make different topics of
+/* The tabs class make different topics for each section in one page
+    - take over both columns
+    - extend the background color with padding by 16px for the top and bottom
+    - indent the text by 16px
+    - text color is white
+    - background color is saturated blue*/
+    
 .tabs{
-    width: 100%;
     grid-column:  span 2;
     
     padding: 16px 0;
@@ -610,6 +620,7 @@ td, th{
     padding-bottom: 16px;
 }
 
+/* This only applies on images with this class*/
 .size img{
     width: 20%;
     float: right;
@@ -649,9 +660,10 @@ td, th{
     height: 100%;
 
     margin-top: 100px;
+    font-size: 8pt;
 
-    overflow-y: scroll;
-    background-color: #ffffff; /* White */
+    overflow-y: hidden;
+    /* background-color: #ffffff; White */
 }
 
 /* - all the a tag in this class will display vertically
@@ -662,7 +674,7 @@ td, th{
     display: block; 
     text-indent: 20px;
 
-    padding: 24px 0;
+    padding: 12px 0;
     /* border-bottom: 2px solid #3a3a3a; */
      /*Color Black*/
 }
@@ -683,16 +695,15 @@ td, th{
     - set this icon to width and height of 70px
     - float right because, this navigation is at the very left.
     - moving the image down by 100px*/
-#side_sub img{
+
+/* #side_sub img{
     width: 70px;
     height: 70px;
     float: right;
-    /* position: fixed; */
-    transition: .3s linear;
 
-    /* display: inline-flex; */
+    transition: .3s linear;
     padding-top: 150px;
-}
+} */
 
 /* When this navigation is hovered, the whole thing will appear with the animation of ease-out.*/
 #side_sub:hover{
@@ -711,28 +722,8 @@ td, th{
 
 .toggle_button a{
     text-indent: 40px;
-    font-weight: bold;
 }
 
-/* Was originally going to be used as a back button but I do not know how to do it correctly*/
-
-/* .section_1 #sub_sec_button{
-    padding: 16px;
-    float: right;
-}
-
-#sub_sec_button{
-    background-color: #ffffff;
-    background-image: url(gallery_icon/arrow.svg);
-
-    background-repeat: no-repeat;
-    border: none;
-}
-
-@keyframes rotate_button{
-    from{transform: rotate(0deg);}
-    to{transform: rotate(90deg);}
-} */
 /*******************************************************************
                             Resume
 ********************************************************************/
