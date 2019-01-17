@@ -3,7 +3,7 @@
 
 /*This code effects all of my codes.
     This set my margins and padding to 0.
-    The Dominant Font Family is Overpass in the goole fonts*/
+    The Dominant Font Family is Overpass in the google fonts*/
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +33,8 @@ body {
 
 
 /* Remove all the list style type to none. */
+/* Seperate the list by 16px at the bottom*/
+/* Seperate the line height on a single li tag by 36px */
 li {
     list-style-type: none;
     padding-bottom: 16px;
@@ -56,9 +58,13 @@ p a:hover{
 ********************************************************************/
 
 
-/* - Set width to 900px 
+/* - Set width to 100%. This is nessessary becasue the navigation to fit the max-width of 1200px
    - Set the Height to 100px
-   - Have the navigation to float right*/
+   - set the z-index to 3. This will set the position of the Navigation without glitchy overlaps of my
+     interactive objects tags
+   - Set position to fixed
+   - Background color is white
+   - transition effects my scroll animation. Must by complicite with Javascript*/
 #cpu {
     max-width: 1200px;
     width: 100%;
@@ -69,12 +75,9 @@ p a:hover{
      
     background-color: #ffffff;
     transition: .3s ease-out;
-    /*for Debugging only*/
-    /* background-color: #80a3d8; */
-    /* padding: 35px 0; */
-
 }
 
+/* - The mobile version of navigation will not show up */
 #mobile{
     display: none;
 }
@@ -109,10 +112,6 @@ p a:hover{
    - give a .2 seconds animation of fade in fade out background color and text color*/
 .nav_container a:hover{
     animation: mainHover .2s linear both;
-
-    /*Was used before animation was played*/
-    /* background-color: #3c60af; Light Blue */
-    /* color: #ffffff; White */
 }
 
 /* - This code is the animation of the navigation hover
@@ -125,16 +124,11 @@ p a:hover{
         color: #ffffff}
 }
 
+/*This only appears if this is on tablet or phone*/
 #hamberger_button{
     display: none;
 }
 
-.logo img{
-    border: none;
-}
-/* .cpu_nav{
-    display: block;
-} */
 /*******************************************************************
                         Dropdown Navigation
 ********************************************************************/
@@ -174,11 +168,6 @@ p a:hover{
         - Change font color to white 
         - When hovered, color from both text and background color will fade in for .2 seconds*/
 .subnav a:hover{
-
-    /*Was used before the animation was implamented*/
-    /* background-color: #80a3d8; light Blue */
-    /* color: #ffffff; White */
-
     animation: subHover .2s linear both;
 }
 
@@ -212,7 +201,7 @@ p a:hover{
 }
 
 /* - this will set the logo to the left side
-   - Set the width and height to 137px x 100px
+   - Set the width and height to 120px x 100px
    - Set the padding left by 10px*/
 .logo img{
     float: left;
@@ -221,8 +210,6 @@ p a:hover{
     height: 100px; 
 
     padding-left: 10px;
-    /* padding-top: 32px;
-    margin: 0 30px; */
 }
 
 /* Make the Mobile Navigation for dropdown completely invisible */
@@ -230,6 +217,7 @@ p a:hover{
     display: none;
 }
 
+/* Make the Mobile Navigation for dropdown completely invisible */
 #dropdown_mobile{
     display: none;
 }
@@ -414,12 +402,15 @@ footer{
 /*This only applies to the about section of the homepage
   - Max-width is 100%
   - Set background with an image: no-repeat
+  - Set the position of the image to 150px for y and -250px for x
+  - Cover the whole image
   - height: 800px*/
 #about{
-    max-width: 100%;
+    width: 100%;
+    max-width: 1200px;
     background-image: url(image/illustation/lifeofdanx/about.png);
     background-position-y: 150px;
-    background-position-x: -50px;
+    background-position-x: -250px;
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
@@ -427,6 +418,7 @@ footer{
 
     padding-top: 250px;
     font-size: 24px;
+    margin: 0 auto;
 }
 
 /*This code controls the whole text of the about page
@@ -438,21 +430,13 @@ footer{
     padding-top: 60px;
     position: relative;
 
-    padding-left: 20px;
-
-    /*left: -800px;*/
+    padding-left: 40px;
 }
 
 /* Set the margin between h2 and p tag by 16px*/
 #about h2{
     margin-bottom: 16px;
 }
-
-/*Used for testing*/
-/* #about img{
-    width:  100%;
-    display: inline-flex;
-} */
 
 /*******************************************************************
                         Works
@@ -478,6 +462,7 @@ footer{
     padding-top: 50px;
 }
 
+/*This grid wrapper set the max height by 1200px*/
 #grid-wrapper{
     max-width: 1200px;
     
@@ -485,6 +470,7 @@ footer{
     margin: 0 auto;
 }
 
+/*Set the line height of the p tag by 24px*/
 article p, section p{
     line-height: 24px;
 }
@@ -526,26 +512,32 @@ article p, section p{
 
 /* The interior_wrapper class only effects the imges and videos
     - Set the max width by 800px
-    - Set everyting to center with margin */
+    - Set everyting to center with margin
+    - Set a two column Grid
+    - Give the column gap of 20px
+    - Give the row gap of 50px
+    - Give the padding top of 150px  */
 .interior_wrapper{
     max-width:800px;
     display: grid;
     grid-template-columns: 1fr 65%;
 
     grid-column-gap: 20px;
-    grid-row-gap: 30px;
+    grid-row-gap: 50px;
     margin: 0 auto;
     padding-top: 150px;
 }
 
+/* This only list style type that change is the one that is in a section tag */
 section ul li{
     list-style-type: circle;
 }
 
+
+/* Take up both columns of the grid space */
 .grid-space{
-    width: 100%;
     grid-column: span 2;
-    }
+}
 
 /* Seperate other figure div by 32px at the botttom */
 .interior_wrapper figure {
@@ -564,7 +556,6 @@ section ul li{
     top: 90%;
 
     position: fixed;
-    /*fill: #3c60af;*/
 }
 /*------ Grid Layout -----*/
 
@@ -593,12 +584,14 @@ table{
     text-align: left;   
 }
 
-/* Give space of 16px on the bottom and 20px on the right */
+/* This table will be only used for User Story / Persona.
+   - Give space of 16px on the bottom and 20px on the right */
 td, th{
     padding-bottom: 16px;
     padding-right: 20px;
 }
 
+/* The tabs class make different topics of
 .tabs{
     width: 100%;
     grid-column:  span 2;
