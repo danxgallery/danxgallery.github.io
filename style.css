@@ -678,7 +678,7 @@ td, th{
 /* --------------- Custom Scroll Bar------------------------------------*/
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 15px;
   }
   
   /* Track */
