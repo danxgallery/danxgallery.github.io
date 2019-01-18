@@ -667,6 +667,7 @@ td, th{
     text-indent: 30px; 
 }
 
+/* When hovered, the scroll bar will appear */
 #side_sub .list:hover{
     overflow-y: scroll;
 }

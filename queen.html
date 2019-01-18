@@ -29,6 +29,16 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
 
+    <style>
+        .toggle_button a{
+            text-indent: 30px;
+        }
+
+        .section a{
+            text-indent: 60px;
+        }
+    </style>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- This code is made by Liep Nguyen
         Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
@@ -48,12 +58,12 @@
                 <div class="list"> 
                     <!-- <button id="back_button" onclick="back()"></button>-->
                     <!-- Tried to use the back button but it does not want to work-->
-                    <h3><a href="#description">Description</a></h3>
-                    <h3><a href="#titleCard">Animation</a></h3>
-                    <h3><a href="#antimatic">Antimatic</a></h3>
-                    <h3><a href="#storyboard">Storyboard</a></h3>
-                    <h3><a href="#styleframe">Styleframe</a></h3>
-                    <h3><a class="toggle_button">Characters</a></h3>
+                    <a href="#description">Description</a>
+                    <a href="#titleCard">Animation</a>
+                    <a href="#antimatic">Antimatic</a>
+                    <a href="#storyboard">Storyboard</a>
+                    <a href="#styleframe">Styleframe</a>
+                    <div class="toggle_button"><a>Characters</a></div>
                     <div class="section" style="display: none;">
                         <a href="#queen">Evil Red Queen</a>
                         <a href="#hero">Green Maiden Hero</a>
@@ -61,7 +71,7 @@
                         <a href="#army">Evil Red Army</a>
                     </div>
 
-                    <h3><a class="toggle_button">Assets</a></h3>
+                    <div class="toggle_button"><a>Assets</a></div>
                     <div class="section" style="display: none;">
                         <a href="#icon">Icon Design</a>
                         <a href="#weapons">Weapons</a>

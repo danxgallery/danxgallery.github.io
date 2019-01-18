@@ -19,6 +19,10 @@
         figure img{
             border: 5px solid #424452; /*Dark Grey Blue*/
         }
+
+        #sub_section{
+            text-indent: 60px;
+        }
     </style>
 </head>
 <body>
@@ -30,10 +34,10 @@
                 <div class="list"> 
                     <!-- <button id="back_button" onclick="back()"></button>-->
                     <!-- Tried to use the back button but it does not want to work-->
-                    <h3><a href="#description">Description</a></h3>
+                    <a href="#description">Description</a>
                                         
-                    <h3><a class="toggle_button">Character</a></h3>
-                    <div id="section1" style="display: none;">
+                    <a id="toggle_button0">Character</a>
+                    <div id="sub_section" style="display: none;">
                     <a href="#ace">Ace</a>
                     <a href="#max">Max</a>
                     <a href="#clara">Clara</a>
@@ -43,7 +47,7 @@
                     <a href="#violet">Violet</a>
                     </div>
 
-                    <h3><a href="#animation">Animation</a></h3>
+                    <a href="#animation">Animation</a>
     
                 </div>
         </div>

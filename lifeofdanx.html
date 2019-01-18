@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+     <!-- *************************** FavIcon ***************************** -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -26,13 +27,23 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
 
+     <!-- *************************** Google Font ***************************** -->
     <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" />
 
+    <!-- *************************** Stylesheet ***************************** -->
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        #sub_section{
+            text-indent: 60px;
+        }
+    </style>
+
+ <!-- *************************** Javascript ***************************** -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- This code is made by Liep Nguyen
         Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
     <script src="js/customscript.js"></script>
+
     
     <title>DanX Portfolio - Life of DanX</title>
 </head>
@@ -45,10 +56,10 @@
                 <div class="list"> 
                     <!-- <button id="back_button" onclick="back()"></button>-->
                     <!-- Tried to use the back button but it does not want to work-->
-                    <h3><a href="#description">Description</a></h3>
+                    <a href="#description">Description</a>
     
-                    <h3><a class="toggle_button">Characters</a></h3>
-                    <div class="section" style="display: none;">
+                    <a id="toggle_button0">Characters</a>
+                    <div id="sub_section" style="display: none;">
                     <a href="#danx">DanX</a>
                     <a href="#miku">Hatsune Miku</a>
                     <a href="#natalie">Natalie Overture</a>
@@ -56,7 +67,7 @@
                     <a href="#yuri">Yuri Konpyutaa</a>
                     </div>
 
-                    <h3><a href="#logo">Logo Design</a></h3>
+                    <a href="#logo">Logo Design</a>
                 </div>
             </div>
 
