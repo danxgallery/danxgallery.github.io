@@ -637,34 +637,60 @@ td, th{
   - Width is 295px
   - when hovered, it will have an ease out animation */
 #side_sub{
-    left: -230px;  
+    left: -280px;  
     width: 295px;
-
+    
     z-index: 2;
     position: fixed;
     float: right;
-
+    
     height: 80%;
     
     transition: .3s ease-out;
+    
 }
 
 /*All the list in the sub navigation will be implamented here.
-  - width is only 325px
-  - heigth is the same
-  - does have scrolling, but only to the y-axis
-  - border is only on the right to indicate were the border ends
-  - background color is white */
+- width is only 325px
+- heigth is the same
+- does have scrolling, but only to the y-axis
+- border is only on the right to indicate were the border ends
+- background color is white with transparencey*/
 #side_sub .list{
-    width: 225px;
+    border-top: #3c60af solid 5px;
+    width: 340px;
     height: 100%;
-
     margin-top: 100px;
-    font-size: 8pt;
+    font-size: 12pt;
 
-    overflow-y: hidden;
-    /* background-color: #ffffff; White */
+    background-color: rgba(255,255,255,0.8);
+    text-indent: 30px; 
 }
+
+#side_sub .list:hover{
+    overflow-y: scroll;
+}
+
+/* --------------- Custom Scroll Bar
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #c22020; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #cf7b7b; 
+  }
 
 /* - all the a tag in this class will display vertically
    - text indent is 20px to the right
@@ -672,11 +698,32 @@ td, th{
    - border only appears at the bottom of 2px solid line black */
 .list a{
     display: block; 
-    text-indent: 20px;
+    /* text-indent: 20px; */
 
     padding: 12px 0;
-    /* border-bottom: 2px solid #3a3a3a; */
-     /*Color Black*/
+}
+
+.list a::before{
+    content: "";
+    background: url(fontawesome_logo/map-marker-solid.svg) no-repeat; /*This icon does not belong to me. 
+    This icon belongs to "fontawesome.com" */
+
+    display: inline-block;
+    padding-right: 10px;
+
+    width: 20px;
+    height: 20px;
+}
+
+#toggle_button0::before, .toggle_button a::before{
+    content: "";
+    background: url(image/side_bar_line.svg) no-repeat;
+
+    display: inline-block;
+    padding-right: 10px;
+
+    width: 20px;
+    height: 20px;
 }
 
 /*when hovering the a tag, this will hover with the background color from white to ligt blue on
@@ -686,24 +733,9 @@ td, th{
 
   Check on @keyframe subHover on the sub navigation of this css page*/
 .list a:hover, .list h4:hover{
+    font-weight: bold;
     animation: subHover .2s linear both;
 }
-
-/* This side navigation only applies on the interior work page
-    Such as: "MyCourses Rework", "Future UI", "Struggle". All of them are works pages.
-
-    - set this icon to width and height of 70px
-    - float right because, this navigation is at the very left.
-    - moving the image down by 100px*/
-
-/* #side_sub img{
-    width: 70px;
-    height: 70px;
-    float: right;
-
-    transition: .3s linear;
-    padding-top: 150px;
-} */
 
 /* When this navigation is hovered, the whole thing will appear with the animation of ease-out.*/
 #side_sub:hover{
@@ -711,17 +743,13 @@ td, th{
     transition: .3s ease-out;
 }
 
-/* #back_button {
-    display: none;
-} */
-    
 /* Text indent on the sub navigation is 30px */
-.section a{
-    text-indent: 60px;
+ .section a{
+    text-indent: 90px;
 }
 
 .toggle_button a{
-    text-indent: 40px;
+    text-indent: 60px;
 }
 
 /*******************************************************************
