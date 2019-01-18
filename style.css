@@ -663,13 +663,16 @@ td, th{
     margin-top: 100px;
     font-size: 12pt;
 
-    background-color: rgba(255,255,255,0.8);
+
     text-indent: 30px; 
 }
 
 /* When hovered, the scroll bar will appear */
 #side_sub .list:hover{
     overflow-y: scroll;
+    background-color: rgba(255,255,255,0.8);
+
+    transition: linear .2s;
 }
 
 /* --------------- Custom Scroll Bar
