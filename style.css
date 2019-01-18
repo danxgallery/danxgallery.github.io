@@ -675,7 +675,7 @@ td, th{
     transition: linear .2s;
 }
 
-/* --------------- Custom Scroll Bar
+/* --------------- Custom Scroll Bar------------------------------------*/
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
