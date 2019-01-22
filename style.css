@@ -620,11 +620,6 @@ td, th{
     padding-bottom: 16px;
 }
 
-/* This only applies on images with this class*/
-.size img{
-    width: 20%;
-    float: right;
-}
 /******************************************************
                     Side Navigation
 *****************************************************/
