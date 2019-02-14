@@ -672,22 +672,22 @@ td, th{
 
 /* --------------- Custom Scroll Bar------------------------------------*/
 /* width */
-::-webkit-scrollbar {
+#side_sub::-webkit-scrollbar {
     width: 15px;
   }
   
   /* Track */
-  ::-webkit-scrollbar-track {
+  #side_sub::-webkit-scrollbar-track {
     background: none; 
   }
   
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+  #side_sub::-webkit-scrollbar-thumb {
     background: #c22020; 
   }
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+  #side_sub::-webkit-scrollbar-thumb:hover {
     background: #cf7b7b; 
   }
 
@@ -704,7 +704,7 @@ td, th{
 
 .list a::before{
     content: "";
-    background: url(fontawesome_logo/map-marker-solid.svg) no-repeat; /*This icon does not belong to me. 
+    background: url(fontawesome_logo/map-marker-alt-solid.svg) no-repeat; /*This icon does not belong to me. 
     This icon belongs to "fontawesome.com" */
 
     display: inline-block;
