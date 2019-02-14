@@ -670,27 +670,6 @@ td, th{
     transition: linear .2s;
 }
 
-/* --------------- Custom Scroll Bar------------------------------------*/
-/* width */
-#side_sub::-webkit-scrollbar {
-    width: 15px;
-  }
-  
-  /* Track */
-  #side_sub::-webkit-scrollbar-track {
-    background: none; 
-  }
-  
-  /* Handle */
-  #side_sub::-webkit-scrollbar-thumb {
-    background: #c22020; 
-  }
-  
-  /* Handle on hover */
-  #side_sub::-webkit-scrollbar-thumb:hover {
-    background: #cf7b7b; 
-  }
-
 /* - all the a tag in this class will display vertically
    - text indent is 20px to the right
    - giving space of 24px on the top and bottom of the a tags
