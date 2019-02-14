@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- This code is made by Liep Nguyen
+        Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
+    <script src="js/customscript.js"></script>
+
+    <style>
+        figure img{
+            border: 5px solid #424452; /*Dark Grey Blue*/
+        }
+
+        .size img, video{
+            width: 60%;
+            float: right;
+        }
+
+        .noborders{
+            border: none;
+        }
+
+        .toggle_button a{
+            text-indent: 30px;
+        }
+
+        .section a{
+            text-indent: 60px;
+        }
+    </style>
+    
+    <title>DanX Portfolio - MyCourses</title>
+</head>
+<body>
+        <div id="top"></div>
+        <div id="side_sub">
+
+                <div class="list"> 
+                        <a href="#description">Description</a>
+                        <a href="#problem">Problem</a>
+                        <a href="#goal">Goal</a></h3>
+                        <a href="#research_comp">Competitive Research</a>
+                        <a href="#research_analytical">Analytical Research</a>
+                        <a href="#flow">User Flow</a>    
+                        <a href="#workflow">Work Flow</a>
+                        <a href="#sketch">Sketches</a>    
+                        <div class="toggle_button"><a>Wireframes</a></div>
+                            <div class="section" style="display: none;">
+                                <a href="#home1">Homepage</a>  
+                                <a href="#onboard1">Onboard</a>  
+                                <a href="#article1">Article</a>  
+                            </div> 
+                        <div class="toggle_button"><a>Main Composition</a></div>    
+                            <div class="section" style="display: none;">
+                                <a href="#home2">Homepage</a>  
+                                <a href="#onboard2">Onboard</a>  
+                                <a href="#article2">Article</a>  
+                            </div>
+                        <a href="#final">Final Product</a>
+
+                </div>
+        </div>
+
+        <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
+<div class="wrapper">
+        <nav id="cpu">
+            <figure class="logo">
+                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
+            </figure>
+            
+            <!-- To be used on PC -->
+            <div class="nav_container">
+                    <div class="cpu_nav">
+                        <div class="dropdown" >
+                            <a class="indicator">Works</a>
+                            <div class="subnav">
+                                <a href="animation.html">Animation / Motion Graphic</a>
+                                <a href="illustration.html">Illustration</a>
+                                <a href="ui.html">UI Design</a>
+                            </div>
+                        </div>
+                        
+                        <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
+                        <a href="about.html">About Me</a>
+                        <!-- This code is by: John Conde
+                            Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
+                            <a href="resume.html">Resume</a>
+                            <a href="#contact">Contact Me</a>
+                            
+                        </div>
+                    </div>
+            </nav>
+
+            <!-- To Be used on mobile and tablet -->  
+            <nav id="mobile">
+            <figure class="logo">
+                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
+            </figure>
+            <button id="hamberger_button" type="button" onclick="nav_button()"></button>
+
+            <div class="mobile_nav" style="display: none;">
+                    <button id="mobile_button">Works</button>
+                    <div id="subnav_mobile" style="display: none;">
+                    <a href="animation.html">Animation / Motion Graphic</a>
+                    <a href="illustation.html">Illustration</a>
+                    <a href="ui.html">UI Design</a>
+                </div>
+        
+                <div class="nav-wrapper">
+                    <a href="about.html">About Me</a>
+                    <!-- This code is by: John Conde
+                         Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
+                    <a href="resume.html">Resume</a>
+                    <a href="#contact">Contact Me</a>
+                    
+                </div>
+            </div>
+            
+        
+            </div>
+        </nav>
+</div>
+
+        
+    <div class="interior_wrapper">
+        <article class="grid-space">
+            <h1 id="description" class="space">Rochester Regional Hospital - Wayfinder</h1>
+            <h3 class="space">Team Project</h3>
+            
+            <p><strong>August 2018 - November 2018</strong></p>
+            
+        
+            <h2 class="space">Summary</h2>
+            <p>This team project is to create a Augment Reality that can help both Patients and Coworkers to help
+                navigate the Hospital in a most simpliest was possible. I was in a team that deals with Forign Language
+                and other language barriers.
+            </p>
+
+            <p>I will only be posting the work I have done.</p>
+        </article>
+       
+        <!-- *********************** Title Card *************************** -->
+        <h2 id="problem" class="tabs" >Problem</h2>
+
+            <article class="grid-space">
+            <h3>Problem</h3>
+            <p>The Hospital is easy to get lost. When that person gets lost, it would cause.
+            </p>
+            </article>
+
+        <!-- *********************** Goal *************************** -->
+        <h2 id="goal" class="tabs" >Goal</h2>
+        <section class="grid-space">
+            <div class="grid-structure">
+                <article>
+                <h3 class="space">Tagging System</h3>
+                <p>Improve USA TODAY by implementing a tagging system and redesigning the
+                     UI to make the app more user friendly and customizable for each specific user.</p>
+                </article>
+        
+                <article>
+                <h3 class="space">Target Audience</h3>
+                <p>USA TODAY needs to be made more appealing to a younger demographic
+                     between 22 - 35 years of age.</p>
+                </article>
+            </div>
+        </section>
+        
+        <!-- *********************** UI Research *************************** -->
+        <h2 id="research_comp" class="tabs">Competitive Research</h2>
+        
+        <!-- *********************** 8Tracks *************************** -->
+        <section>
+            <h3 class="space">8Tracks</h3>
+            
+            <p>8Tracks is a web app that allows the user to listen to music.</p>
+     
+            <p>The search bar allows the user to type in any word they want. While its being typed in,
+                a set of tags will appear to help the user to narrow down their choice.
+            </p>
+
+            <p>When any word is type into the search bar, a gallery menu appears. It will allow the user
+            to click on an album and choose their type of music.
+        </p>
+    </section>
+
+    <figure>
+        <img src="image/ui/usa_today/inspiration/8track.png" alt="8track" >
+    </figure>
+    
+        <!-- *********************** UI Research *************************** -->
+        <h2 id="research_analytical" class="tabs">Analytical Research</h2>
+
+        <!-- *********************** Dropbox Paper *************************** -->
+        <section>
+            <h3 class="space">Flipboard</h3>
+            <p>Flipboard is a news app that users read. It has an onboard system that allow the users to choose
+                which topics they want.
+            </p>
+
+            <p>The layout has a grid like structure that can help with the feeds page. I was not in charge of 
+                it so that page will not be in this.
+            </p>
+        </section>
+        
+        <figure>
+            <img src="image/ui/usa_today/inspiration/flipboard.png" alt="facebook" >
+        </figure>
+            
+            <!-- *********************** User Flow *************************** -->
+            <h2 id="flow" class="tabs">User Flow</h2>
+            
+            <!-- *********************** Manov *************************** -->
+            <section>
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <td>Lisa Basil</td>
+                    </tr>
+                    <tr>
+                        <th>User:</th> 
+                        <td>First Time User</td>
+                    </tr>
+                    <tr> 
+                        <th>Gender:</th>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <th>Age:</th>
+                        <td>26</td>
+                    </tr>
+                </table>
+                
+                <p>Lisa finds a USA TODAY Life article on her Facebook feed and clicks on it. 
+                    She isn’t impressed by the page design, nothing feels innovative or new. 
+                    She doesn’t like the being bombarded with ads and many large pictures on the article. 
+                    She reads the article, then decides to browse the Life feed. She clicks on an article 
+                    that interests her, and decides to share it on Facebook. 
+                </p>
+            </section>
+            
+            <figure>
+            <img src="image/ui/usa_today/user-flow_lisa.png" alt="user flow" >
+        </figure>
+        
+        <!-- *********************** Manga *************************** -->
+        <section>
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td>Frank Reynolds</td>
+            </tr>
+            <tr>
+                <th>User:</th> 
+                <td>Power User</td>
+            </tr>
+            <tr> 
+                <th>Gender:</th>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <th>Age:</th>
+                <td>32</td>
+            </tr>
+        </table>
+        
+        <p>Frank wakes up early in the morning to read through his notifications on his phone. 
+            He clicks on a USA TODAY push notification and reads the article, then decides to look through the Life feed. 
+            He bookmarks several news stories to read later and shares one to Twitter and Facebook. 
+            He looks at his recommended feed to see what news stories interest him.</p>
+        </section>
+        
+        <figure>
+            <img src="image/ui/usa_today/user-flow_frank.png" alt="user flow" >
+        </figure>
+        
+        <!-- *********************** Sketches *************************** -->
+        <h2 id="workflow" class="tabs">Work Flow</h2>
+    
+        <figure class="grid-space">
+            <figcaption>This is a blueprint of how the app is gonna go.</figcaption>
+            <img src="image/ui/usa_today/work_flow.png" alt="achivement sketch">
+        </figure>
+        
+        <!-- *********************** Sketch *************************** -->
+        <h2 id="sketch" class="tabs">Sketch</h2>
+
+        <!-- *********************** 1 *************************** -->
+        <section>
+            <h3 class="space">Sketch Exploration - Onboard</h3>
+            <p>This is an Exploration sketch of my first draft of the Onboard Page. This is 
+                eriely similar to Flipboard. This was done on purpose just to get the idea out of my head.
+            </p>
+
+            <p>This way, I can explore the idea easier and not have that looming over my head and think harder.</p>
+        </section>
+
+        <figure>
+            <img src="image/ui/usa_today/sketch/1.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** 2 *************************** -->
+        <section>
+            <h3 class="space">Sketch Exploration - Onboard</h3>
+            <p>This is more exploration sketch of the Onboard Page. My thinking process was "How to make 
+                the Onboard system better than Flipboard?" At the time, I was thinking about an Accordion, or 
+                a paper fan. Because of how the paperfan and the accordion is folded. 
+            </p>
+
+            <p>The icon at the bottom left were to suppose to be topics. This is easily dropped because the
+                text itself was easily readable. If this isn't for mobile, it would have been used for navigation.
+            </p>
+        </section>
+
+        <figure>
+            <img src="image/ui/usa_today/sketch/2.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** 3 *************************** -->
+        <section>
+            <h3 class="space">Sketch Exploration - Homepage</h3>
+            <p>This is the homepage sketch.
+            </p>
+
+            <p>This is more of an exploration of how this Homepage will function.</p>
+        </section>
+
+        <figure>
+            <img src="image/ui/usa_today/sketch/4.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** 4 *************************** -->
+        <section>
+            <h3 class="space">Sketch Exploration - Homepage</h3>
+            <p>This the extention of the homepage.
+            </p>
+
+            <p>It is more like how the sub article of the homepage will work.</p>
+        </section>
+
+        <figure>
+            <img src="image/ui/usa_today/sketch/3.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** Wireframes *************************** -->
+        <h2 class="tabs">Wireframes</h2>
+
+        <!-- *********************** Homepage *************************** -->
+        <h2 id="home1" class="grid-space">Homepage</h2>
+
+        <!-- *********************** 1 *************************** -->
+        <section>
+            <h3 class="space">Version 1</h3>
+            <p>This is my version of the homepage. We did made a previous homepage. But, I am not the original
+                creator.
+            </p>
+
+            <ul>
+            <li>This is more inspired to various websites that has diagnol lines. This will tell the readers
+            that there is more content as the user scrolls down.
+            </li>
+            
+            <li>The diagonal is also used to seperate the borders.</li>
+            
+            <li>The hashtags was there to allow the user to save that topic into their intereset</li>
+            </ul>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/homepage/v1.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** 2 *************************** -->
+        <section>
+            <h3 class="space">Version 2</h3>
+            <p>The second version acutally looks better with these reasons.
+            </p>
+            
+            <ul>
+                <li>The diagonals are lighter. Given less attention to them.</li>
+                <li>The diagonals also lead to other sub articles</li>
+                <li>The navigation was absent in version 1. It is now added.</li>
+                <li>The Sub-Navigation is readable. In version 1. The text were bold and 
+                    text were small. In this version, the text are bigger and the font weight is thin.
+                </li>
+                <li>The Main Article is an interactive swipping that allow the user to find other main articles.</li>
+            </ul>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/homepage/v2.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** 3 *************************** -->
+        <section>
+            <h3 class="space">Version 3</h3>
+            <p>The only thing that is different is the hashtags are removed. Because they were undergoing 
+                a new design.
+            </p>
+            <p>The layout is exacatly the same.</p>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/homepage/v3.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** 4 *************************** -->
+        <section>
+            <h3 class="space">Version 4</h3>
+            <p>This version has the updated tags that allow the user to see that the tags are clickable.
+            </p>
+
+            <p>Comparing this to version 1 and 2, This version is also more seperate from the sub navigation.
+                Version 1 and 2 has no seperation. Even with the "#" next to the topic, it still looks like it
+                could be a part of the sub article.
+            </p>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/homepage/v4.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** 5 *************************** -->
+        <section>
+            <h3 class="space">Version 5</h3>
+            <p>This is the final version of the homepage.
+            </p>
+
+            <p>With this one, user can flip between the homepage and the feeds page. The feeds page is</p>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/homepage/v5.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** Onboard *************************** -->
+        <h2 id="onboard1" class="grid-space">Onboard UI</h2>
+
+        <!-- *********************** v1 ************************* -->
+        <section>
+            <h3 class="space">Version 1</h3>
+            <p>This is the version 1 of the onboard page.</p>
+            <p>This was layout similar to the flipboard because of how it look. However, the topics are very
+                low. So it looks disorganized.
+            </p>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/onboard/onboard_v1.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** v1 part 2 *************************** -->
+        <section>
+            <h3 class="space">Version 1 part 2</h3>
+            <p>This is still the version 1 of the onboard page.</p>
+            <p>This version is seperate from the first onboard page. This one allows the user to go deeper with 
+                the topic that was chosen in the first page.
+            </p>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/onboard/onboard_v2.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** v2 *************************** -->
+        <section>
+            <h3 class="space">Version 2 page 1</h3>
+            <p>This is version 2 of the onboard page.</p>
+            <p>This version allows the user to select the state they live in and the city they are
+                currently living.
+            </p>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/onboard/onboard_page_1.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** v2 *************************** -->
+        <section>
+            <h3 class="space">Version 2 page 2</h3>
+            <p>This is version 2 part 2 of the onboard page.</p>
+            <p>This version allows the user to select ether local news or national news.</p>
+            <p>This way, it would attract some locals to find out what is going on in their place of living.</p>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/onboard/onboard_page_2.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** v2 *************************** -->
+        <section>
+            <h3 class="space">Version 2 page 3 - Version 1</h3>
+            <p>This is version 2 part 3 of the onboard page.</p>
+            <p>This is similar to version 1 of the onboard. But this time, this is set up like a stack of 
+                blocks. This keeps it organized and it is kept in the USA TODAY color pallettes of the topics they 
+                have already selected.
+            </p>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/onboard/onboard_page_3_V1.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** Article *************************** -->
+        <h2 id="article1" class="grid-space">Article</h2>
+        <!-- *********************** v1 ************************* -->
+        <section>
+            <h3 class="space">Version 1</h3>
+            <p>This is the version 1 of the onboard page.</p>
+            <p>This was layout similar to the flipboard because of how it look. However, the topics are very
+                low. So it looks disorganized.
+            </p>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/article/v1.png" alt="user flow" >
+        </figure>
+        
+
+        <!-- *********************** Main Composition *************************** -->
+        <h2 class="tabs">Main Composition</h2>
+
+        <!-- *********************** Homepage *************************** -->
+        <h2 id="home2" class="grid-space">Homepage</h2>
+        <!-- *********************** 1 *************************** -->
+        <section>
+            <h3 class="space">Final Version Homepage</h3>
+            <p>This is the final version of the homepage on a phone.
+            </p>
+
+            <ul>
+            <li>This is more inspired to various websites that has diagnol lines. This will tell the readers
+            that there is more content as the user scrolls down.
+            </li>
+            
+            <li>The diagonal is also used to seperate the borders.</li>
+            
+            <li>The hashtags was there to allow the user to save that topic into their intereset</li>
+            </ul>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/final/homepage.png" alt="user flow" class="noborders">
+        </figure>
+
+        <!-- *********************** Homepage *************************** -->
+        <h2 id="onboard2" class="grid-space">Onboard</h2>
+
+        <!-- *********************** 1 *************************** -->
+        <section>
+            <h3 class="space">Page 1</h3>
+            <p>This is the final version of the homepage on a phone.
+            </p>
+
+            <ul>
+            <li>This is more inspired to various websites that has diagnol lines. This will tell the readers
+            that there is more content as the user scrolls down.
+            </li>
+            
+            <li>The diagonal is also used to seperate the borders.</li>
+            
+            <li>The hashtags was there to allow the user to save that topic into their intereset</li>
+            </ul>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/final/onboard_page1.png" alt="user flow" class="noborders">
+        </figure>
+
+        <!-- *********************** Homepage *************************** -->
+        <h2 id="article2" class="grid-space">Article</h2>
+
+        <!-- *********************** 1 *************************** -->
+        <section>
+            <h3 class="space">Page 1</h3>
+            <p>This is the final version of the homepage on a phone.
+            </p>
+
+            <ul>
+            <li>This is more inspired to various websites that has diagnol lines. This will tell the readers
+            that there is more content as the user scrolls down.
+            </li>
+            
+            <li>The diagonal is also used to seperate the borders.</li>
+            
+            <li>The hashtags was there to allow the user to save that topic into their intereset</li>
+            </ul>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/usa_today/final/final_article1.png" alt="user flow" class="noborders">
+            <img src="image/ui/usa_today/final/final_article2.png" alt="user flow" class="noborders">
+        </figure>
+        
+        <!-- *********************** Main Composition *************************** -->
+        <h2 id="final" class="tabs">Final Product</h2>
+
+        
+        <!-- *********************** Onboard *************************** -->
+        <section>
+            <h3 class="space">Onboard</h3>
+            <p>This is the homepage. The user is swipping the main article.
+            </p>
+
+            <p>You can see the user swipping left and right. Yet, the direction of the swipping gose diagonal in
+                their respected direction.
+            </p>
+        </section>
+        
+        <figure class="size">
+        <video controls autoplay>
+            <source src="image/ui/usa_today/prototype/onboard_1.mp4" type="video/mp4">
+                This video does not support your program
+            </video>
+        </figure>
+         
+        <!-- *********************** Swip *************************** -->
+        <section>
+            <h3 class="space">Swip</h3>
+            <p>This is the homepage. The user is swipping the main article.
+            </p>
+    
+            <p>You can see the user swipping left and right. Yet, the direction of the swipping gose diagonal in
+                their respected direction.
+            </p>
+        </section>
+    
+        <figure class="size">
+            <video controls autoplay>
+                <source src="image/ui/usa_today/prototype/swap_1.mp4" type="video/mp4">
+                This video does not support your program
+            </video>
+        </figure>
+
+        <!-- *********************** Tagging *************************** -->
+        <section>
+            <h3 class="space">Tagging</h3>
+            <p>This is the homepage. The user is swipping the main article.
+            </p>
+
+            <p>You can see the user swipping left and right. Yet, the direction of the swipping gose diagonal in
+                their respected direction.
+            </p>
+        </section>
+
+        <figure class="size">
+            <video controls autoplay>
+                <source src="image/ui/usa_today/prototype/Tagging_1.mp4" type="video/mp4">
+                This video does not support your program
+            </video>
+        </figure>
+ 
+        <!-- *********************** Article *************************** -->
+        <section>
+            <h3 class="space">Article</h3>
+            <p>This is the homepage. The user is swipping the main article.
+            </p>
+
+            <p>You can see the user swipping left and right. Yet, the direction of the swipping gose diagonal in
+                their respected direction.
+            </p>
+        </section>
+
+        <figure class="size">
+            <video controls autoplay>
+                <source src="image/ui/usa_today/prototype/article_1.mp4" type="video/mp4">
+                This video does not support your program
+            </video>
+        </figure>
+    </div>
+
+    <footer>
+        <div class="footer_wrapper">
+            <div id="contact">
+                <h2>Contact Me:</h2>
+                <ul>
+                    <li>Phone: 207-766-6625</li>
+                    <li>Email: MiyukProduction@gmail</li>
+                </ul> 
+                <!-- <div class="icon">
+                    <a href="#"><img id="facebook" src="" /></a>
+                </div> -->
+            </div>
+    
+            <div class="gallery">
+                <h2>Gallery</h2>
+        
+                <div class="social_gallery">
+                        <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
+                    
+                        <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"  alt="behance"/></a>
+                    
+                        <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"  alt="deviantart"/></a>
+                        <!-- These image icons are made by Font Awesome --> 
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    
+    
+
+
+</body>
+</html>
