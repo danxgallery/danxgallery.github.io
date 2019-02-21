@@ -74,15 +74,13 @@
                         <a href="#sketch">Sketches</a>    
                         <div class="toggle_button"><a>Wireframes</a></div>
                             <div class="section" style="display: none;">
-                                <a href="#home1">Homepage</a>  
-                                <a href="#onboard1">Onboard</a>  
-                                <a href="#article1">Article</a>  
+                                <a href="#v1">Version 1</a>  
+                                <a href="#v2">Version 2</a>
                             </div> 
                         <div class="toggle_button"><a>Main Composition</a></div>    
                             <div class="section" style="display: none;">
                                 <a href="#home2">Homepage</a>  
-                                <a href="#onboard2">Onboard</a>  
-                                <a href="#article2">Article</a>  
+                                <a href="#nav2">Navigation</a>  
                             </div>
                         <a href="#final">Final Product</a>
 
@@ -170,13 +168,17 @@
         <h2 id="problem" class="tabs" >Problem</h2>
 
             <article class="grid-space">
-            <h3>Problem</h3>
+            <h3 class="space">Problem</h3>
             <p>The problem of the RRH (Rochester Regional Health) Hospital is that people do get lost. From
                 the research Mark Green, chief executive and co-founder of Connexient, 30%-40% of the
                 patients and visitors will get lost and waste their time in the hospital. This issue cause problems
                 for the hospital at: efficiency, experiences, and emotions for doctors, patients, and family
                 member and friends. 
             </p>
+
+            <p><strong>Source:</strong> <a href="http://theweek.com/articles/761108/people-keep-getting-lost-hospitals-app-wants-stop-that"
+                onclick="window.open(this.href); return false;" onkeypress="window.open(this, href)">
+                http://theweek.com/articles/761108/people-keep-getting-lost-hospitals-app-wants-stop-that</a></p>
             </article>
 
         <!-- *********************** Goal *************************** -->
@@ -184,15 +186,20 @@
         <section class="grid-space">
             <div class="grid-structure">
                 <article>
-                <h3 class="space">Tagging System</h3>
-                <p>Improve USA TODAY by implementing a tagging system and redesigning the
-                     UI to make the app more user friendly and customizable for each specific user.</p>
+                <h3 class="space">Control Efficiency of the Hospital</h3>
+                <p>People can get lost very easy. Especially when it’s a fast pace emergency is going on. This can
+                    cause traffic jam for the patients and doctors to show up in the right room on time.</p>
                 </article>
         
                 <article>
-                <h3 class="space">Target Audience</h3>
-                <p>USA TODAY needs to be made more appealing to a younger demographic
-                     between 22 - 35 years of age.</p>
+                <h3 class="space">Improve Localization</h3>
+                <p>Some people do not understand English very well or do not understand it at all. We would like </p>
+                </article>
+
+                <article>
+                <h3 class="space">Improve Emotion Experience</h3>
+                <p>Hospital is a controlled enviornment. So things can be very stressful very easy. We would like to
+                    improve a way to reduce stress and make people calmer.</p>
                 </article>
             </div>
         </section>
@@ -200,57 +207,74 @@
         <!-- *********************** UI Research *************************** -->
         <h2 id="research_comp" class="tabs">Competitive Research</h2>
         
-        <!-- *********************** 8Tracks *************************** -->
+        <!-- *********************** Magic Leap *************************** -->
         <section>
-            <h3 class="space">8Tracks</h3>
+            <h3 class="space">Magic Leap</h3>
             
-            <p>8Tracks is a web app that allows the user to listen to music.</p>
-     
-            <p>The search bar allows the user to type in any word they want. While its being typed in,
-                a set of tags will appear to help the user to narrow down their choice.
-            </p>
+            <p>Magic Leap is a company that solely design for Augmented and Virtual Reality. It shows step by step
+                of how the Augmented Reality functions.</p>
+        </section>
+    
+        <figure>
+            <img src="image/ui/wayfinder/research/" alt="Magic Leap" >
+        </figure>
+        
+        <!-- *********************** Microsoft HoloLens *************************** -->
+        <section>
+            <h3 class="space">Microsoft HoloLens</h3>
+            
+            <p>Microsoft HoloLens allows the user to contact other professionals to help the user how to fix things that
+                the user cannot fix.</p>
+        </section>
 
-            <p>When any word is type into the search bar, a gallery menu appears. It will allow the user
-            to click on an album and choose their type of music.
-        </p>
-    </section>
-
-    <figure>
-        <img src="image/ui/usa_today/inspiration/8track.png" alt="8track" >
-    </figure>
+        <figure>
+            <img src="image/ui/wayfinder/research/" alt="Magic Leap" >
+        </figure>
     
         <!-- *********************** UI Research *************************** -->
         <h2 id="research_analytical" class="tabs">Analytical Research</h2>
 
-        <!-- *********************** Dropbox Paper *************************** -->
+        <!-- *********************** Google Translator *************************** -->
         <section>
-            <h3 class="space">Flipboard</h3>
-            <p>Flipboard is a news app that users read. It has an onboard system that allow the users to choose
-                which topics they want.
+            <h3 class="space">Google Translator</h3>
+            <p>Google Translator automatically translate from one screen to another without having to type a single word
+                from one screen to another. 
             </p>
 
-            <p>The layout has a grid like structure that can help with the feeds page. I was not in charge of 
-                it so that page will not be in this.
+            <p>Though Google Translator is not 100% accurate. This will help the user who
+                does not speak English fluently to select their language and just hover over the numbers or words.
             </p>
         </section>
         
         <figure>
-            <img src="image/ui/usa_today/inspiration/flipboard.png" alt="facebook" >
+            <img src="image/ui/wayfinder/research/" alt="google" >
+        </figure>
+
+        <!-- *********************** Blippar *************************** -->
+        <section>
+            <h3 class="space">Blippar</h3>
+            <p>Blippar is augmented reality company that deals with navigation from both indoor and outdoor. It tells the
+                accuracy of where you are suppose to go. It even has a list to know exactly where you are suppose to go.
+            </p>
+        </section>
+        
+        <figure>
+            <img src="image/ui/wayfinder/research/" alt="Blippar" >
         </figure>
             
             <!-- *********************** User Flow *************************** -->
             <h2 id="flow" class="tabs">User Flow</h2>
             
-            <!-- *********************** Manov *************************** -->
+            <!-- *********************** Muon Shain *************************** -->
             <section>
                 <table>
                     <tr>
                         <th>Name:</th>
-                        <td>Lisa Basil</td>
+                        <td>Muon Sháin</td>
                     </tr>
                     <tr>
                         <th>User:</th> 
-                        <td>First Time User</td>
+                        <td>Doctor</td>
                     </tr>
                     <tr> 
                         <th>Gender:</th>
@@ -258,32 +282,30 @@
                     </tr>
                     <tr>
                         <th>Age:</th>
-                        <td>26</td>
+                        <td>35</td>
                     </tr>
                 </table>
                 
-                <p>Lisa finds a USA TODAY Life article on her Facebook feed and clicks on it. 
-                    She isn’t impressed by the page design, nothing feels innovative or new. 
-                    She doesn’t like the being bombarded with ads and many large pictures on the article. 
-                    She reads the article, then decides to browse the Life feed. She clicks on an article 
-                    that interests her, and decides to share it on Facebook. 
+                <p>Muon does not speak fluent English. So there are language barriers between the patient and her co-workers.
+                    In this situation, language translation doing the work may cause misunderstanding and waste of time and space. Relaying on
+                    dictionary or other tools too often; making it wasting more time than it should.
                 </p>
             </section>
             
             <figure>
-            <img src="image/ui/usa_today/user-flow_lisa.png" alt="user flow" >
+            <img src="image/ui/wayfinder/user_story/muon_shain_1.png" alt="user flow" >
         </figure>
         
-        <!-- *********************** Manga *************************** -->
+        <!-- *********************** San Raiz *************************** -->
         <section>
         <table>
             <tr>
                 <th>Name:</th>
-                <td>Frank Reynolds</td>
+                <td>Sán Raiz</td>
             </tr>
             <tr>
                 <th>User:</th> 
-                <td>Power User</td>
+                <td>Patient</td>
             </tr>
             <tr> 
                 <th>Gender:</th>
@@ -291,14 +313,15 @@
             </tr>
             <tr>
                 <th>Age:</th>
-                <td>32</td>
+                <td>20</td>
             </tr>
         </table>
         
-        <p>Frank wakes up early in the morning to read through his notifications on his phone. 
-            He clicks on a USA TODAY push notification and reads the article, then decides to look through the Life feed. 
-            He bookmarks several news stories to read later and shares one to Twitter and Facebook. 
-            He looks at his recommended feed to see what news stories interest him.</p>
+        <p> Sán comes in the hospital severely ill. He was called by his doctor to check what kind of illness San has.
+            However, the doctor does not know where he is going and ended up lost. The Patient
+            becomes annoyed. He tells the doctor to just find a room cause he could die at anytime.
+            But the doctor is convinced that he is going to the right direction but only to get even farther away from the
+            destination they are suppose to go. </p>
         </section>
         
         <figure>
@@ -310,7 +333,7 @@
     
         <figure class="grid-space">
             <figcaption>This is a blueprint of how the app is gonna go.</figcaption>
-            <img src="image/ui/usa_today/work_flow.png" alt="achivement sketch">
+            <img src="image/ui/wayfinder/map_site/mapsite.png" alt="achivement sketch">
         </figure>
         
         <!-- *********************** Sketch *************************** -->
@@ -318,154 +341,117 @@
 
         <!-- *********************** 1 *************************** -->
         <section>
-            <h3 class="space">Sketch Exploration - Onboard</h3>
-            <p>This is an Exploration sketch of my first draft of the Onboard Page. This is 
-                eriely similar to Flipboard. This was done on purpose just to get the idea out of my head.
-            </p>
-
-            <p>This way, I can explore the idea easier and not have that looming over my head and think harder.</p>
+            <h3 class="space">Sketch Exploration</h3>
+            <p>These are my sketches. These are meant for exploration for ideas of how is my UI going to
+                be set up.</p>
         </section>
 
         <figure>
             <img src="image/ui/usa_today/sketch/1.png" alt="user flow" >
         </figure>
 
-        <!-- *********************** 2 *************************** -->
-        <section>
-            <h3 class="space">Sketch Exploration - Onboard</h3>
-            <p>This is more exploration sketch of the Onboard Page. My thinking process was "How to make 
-                the Onboard system better than Flipboard?" At the time, I was thinking about an Accordion, or 
-                a paper fan. Because of how the paperfan and the accordion is folded. 
-            </p>
-
-            <p>The icon at the bottom left were to suppose to be topics. This is easily dropped because the
-                text itself was easily readable. If this isn't for mobile, it would have been used for navigation.
-            </p>
-        </section>
-
-        <figure>
-            <img src="image/ui/usa_today/sketch/2.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** 3 *************************** -->
-        <section>
-            <h3 class="space">Sketch Exploration - Homepage</h3>
-            <p>This is the homepage sketch.
-            </p>
-
-            <p>This is more of an exploration of how this Homepage will function.</p>
-        </section>
-
-        <figure>
-            <img src="image/ui/usa_today/sketch/4.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** 4 *************************** -->
-        <section>
-            <h3 class="space">Sketch Exploration - Homepage</h3>
-            <p>This the extention of the homepage.
-            </p>
-
-            <p>It is more like how the sub article of the homepage will work.</p>
-        </section>
-
-        <figure>
-            <img src="image/ui/usa_today/sketch/3.png" alt="user flow" >
-        </figure>
-
         <!-- *********************** Wireframes *************************** -->
         <h2 class="tabs">Wireframes</h2>
 
         <!-- *********************** Homepage *************************** -->
-        <h2 id="home1" class="grid-space">Homepage</h2>
+        <h2 id="v1" class="grid-space">Version 1</h2>
 
-        <!-- *********************** 1 *************************** -->
+        <!-- *********************** Base *************************** -->
         <section>
-            <h3 class="space">Version 1</h3>
-            <p>This is my version of the homepage. We did made a previous homepage. But, I am not the original
-                creator.
+            <h3 class="space">Base</h3>
+            <p>This page is made to be quick and efficient. Just type
+                    in the number.
             </p>
 
             <ul>
-            <li>This is more inspired to various websites that has diagnol lines. This will tell the readers
-            that there is more content as the user scrolls down.
+            <li>Type in the room number.</li>
+            
+            <li>Room number display.</li>
+            
+            <li>Find the cloest exit.</li>
+
+            <li>Delete a number.</li>
+
+            <li>Change Language.</li>
+            </ul>
+        </section>
+
+        <figure class="size">
+            <img src="image/ui/wayfinder/wireframes/v1/base.png" alt="user flow" >
+        </figure>
+
+        <!-- *********************** Comfirm *************************** -->
+        <section>
+            <h3 class="space">Comfirm Page</h3>
+            <p>This page is made to be quick and efficient. Just type in the number.</p>
+
+            <ul>
+            <li>It’s ether yes or no.</li>
+
+            <li>If the user pressed yes, than the user will continue to the next page.
+
+            <li>If the user pressed no, then the user will go back to the homepage.</li>
             </li>
             
-            <li>The diagonal is also used to seperate the borders.</li>
-            
-            <li>The hashtags was there to allow the user to save that topic into their intereset</li>
+            <li>Room number display.</li>
             </ul>
         </section>
 
         <figure class="size">
-            <img src="image/ui/usa_today/homepage/v1.png" alt="user flow" >
+            <img src="image/ui/wayfinder/wireframes/v1/comfirm.png" alt="user flow" >
         </figure>
 
-        <!-- *********************** 2 *************************** -->
+        <!-- *********************** Navigation *************************** -->
         <section>
-            <h3 class="space">Version 2</h3>
-            <p>The second version acutally looks better with these reasons.
-            </p>
+            <h3 class="space">Navigation Page</h3>
+            <p>This tells the user which direction to go.</p>
             
             <ul>
-                <li>The diagonals are lighter. Given less attention to them.</li>
-                <li>The diagonals also lead to other sub articles</li>
-                <li>The navigation was absent in version 1. It is now added.</li>
-                <li>The Sub-Navigation is readable. In version 1. The text were bold and 
-                    text were small. In this version, the text are bigger and the font weight is thin.
-                </li>
-                <li>The Main Article is an interactive swipping that allow the user to find other main articles.</li>
+                <li>Tells the user which direction to go.</li>
+                <li>Arrows to tell the user to turn.</li>
+                <li>Tells the user to follow.</li>
+                <li>Map. Tells the user where to go.</li>
             </ul>
         </section>
 
         <figure class="size">
-            <img src="image/ui/usa_today/homepage/v2.png" alt="user flow" >
+            <img src="image/ui/wayfinder/wireframes/v1/navigation.png" alt="user flow" >
         </figure>
 
-        <!-- *********************** 3 *************************** -->
+        <!-- *********************** Almost There *************************** -->
         <section>
-            <h3 class="space">Version 3</h3>
-            <p>The only thing that is different is the hashtags are removed. Because they were undergoing 
-                a new design.
-            </p>
-            <p>The layout is exacatly the same.</p>
+            <h3 class="space">Navigation Page - Almost There</h3>
+            <p>Tells the user that they are almost theren.</p>
         </section>
 
         <figure class="size">
-            <img src="image/ui/usa_today/homepage/v3.png" alt="user flow" >
+            <img src="image/ui/wayfinder/wireframes/v1/almost.png" alt="user flow" >
         </figure>
 
-        <!-- *********************** 4 *************************** -->
+        <!-- *********************** Wrong Way *************************** -->
         <section>
-            <h3 class="space">Version 4</h3>
-            <p>This version has the updated tags that allow the user to see that the tags are clickable.
-            </p>
-
-            <p>Comparing this to version 1 and 2, This version is also more seperate from the sub navigation.
-                Version 1 and 2 has no seperation. Even with the "#" next to the topic, it still looks like it
-                could be a part of the sub article.
-            </p>
+            <h3 class="space">Navigation Page - U-Turn</h3>
+            <p>This page tells the user to turn around. When the user go in a wrong direction.</p>
         </section>
 
         <figure class="size">
-            <img src="image/ui/usa_today/homepage/v4.png" alt="user flow" >
+            <img src="image/ui/wayfinder/wireframes/v1/wrong_way.png" alt="user flow" >
         </figure>
 
-        <!-- *********************** 5 *************************** -->
+        <!-- *********************** Closer *************************** -->
         <section>
-            <h3 class="space">Version 5</h3>
-            <p>This is the final version of the homepage.
-            </p>
+            <h3 class="space">Navigation Page - Closer</h3>
+            <p>Tell the user that they are very close</p>
 
-            <p>With this one, user can flip between the homepage and the feeds page. The feeds page is</p>
+            <p>This is “Nav Beacon”. This tells the user the exact location of where the room is located.</p>
         </section>
 
         <figure class="size">
-            <img src="image/ui/usa_today/homepage/v5.png" alt="user flow" >
+            <img src="image/ui/wayfinder/wireframes/v1/closer.png" alt="user flow" >
         </figure>
 
         <!-- *********************** Onboard *************************** -->
-        <h2 id="onboard1" class="grid-space">Onboard UI</h2>
+        <h2 id="v2" class="grid-space">Version 2</h2>
 
         <!-- *********************** v1 ************************* -->
         <section>
