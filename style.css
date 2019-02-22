@@ -562,6 +562,10 @@ section ul li{
 
     position: fixed;
 }
+
+.noborders{
+    border: none;
+}
 /*------ Grid Layout -----*/
 
 /* This tag only effects inside of all of my works and none of the grids
