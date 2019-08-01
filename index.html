@@ -30,241 +30,43 @@
         <link href="style.css" rel="stylesheet" />
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-        <script>
-        /* --------------------------- Slide Show --------------------------- */
-            
-        var slideIndex = 1;       //Set the slide index to a minimum of 1
-        showSlides(slideIndex);   //set the amount of slide index with 
-            
-        // Next/previous controls
-        function plusSlides(n) {            //Function slide to go right or left
-          showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls     
-        function currentSlide(n) {          //This shows the current slides
-          showSlides(slideIndex = n);   
-        }   
-
-        //Make a function
-        function showSlides(n) {
-            var i;                                                      //Call i as a var
-            var slides = document.getElementsByClassName("mySlides");   //Call slices as var that is equal to grabbing an Element by ID
-            var dots = document.getElementsByClassName("dot");          //Call dots as var that is equal to grabb
-
-            if (n > slides.length) {slideIndex = 1} 
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none"; 
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block"; 
-            dots[slideIndex-1].className += " active";
-}
-
-        </script>
-        <!-- This code is made by Liep Nguyen
-            Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
-
-
-        <!-- <script src="/js/jquery-3.3.1.min.js"></script> -->
-        <script src="js/customscript.js"></script>
-
-        <style>
-            section .testing{
-                text-align: center;
-                width: 100%;
-                background-color: rgba( 0, 0, 0, .8);
-                color: #ffffff;
-                padding-bottom: 10px;
-                padding-top: 10px;
-            }
-
-            section img{
-                width: 100%;
-            }
-
-            section{
-                width: 400px;
-                transition: all .2s ease-in-out;
-            }
-
-            section:hover{
-                transform: scale(1.1, 1.1);
-            }
-        </style>
         
         <title>DanX Portfolio</title>
+
+        <style>
+            #wrapper{
+                max-width: 1200px;
+                margin: 0 auto;
+                margin-top: 10%;
+                text-align: center;
+            }
+
+            #image{
+                display: block;
+                width: 200px;
+                height: 400px;
+                background-image: url("image/sorry.png");
+                background-size: 100%;
+                margin: 0 auto;
+            }
+
+            @media screen and (max-width: 415px){
+                #wrapper{
+                    max-width: 415px;
+                    line-height: 20px;
+                }
+
+                #wrapper h3{
+                    width: 300px;
+                    margin: 0 auto;
+                }
+            }
+        </style>
     </head>
     <body>
-            <div class="wrapper">
-         <nav id="cpu">
-            <figure class="logo">
-                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-            </figure>
-            
-            <!-- To be used on PC -->
-            <div class="nav_container">
-                    <div class="cpu_nav">
-                        <div class="dropdown" >
-                            <a>Works</a>
-                            <div class="subnav">
-                                <a href="animation.html">Animation / Motion Graphic</a>
-                                <a href="illustration.html">Illustration</a>
-                                <a href="ui.html">UI Design</a>
-                            </div>
-                        </div>
-                        
-                        <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
-                            <a href="about.html">About Me</a>
-                            <a href="resume.html">Resume</a>
-                            <a href="#contact">Contact Me</a>
-                            
-                        </div>
-                    </div>
-            </nav>
-
-            <!-- To Be used on mobile and tablet -->  
-            <nav id="mobile">
-            <figure class="logo">
-                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-            </figure>
-            <button id="hamberger_button" type="button" onclick="nav_button()"></button>
-
-            <div class="mobile_nav" style="display: none;">
-                    <button id="mobile_button">Works</button>
-                    <div id="subnav_mobile" style="display: none;">
-                    <a href="animation.html">Animation / Motion Graphic</a>
-                    <a href="illustation.html">Illustration</a>
-                    <a href="ui.html">UI Design</a>
-                </div>
-        
-                <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
-                    <a href="about.html">About Me</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="#contact">Contact Me</a>
-                    
-                </div>
-            </div>
-            
-        
-            </div>
-        </nav>
-            </div>
-    
-    
-        <main id="index_wrapper">
-            
-        <!------------------- Slideshow container ---------->
-        <div class="slideshow-container grid-space">
-            
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade" style="display: block;">
-          <a href="empire.html#beatrice">
-              <img src="gallery_icon/image2.png" style="width:100%">
-              <div class="text">In the Villianous Empire, a character has been updated.<br /> Check on the process by
-                  clicking here.
-              </div>
-          </a>
+        <div id="wrapper">
+            <h3>I'm Sorry, this site is undergoing maintenance. Please come back later.</h3>
+            <div id="image"></div>
         </div>
-            
-        <div class="mySlides fade">
-          <a href="queen.html">
-              <img src="image/animation/storyofevil/styleframe/styleframe_1.png" style="width:100%">
-              <div class="text">The Queen has taken over. <br /> Check on the process by clicking here.</div>
-          </a>
-        </div>
-
-        <div class="mySlides fade">
-          <a href="struggle.html">
-              <img src="image/animation/struggle/styleframe/styleframe_11.png" alt="Struggle" style="width:100%">
-              <div class="text">"Struggle the Animation" will be continue to be worked on. <br />
-                                Check on the process by clicking here.</div>
-          </a>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>    
-      
-      <!-- The dots/circles -->
-      <div style="text-align: center;" class="grid-space">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
-       <!-- Everything in the slide show is not owned by me. This is credited to w2schools. -->
-      <!-- Source: https://www.w3schools.com/howto/howto_js_slideshow.asp  -->
-
-
-      <section>
-        <a href="fanart.html">
-            <img src="gallery_icon/yume_yume_icon.png" alt="Struggle">
-            <div class="testing">Check on some of my fan art I made.</div>
-        </a>
-      </section>
-      
-      <section>
-        <a href="future.html">
-            <img src="image/ui/futureui/assets/logo.png" alt="Struggle">
-            <div class="testing">Rebecca Amaterasu is in this Future UI. <br />
-                              Check on the process by clicking here.</div>
-        </a>
-      </section>
-
-      <section>
-        <a href="mycourses.html">
-            <img src="gallery_icon/mycoursesicon.svg" alt="Struggle">
-            <div class="testing">Check on the MyCourses Re:Work</div>
-        </a>
-      </section>
-
-      <section>
-        <a href="pikmin.html">
-            <img src="gallery_icon/pikmin_logo.svg" alt="Struggle">
-            <div class="testing">These Pikmins are adorable. <br />
-            Check on the animation.</div>
-        </a>
-      </section>
-                
-        </main>
-            
-            <footer>
-            <div class="footer_wrapper">
-            <div id="contact">
-            <h2>Contact Me:</h2>
-            <ul>
-            <li>Phone: 207-766-6625</li>
-            <li>Email: MiyukProduction@gmail</li>
-            </ul>
-            <!-- <div class="icon">
-            <a href="#"><img id="facebook" src="" alt="" /></a>
-            </div> -->
-            </div>
-            
-            <div class="gallery">
-            <h2>Gallery</h2>
-            
-            <div class="social_gallery">
-            <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
-            onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
-            
-            <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
-            onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"  alt="behance"/></a>
-            
-            <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
-            onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"  alt="deviantart"/></a>
-            <!-- These image icons are made by Font Awesome -->
-            </div>
-            </div>
-            </div>
-            
-            </footer>
-        </div>
-
     </body>
     </html>
