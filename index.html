@@ -30,43 +30,134 @@
         <link href="style.css" rel="stylesheet" />
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/customscript.js"></script>
         
         <title>DanX Portfolio</title>
 
         <style>
-            #wrapper{
-                max-width: 1200px;
-                margin: 0 auto;
-                margin-top: 10%;
-                text-align: center;
-            }
-
-            #image{
-                display: block;
-                width: 200px;
-                height: 400px;
-                background-image: url("image/sorry.png");
-                background-size: 100%;
-                margin: 0 auto;
-            }
-
-            @media screen and (max-width: 415px){
-                #wrapper{
-                    max-width: 415px;
-                    line-height: 20px;
-                }
-
-                #wrapper h3{
-                    width: 300px;
-                    margin: 0 auto;
-                }
+            #cpu_screen .wrapper{
+                height: 50px;
             }
         </style>
+
     </head>
+
     <body>
-        <div id="wrapper">
-            <h3>I'm Sorry, this site is undergoing maintenance. Please come back later.</h3>
-            <div id="image"></div>
+
+    <!-- **************************** Navigation *************************************  -->
+    <nav id="cpu_screen"> <!-- This is the Navigation Control for the PC-->
+
+        <div class="wrapper">
+            <!-- Clicking on the Logo will lead back to the homepage-->
+            <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                                  <!-- It will also allow me to control the position of the page.-->
+                <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+            </figure> <!-- End Figure for my Logo-->
+            
+            
+            <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
+                <a href="#projects">My Projects</a>
+                <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">Resume</a>
+                <!-- -->
+                <a href="#contact">Contact Me</a>
+            </div> <!-- End div for nav_container -->
         </div>
+    </nav> <!-- End nav for CPU-->
+
+    <!-- **************************** Contact *************************************  -->
+    <nav id="contact">
+
+    </nav>
+    
+    <!-- *************************** About Me ********************************** -->
+
+    <div id="index_wrapper"><!-- This div is used for containing all content that is not footer or navigation-->
+        <div id="image"></div><!-- End div for the Image -->
+
+        <article>
+            <h2>Design is the true way of the Future</h2> 
+            <p>I’m a designer. I specialize in Visual Communication, Design Strategy, and
+            User Experience. I like to create new innovative designs to share with the whole world.</p>
+        </article>
+
+    </div> <!--End of the Wrapper-->
+    
+
+    <!-- **************************** Works *************************************  -->
+    <div id="projects">
+        <div class="wrapper">
+        <h2>My Projects</h2>
+
+        <p style="padding-top: 16px;">These are the works I have done Previously.</p>
+
+        <!-- Grid Structure -->
+        <main class="grid-container">
+    
+                <!-- Link for Keniplier -->
+                <div class="grid-item">
+                    <a href="keniplier.html" >
+                    <img src="gallery_icon/rrh.jpg" alt="keniplier"> <br />
+                    Keniplier no Ken</a>
+                </div>
+
+                <!-- Link for Struggle -->
+                <div class="grid-item">
+                    <a href="strggle.html">
+                    <img src="gallery_icon/stuggle_icon.png" alt="My Courses"> </br>
+                    Struggle</a>
+                </div>
+
+                <!-- Link for Future UI -->
+                <div  class="grid-item">
+                    <a href="future.html">
+                    <img src="gallery_icon/futurelogo.svg" alt="Future UI" style="background-color: #ffffff;"> <br/>
+                    Future UI</a>
+                </div>
+
+                <!-- Link for wayfinder -->
+                <div class="grid-item">
+                    <a href="wayfinder.html">
+                    <img src="gallery_icon/rrh.jpg" alt="wayfinder"> <br/>
+                    RRH: Wayfinder</a>
+                </div>
+
+                <!-- Link for Vocaloid-->
+                <div class="grid-item">
+                    <a href="vocaloid.html">
+                    <img src="gallery_icon/yume_yume_icon.png" alt="Vocaloid"> <br/>
+                    Vocaloid Illustration</a>
+                </div>
+                
+                <!-- Link for Pokemon -->
+                <div class="grid-item">
+                    <a href="pokemon.html">
+                    <img src="gallery_icon/pokemon.png" alt="pokemon"> <br/>
+                    RIT Pokemon Club Posters</a>
+                </div>
+            </main>
+
+        </div> <!-- End div for Wrapper-->
+    </div> <!-- End div for Works-->
+
+    <!-- **************************** Resume *************************************  -->
+    <div id="resume" style="background-color: #bd2217; height: 700px;">
+        <div class="wrapper">
+            <h2>Skills</h2>
+            
+        </div>
+
+    <!-- **************************** Resume *************************************  -->
+    <div id="resume" style="background-color: #8e3fbd; height: 700px;">
+        <div class="wrapper">
+            <h2>Resume</h2>
+            <p>Download my Resume Here</p>
+
+            <!-- This is just a placeholder -->            
+            <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                Resume</a>
+        </div>
+
+    </div><!-- End div for resume -->
+
     </body>
     </html>

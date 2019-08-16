@@ -33,379 +33,238 @@
     <!-- This code is made by Liep Nguyen
         Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
     <script src="js/customscript.js"></script>
+
+    <style>
+        .grid-structure:nth-of-type(7), .grid-structure:nth-of-type(8){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #image_ui{
+            left: 25%;
+            top: -5px;
+        }
+    </style>
     
     <title>DanX Portfolio - Future UI</title>
 </head>
+
+
 <body>
-        <div id="top"></div>
-        <div id="side_sub">
+    <div id="top">
+        <!-- This div is purposly Empty-->
+    </div> <!-- This div only applies with the div, back to top. -->
+    <div id="side_sub">
 
-                <div class="list"> 
-                    <a href="#description">Description</a>
-                    <a href="#titleCard">Animation</a>
-                    <a href="#sketches">Sketches</a>
-                    <a href="#ui">User Interface Design</a>
-                    <a href="#char">Character Design</a>
-                    <a href="#assets">Assets</a>
-                </div>
-        </div>
+            <div class="list"> 
+                <a href="#description">Description</a>
+                <a href="#titleCard">Animation</a>
+                <a href="#sketches">Sketches</a>
+                <a href="#ui">User Interface Design</a>
+                <a href="#char">Character Design</a>
+                <a href="#assets">Assets</a>
+            </div> <!-- End div for list -->
+    </div> <!-- End div for side_sub-->
 
-        <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
-<div class="wrapper">
-        <nav id="cpu">
-            <figure class="logo">
-                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-            </figure>
-            
-            <!-- To be used on PC -->
-            <div class="nav_container">
-                    <div class="cpu_nav">
-                        <div class="dropdown" >
-                            <a class="indicator">Works</a>
-                            <div class="subnav">
-                                <a href="animation.html">Animation / Motion Graphic</a>
-                                <a href="illustration.html">Illustration</a>
-                                <a href="ui.html">UI Design</a>
-                            </div>
-                        </div>
-                        
-                        <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
-                            <a href="about.html">About Me</a>
-                            <a href="resume.html">Resume</a>
-                            <a href="#contact">Contact Me</a>
-                            
-                        </div>
-                    </div>
-            </nav>
+    <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
 
-            <!-- To Be used on mobile and tablet -->  
-            <nav id="mobile">
-            <figure class="logo">
-                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-            </figure>
-            <button id="hamberger_button" type="button" onclick="nav_button()"></button>
-
-            <div class="mobile_nav" style="display: none;">
-                    <button id="mobile_button">Works</button>
-                    <div id="subnav_mobile" style="display: none;">
-                    <a href="animation.html">Animation / Motion Graphic</a>
-                    <a href="illustation.html">Illustration</a>
-                    <a href="ui.html">UI Design</a>
-                </div>
-        
-                <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
-                    <a href="about.html">About Me</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="#contact">Contact Me</a>
-                    
-                </div>
-            </div>
-            
-        
-            </div>
-        </nav>
-</div>
-
-           
-
-            <div id="moving">
-                <div class="interior_wrapper">
-                    <article class="grid-space">
-                    <h1 id="description" class="space">Future UI</h1>
-                    <h3 class="space">Class Project</h3>
-                    
-                    <p><strong>November 2017 - December 2017</strong></p>
-                
-                        <p>This is just a basic Future UI while playing around with roto brush.</p>
     
-                        <p>All sound effects belongs to Enterbrain, Rage Games, Capcom, and SEGA.</p> 
-                    </article>
+    <!-- **************************** Navigation *************************************  -->
+    <nav id="cpu_screen"> <!-- This is the Navigation Control for the PC-->
+
+        <div class="wrapper">
+            <!-- Clicking on the Logo will lead back to the homepage-->
+            <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                                  <!-- It will also allow me to control the position of the page.-->
+                <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+            </figure> <!-- End Figure for my Logo-->
+            
+            
+            <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
+                <a href="#projects">My Projects</a>
+                <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">Resume</a>
+                <!-- -->
+                <a href="#contact">Contact Me</a>
+            </div> <!-- End div for nav_container -->
+        </div> <!-- End div for Wrapper -->
+    </nav> <!-- End nav for CPU-->
+
+    <!-- **************************** Main *************************************  -->
+    <div id="image_ui"></div> <!-- Seperate the images -->
+
+    <div class="content grid-space">
+    <div class="interior_wrapper"> <!-- Wraps the whole content. -->
+
+    <article class="grid-space">
+        <h1  class="space">Future UI</h1>
+        <p><strong>November 2017 - December 2017</strong></p>
+    </article>
+    </div>
+    </div>
+
+    
+    <!-- ************************ Image Seperation ******************************  -->
+    <div class="seperation"></div>
+
+    <div class="content">
+    <div class="interior_wrapper"> <!-- Wraps the whole content. -->
+    <!-- **************************** Description *************************************  -->
+    <article class="grid-space">
+        <h2 id="description" class="tabs">Description</h2>
+        <section class="space">
+            <p>This is just a basic Future UI while playing around with roto brush. Style 
+                of art is more towards vector style.
+            </p>
+            <p>All sound effects belongs to Enterbrain, Rage Games, Capcom, and SEGA.</p> 
+        </section>
+    </article>
                    
-                    <!-- *********************** Title Card *************************** -->
-                    <h2 id="titleCard" class="space">Future UI</h2>
-                    <figure class="grid-space">
-                        <video controls src="image/ui/futureui/animation/animation-30fps.mp4">
-                        This video does not support your current version</video>
-                        <figcaption>This is the animation version</figcaption>
-                    </figure>
+    <!-- *********************** Video *************************** -->
+    <figure class="grid-space">
+        <video controls src="image/ui/futureui/animation/animation-30fps.mp4">
+        This video does not support your current version</video>
+        <figcaption>This is the animation version</figcaption>
+    </figure>
 
-                    <!-- *********************** Sketches *************************** -->
-                    <h2 id="sketches" class="tabs">Sketches</h2>
-                    <article class="grid-space">
-                        <p>First, I started out with some sketches with the UI.</p>
-                        <p>These sketches helps me give me ideas.</p>
-                    </article>
+    <!-- *********************** Sketches *************************** -->
+    <h2 id="sketches" class="tabs">Sketches</h2>
+    <article class="grid-space">
+        <p>These sketches helps me give me explore some ideas. In order to start off
+            some of my assets.
+        </p>
+    </article>
                 
-                    <!-- *********************** Sketches Interface *************************** -->
-                    <section>
-                        <h3 class="space">Sketch - Interactive Interface</h3>
-                        <p>Phase I - User press the tablet.</p>
-                        <p>Phase II - User press the character.</p>
-                        <p>Phase III - Notification</p>
-                        <p>Phase IV - User can check their achivement page for medals.</p>
-                    </section>
+    <!-- *********************** Sketches Interface *************************** -->
+    <section>
+        <h3 class="space">Sketch - Interactive Interface</h3>
+        <p>Phase I - User press the tablet.</p>
+        <p>Phase II - User press the character.</p>
+        <p>Phase III - Notification</p>
+        <p>Phase IV - User can check their achivement page for medals.</p>
+    </section>
 
-                    <figure>
-                        <img src="image/ui/futureui/sketch/interface.png" alt="sketch 1">
-                    </figure>
-                    <!-- *********************** Sketches in dept*************************** -->
-                    <section>
-                        <h3 class="space">Indept</h3>
-                        <p>This is the in dept sketch of the interface.</p>
-                    </section>
+    <figure class="grid-structure">
+        <img src="image/ui/futureui/sketch/interface.png" alt="sketch 1">
+        <img src="image/ui/futureui/sketch/interface_sketch_pre.png" alt="sketch 1">
+        <img src="image/ui/futureui/sketch/assetsketch.png" alt="sketch 1">
+        <img src="image/ui/futureui/sketch/achivement_page.png" alt="achivement sketch">
+        <img src="image/ui/futureui/sketch/profilesketch.png" alt="achivement sketch">
+    </figure>
 
-                    <figure>
-                        <img src="image/ui/futureui/sketch/interface_sketch_pre.png" alt="sketch 1">
-                    </figure>
 
-                    <!-- *********************** Assets Sketches *************************** -->
-                    <section>
-                        <h3 class="space">Assets Sketch</h3>
-                        <p>Plans of assets Design.</p>
-                        <p></p>
-                    </section>
-                    <figure>
-                        <img src="image/ui/futureui/sketch/assetsketch.png" alt="sketch 1">
-                    </figure>
-                
-                    <!-- *********************** Achivement Page Sketches *************************** -->
-                    <section>
-                        <h3 class="space">Achivement Page - Sketch</h3>
-                        <p>This the sketches for the achivements.</p>
-                    </section>
-                    
-                    <figure>
-                        <img src="image/ui/futureui/sketch/achivement_page.png" alt="achivement sketch">
-                    </figure>
-                
-                    <!-- *********************** Profile Page Sketches *************************** -->
-                    <section>
-                        <h3 class="space">Profile Page - Sketch</h3>
-                        <p>This the sketches for the achivements.</p>
-                    </section>
-                    
-                    <figure>
-                        <img src="image/ui/futureui/sketch/profilesketch.png" alt="achivement sketch">
-                    </figure>
+    <!-- *********************** Wireframes *************************** -->
+    <h2 id="ui" class="tabs">Wireframes</h2>
+    <!-- *********************** Achivement Page *************************** -->
 
-                    <!-- *********************** Wireframes *************************** -->
-                    <h2 id="ui" class="tabs">Wireframes</h2>
-                    <!-- *********************** Achivement Page *************************** -->
-                    <h2 class="grid-space">Achivement Page</h2>
+    <section class="grid-space">
+        <h2>Achivement Page</h2>
+        
+        <p>This is version 1 of the achivemnet page.</p>
+        <p>The whole look I was going for is from a music video "Believe".
+    </section>
 
-                    <!-- *********************** v1 *************************** -->
-                    <section>
-                        <h3 class="space">Version 1</h3>
-                        <p>This is version 1 of the achivemnet page.</p>
-                        <p>The whole look I was going for is from a music video "Believe".
-                            A cover song by "Mitchie M". Time stamp: 2:56.
-                        </p>
+    <figure class="grid-structure">
+        <img src="image/ui/futureui/assets/achivement_v1.png"  alt="achivement 1">
+        <img src="image/ui/futureui/assets/achivement_v2.png"  alt="achivement 2">
+        <img src="image/ui/futureui/assets/achivement_final.png"  alt="achivement 1">
+    </figure>
 
-                        <p><strong>Source</strong>: <a href="https://www.youtube.com/watch?v=SRam9zcijao" onclick="window.open(this.href); return false;"
-                            onkeypress="window.open(this, href)" >https://www.youtube.com/watch?v=SRam9zcijao</a></p>
-                    </section>
 
-                    <figure>
-                        <img src="image/ui/futureui/assets/achivement_v1.png"  alt="sketch 1">
-                    </figure>
+    <!-- *********************** Profile Page *************************** -->
+    <section>
+        <h2>Profile Page</h2>
+        <p>This is version 1 of the profile page.</p>
+    </section>
 
-                    <!-- *********************** v2 *************************** -->
-                    <section>
-                        <h3 class="space">Version 2</h3>
-                        <p>This is version 2 of the achivemnet page.</p>
-                        <p>This design is cleaner.</p>
-                        <p>However in the User Experience, user will not under stand what to do.</p>
-                    </section>
+    <figure class="grid-structure">
+        <img src="image/ui/futureui/assets/profile_v1.png"  alt="sketch 1">
+        <img src="image/ui/futureui/assets/profile_v2.png"  alt="sketch 1">
+        <img src="image/ui/futureui/assets/profile_v3.png" alt="profile">
+        <video loop autoplay src="image/ui/futureui/profile_comp.mp4">
+            This video does not support your version.</video>
+    </figure>
 
-                    <figure>
-                        <img src="image/ui/futureui/assets/achivement_v2.png"  alt="sketch 1">
-                    </figure>
 
-                    <!-- *********************** v3 *************************** -->
-                    <section>
-                        <h3 class="space">Version 3</h3>
-                        <p>This is final version of the achivemnet page.</p>
-
-                        <p>User can scroll in the y direction.</p>
-                    </section>
-                    <figure>
-                        <img src="image/ui/futureui/assets/achivement_final.png"  alt="sketch 1">
-                    </figure>
-
-                    <!-- *********************** Profile Page *************************** -->
-                    <h2 class="grid-space">Profile Page</h2>
-
-                    <!-- *********************** v1 *************************** -->
-                    <section>
-                        <h3 class="space">Version 1</h3>
-                        <p>This is version 1 of the profile page.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/futureui/assets/profile_v1.png"  alt="sketch 1">
-                    </figure>
-
-                    <!-- *********************** v2 *************************** -->
-                    <section>
-                        <h3 class="space">Version 2</h3>
-                        <p>This is the final version of the achivement page.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/futureui/assets/profile.png" alt="profile"> 
-                    </figure>
-
-                    <!-- *********************** animation *************************** -->
-
-                    <section>
-                        <h3 class="space">Animation</h3>
-                        <p>Animation of the Video</p>
-                    </section>
-
-                    <figure>
-                        <video controls src="image/ui/futureui/profile_comp.mp4">This video does not
-                        support your version.</video>
-                    </figure>
-
-                    <!-- *********************** Medal *************************** -->
-                    <h2 class="grid-space">Medal Page</h2>
-
-                    <!-- *********************** animation *************************** -->
-                    <section>
-                        <h3 class="space">Animation</h3>
-                        <p>This is the final version of the achivement page.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/futureui/assets/medal_ui.png" alt="profile"> 
-                    </figure>                   
-
-                    <section>
-                        <h3 class="space">Animation</h3>
-                        <p>Animation of the Video</p>
-                    </section>
-                    <figure>
-                        <video controls src="image/ui/futureui/medal.mp4">This video does not
-                        support your version.</video>
-                    </figure>
-
-                    <h2 id="char" class="tabs">Character Design</h2>
-                    <!-- *********************** Rebecca *************************** -->
-                    <article class="grid-space">
-                    <h2 class="space">Rebecca Amaterasu</h2>
-
-                        <p><strong>Age:</strong> 21</p>
-                        <p><strong>Nation:</strong> Fourside</p>
+    <!-- *********************** Medal *************************** -->
+    <section>
+        <h2 class="grid-space">Medal Page</h2>
+        <p>This is the final version of the achivement page.</p>
+    </section>
+    <figure class="grid-structure">
+        <img src="image/ui/futureui/assets/medal_v1.png" alt="profile"> 
+        <img src="image/ui/futureui/assets/medal_v2.png" alt="profile"> 
+        <img src="image/ui/futureui/assets/medal_ui.png" alt="profile"> 
+        <video loop autoplay src="image/ui/futureui/medal.mp4">This video does not
+        support your version.</video>
+    </figure>                   
     
-                        <p>Rebecca is a Designer who always find inspiration in songs, UI and pretty much anything.
-                            However, she end up in a Parallel world of Another Earth where she can use magic known as PSI Power.</p>
+    <!-- *********************** Character Design *************************** -->
+    <h2 id="char" class="tabs">Character Design</h2>
+    <article class="grid-space">
+        <h2 class="space">Rebecca Amaterasu</h2>
+    </article>
+    
+    <!-- *********************** Sketch *************************** -->
+    <section>
+        <h3 class="space">Sketch</h3>
+        <p>The main Inspiration for her is like a mix of a tipical school girl in college</p>
+        <p>First Sketch of Rebecca.</p>
+        <p>At first, I wanted to go towards chibi anime style.</p>
+        <p>The name Rebecca is named after a friend of mine. This design by the way
+            does not look like her. The name itself inspired me.
+        </p>
+    </section>
+    <figure class="grid-structure">
+        <img src="image/ui/futureui/sketch/rebecca-sketch.png" alt="sketch" style="grid-column: span 3;">
+        <img src="image/ui/futureui/sketch/rebecca-face-sketch.png" alt="face">
+        <img src="image/ui/futureui/sketch/rebecca_amaterasu_v1.png" alt="digital sketch">
+        <img src="image/ui/futureui/sketch/rebecca_sketch_v3.png" alt="final sketch">
+    </figure>
+    
+    <!-- *********************** Sketch Faces *************************** -->
+    <section>
+        <h3 class="space">Faces</h3>
+        <p>I explored some faces.</p>
+        <p>One has a hat (top right).</p>
+        <p>The other one has glasses on (bottom).</p>
+    </section>
+    
+    <figure class="grid-structure">
+        <video loop autoplay src="image/ui/futureui/idle_stance.mp4">This video does not support</video>
+        <video loop autoplay src="image/ui/futureui/smiling.mp4">This video does not support</video>
+        <figcaption>Idle Stance</figcaption>
+        <figcaption>Smiling</figcaption>
+    </figure>
+
+
+    <!-- *********************** Rebecca Final Version*************************** -->
+    <section>
+        <h3 class="space">Final Version.</h3>
+        <p>This style was geared toward the Puyo Puyo style. Flat and cartoony.</p>
+    </section>
+
+    <figure class="grid-structure">
+        <img src="image/ui/futureui/sketch/amaterasu_v1.svg" alt="final version">
+        <img src="image/ui/futureui/sketch/amaterasu_v2.svg" alt="final version">
+        <figcaption>Version 1</figcaption>
+        <figcaption>Version 2</figcaption>
+    </figure>
+
                         
-                        <p>She fights an evil force to save the world. This Evil Force is known as “The Crazed Sign.” Crazed Sign are known to
-                        steal bus stop signs in order to spread chaos to the world. It is up to Rebecca to save the world.</p>
+    <!-- *********************** Assets *************************** -->
+    <h2 id="assets" class="tabs">Assets</h2>
+     
+    <h2 class="grid-space">Base Circle</h2>
+    <section>
+        <h3 class="space">Circle</h3>
+        <p>This circle was just in my imagination. I just go with the flow.</p>
+    </section>
 
-                        <p>Glory to Arstotzka!</p>
-                        <p>I mean, Glory to Fourside!</p>
-                    </article>
-
-                    <!-- *********************** Logo *************************** -->
-                    <section>
-                        <h3 class="space">Logo</h3>
-                        <p>This is the logo for this app.</p>
-                        <p>This was used all the assets I had.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/futureui/assets/logo.png" alt="logo">
-                    </figure>
-
-                    <!-- *********************** Sketch *************************** -->
-                    <section>
-                        <h3 class="space">Sketch</h3>
-                        <p>First Sketch of Rebecca.</p>
-                        <p>At first, I wanted to go towards chibi anime style.</p>
-
-                        <p>The name Rebecca is named after a friend of mine. This design by the way
-                            does not look like her. The name itself inspired me.
-                        </p>
-                    </section>
-                    <figure>
-                        <img src="image/ui/futureui/sketch/rebecca-sketch.png" alt="sketch">
-                    </figure>
-                    
-                    <!-- *********************** Sketch Faces *************************** -->
-                    <section>
-                        <h3 class="space">Faces</h3>
-                        <p>I explored some faces.</p>
-                        <p>One has a hat (top right).</p>
-                        <p>The other one has glasses on (bottom).</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/futureui/sketch/rebecca-face-sketch.png" alt="face">
-                    </figure>
-
-                    <!-- *********************** Rebecca Sketch Style *************************** -->
-                    <section>
-                        <h3 class="space">Digital Sketch</h3>
-                        <p>First Color before the final sketch.</p>
-                        <p>Some of the poses are inspired by Ringo from "Puyo Puyo Series".</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/futureui/sketch/rebecca_amaterasu_v1.png" alt="digital sketch">
-                    </figure>
-
-                    <!-- *********************** Final Sketch *************************** -->
-                    <section>
-                        <h3 class="space">Final Sketch</h3>
-                        <p>Final Sketch of Rebecca</p>
-                    </section>
-
-                    <figure>
-                       <img src="image/ui/futureui/sketch/rebecca_sketch_v3.png" alt="final sketch">
-                    </figure>
-
-                    <!-- *********************** Rebecca Final Version*************************** -->
-                    <section>
-                        <h3 class="space">Final Version.</h3>
-                        <p>This style was geared toward the Puyo Puyo style. Flat and cartoony.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/futureui/sketch/rebecca_amaterasu_v2.png" alt="final version">
-                    </figure>
-
-                    <!-- *********************** Animation 1 *************************** -->
-                    <section>
-                        <h3 class="space">Idle Stance</h3>
-                        <p>Animation for Rebecca.</p>
-                        <p>This is the standard pose of Rebecca. Without any interaction.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/futureui/rebecca_animation1.gif" alt="animation 1">
-                    </figure>
-
-                    <!-- *********************** Animation 2 *************************** -->
-                    <section>
-                        <h3 class="space">Pressed Rebecca</h3>
-                        <p>This is Rebecca doing a animation when pressed.</p>
-                    </section>
-                    <figure>
-                        <img src="image/ui/futureui/rebecca_animation2.gif" alt="animation 2">
-                    </figure>
-                        
-                    <!-- *********************** Assets *************************** -->
-                    <h2 id="assets" class="tabs">Assets</h2>
-                    
-                    <h2 class="grid-space">Base Circle</h2>
-                    <section>
-                        <h3 class="space">Circle</h3>
-                        <p>This circle was just in my imagination. I just go with the flow.</p>
-                    </section>
-                    <figure>
-                        <img src="image/ui/futureui/assets/circle.png" alt="base circle">
-                    </figure>
+    <figure class="grid-structure">
+        <img src="image/ui/futureui/assets/circle.png" alt="base circle">
+        <img src="image/ui/futureui/assets/surround.png" alt="line">
+        <video loop autoplay src="image/ui/futureui/circle.mp4">This video does not work on
+            your version</video>
+    </figure>
                     
                     <!-- *********************** Surround circle *************************** -->
                     <section>
@@ -415,7 +274,6 @@
                     </section>
 
                     <figure>
-                        <img src="image/ui/futureui/assets/surround.png" alt="line">
                     </figure>
                     
                     <!-- *********************** Animation *************************** -->
@@ -425,8 +283,6 @@
                     </section>
 
                     <figure>
-                        <video controls src="image/ui/futureui/circle.mp4">This video does not work on
-                            your version</video>
                     </figure>
                     
                     <!-- *********************** Notification *************************** -->
@@ -449,15 +305,6 @@
 
                     <figure>
                         <img src="image/ui/futureui/assets/notification_v2.png" alt="notification 2">
-                    </figure>
-
-                    <!-- *********************** Notification Medal *************************** -->
-                    <section>
-                        <h3 class="space">Notification Medal</h3>
-                        <p>This is the notification for medal.</p>
-                    </section>
-
-                    <figure>
                         <img src="image/ui/futureui/assets/notification_v2_medal.png" alt="notification medal">
                     </figure>
 
@@ -476,6 +323,9 @@
 
                 </div>
              </div>
+            </div>
+
+    <!-- ************************************* Footer ******************************** -->
     <footer>
         <div class="footer_wrapper">
             <div id="contact">
@@ -484,9 +334,10 @@
                     <li>Phone: 207-766-6625</li>
                     <li>Email: MiyukProduction@gmail</li>
                 </ul> 
-                <!-- <div class="icon">
-                    <a href="#"><img id="facebook" src="" /></a>
-                </div> -->
+                <div class="icon">
+                    <a href="https://www.facebook.com/david.zhao.73" onclick="window.open(this.href); return false;"
+                    onkeypress="window.open(this, href); return false"><img id="facebook" src="fontawesome_logo/facebook-square-brands.svg" /></a>
+                </div>
             </div>
     
             <div class="gallery">
