@@ -35,16 +35,24 @@
     <script src="js/customscript.js"></script>
     
     <title>DanX Portfolio - Struggle</title>
+    
+    <style>
+        #image_ui{
+            background-color: black;
+            /* background-image: url(#); */
+
+            top: -10px;
+        }
+    </style>
+
 </head>
 <body>
-        <div id="top"></div>
+        <div id="top">
+                <!-- This div is purposly Empty-->
+        </div> <!-- This div only applies with the div, back to top. -->
+
         <div id="side_sub">
-
-                
-
                 <div class="list"> 
-                    <!-- <button id="back_button" onclick="back()"></button>-->
-                    <!-- Tried to use the back button but it does not want to work-->
                     <a href="#description">Description</a>
                     <a href="#titleCard">Animation</a>
                     <a href="#storyboard">Storyboard</a>
@@ -54,81 +62,74 @@
                     <a href="#characters">Characters</a>
                     <a href="#background">Background</a>
                     <a href="#assets">Assets</a>
+                </div> <!-- End div for List-->
+        </div> <!-- End did for side sub -->
 
-
-    
-                </div>
-        </div>
-
+        <!-- This is the back to top button -->
         <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
-<div class="wrapper">
-        <nav id="cpu">
-            <figure class="logo">
-                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-            </figure>
+
+    <!-- **************************** CPU Navigation *************************************  -->
+    <nav id="cpu_screen" > <!-- This is the Navigation Control for the PC-->
+
+        <div class="wrapper">
+            <!-- Clicking on the Logo will lead back to the homepage-->
+            <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                                  <!-- It will also allow me to control the position of the page.-->
+                <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+            </figure> <!-- End Figure for my Logo-->
             
-            <!-- To be used on PC -->
-            <div class="nav_container">
-                    <div class="cpu_nav">
-                        <div class="dropdown" >
-                            <a class="indicator">Works</a>
-                            <div class="subnav">
-                                <a href="animation.html">Animation / Motion Graphic</a>
-                                <a href="illustration.html">Illustration</a>
-                                <a href="ui.html">UI Design</a>
-                            </div>
-                        </div>
-                        
-                        <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
-                        <a href="about.html">About Me</a>
-                        <!-- This code is by: John Conde
-                            Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
-                            <a href="resume.html">Resume</a>
-                            <a href="#contact">Contact Me</a>
-                            
-                        </div>
-                    </div>
-            </nav>
+            
+            <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
+                <a href="index.html #projects">My Projects</a>
+                <a href="index.html #resume">Resume</a>
+                <a href="#contact">Contact Me</a>
+            </div> <!-- End div for nav_container -->
+        </div> <!-- End div for Wrapper -->
+    </nav> <!-- End nav for CPU-->
 
-            <!-- To Be used on mobile and tablet -->  
-            <nav id="mobile">
-            <figure class="logo">
-                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-            </figure>
-            <button id="hamberger_button" type="button" onclick="nav_button()"></button>
+        <!-- **************************** Mobile Navigation *************************************  -->
+    <nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
 
-            <div class="mobile_nav" style="display: none;">
-                    <button id="mobile_button">Works</button>
-                    <div id="subnav_mobile" style="display: none;">
-                    <a href="animation.html">Animation / Motion Graphic</a>
-                    <a href="illustation.html">Illustration</a>
-                    <a href="ui.html">UI Design</a>
-                </div>
-        
-                <div class="nav-wrapper">
-                    <a href="about.html">About Me</a>
-                    <!-- This code is by: John Conde
-                         Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
-                    <a href="resume.html">Resume</a>
+        <div class="wrapper">
+            <!-- Clicking on the Logo will lead back to the homepage-->
+            <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                                  <!-- It will also allow me to control the position of the page.-->
+                <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+            </figure> <!-- End Figure for my Logo-->
+            
+            <!-- This button only exist on mobile only -->
+            <div id="hamberger_icon" onclick="nav_button()"></div>
+
+                <div class="nav_container">
+                    <a href="index.html#projects">My Projects</a>
+                    <a href="index.html#resume">Resume</a>
                     <a href="#contact">Contact Me</a>
-                    
-                </div>
-            </div>
-            
-        
-            </div>
-        </nav>
-        </div>
+                </div><!-- End div for nav container -->
 
+        </div> <!-- End div for Wrapper -->
+    </nav> <!-- End nav for mobile-->
+    
+    <!-- *********************** Background Image *************************** -->
+    <div id="image_ui"></div> <!-- Place Image Backgorund Here in CSS -->
+
+    <div class="content" style="padding-top: 0; padding-bottom: 0;">
     <div class="interior_wrapper">
         
         <!-- *********************** Description *************************** -->
-        <article class="grid-space">
-        <h1 id="description" class="space">Struggle</h1>
-        <h3 class="space">Class Project</h3>
+        <article style="padding-bottom: 0;">
+        <h1 class="space">Struggle</h1>
 
         <p><strong>April 2018 - May 2018</strong></p>
+        </article>
+    </div> <!-- End div for interior wrapper -->
+    </div> <!-- End did for content -->
         
+        <!-- ************************ Image Seperation ******************************  -->
+        <div class="seperation"></div>
+     
+    <div class="content">
+    <div class="interior_wrapper">
+        <h2 id="description" class="tabs">Description</h2>
         <p>This is a story about the struggles I have to deal with during the times I deal
         with during my time at in School. I'm planning to keep working
         on it.
@@ -138,7 +139,6 @@
         <p><strong>Source:</strong> <a href="https://www.youtube.com/watch?v=vt2wHUJHbbg" 
             onclick="window.open(this.href); return false;" onkeypress="window.open(this, href)">
             https://www.youtube.com/watch?v=vt2wHUJHbbg</a></p>
-        </article>
 
         <!-- *********************** Animation *************************** -->
         <h2 id="titleCard" class="tabs">Animation</h2>
@@ -456,6 +456,7 @@
             <img src="image/animation/struggle/keychain_sketch.png" alt="Logo">
         </figure>  
     </div>
+    </div>
 
     <footer>
         <div class="footer_wrapper">
@@ -465,9 +466,11 @@
                     <li>Phone: 207-766-6625</li>
                     <li>Email: MiyukProduction@gmail</li>
                 </ul> 
-                <!-- <div class="icon">
-                    <a href="#"><img id="facebook" src="" /></a>
-                </div> -->
+                <a href="https://www.facebook.com/david.zhao.73" onclick="window.open(this.href); return false;"
+                onkeypress="window.open(this, href); return false"><img id="facebook" src="fontawesome_logo/facebook-square-brands.svg" /></a>
+
+                <a href="https://www.linkedin.com/in/david-zhao-a27371136/" onclick="window.open(this.href); return false;"
+                onkeypress="window.open(this, href); return false"><img id="facebook" src="fontawesome_logo/linkedin-brands.svg" /></a>
             </div>
     
             <div class="gallery">
