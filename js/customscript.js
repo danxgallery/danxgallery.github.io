@@ -4,21 +4,22 @@
 
  window.onscroll = function() {scrollFunction()};
 
+ //let y = document.querySelector("#cpu_screen")
  function scrollFunction() {
    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 80) {
-     document.querySelector("#cpu").style.top = "-90px";
+     document.querySelector("#cpu_screen").style.top = "-70px";
      //document.querySelector(".nav_container").style.paddingTop = "30px";
    } 
   
    else {
-     document.querySelector("#cpu").style.top = "0";
+     document.querySelector("#cpu_screen").style.top = "0";
      //document.querySelector(".nav_container").style.paddingTop = "40px";
    }
 
  }
 
 function nav_button() {
-    let x = document.querySelector(".mobile_nav"); //Grab the subnav for mobile
+    let x = document.querySelector(".nav_container"); //Grab the subnav for mobile
     if (x.style.display === "none") {
         x.style.display = "block";  
 
@@ -40,12 +41,11 @@ function nav_button() {
 $(document).ready(function(){
 
 
-    $("#mobile_button").click(function(){
-        $("#subnav_mobile").toggle(300);});
+    $("#hamberger_icon").click(function(){
+        $(".nav_container").toggle(300);});
 
     $("#toggle_button0").click(function(){
         $("#sub_section").toggle(300);});
-   
 
     $(".toggle_button").click(function(){
         $(this).next(".section").slideToggle(300);});
