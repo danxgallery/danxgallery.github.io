@@ -35,139 +35,145 @@
     <script src="js/customscript.js"></script>
     
     <title>DanX Portfolio - Pikmin Fan Animation</title>
+    <style>
+        /* Reposition the image */
+        #image_ui{
+            left: 25%;
+            top: -5px;
+
+            background-image: url(gallery_icon/pikmin_logo.svg);
+        }
+
+        @media screen and (max-width: 1024px){
+            #image_ui{
+                left: 0;
+                top: 100px;
+            }
+        }
+    </style>
 </head>
 <body>
         <div id="top"></div>
         <div id="side_sub">
-
-                
-
-                <div class="list"> 
-                    <a href="#description">Description</a>
-                    <a href="#titleCard">Animation</a>
-                    <a href="#antimatic">Antimatic</a>
-                    <a href="#styleframe">Animatic Drawings</a>
-                    <a href="#characters">Characters</a>
-                    <a href="#background">Background</a>
-                    <a href="#storyboard">Storyboard</a>
-                </div>
+            <div class="list"> 
+                <a href="#description">Description</a>
+                <a href="#titleCard">Animation</a>
+                <a href="#antimatic">Antimatic</a>
+                <a href="#storyboard">Storyboard</a>
+                <a href="#characters">Characters</a>
+                <a href="#animated">Character Animation</a>
+            </div>
         </div>
 
-        <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
-<div class="wrapper">
-        <nav id="cpu">
-                <figure class="logo">
-                    <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-                </figure>
-                
-                <!-- To be used on PC -->
-                <div class="nav_container">
-                        <div class="cpu_nav">
-                            <div class="dropdown" >
-                                <a class="indicator">Works</a>
-                                <div class="subnav">
-                                    <a href="animation.html">Animation / Motion Graphic</a>
-                                    <a href="illustration.html">Illustration</a>
-                                    <a href="ui.html">UI Design</a>
-                                </div>
-                            </div>
-                            
-                            <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
-                            <a href="about.html">About Me</a>
-                            <!-- This code is by: John Conde
-                                Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
-                                <a href="resume.html">Resume</a>
-                                <a href="#contact">Contact Me</a>
-                                
-                            </div>
-                        </div>
-                </nav>
-    
-                <!-- To Be used on mobile and tablet -->  
-                <nav id="mobile">
-                <figure class="logo">
-                    <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-                </figure>
-                <button id="hamberger_button" type="button" onclick="nav_button()"></button>
-    
-                <div class="mobile_nav" style="display: none;">
-                        <button id="mobile_button">Works</button>
-                        <div id="subnav_mobile" style="display: none;">
-                        <a href="animation.html">Animation / Motion Graphic</a>
-                        <a href="illustation.html">Illustration</a>
-                        <a href="ui.html">UI Design</a>
-                    </div>
-            
-                    <div class="nav-wrapper">
-                        <a href="about.html">About Me</a>
-                        <!-- This code is by: John Conde
-                             Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
-                        <a href="resume.html">Resume</a>
-                        <a href="#contact">Contact Me</a>
-                        
-                    </div>
-                </div>
-                
-            
-                </div>
-            </nav>
-</div>
+<a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
+ <!-- **************************** CPU Navigation *************************************  -->
+ <nav id="cpu_screen" > <!-- This is the Navigation Control for the PC-->
 
-           
+    <div class="wrapper">
+        <!-- Clicking on the Logo will lead back to the homepage-->
+        <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                              <!-- It will also allow me to control the position of the page.-->
+            <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+        </figure> <!-- End Figure for my Logo-->
+        
+        
+        <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
+            <a href="index.html #projects">My Projects</a>
+            <a href="index.html #resume">Resume</a>
+            <a href="#contact">Contact Me</a>
+        </div> <!-- End div for nav_container -->
+    </div> <!-- End div for Wrapper -->
+</nav> <!-- End nav for CPU-->
 
-    <div class="interior_wrapper">
+    <!-- **************************** Mobile Navigation *************************************  -->
+<nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
 
-        <!-- *********************** Description *************************** -->
-        <article class="grid-space">
-            <h1 id="description" class="space">Pikmin Fan Animation</h1>
-            <h3 class="space">Class Project</h3>
-                        
+    <div class="wrapper">
+        <!-- Clicking on the Logo will lead back to the homepage-->
+        <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                              <!-- It will also allow me to control the position of the page.-->
+            <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+        </figure> <!-- End Figure for my Logo-->
+        
+        <!-- This button only exist on mobile only -->
+        <div id="hamberger_icon" onclick="nav_button()"></div>
+
+            <div class="nav_container">
+                <a href="index.html#projects">My Projects</a>
+                <a href="index.html#resume">Resume</a>
+                <a href="#contact">Contact Me</a>
+            </div><!-- End div for nav container -->
+
+    </div> <!-- End div for Wrapper -->
+</nav> <!-- End nav for mobile-->
+
+<!-- **************************** Main *************************************  -->
+<div id="image_ui"></div> <!-- Place Image Backgorund Here in CSS -->
+
+<div class="content" style="padding-top: 0;">
+<div class="interior_wrapper"> <!-- Wraps the whole content. -->
+
+<!-- *********************** Description *************************** -->
+        <article>
+            <h1>Pikmin Fan Animation</h1>
             <p><strong>Feburary 2018 - March 2018</strong></p>
-                    
-            <p>This is a fan animation of a Nintendo Game Series named Pikmin.</p>
-            <p><em>The Music and original character design belong to Nintendo.</em></p>
-            <p>I made the Pikmins in my style.</p>
         </article>
+</div> <!-- End div for content -->
+</div> <!-- End div for interior wrapper -->
 
-        <!-- *********************** Animation *************************** -->
-        <h2 id="titleCard" class="tabs">Animation</h2>
-        <figure class="grid-space">
-            <video controls src="image/animation/pikmin_fan_animation/animation_final.mp4">
+<div class="seperation"></div>
+
+<div class="content">
+<div class="interior_wrapper"> <!-- Wraps the whole content. -->
+
+    <h2 id="description" class="tabs">Description</h2>
+    
+    <article>
+        <p>This is a fan animation of a Nintendo Game Series named Pikmin.</p>
+        <p><em>The Music and original character design belong to Nintendo.</em></p>
+        <p>I made the Pikmins in my style.</p>
+    </article>
+    
+    <!-- *********************** Animation *************************** -->
+    <h2 id="titleCard" class="tabs">Animation</h2>
+    
+    <figure>
+        <video controls src="image/animation/pikmin_fan_animation/animation_final.mp4">
+        This video does not support your current version</video>
+        <figcaption>This is the animation version</figcaption>
+    </figure>
+
+    <!-- *********************** Animatic *************************** -->
+    <h2 id="antimatic" class="tabs">Animatic</h2>
+    <figure>
+        <video controls src="image/animation/pikmin_fan_animation/animatic.mp4">
             This video does not support your current version</video>
-            <figcaption>This is the animation version</figcaption>
-        </figure>
+            <figcaption>This is the animatic version</figcaption>
+    </figure>
 
-        <!-- *********************** Animatic *************************** -->
-        <h2 id="antimatic" class="tabs">Animatic</h2>
-        <figure class="grid-space">
-            <video controls src="image/animation/pikmin_fan_animation/animatic.mp4">
-                This video does not support your current version</video>
-                <figcaption>This is the animatic version</figcaption>
-            </figure>
+    <p>These are all the animatic. These are hand drawen. It makes it easier for me to remember how
+        these will be animated.
+    </p>
+    <figure>
+        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic1.png" alt="styleframe 1">
+        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic2.png" alt="styleframe 2">
+        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic4part0.png" alt="styleframe 2">
+        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic5.png" alt="styleframe 2">
+        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic6.png" alt="styleframe 2">
+        <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic7.png" alt="styleframe 2">
+    </figure>
         
         <!-- *********************** Storyboard *************************** -->
         <h3 id="storyboard">Storyboard</h3>
 
-        <p class="grid-space">This is the stoyboard that I used to help make the animation.</p>
+        <section>
+            <p>This is the stoyboard that I used to help make the animation.</p>
+        </section>
 
         <figure class="grid-space">
             <img src="image/animation/pikmin_fan_animation/Storyboard.png" alt="Green Maiden Hero">
         </figure>
-        
-        <!-- *********************** Animatics Drawing *************************** -->
-        <h2 id="styleframe" class="tabs">Animatic Drawings</h2>
 
-        <p>Thes are all Drawings for the Animatic.</p>
-        <figure class="grid-space">
-            <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic1.png" alt="styleframe 1">
-            <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic2.png" alt="styleframe 2">
-            <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic3.png" alt="styleframe 3">
-            <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic4part0.png" alt="styleframe 2">
-            <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic5.png" alt="styleframe 2">
-            <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic6.png" alt="styleframe 2">
-            <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic7.png" alt="styleframe 2">
-            <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic10.png" alt="styleframe 2">
-        </figure>
 
         <!-- *********************** Characters *************************** -->
         <h2 id="characters" class="tabs">Characters</h2>
@@ -189,88 +195,57 @@
         <figure>
             <img src="image/animation/pikmin_fan_animation/pikmin_sketch.png" alt="Sketch">
         </figure>
-        
-        <!-- *********************** Yellow Spectralids Animation *************************** -->
-        <section>
-            <h3 class="space">Yellow Spectralids</h3>
-            <p>This is the animation of the Yellow Spectralids</p>
-        </section>
 
         <figure>
-            <img src="image/animation/pikmin_fan_animation/yellow_spetrialid.gif" alt="Spectralids Animation">
+                <img src="image/animation/pikmin_fan_animation/Assets.png" alt="Logo">
         </figure>
-        <!-- *********************** Spectralids *************************** -->
-        <section>
-            <p>Sketch of the Yellow Spectralids.</p>
-        </section>
 
         <figure>
             <img src="image/animation/pikmin_fan_animation/Yellow_spectralids.png" alt="Yellow Spectralids">
         </figure>
 
-        <!-- *********************** Red Pikmin Animation *************************** -->
-        <h3 class="grid-space">Red Pikmin</h3>
+        
+        <!-- *********************** Yellow Spectralids Animation *************************** -->
+        <h2 id="animated" class="tabs">Character Animation</h2>
 
-        <!-- *********************** About to Land *************************** -->
         <section>
-            <h3 class="space">Landing</h3>
-            <p>Red Pikmin about to land.</p>
+            <p>This is the animation of the Yellow Spectralids</p>
         </section>
 
-        <figure>
-            <img src="image/animation/pikmin_fan_animation/red_pikmin_jump.gif" alt="Animation 1">
-        </figure>
+        <div class="grid-structure">
+            <figure>
+                <video loop autoplay src="image/animation/pikmin_fan_animation/red_question.mp4">
+                    This video does not support your current version</video>
+                <figcaption>Question</figcaption>
+            </figure>
 
-        <!-- *********************** Jump *************************** -->
-        <section>
-            <h3 class="space">About to Jump</h3>
-            <p>Red Pikmin about to jump</p>
-        </section>
+            <figure>
+                <video loop autoplay src="image/animation/pikmin_fan_animation/red_running.mp4">
+                    This video does not support your current version</video>
+                <figcaption>Running</figcaption>
+            </figure>
+            
+            <figure>    
+                <video loop autoplay src="image/animation/pikmin_fan_animation/red_jump.mp4">
+                    This video does not support your current version</video>
+                <figcaption>During Jump.</figcaption>
+            </figure>
 
-        <figure>
-            <img src="image/animation/pikmin_fan_animation/red_pikmin_jump_lift_off.gif" alt="styleframe 2">
-        </figure>
+            <figure>
+                <video loop autoplay src="image/animation/pikmin_fan_animation/red_begin_jump.mp4">
+                    This video does not support your current version</video>
+                <figcaption>Before Jump.</figcaption>
+            </figure>
 
-        <!-- *********************** Question *************************** -->
-        <section>
-            <h3 class="space">Running Animation</h3>
-            <p>Red Pikmin Questioning Pose.</p>
-        </section>
+            <figure>
+                <video loop autoplay src="image/animation/pikmin_fan_animation/spetrialid.mp4">
+                    This video does not support your current version</video>
+                <figcaption>Yellow Spectralids Flying</figcaption>
+            </figure>
 
-        <figure>
-            <img src="image/animation/pikmin_fan_animation/red_pikmin_question.gif" alt="styleframe 3">
-        </figure>
-
-        <!-- *********************** Running *************************** -->
-        <section>
-            <p>Red Pikmin running.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/pikmin_fan_animation/red_pikmin_running.gif" alt="styleframe 2">
-        </figure>
-
-        <!-- *********************** Yellow Pikmin *************************** -->
-        <h3 class="grid-space">Yellow Pikmin</h3>
-        <section>
-            <h3 class="space">Yellow Pikmin Question Animation</h3>
-            <p>Same as the Blue Pikmin, this is the animation of the Yellow Pikmin Question.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/pikmin_fan_animation/yellow_pikmin_question.gif" alt="styleframe 2">
-        </figure>
-
-                    
-        <!-- *********************** Background *************************** -->
-        <h3 id="background" class="tabs">Background</h3>
-        <section>
-            <p>Sketch of all the assets used in this animation.</p>
-        </section>
-        <figure>
-            <img src="image/animation/pikmin_fan_animation/Assets.png" alt="Logo">
-        </figure>
+        </div>
                         
+    </div>
     </div>
 
     <footer>
