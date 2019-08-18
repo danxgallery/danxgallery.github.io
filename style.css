@@ -34,6 +34,16 @@ body {
     height: 100%;
 }
 
+/*Always a fill size video regardless of width of the section with adjustment */
+video{
+    width: 100%;
+}
+
+/*Always a fill size image regardless of width of the section with adjustment */
+figure img{
+    width: 100%;
+}
+
 
 li {
     list-style-type: none; /* Remove all the list style type to none. */
@@ -45,7 +55,7 @@ li {
 
 p {
     padding-bottom: 16px; /*all p tags will have a bottom padding of 16px*/
-    line-height: 24px; /* give the space of each gap by 24px */
+    line-height: 34px; /* give the space of each gap by 24px */
 }
 
 /*all non-specific a tags will have a highlight color of blue and make them bold*/
@@ -67,15 +77,8 @@ a:link, a:visited{
 ********************************************************************/
 
 /* ------------------------- CPU Screen Navigation ------------------------ */
-/* - Set width to 100%.
-   - Set the Height to 100px
-   - set the z-index to 3. This will set the position of the Navigation without glitchy overlaps of my
-     interactive objects tags
-   - Set position to fixed
-   - Background color is white
-   - transition effects my scroll animation. Must by complicite with Javascript*/
+/* This only applie to Navigation for CPU */
 #cpu_screen {
-
     width: 100%; /* This is nessessary becasue the navigation to fit the max-width of 1200px*/
     height: 70px;
 
@@ -121,7 +124,7 @@ a:link, a:visited{
 /*----------------- Mobile Navigation ------------------ */
 
 /* - The mobile version of navigation will not show up on CPU Screen*/
-#mobile{
+#mobile_screen{
     display: none;
 }
 
@@ -149,6 +152,7 @@ a:link, a:visited{
     margin-left: 12px;
 }
 
+/* Seperate the section off the border */
 #index_wrapper article{
     width: 300px;
     height: 500px;
@@ -160,7 +164,7 @@ a:link, a:visited{
 
 
 /*******************************************************************
-                        Works
+                        Homepage Works
 ********************************************************************/
 
 /* This div is the wrapper of the whole thing.*/
@@ -276,7 +280,7 @@ footer{
 }
 
 /* - Give the Font Awesome Icon with the div of "class="social_gallery" in between space of 20px*/
-.social_gallery a{
+.social_gallery a, .icon a{
     padding-right: 20px;
 }
 
@@ -302,110 +306,22 @@ footer{
     to {opacity: 1;}
 }
 
-
-
-
-/*******************************************************************
-                        Sub Navigation
-********************************************************************/
-
-/* This code only applies to the "Works" Section of the Navigation */
-.subnav {
-    display: none; /* Set the display of the dropdown nav to be remove completely */
-    position: absolute; /* Position does not move at all */
-
-    z-index: 1; /* One layer higher than base */
-    margin-top: 30px;
-}
-
-/* - When the dropdown class hovers: these effect happens */
-.dropdown:hover .subnav {
-    display: inline-block; /* Display is set to inline-block (Making the subnav go vertical) */
-    width: 350px;
-    height: 310px;
-
-    padding-bottom: 16px;   
-    background-color: #ffffff; /*White*/
-    border: 4px solid #000000; /*Pure Black*/
-
-    animation: opacityAnimation .2s linear both;
-}
-
-/* - When the subnav links are hovering:
-        - Set background color to light blue
-        - Change font color to white 
-        - When hovered, color from both text and background color will fade in for .2 seconds*/
-.subnav a:hover{
-    animation: subHover .2s linear both;
-}
-
-/* - Center all the text to center top, bottom, left and right with padding and text align
-   - Give only bottom links a border by 2px solid and black 
-   - Seting all the subnav to block to make it vertical */
-.subnav a{
-    display: block;
-
-    text-align: center;
-    padding: 40px 0;
-
-    border-bottom: 2px solid #000000;
-}
-
-/* Make the Mobile Navigation for dropdown completely invisible */
-.mobile_nav {
-    display: none;
-}
-
-/* Make the Mobile Navigation for dropdown completely invisible */
-#dropdown_mobile{
-    display: none;
-}
-
-
-
 /*******************************************************************
                         Projects Interior
 ********************************************************************/
 
+/* ----------- General Section ------------ */
+
+/* Main wrapper for all section */
 .interior_wrapper{
     max-width: 800px;
     margin: 0 auto; 
 }
 
-.grid-structure{
-    display: grid;
-
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column: span 2;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+/* All text for all caption is centered*/
+.interior_wrapper figcaption{
+    text-align: center;
 }
-
-section{
-    padding: 10px 0;
-}
-
-.grid-structure img{
-    width: 100%;
-}
-
-#description{
-    margin-top: 70px;
-}
-.content{
-    background-color: #ffffff;
-}
-
-/* This class is used for organization of the files */
-.grid-space{
-    grid-column: span 2; /* Take up both columns of the grid space */
-}
-
-/* This only exist if section has more than 1 thing */
-section ul li{
-    list-style-type: circle; /* This only list style type that change is the one that is in a section tag */
-}
-
 
 /* Seperate other figure div by 32px at the botttom */
 .interior_wrapper figure {
@@ -416,6 +332,22 @@ section ul li{
 .seperation {
     width: 100%;
     padding-bottom: 75%;
+}
+
+/* The div is the wrapper for the interior wrapper just for the background color */
+.content{
+    background-color: #ffffff; /* White */
+    padding-top: 20px;
+}
+
+/* Adds space between all sections and article */
+section, article{
+    padding: 20px 0;
+}
+
+/* This only exist if section has more than 1 thing */
+section ul li{
+    list-style-type: circle; /* This only list style type that change is the one that is in a section tag */
 }
 
 /* This is the background of the layer */
@@ -432,64 +364,17 @@ section ul li{
     margin: 0 auto;
 }
 
-/* Bring the user back to the top of the whole page.
-    - Set this icon to 50px on width and height
-    - Set this to the bottom right corner
-    - Position stays. Does not move at all*/
+/* Bring the user back to the top of the whole page. */
 #back-to-top{
-    width: 50px;
+    width: 50px; /* size of 50px width and height */
     height: 50px;
 
-    left: 94%;
+    left: 94%; /* Located at the bottom right of the screen */
     top: 90%;
     
-    clear: both;
     position: fixed; /* Position does not move at all. */
 }
 
-/*------ Grid Layout -----*/
-
-/* This tag only effects inside of all of my works and none of the grids
-    - It only reduce the width of the images to the max-width of the interior wrapper */
-figure img{
-    width: 100%;
-}
-
-/* Set all video tags by 100% because of the interior_wrapper class */
-video {
-    width: 100%;
-}
-
-/* This only effects on one image in the "Queen of Evil" page */
-#tower img{
-    width: 10%;
-}
-
-/* This applies only on the table tag.
-   - These table tags only apply to UI's User Story
-   - Remove any borders on the table
-   - All text are align left */
-table{
-    border: none;
-    text-align: left;   
-}
-
-/* This table will be only used for User Story / Persona.
-   - Give space of 16px on the bottom and 20px on the right */
-td, th{
-    padding-bottom: 16px;
-    padding-right: 20px;
-}
-
-/* The tabs class make different topics for each section in one page */
-    
-.tabs{
-    grid-column:  span 2; /* take over both columns */
-    padding: 16px 0; /* extend the background color with padding by 16px for the top and bottom */
-    text-indent: 16px; /* indent the text by 16px */
-    background-color: #5f6272; /* Grayish Blue */
-    color: #ffffff; /* White */
-}
 
 /* This only applies on h3 with this class
    - Give botttom space by 16px. */
@@ -497,20 +382,41 @@ td, th{
     padding-bottom: 16px;
 }
 
+/* This class creates different topics / sections */
+.tabs{
+    padding: 16px 0; /* extend the background color with padding by 16px for the top and bottom */
+    text-indent: 16px; /* indent the text by 16px */
+    background-color: #5f6272; /* Grayish Blue */
+    color: #ffffff; /* White */
+}
+
+/* ----------- Grid Section ------------ */
+
+/* create a three layer grid */
+.grid-structure{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr; /* Three layer grid */
+
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+/* takes up three spaces */
+.grid-span{
+    grid-column: span 3;
+}
+
+
+
 /******************************************************
                     Side Navigation
 *****************************************************/
 
 /*Move the things to the left side. This will stay hidden until this navigation is hoverd.
-  It's basically the wrapper of this whole navigation.
-
-  - Postion will remain fixed; it will stay in the same position.
-  - Height Extends to the end of the page.
-  - Width is 295px
-  - when hovered, it will have an ease out animation */
+  It's basically the wrapper of this whole navigation. */
 #side_sub{
     left: -280px;  
-    width: 295px;
     
     z-index: 2;
     position: fixed;
@@ -518,7 +424,7 @@ td, th{
     
     height: 80%;
     
-    transition: .3s ease-out;
+    transition: .3s ease-out; /*when hovered, it will have an ease out animation */
     
 }
 
@@ -547,21 +453,19 @@ td, th{
     transition: linear .2s;
 }
 
-/* - all the a tag in this class will display vertically
-   - text indent is 20px to the right
-   - giving space of 24px on the top and bottom of the a tags
-   - border only appears at the bottom of 2px solid line black */
+/* all the a tag in this class will display vertically */
 .list a{
-    display: block; 
-    /* text-indent: 20px; */
-
+    display: block;
     padding: 12px 0;
 }
 
+/* This class is used to make icon at the left side of the section */
 .list a::before{
     content: "";
-    background: url(fontawesome_logo/map-marker-alt-solid.svg) no-repeat; /*This icon does not belong to me. 
+
+    /*This icon does not belong to me. 
     This icon belongs to "fontawesome.com" */
+    background: url(fontawesome_logo/map-marker-alt-solid.svg) no-repeat;
 
     display: inline-block;
     padding-right: 10px;
@@ -611,18 +515,139 @@ td, th{
         Media Query - Responsive Design
 ***************************************************************/
 
-/******************************************************
-This is the Responsive Design for Ipad Pro
-*****************************************************/
+/* This is the Responsive Design for Ipad Pro */
 @media screen and (max-width: 1024px){
-    
 
-}
-/******************************************************
-This is the Responsive Design for Ipad
-*****************************************************/
-@media screen and (max-width: 768px){
+    /******************************************************
+                    Navigation
+    *****************************************************/
+
+    /* This navigation does not exist. */
+    #cpu_screen{
+        display: none;
+    }
     
+     /* - Set the height from 50px to 400px because this is the hamberger menu
+     - Width will always be at 100%
+     - set bottom margin of 60px */
+     #mobile_screen{
+        height: 50px;
+        width: 100%;
+        display: block;
+         
+        position: fixed; /* Position of the Navigation does not move */
+        z-index: 3; /* Layer is higher by 3 */
+
+        background-color: #ffffff; /* White */
+    }
+
+    /* This is the dropdown menu when the hamberger menu icon is pressed */
+    .nav_container{
+        display: none; /* Start by not showing itself */
+
+        background-color: #ffffff; /* White */
+        width: 100%;
+    }
+    
+    .nav_container a{
+        width: 100%; 
+
+        text-align: center;
+        float: none;
+        display: block;
+        
+        border-bottom: 2px solid #3b4653; /* Greyish Blue */
+    }
+    .nav_container a:hover{
+        animation: subNav .2s linear both;
+    }
+
+    .grid-span{
+        grid-column: none;
+    }
+
+    .nav_container a:hover{
+        animation: subNav .2s linear both;
+    }
+
+    /* Change border size */
+    .wrapper{
+        max-width: 100%;
+    }
+
+    .logo img{
+        padding: 0;
+
+    }
+
+    
+    /* Purposly use for Javascript. */
+    /* Start as not showing til teh button is pressed */
+    #show_and_hide{
+        display: none;
+    }
+
+
+    /* This icon makes a dropdown menu like a Hamberger. */
+    #hamberger_icon{
+        width: 50px;
+        height: 50px;
+
+        float: right;
+
+        background-image: url(gallery_icon/hamberger_bar.svg);
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+    }  
+    
+    /*******************************************************************
+                            Interior Project
+    ********************************************************************/
+    .interior_wrapper:nth-of-type(1){
+        padding-top: 50px;
+    }
+
+    /* This class is an empty div that allow the background image to show in image */
+    .seperation {
+        padding-bottom: 110%;
+    }
+
+    /*******************************************************************
+                            Footer
+    ********************************************************************/
+
+    /* This content is footer only */
+    .footer_wrapper{
+        max-width: 80%; /* Not effected by wrapped div and covers all of the content */
+    }
+}/* End Bracket for screen width for the Ipad Pro */
+
+/* This is the Responsive Design for Ipad */
+@media screen and (max-width: 768px){
+
+/* *********************** Interior Project ********************* */
+
+    .interior_wrapper{
+        max-width: 85%;
+        display: block;
+    }
+
+    #back-to-top{
+        left: 90%;
+        top: 90%;
+    }
+
+/* **************************** Grid Structure *********************************** */
+    /* This Class will change the order of the grid layout. */
+    .grid-structure{
+        grid-template-columns: 1fr 1fr; /* Change the column layout to one. */
+    }
+    
+    /* Change from 3 to 2 */
+    .grid-span{
+        grid-column: span 2;
+    }
+
 
 }
 
@@ -630,6 +655,57 @@ This is the Responsive Design for Ipad
 This is the Responsive Design for Iphone 6 and below
 *******************************************************/
 @media screen and (max-width: 415px){
-    
 
-}
+
+/******************************************************
+                    Interior Project
+*****************************************************/
+    /* This class is an empty div that allow the background image to show in image */
+    .seperation {
+        padding-bottom: 150%;
+    }
+
+/******************************************************
+                    Sub Navigation
+*****************************************************/
+        
+    /* The sub navigation is changed when the screen size is mobile. */
+    #side_sub{
+        left: -220px;
+        top: -50px;
+    
+        height: 80%;
+    
+        line-height: 24pt;
+        
+        transition: .3s ease-out;
+    }
+
+    #side_sub .list{
+        width: 250px;
+        clear: left;
+    }
+
+    #side_sub .list:hover{
+        left: 200px;
+    }
+
+    /* Change from 3 to none */
+    .grid-span{
+        grid-column: 0;
+    }
+
+
+
+    /* **************************** Grid Structure *********************************** */
+    /* This Class will change the order of the grid layout. */
+    .grid-structure{
+        grid-template-columns: 1fr; /* Change the column layout to one. */
+    }
+
+    #back-to-top{
+        left: 80%;
+        top: 85%;
+    }
+
+} /* End bracket for mobile phone screen */
