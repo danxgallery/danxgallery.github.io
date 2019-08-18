@@ -5,18 +5,18 @@
  window.onscroll = function() {scrollFunction()};
 
  //let y = document.querySelector("#cpu_screen")
- function scrollFunction() {
-   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 80) {
-     document.querySelector("#cpu_screen").style.top = "-70px";
-     //document.querySelector(".nav_container").style.paddingTop = "30px";
-   } 
+//  function scrollFunction() {
+//    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 80) {
+//      document.querySelector("#cpu_screen").style.top = "-70px";
+//      //document.querySelector(".nav_container").style.paddingTop = "30px";
+//    } 
   
-   else {
-     document.querySelector("#cpu_screen").style.top = "0";
-     //document.querySelector(".nav_container").style.paddingTop = "40px";
-   }
+//    else {
+//      document.querySelector("#cpu_screen").style.top = "0";
+//      //document.querySelector(".nav_container").style.paddingTop = "40px";
+//    }
 
- }
+//  }
 
 function nav_button() {
     let x = document.querySelector(".nav_container"); //Grab the subnav for mobile
