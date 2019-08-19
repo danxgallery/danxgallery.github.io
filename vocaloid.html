@@ -35,236 +35,224 @@
     <script src="js/customscript.js"></script>
 
     <style>
-        figure img{
-            border: 5px solid #424452; /*Dark Grey Blue*/
-        }
-
         #image_ui{
-            background-image: url(image/illustation/fan_art/sand_planet.png);
+            background-image: url(image/illustation/vocaloid/sand_planet.png);
             background-size: 100%;
 
             top: -5px;
+        }
+
+        @media screen and (max-width: 1024px){
+            #image_ui{
+                background-size: 180%;
+                background-position-x: 50%;
+            }
+        }
+
+        /* size for mobile phones */
+        @media screen and (max-width: 415px){
+            #image_ui{
+                background-size: 250%;
+                background-position-x: 50%;
+            }
+
+            .grid-structure{
+                display: block;
+            }
+
         }
     </style>
     
     <title>DanX Portfolio - Vocaloid Fan Art</title>
 </head>
 <body>
-        <div id="top"></div>
-        <div id="side_sub"> <!-- This is used as a border for the sub_navigation -->
-                <div class="list"> <!-- Used for actually list -->
-                    <a href="#description">Description</a>
-                    <a href="#titleCard">Sand Planet</a>
-                </div>
-        </div>
+    <div id="top"></div>
 
-        <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
-
+    <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
+    <div class="content"> <!-- Wraps the whole content with white background. -->
+    <div class="interior_wrapper"> <!-- Wraps the whole content. -->
 
         <article style="padding-bottom: 0;">
-            <h1  class="space">Future UI</h1>
-            <p><strong>November 2017 - December 2017</strong></p>
+            <h1  class="space">Vocaloid Fan Art</h1>
         </article>
 
     </div> <!-- End div for Interior Wrapper -->
     </div> <!-- End div for content class -->
 
-    
+    <div id="image_ui"></div> <!-- Place Image Backgorund Here in CSS -->
     <!-- ************************ Image Seperation ******************************  -->
     <div class="seperation"></div>
 
     <div class="content"> <!-- Wraps the whole content with white background. -->
     <div class="interior_wrapper"> <!-- Wraps the whole content. -->
-                <!-- *********************** Description *************************** -->
-                <article>
-                    <h1 id="description">Description</h1>
-                
-                    <p>These are all the fan art I made. All the original characters belongs to the rightful owner.</p>
+    <!-- *********************** Description *************************** -->
+    <article>
+        <h1 id="description">Description</h1>
+    
+        <p>These are all the fan art I made. All the original characters belong to the rightful owner.</p>
+        <p>Vocaloid is a virtual android that sings in your electronics. They are in this anime-like style. 
+            The songs are created by other producers and animation and drawings are made by other animators and illustrators. 
+            They were made by "Yamaha". But these Vocaloids I drew originated by "Crypton Future Tech".</p>
+        <p>Such as Hatsune Miku, and Kagamine Rin and Len. are examples of "Crypton Future Tech" Vocaloids.</p>
+    </article>
 
-                    <p>Vocaloid are vitual androids that sings. They are in this anime like style. They were made 
-                            by "Yamaha". But these Vocaloids I drew originated by "Cryton Future Tech".</p>
-                </article>
+        <!-- *********************** Sand Plant *************************** -->
+        <section>
+            <h3 class="space">Lucky☆Orb Miku</h3>
+            <p>This costume originated in emon(Tes.) in his song Lucky☆Orb.</p>
+        </section>
+        
+        <figure>
+            <img src="image/illustation/vocaloid/lucky_orb.png" alt="sand_planet">
+            <figcaption>Made in <em>June 1, 2019</em></figcaption>
+        </figure>
 
-                <!-- *********************** Sand Plant *************************** -->
-                <section>
-                    <h3 class="space">Sand Planet</h3>
-                    <p>Fan Art of Sand Planet.</p>
-                    <p>Made in <em>January 2018</em></p>
-                </section>
+        <!-- *********************** Sand Plant *************************** -->
+        <section>
+            <h3 class="space">Sand Planet</h3>
+            <p>Sand Planet is made by Hachi.</p>
+        </section>
+        
+        <figure>
+            <img src="image/illustation/vocaloid/sand_planet.png" alt="sand_planet">
+            <figcaption>Made in <em>January 2018</em></figcaption>
+        </figure>
 
-                <figure>
-                    <img src="image/illustation/fan_art/sand_planet.png" alt="sand_planet">
-                </figure>
-                <section>
-                    <h3 class="space">Sketch Version</h3>
-                    <p>Sketch of Sand Planet.</p>
+        <section>
+            <h3 class="space">Sketch Version</h3>
+            <p>Sketch of Sand Planet.</p>
+            <p>I just like the song. It wanted me to do a drawing of this.</p>
+        </section>
+        
+        <figure>
+            <img src="image/illustation/vocaloid/sand_planet_sketch.png" alt="sand_planet">
+            <figcaption>Made in <em>December 2017</em></figcaption>
+        </figure>
 
-                    <p>I just like the song. It wanted me to do a drawing of this.</p>
-                    <p>Made in <em>December 2017</em></p>
-                </section>
-                <figure>
-                    <img src="image/illustation/fan_art/sand_planet_sketch.png" alt="sand_planet">
-                </figure>
+        <!-- *********************** Chinese New Year *************************** -->
+        <section>
+            <h3 class="space">Happy Chinese New Year</h3>
+            <p>Happy Chinese New Year. Fan art of "1 2 Fan Club"
+            and "Chinese New Year Miku and Len".</p> 
+        </section>
+        
+        <figure>
+            <img src="image/illustation/vocaloid/chinese_new_year.png" alt="Chinese New Year">
+            <figcaption>Made in <em>February 16, 2018</em></figcaption>
+        </figure>
 
-                <!-- *********************** Chinese New Year *************************** -->
-                <section>
-                    <h3 class="space">Happy Chinese New Year</h3>
-                    <p>Happy Chinese New Year. Fan art of "1 2 Fan Club"
-                    and "Chinese New Year Miku and Len".</p> 
-                    
-                    <p>Made in <em>February 16, 2018</em></p>
-                </section>
+        <!-- *********************** ARiA *************************** -->
+        <section>
+            <h3 class="space">ARiA</h3>
+            <p>ARiA Miku. The Song ARiA is made by TokuP</p> 
+        </section>
+        
+        <figure>
+            <img src="image/illustation/vocaloid/ARiA.png" alt="ARiA">
+            <figcaption>Made in <em>March 2018</em></figcaption>
+        </figure>
 
-                <figure>
-                    <img src="image/illustation/fan_art/chinese_new_year.png" alt="Chinese New Year">
-                </figure>
+        <!-- *********************** Snow Miku 2016 *************************** -->
+        <section>
+            <h3 class="space">Snow Miku 2016</h3>
+            <p>Snow Miku 2016.</p>
+            <p>The original designer of Snow Miku 2016 is Otogi Kotatu</p>
+            <p>The song is made by Doriko.</p>
+        </section>
+        
+        <figure>
+            <img src="image/illustation/vocaloid/snowmiku.jpg" alt="snow miku 2016">
+            <figcaption>Made in <em>January 2017</em></figcaption>
+        </figure>
 
-                <!-- *********************** House of Songs *************************** -->
-                <section>
-                    <h3 class="space">House of Songs</h3>
-                    <p>Sketch of Mitchie M's "House of Songs".</p>
-                    <p>Made in <em>February 14, 2018</em></p>
-                </section>
+        <!-- *********************** Magical Kitty Len Len *************************** -->
+        <section>
+            <h3 class="space">Magical Kitty Len Len</h3>
+            <p>Kagamine Len dressed up as a girl.</p>
+            <p>Magical Kitty Len Len orginated by OwataP</p>
+            
+            <h4 class="space">Translation</h4>
+            <p>Take This! Magical Banana Attack!</p>
+            <p>.... It didn't work.</p>
+        </section>
 
-                <figure>
-                    <img src="image/illustation/fan_art/mitchie_m_miku.png" alt="Chinese New Year">
-                </figure>
+        <figure>
+            <img src="image/illustation/vocaloid/lenlen_again.jpg" alt="Len Len">
+            <figcaption>Made in <em>April 2, 2016</em></figcaption>
+        </figure>
 
-                <!-- *********************** ARiA *************************** -->
-                <section>
-                    <h3 class="space">ARiA</h3>
-                    <p>ARiA Miku.</p> 
-                    <p>Made in <em>March 2018</em></p>
-                </section>
-
-                <figure>
-                    <img src="image/illustation/fan_art/aria.png" alt="ARiA">
-                </figure>
-
-                <!-- *********************** Miku *************************** -->
-                <section>
-                    <h3 class="space">Hatsune Miku</h3>
-                    <p>Fan Art of Hatsune Miku</p>
-                    <p>Made in <em>May 2017</em></p>
-                </section>
-                <figure>
-                    <img src="image/illustation/fan_art/Miku.png" alt="miku">
-                </figure>
-                
-                <!-- *********************** Snow Miku 2016 *************************** -->
-                <section>
-                    <h3 class="space">Snow Miku 2016</h3>
-                    <p>Snow Miku 2016.</p> 
-                    <p>Made in <em>January 2017</em></p>
-                </section>
-
-                <figure>
-                    <img src="image/illustation/fan_art/snowmiku.jpg" alt="snow miku 2016">
-                </figure>
-
-                <!-- *********************** Tako Luka *************************** -->
-                <section>
-                    <h3 class="space">Tako Luka</h3>
-                    <p>Tako Luka Everyone.</p> 
-                    <p><em>Made 2016</em>.</p>
-                </section>
-
-                <figure>
-                    <img src="image/illustation/fan_art/tako_luka.png" alt="Tako Luka">
-                </figure>
-
-                <!-- *********************** Magical Kitty Len Len *************************** -->
-                <section>
-                    <h3 class="space">Magical Kitty Len Len</h3>
-                    <p>Kagamine Len dressed up as a girl.</p>
-                    <p>Made in <em>April 2, 2016</em></p>
-
-                    <h4 class="space">Translation</h4>
-                    <p>Take This! Magical Banana Attack!</p>
-                    <p>.... It didn't work.</p>
-                </section>
-
-                <figure>
-                    <img src="image/illustation/fan_art/lenlen_again.jpg" alt="Len Len">
-                </figure>
-
-                <!-- *********************** Miku *************************** -->
-                <section>
-                    <h3 class="space">Miku and I</h3>
-                    <p>Miku in another world.</p> 
-                    <p>Made in <em>April 25 2015</em></p>
-                </section>
-
-                <figure>
-                    <img src="image/illustation/fan_art/mikuandi.jpg" alt="Miku and I">
-                </figure>
-
-                <!-- *********************** Chibi Miku *************************** -->
-                <section>
-                    <h3 class="space">Chibi Miku</h3>
-                    <p>Chibi Miku.</p>
-                    <p>Made in <em>October 2016</em></p>
-                </section>
-
-                <figure>
-                    <img src="image/illustation/fan_art/chibimiku.png" alt="Chibi Miku">
-                </figure>
+        <!-- *********************** Miku *************************** -->
+        <section>
+            <h3 class="space">Miku and I</h3>
+            <p>Miku in another world.</p> 
+        </section>
+        
+        <figure>
+            <img src="image/illustation/vocaloid/mikuandi.jpg" alt="Miku and I">
+            <figcaption>Made in <em>April 25 2015</em></figcaption>
+        </figure>
   
-                <!-- *********************** Clover Club Miku *************************** -->
-                <section>
-                    <h3 class="space">Clover Club</h3>
-                    <p>Let it Clover Club. The Beautiful Love.</p>
-                    <p>Made in <em>2017</em></p>
-                </section>
+        <!-- *********************** Clover Club Miku *************************** -->
+        <section>
+            <h3 class="space">Clover Club</h3>
+            <p>Let it Clover Club. The Beautiful Love.</p> 
+            <p>This song is made by YuuyuP</p>
+        </section>
+        
+        <figure>
+            <img src="image/illustation/vocaloid/clover_club_miku_v2.png" alt="Clover Club">
+            <figcaption>Made in <em>2017</em></figcaption>
+        </figure>
 
-                <figure>
-                    <img src="image/illustation/fan_art/clover_club_miku_v2.png" alt="Clover Club">
-                </figure>
+        <!-- *********************** Yume Yume Miku *************************** -->
+        <section>
+            <h3 class="space">Yume Yume</h3>
+            <p>Yume Yume Miku.</p>
+            <p>The song Yume Yume is made by DECO*27</p>
+        </section>
+        
+        <figure>
+            <img src="image/illustation/vocaloid/yume_yume_fan.png" alt="Yume Yume">
+            <figcaption>Made in <em>December 24, 2016</em></figcaption>
+        </figure>
 
-                <!-- *********************** Yume Yume Miku *************************** -->
-                <section>
-                    <h3 class="space">Yume Yume</h3>
-                    <p>Yume Yume Miku.</p>
-                    <p>Made in <em>December 24, 2016</em></p>
-                </section>
+        <!-- *********************** Miracle Paint *************************** -->
+        <section>
+            <h3 class="space">Miracle Paint</h3>
+            <p>Miracle Paint is my favorite Miku Song of all time.</p>
+            <p>The song Miracle Paint is made by fuwacina(Oster Project).</p>
+            <p>Made in <em>September 2015</em></p>
+        </section>
 
-                <figure>
-                    <img src="image/illustation/fan_art/yume_yume_fan.png" alt="Yume Yume">
-                </figure>
+        <figure>
+            <img src="image/illustation/vocaloid/miraclepaint.jpg" alt="Miracle Paint">
+        </figure>
 
-                <!-- *********************** Miracle Paint *************************** -->
-                <section>
-                    <h3 class="space">Miracle Paint</h3>
-                    <p>Miracle Paint is my favorite Miku Song of all time.</p>
-                    <p>Made in <em>September 2015</em></p>
-                </section>
+        <!-- *********************** SPiCA Miku *************************** -->
+        <section>
+            <h3 class="space">SPiCa</h3>
+            <p>Fan at of SPiCa Miku.</p>
+            <p>The song SPiCA is made by TokuP.</p>
+            
+        </section>
+        <figure>
+            <img src="image/illustation/vocaloid/spica.jpg" alt="SPiCa">
+            <figcaption>Made in <em>August 29, 2015</em></figcaption>
+        </figure>
 
-                <figure>
-                    <img src="image/illustation/fan_art/miraclepaint.jpg" alt="Miracle Paint">
-                </figure>
+        <!-- *********************** Troupe Gramerye Miku *************************** -->
+        <section>
+            <h3 class="space">Troupe Gramerye Miku</h3>
+            <p>Hatsune Miku in a Troupe Gramarye Outfit from "Apollo Justice, Ace Attorney".</p>
+        </section>
+        
+        <figure>
+            <img src="image/illustation/vocaloid/troupegramarye.png" alt="Troupe Gramerye">
+            <figcaption>Made in <em>May 17, 2015</em>.</figcaption>
+        </figure>
 
-                <!-- *********************** SPiCA Miku *************************** -->
-                <section>
-                    <h3 class="space">SPiCa</h3>
-                    <p>Fan at of SPiCa Miku.</p>
-                    <p>Made in <em>August 29, 2015</em></p>
-                </section>
-
-                <figure>
-                    <img src="image/illustation/fan_art/spica.jpg" alt="SPiCa">
-                </figure>
-
-                <!-- *********************** Troupe Gramerye Miku *************************** -->
-                <section>
-                    <h3 class="space">Troupe Gramerye Miku</h3>
-                    <p>Hatsune Miku in a Troupe Gramarye Outfit from "Apollo Justice, Ace Attorney".</p>
-                    <p>Made in <em>May 17, 2015</em>.</p>
-                </section>
-                <figure>
-                    <img src="image/illustation/fan_art/troupegramarye.png" alt="Troupe Gramerye">
-                </figure>
-            </div> 
-            </div>
+        </div> 
+    </div>
 
 
 </body>
