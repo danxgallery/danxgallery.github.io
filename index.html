@@ -57,17 +57,34 @@
             
             <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
                 <a href="#projects">My Projects</a>
-                <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">Resume</a>
-                <!-- -->
+                <a href="#resume">Resume</a>
                 <a href="#contact">Contact Me</a>
             </div> <!-- End div for nav_container -->
         </div>
     </nav> <!-- End nav for CPU-->
 
-    <!-- **************************** Contact *************************************  -->
-    <nav id="contact">
+    <!-- ****************************** Mobile Navigation *******************************************-->
+    <nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
 
-    </nav>
+        <div class="wrapper">
+            <!-- Clicking on the Logo will lead back to the homepage-->
+            <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                                  <!-- It will also allow me to control the position of the page.-->
+                <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+            </figure> <!-- End Figure for my Logo-->
+            
+            <!-- This button only exist on mobile only -->
+            <div id="hamberger_icon" onclick="nav_button()"></div>
+
+                <div class="nav_container">
+                    <a href="#projects">My Projects</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#contact">Contact Me</a>
+                </div><!-- End div for nav container -->
+
+        </div> <!-- End div for Wrapper -->
+    </nav> <!-- End nav for mobile-->
+
     
     <!-- *************************** About Me ********************************** -->
 
@@ -94,16 +111,16 @@
         <main class="grid-container">
     
                 <!-- Link for Keniplier -->
-                <div class="grid-item">
+                <!-- <div class="grid-item">
                     <a href="keniplier.html" >
                     <img src="gallery_icon/rrh.jpg" alt="keniplier"> <br />
                     Keniplier no Ken</a>
-                </div>
+                </div> -->
 
                 <!-- Link for Struggle -->
                 <div class="grid-item">
                     <a href="strggle.html">
-                    <img src="gallery_icon/stuggle_icon.png" alt="My Courses"> </br>
+                    <img src="gallery_icon/struggle_icon.svg" alt="My Courses" style="background-color: #000000;"> </br>
                     Struggle</a>
                 </div>
 
@@ -123,9 +140,9 @@
 
                 <!-- Link for Vocaloid-->
                 <div class="grid-item">
-                    <a href="vocaloid.html">
-                    <img src="gallery_icon/yume_yume_icon.png" alt="Vocaloid"> <br/>
-                    Vocaloid Illustration</a>
+                    <a href="pikmin.html">
+                    <img src="gallery_icon/pikmin_logo.svg" alt="pikmin" style="background-color: #ffffff"> <br/>
+                    Pikmin Fan Animation</a>
                 </div>
                 
                 <!-- Link for Pokemon -->
@@ -134,20 +151,27 @@
                     <img src="gallery_icon/pokemon.png" alt="pokemon"> <br/>
                     RIT Pokemon Club Posters</a>
                 </div>
+
+                <!-- Link for Vocaloid -->
+                <div class="grid-item">
+                    <a href="vocaloid.html">
+                    <img src="gallery_icon/yume_yume_icon.png" alt="vocaloid"> <br/>
+                    Vocaloid Fan Art</a>
+                </div>
             </main>
 
         </div> <!-- End div for Wrapper-->
     </div> <!-- End div for Works-->
 
     <!-- **************************** Resume *************************************  -->
-    <div id="resume" style="background-color: #bd2217; height: 700px;">
+    <div id="skill">
         <div class="wrapper">
             <h2>Skills</h2>
             
-        </div>
+    </div>
 
     <!-- **************************** Resume *************************************  -->
-    <div id="resume" style="background-color: #8e3fbd; height: 700px;">
+    <div id="resume">
         <div class="wrapper">
             <h2>Resume</h2>
             <p>Download my Resume Here</p>
@@ -158,6 +182,43 @@
         </div>
 
     </div><!-- End div for resume -->
+
+    <!-- All of footer icons do not belong to me. These icon belongs to "fontawesome.com"-->
+    <footer>
+        <div class="footer_wrapper">
+            <div id="contact">
+                <h2>Contact Me:</h2>
+                <ul>
+                    <li>Phone: 207-766-6625</li>
+                    <li>Email: MiyukProduction@gmail</li>
+                </ul> 
+                <div class="icon">
+                    <a href="https://www.facebook.com/david.zhao.73" onclick="window.open(this.href); return false;"
+                    onkeypress="window.open(this, href); return false"><img id="facebook" src="fontawesome_logo/facebook-square-brands.svg" /></a>
+                    <a href="https://www.linkedin.com/in/david-zhao-a27371136/" onclick="window.open(this.href); return false;"
+                    onkeypress="window.open(this, href); return false"><img id="facebook" src="fontawesome_logo/linkedin-brands.svg" /></a>
+                </div> <!-- End div for Icon-->
+            </div>
+    
+            <div class="gallery">
+                <h2>Gallery</h2>
+        
+                <div class="social_gallery">
+                        <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
+                    
+                        <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"  alt="behance"/></a>
+                    
+                        <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"  alt="deviantart"/></a>
+                        <!-- These image icons are made by Font Awesome --> 
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
 
     </body>
     </html>
