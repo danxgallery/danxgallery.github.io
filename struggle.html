@@ -48,6 +48,22 @@
         .grid-structure{
             grid-template-columns: 1fr 1fr;
         }
+
+        @media screen and (max-width: 1024px){
+            #image_ui{
+                background-image: url(gallery_icon/struggle_icon.svg);
+            }
+
+        }
+
+        /* size for mobile phones */
+        @media screen and (max-width: 415px){
+
+            .grid-structure{
+                display: block;
+            }
+
+        }
     </style>
 
 </head>
@@ -135,15 +151,16 @@
     <div class="content">
     <div class="interior_wrapper">
         <h2 id="description" class="tabs">Description</h2>
-        <p>This is a story about the struggles I have to deal with during the times I deal
-        with during my time at in School. I'm planning to keep working
-        on it.
-        </p>
-        
-        <p>The Song "Meteor" belongs to John</p>
-        <p><strong>Source:</strong> <a href="https://www.youtube.com/watch?v=vt2wHUJHbbg" 
-            onclick="window.open(this.href); return false;" onkeypress="window.open(this, href)">
-            https://www.youtube.com/watch?v=vt2wHUJHbbg</a></p>
+        <section>
+            <p>This is a story about the struggles I have to deal with during the times I deal with 
+                during my time at in School. It mostly involves pressure and depression. 
+                I'm planning to keep working on it.</p>
+            
+            <p>The Song "Meteor" belongs to John</p>
+            <p><strong>Source:</strong> <a href="https://www.youtube.com/watch?v=vt2wHUJHbbg" 
+                onclick="window.open(this.href); return false;" onkeypress="window.open(this, href)">
+                https://www.youtube.com/watch?v=vt2wHUJHbbg</a></p>
+        </section>
 
         <!-- *********************** Animation *************************** -->
         <h2 id="titleCard" class="tabs">Animation</h2>
@@ -157,8 +174,11 @@
 
         <h3 id="storyboard" class="tabs">Storyboard</h3>
 
-        <figure class="grid-space">
-            <figcaption class="space">This is the stoyboard that I used to help make the animation.</figcaption>
+        <section>
+            <p>This is the stoyboard that I used to help make the animation.</p>
+        </section>
+
+        <figure>
             <img src="image/animation/struggle/storyboard/storyboard_1.png" alt="Storyboard">
             <img src="image/animation/struggle/storyboard/storyboard_2.png" alt="Storyboard">
             <img src="image/animation/struggle/storyboard/storyboard_3.png" alt="Storyboard">
@@ -195,8 +215,12 @@
 
         <!-- *********************** Styleframe *************************** -->
         <h3 id="styleframe" class="tabs">Styleframe</h3>
-        <p>Thes are all the styleframes of "Struggle"</p>
-        <figure class="grid-space">
+
+        <section>
+            <p>Thes are all the styleframes of "Struggle"</p>
+        </section>
+
+        <figure>
             <img src="image/animation/struggle/styleframe/styleframe_1.png" alt="styleframe 1">
             <img src="image/animation/struggle/styleframe/styleframe_2.png" alt="styleframe 2">
             <img src="image/animation/struggle/styleframe/styleframe_3.png" alt="styleframe 3">
@@ -204,10 +228,8 @@
             <img src="image/animation/struggle/styleframe/styleframe_5.png" alt="styleframe 5">
             <img src="image/animation/struggle/styleframe/styleframe_6.png" alt="styleframe 6">
             <img src="image/animation/struggle/styleframe/styleframe_7.png" alt="styleframe 7">
-            <img src="image/animation/struggle/styleframe/styleframe_8.png" alt="styleframe 8">
-            <img src="image/animation/struggle/styleframe/styleframe_9.png" alt="styleframe 9">
-            <img src="image/animation/struggle/styleframe/styleframe_10.png" alt="styleframe 10">
-            <img src="image/animation/struggle/styleframe/styleframe_11.png" alt="styleframe 11">
+            <img src="image/animation/struggle/styleframe/styleframe_10.png" alt="styleframe 8">
+            <img src="image/animation/struggle/styleframe/styleframe_11.png" alt="styleframe 9  ">
         </figure>
 
         <!-- *********************** Characters *************************** -->
@@ -223,13 +245,12 @@
             <p>There are reasons why the main character looks like this.</p>
 
             <ul>
-                <li>Color White Represents the character is depress.</li>
-                <li>Glasses represents shield of vulnerablility (or emotion).
-                    AKA: An Empty Husk.
-                </li>
+                <li>Color White Represents the character is depressed.</li>
+                <li>Glasses represent shield of vulnerability (or emotion).</li>
                 <li>Eyes have no light. This represents lifeless.</li>
                 <li>Hair is blonde because it represents there is still hope.</li>
                 <li>The Shadows on its face represents loneliness and fatigue.</li>
+                <li>This character is nothing more than an empty husk.</li>
             </ul>
         </section>
         
@@ -238,20 +259,7 @@
         </figure>
         
         <!-- *********************** Main Character SKetch *************************** -->
-        <section>
-            <h3 class="space">Sketch</h3>
-            <p>This is just a rough sketch of the main character.</p>
-        </section>
 
-        <div class="grid-structure">
-            <figure>
-                <img src="image/animation/struggle/main_sketches.png" alt="Assets">
-            </figure>
-    
-            <figure>
-                <img src="image/animation/struggle/sketch_running.png" alt="Logo">
-            </figure>
-        </div>>
 
         
 
@@ -260,6 +268,7 @@
             <h3 class="space">Phone</h3>
             <p>Main Character holding a phone.</p>
             <p>This tells the main character where it has to go at this time.</p>
+            <p>It was modeled after the phone I have.</p>
         </section>
 
         <figure>
@@ -269,9 +278,9 @@
         <!-- *********************** Fear *************************** -->
         <section>
             <h3 class="space">FEAR</h3>
-            <p>She represent Fear. Prevents the main character to ask for help. Messing around with
-                the main character's vision.
-            </p>
+            <p>She represents Fear. Prevents the main character to ask for help.
+                 Messing around with the main character's vision. A mental state of the Main 
+                 Character to never overcome.</p>
         </section>
 
         <figure>
@@ -282,10 +291,10 @@
         <section>
             <h3 class="space">Time-Management Character</h3>
 
-            <p>This person represent time-management. Working long hours
-                 just to feel more depress.</p>
+            <p>This person represents time-management. Working long hours just to feel more depressed.</p>
 
-            <p>It can also represent not getting much school work done.</p>
+            <p>It can also represent not getting much school work done, 
+                and being used just to have their own goals done.</p>
         </section>
 
         <figure>
@@ -294,12 +303,23 @@
 
         <!-- *********************** Character SKetches *************************** -->
         <section>
-            <p>These are the sketches before the fast food and fear character was made.</p>
+            <h3 class="space">Sketch</h3>
+            <p>This is just a rough sketch of all of the characters</p>
         </section>
-
-        <figure>
-            <img src="image/animation/struggle/characer_sketches.png" alt="Logo">
-        </figure>
+    
+        <div class="grid-structure">
+            <figure>
+                <img src="image/animation/struggle/main_sketches.png" alt="Assets">
+            </figure>
+    
+            <figure>
+                <img src="image/animation/struggle/sketch_running.png" alt="Logo">
+            </figure>
+            <figure style="grid-column: span 2;">
+                <img src="image/animation/struggle/characer_sketches.png" alt="Logo">
+            </figure>
+        </div>
+        
 
         <!-- *********************** Background *************************** -->
         <h2 id="background" class="tabs">Background</h2>
@@ -319,7 +339,7 @@
         <section>
             <h3 class="space">Dreaded Office</h3>
             <p>This is the final rendering of the dreaded office.</p>
-            <p>The office is modeled after one of the room in 2018 Spring Semester.</p>
+            <p>The office is modeled after one of the rooms in 2018 Spring Semester.</p>
         </section>
         <figure>
             <img src="image/animation/struggle/office.png" alt="Logo">
@@ -339,7 +359,7 @@
         <section>
             <h3 class="space">New Media Room</h3>
             <p>New Media Room without any other assets.</p>
-            <p>This room represent isolation from everyone.</p>
+            <p>This room represents isolation from everyone.</p>
         </section>
 
         <figure>
@@ -386,8 +406,9 @@
             </p>
 
             <p>Inside this character, you can see harsh things to say about the main character.</p>
-            <p>This character is inspired by my depression. During my depression, I feel alone and struggle
-                my way to work and school while limping my way to finish some work (mentally).
+
+            <p>This character is inspired by my depression. During my depression, I feel alone and struggle my way
+                 to work and school while limping my way to finishing some work (mentally).
             </p>
         </section>
 
@@ -457,7 +478,7 @@
         <figure>
             <img src="image/animation/struggle/keychain_sketch.png" alt="Logo">
         </figure>  
-    </div>
+        </div>
     </div>
 
     <footer>
