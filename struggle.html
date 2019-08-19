@@ -38,10 +38,15 @@
     
     <style>
         #image_ui{
+            background-image: url(image/animation/struggle/logo.svg);
             background-color: black;
-            /* background-image: url(#); */
 
+            background-position-y: 30px;
             top: -10px;
+        }
+
+        .grid-structure{
+            grid-template-columns: 1fr 1fr;
         }
     </style>
 
@@ -87,7 +92,7 @@
         </div> <!-- End div for Wrapper -->
     </nav> <!-- End nav for CPU-->
 
-        <!-- **************************** Mobile Navigation *************************************  -->
+    <!-- **************************** Mobile Navigation *************************************  -->
     <nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
 
         <div class="wrapper">
@@ -238,20 +243,17 @@
             <p>This is just a rough sketch of the main character.</p>
         </section>
 
-        <figure>
-            <img src="image/animation/struggle/main_sketches.png" alt="Assets">
-            
-        </figure>
+        <div class="grid-structure">
+            <figure>
+                <img src="image/animation/struggle/main_sketches.png" alt="Assets">
+            </figure>
+    
+            <figure>
+                <img src="image/animation/struggle/sketch_running.png" alt="Logo">
+            </figure>
+        </div>>
 
-        <!-- *********************** Main Character SKetch  Running*************************** -->
-        <section>
-            <h3 class="space">Sketch - Running</h3>
-            <p>Main Character Running pose.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/sketch_running.png" alt="Logo">
-        </figure>
+        
 
         <!-- *********************** Cellphone *************************** -->
         <section>
@@ -466,11 +468,12 @@
                     <li>Phone: 207-766-6625</li>
                     <li>Email: MiyukProduction@gmail</li>
                 </ul> 
-                <a href="https://www.facebook.com/david.zhao.73" onclick="window.open(this.href); return false;"
-                onkeypress="window.open(this, href); return false"><img id="facebook" src="fontawesome_logo/facebook-square-brands.svg" /></a>
-
-                <a href="https://www.linkedin.com/in/david-zhao-a27371136/" onclick="window.open(this.href); return false;"
-                onkeypress="window.open(this, href); return false"><img id="facebook" src="fontawesome_logo/linkedin-brands.svg" /></a>
+                <div class="icon">
+                    <a href="https://www.facebook.com/david.zhao.73" onclick="window.open(this.href); return false;"
+                    onkeypress="window.open(this, href); return false"><img id="facebook" src="fontawesome_logo/facebook-square-brands.svg" /></a>
+                    <a href="https://www.linkedin.com/in/david-zhao-a27371136/" onclick="window.open(this.href); return false;"
+                    onkeypress="window.open(this, href); return false"><img id="facebook" src="fontawesome_logo/linkedin-brands.svg" /></a>
+                </div> <!-- End div for Icon-->
             </div>
     
             <div class="gallery">

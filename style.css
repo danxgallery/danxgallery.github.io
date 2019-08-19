@@ -37,6 +37,7 @@ body {
 /*Always a fill size video regardless of width of the section with adjustment */
 video{
     width: 100%;
+    padding: 10px 0;
 }
 
 /*Always a fill size image regardless of width of the section with adjustment */
@@ -388,6 +389,18 @@ section ul li{
     text-indent: 16px; /* indent the text by 16px */
     background-color: #5f6272; /* Grayish Blue */
     color: #ffffff; /* White */
+}
+
+table{
+    text-align: left;
+}
+
+td{
+    padding-left: 30px;
+}
+
+th, td{
+    padding-bottom: 20px;
 }
 
 /* ----------- Grid Section ------------ */

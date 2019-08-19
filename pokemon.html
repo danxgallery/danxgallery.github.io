@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- This code is made by Liep Nguyen
+        Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
+    <script src="js/customscript.js"></script>
+
+    <style>
+        #image_ui{
+            background-image: url(image/illustation/rit_pokemon/gym2019.png);
+            background-size: 100%;
+
+            top: -5px;
+        }
+
+        @media screen and (max-width: 1024px){
+            #image_ui{
+                background-size: 180%;
+                background-position-x: 50%;
+            }
+        }
+
+        
+        /* size for mobile phones */
+        @media screen and (max-width: 415px){
+            #image_ui{
+                background-size: 250%;
+                background-position-x: 50%;
+            }
+
+        }
+    </style>
+    
+    <title>DanX Portfolio - Vocaloid Fan Art</title>
+</head>
+<body>
+        <div id="top"></div>
+        <div id="side_sub"> <!-- This is used as a border for the sub_navigation -->
+                <div class="list"> <!-- Used for actually list -->
+                    <a href="#description">Description</a>
+                    <a href="#titleCard">Sand Planet</a>
+                </div>
+        </div>
+
+        <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
+    <!-- **************************** CPU Navigation *************************************  -->
+    <nav id="cpu_screen" > <!-- This is the Navigation Control for the PC-->
+
+        <div class="wrapper">
+            <!-- Clicking on the Logo will lead back to the homepage-->
+            <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                                  <!-- It will also allow me to control the position of the page.-->
+                <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+            </figure> <!-- End Figure for my Logo-->
+            
+            
+            <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
+                <a href="index.html #projects">My Projects</a>
+                <a href="index.html #resume">Resume</a>
+                <a href="#contact">Contact Me</a>
+            </div> <!-- End div for nav_container -->
+        </div> <!-- End div for Wrapper -->
+    </nav> <!-- End nav for CPU-->
+
+        <!-- **************************** Mobile Navigation *************************************  -->
+    <nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
+
+        <div class="wrapper">
+            <!-- Clicking on the Logo will lead back to the homepage-->
+            <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                                  <!-- It will also allow me to control the position of the page.-->
+                <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+            </figure> <!-- End Figure for my Logo-->
+            
+            <!-- This button only exist on mobile only -->
+            <div id="hamberger_icon" onclick="nav_button()"></div>
+
+                <div class="nav_container">
+                    <a href="index.html#projects">My Projects</a>
+                    <a href="index.html#resume">Resume</a>
+                    <a href="#contact">Contact Me</a>
+                </div><!-- End div for nav container -->
+
+        </div> <!-- End div for Wrapper -->
+    </nav> <!-- End nav for mobile-->
+
+    <!-- **************************** Main *************************************  -->
+    <div id="image_ui"></div> <!-- Place Image Backgorund Here in CSS -->
+
+    <div class="content" style="padding-top: 0;">
+    <div class="interior_wrapper"> <!-- Wraps the whole content. -->
+
+        <article style="padding-bottom: 0;">
+            <h1  class="space">RIT Pokemon Poster</h1>
+        </article>
+
+    </div> <!-- End div for Interior Wrapper -->
+    </div> <!-- End div for content class -->
+
+    
+    <!-- ************************ Image Seperation ******************************  -->
+    <div class="seperation"></div>
+
+    <div class="content"> <!-- Wraps the whole content with white background. -->
+    <div class="interior_wrapper"> <!-- Wraps the whole content. -->
+
+                <h2 id="antimatic" class="tabs">Pokemon</h2>
+
+                <article class="grid-space">
+                    <p>Pokemon is owned by Nintendo. It's an RPG style game where players take turns
+                         to knock each other's pokemon. The first person to lose all of their Pokemon loses. </p>
+
+                    <p>Pokemon is owned by <strong>Nintendo</strong>.</p>
+                </article>
+
+                <!-- *********************** Christmas *************************** -->
+                <section>
+                    <h3 class="space">Merry Christmas</h3>
+                    <p>Made this Poster for the Rochester Insitute of Technology (RIT) Christmas Tournament.</p> 
+                    <p>Made in <em>November 16, 2018</em></p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/fan_art/christmas_pokemon.png" alt="Pokemon Christmas">
+                </figure>
+                
+                <!-- *********************** Snorlax *************************** -->
+                <section>
+                    <h3 class="space">Pulverizing Pancake</h3>
+                    <p>Snorlax using Pulverizing Pancake while lying down.</p> 
+                    <p>Made in <em>October 8, 2018</em></p>
+                </section>
+                
+                <figure>
+                    <img src="image/illustation/fan_art/snorlax.png" alt="Snorlax">
+                </figure>
+
+                <!-- *********************** VGC Tournament *************************** -->
+                <section>
+                    <h3 class="space">Lunala vs Solgaleo</h3>
+                    <p>Inspired by VGC 2019. So I made this poster.</p> 
+                    <p>Made in <em>September 3, 2018</em></p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/fan_art/sunvsmoon.png" alt="sun vs moon">
+                </figure>
+
+                <!-- *********************** Gym Battle 2018 - 2019 *************************** -->
+                <section>
+                    <h3 class="space">RIT Gym Trial 2018 - 2019</h3>
+                    <p>Rochester Insitute of Technology (RIT) Pokemon Club Gym Trial Poster 2018 - 2019.</p> 
+                    <p>Made in <em>August, 8 2018</em>.</p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/fan_art/gyn_battle.png" alt="RIT Gym 2018 - 2019">
+                </figure>
+
+                <!-- *********************** Final Battle *************************** -->
+                <section>
+                    <h3 class="space">End of the Year Battle 2017 - 2018</h3>
+                    <p>RIT Annuel End of the Year Battle. This is the 2018 Edition.</p> 
+                    <p>Made in <em>May 4, 2018</em></p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/fan_art/final_battle.png" alt="End of the Year 2017 - 2018">
+                </figure>
+
+                <!-- *********************** Whimsicott *************************** -->
+                <section>
+                    <h3 class="space">Whimsicott</h3>
+                    <p>Whimsicott for the Win.</p> 
+                    <p>Made in <em>February 22, 2018</em></p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/fan_art/whimsicott.png" alt="whimsicott">
+                </figure>
+
+                <!-- *********************** Pluse and Minum *************************** -->
+                <section>
+                    <h3 class="space">Pluse and Minum</h3>
+                    <p>Pluse and Minum. Fiiiiiu! Sion! HAAA!</p> 
+                    <p>Made in <em>April 2018</em></p>
+
+                </section>
+                <figure>
+                    <img src="image/illustation/fan_art/pluse_and_minum.png" alt="pluse_and_minum">
+                </figure>
+
+                <!-- *********************** QR Code Tournament *************************** -->
+                <section>
+                    <h3 class="space">RIT QR Code Tournament Version 1</h3>
+                    <p>RIT QR Code Tournament version 1.</p>
+                    
+                    <p>Made in <em>March 22 2018</em></p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/fan_art/qr_code_battle_poster_V1.png" alt="QR 1">
+                </figure>
+                
+                <!-- *********************** QR Code Tournamnet V2 *************************** -->
+                <section>
+                    <h3 class="space">RIT QR Code Tournament Version 2</h3>
+                    <p>RIT QR Code Tornament version 2.</p> 
+                    <p>Made in <em>March 24, 2018</em></p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/fan_art/qr_code_battle_poster_V2.png" alt="QR 2">
+                </figure>
+                
+                <!-- *********************** Mimikyu *************************** -->
+                <section>
+                    <h3 class="space">Mimikyu</h3>
+                    <p>Mimikyu used Wil-o-Wisp.</p>
+                    <p>This was used for RIT Halloween Tournament 2017</p>
+                    <p>Made in <em>October 17, 2017</em></p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/fan_art/mimikyu.png" alt="Mimikyu">
+                </figure>
+
+                <!-- *********************** Lilligant *************************** -->
+                <section>
+                    <h3 class="space">Lilligant</h3>
+                    <p>Lilligant used Attract..... Or Cuteness.... Ether way works.</p> 
+                    <p>Made in <em>September 5, 2017</em></p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/fan_art/lilligant.png" alt="Lilligant">
+                </figure>
+
+                <!-- *********************** Lilligant SKetch *************************** -->
+                <section>
+                    <h3 class="space">Liligant Sketch</h3>
+                    <p>Sketch for Lilligant. This is what is did first before I did the digital art.</p>
+                    <p>Made in <em>2017</em></p>
+                </section>
+                <figure>
+                    <img src="image/illustation/fan_art/lilligant_sketch.jpg" alt="sketch">
+                </figure>
+
+                <!-- *********************** Gen War *************************** -->
+                <section>
+                    <h3 class="space">RIT Gen Wars</h3>
+                    <p>RIT Pokemon Generation War.</p> 
+                    <p>Any participants are only allowed to have use one Generation Pokemon List.</p>
+                    <p>Made in <em>September 2017</em></p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/fan_art/gen_war.png" alt="Gen War">
+                </figure>
+
+                <!-- *********************** Gym Trial 2017 - 2018 *************************** -->
+                <section>
+                    <h3 class="space">RIT Gym Trial 2017 - 2018</h3>
+                    <p>RIT Pokemon Club Gym Trial Poster 2017 - 2018.</p> 
+                    <p>Made in <em>August, 22 2017</em></p>
+                </section>
+
+                <figure>
+                    <img src="image/illustation/fan_art/darkvsfire.png" alt="gym trial 2017 - 2018">
+                </figure>
+
+                <!-- *********************** Gen War Sketch *************************** -->
+                <section>
+                    <p>This is a rough Sketch for the 2017 Edition Gym Trial Poster</p>
+                    <p>This was done before I did the digital art.</p>
+                    <p>Made in <em>August 2017</em></p>
+                </section>
+                <figure>
+                    <img src="image/illustation/fan_art/gym_battle_sketch.png" alt="sketch">
+                </figure>
+            </div> 
+            </div>
+
+
+</body>
+</html>

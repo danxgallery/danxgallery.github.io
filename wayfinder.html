@@ -35,13 +35,19 @@
     <script src="js/customscript.js"></script>
 
     <style>
-        figure img{
-            border: 5px solid #424452; /*Dark Grey Blue*/
+
+        #image_ui{
+            background-image: url(image/ui/wayfinder/background.png);
+            background-color: #8abbff;
+
+
+            background-position-y: -130px;
+            background-position-x: 50%;
+            top: -10px;
         }
 
-        .size img, video{
-            width: 60%;
-            float: right;
+        figure img{
+            border: 5px solid #424452; /*Dark Grey Blue*/
         }
 
         .noborders{
@@ -64,7 +70,8 @@
         <div id="side_sub">
 
                 <div class="list"> 
-                        <a href="#description">Description</a>
+                        <a href="#summery">Summery</a>
+                        <a href="#final">Prototype</a>
                         <a href="#problem">Problem</a>
                         <a href="#goal">Goal</a></h3>
                         <a href="#research_comp">Competitive Research</a>
@@ -79,99 +86,107 @@
                                 <a href="#v3">Version 3 Navigation</a>
                             </div>
                         <a href="#main_comp">Main Composition</a>  
-                        <a href="#final">Prototype</a>
+
 
                 </div>
         </div>
 
-        <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
-<div class="wrapper">
-        <nav id="cpu">
-            <figure class="logo">
-                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-            </figure>
+<a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
             
-            <!-- To be used on PC -->
+<!-- **************************** CPU Navigation *************************************  -->
+<nav id="cpu_screen" > <!-- This is the Navigation Control for the PC-->
+
+    <div class="wrapper">
+        <!-- Clicking on the Logo will lead back to the homepage-->
+        <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                              <!-- It will also allow me to control the position of the page.-->
+            <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+        </figure> <!-- End Figure for my Logo-->
+        
+        
+        <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
+            <a href="index.html #projects">My Projects</a>
+            <a href="index.html #resume">Resume</a>
+            <a href="#contact">Contact Me</a>
+        </div> <!-- End div for nav_container -->
+    </div> <!-- End div for Wrapper -->
+</nav> <!-- End nav for CPU-->
+
+    <!-- **************************** Mobile Navigation *************************************  -->
+<nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
+
+    <div class="wrapper">
+        <!-- Clicking on the Logo will lead back to the homepage-->
+        <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                              <!-- It will also allow me to control the position of the page.-->
+            <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+        </figure> <!-- End Figure for my Logo-->
+        
+        <!-- This button only exist on mobile only -->
+        <div id="hamberger_icon" onclick="nav_button()"></div>
+
             <div class="nav_container">
-                    <div class="cpu_nav">
-                        <div class="dropdown" >
-                            <a class="indicator">Works</a>
-                            <div class="subnav">
-                                <a href="animation.html">Animation / Motion Graphic</a>
-                                <a href="illustration.html">Illustration</a>
-                                <a href="ui.html">UI Design</a>
-                            </div>
-                        </div>
-                        
-                        <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
-                        <a href="about.html">About Me</a>
-                        <!-- This code is by: John Conde
-                            Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
-                            <a href="resume.html">Resume</a>
-                            <a href="#contact">Contact Me</a>
-                            
-                        </div>
-                    </div>
-            </nav>
+                <a href="index.html#projects">My Projects</a>
+                <a href="index.html#resume">Resume</a>
+                <a href="#contact">Contact Me</a>
+            </div><!-- End div for nav container -->
 
-            <!-- To Be used on mobile and tablet -->  
-            <nav id="mobile">
-            <figure class="logo">
-                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-            </figure>
-            <button id="hamberger_button" type="button" onclick="nav_button()"></button>
+    </div> <!-- End div for Wrapper -->
+</nav> <!-- End nav for mobile-->
+</div>
+<div id="image_ui"></div> <!-- Place Image Backgorund Here in CSS -->
 
-            <div class="mobile_nav" style="display: none;">
-                    <button id="mobile_button">Works</button>
-                    <div id="subnav_mobile" style="display: none;">
-                    <a href="animation.html">Animation / Motion Graphic</a>
-                    <a href="illustation.html">Illustration</a>
-                    <a href="ui.html">UI Design</a>
-                </div>
+<div class="content">
+<div class="interior_wrapper">
+    <article>
+        <h1>Rochester Regional Hospital - Wayfinder</h1>
+        <h3 class="space">Team Project</h3>
         
-                <div class="nav-wrapper">
-                    <a href="about.html">About Me</a>
-                    <!-- This code is by: John Conde
-                         Source: https://stackoverflow.com/questions/15885051/html-link-to-the-middle-of-another-page-->
-                    <a href="resume.html">Resume</a>
-                    <a href="#contact">Contact Me</a>
-                    
-                </div>
-            </div>
-            
-        
-            </div>
-        </nav>
+        <p><strong>August 2018 - November 2018</strong></p>
+    </article>
+</div>
 </div>
 
+    <!-- **************************** Main *************************************  -->
+    <div class="seperation"></div>
         
-    <div class="interior_wrapper">
-        <article class="grid-space">
-            <h1 id="description" class="space">Rochester Regional Hospital - Wayfinder</h1>
-            <h3 class="space">Team Project</h3>
-            
-            <p><strong>August 2018 - November 2018</strong></p>
-            
-        
-            <h2 class="space">Summary</h2>
-            <p>This team project is to create a Augmented Reality that can help both Patients and Coworkers to help
-                navigate the Hospital in a simple way. I was in a team that deals with other language barriers.
-            </p>
-
+<div class="content">
+<div class="interior_wrapper">
+        <h2 id="summery">Summery</h2>
+        <article>
+            <p>The Wayfinder project is a team school project in RIT. Our client is Rochester Regional Health (RRH).
+                They want us to create an Augmented Reality that can help both Patients and Coworkers 
+                to help navigate the Hospital in a simple way. I was in a team that deals with other language barriers.</p>
+    
+            <p>This team project is also a team of two people.</p>
             <p>I will only be posting the work I have done.</p>
         </article>
-       
+
+        <!-- *********************** Main Composition *************************** -->
+        <h2 id="final" class="tabs">Prototype</h2>
+
+        <!-- *********************** Onboard *************************** -->
+         
+        <section>
+            <p>This is the presentation of the Wayfinder.</p>
+        </section>
+         
+        <figure>
+            <video controls src="image/ui/wayfinder/presentation.mp4" type="video/mp4" style="width: 100%;">
+                    This video does not support your program.
+            </video>
+        </figure>
+
         <!-- *********************** Title Card *************************** -->
         <h2 id="problem" class="tabs" >Problem</h2>
 
-            <article class="grid-space">
+            <article>
             <h3 class="space">Problem</h3>
             <p>The problem of the RRH (Rochester Regional Health) Hospital is that people do get lost. From
-                the research Mark Green, chief executive and co-founder of Connexient, 30%-40% of the
-                patients and visitors will get lost and waste their time in the hospital. This issue cause problems
-                for the hospital at: efficiency, experiences, and emotions for doctors, patients, and family
-                member and friends. 
-            </p>
+            the research Mark Green, chief executive, and co-founder of Connexient, 30%-40% of the
+            patients and visitors will get lost and waste their time in the hospital. This issue cause problems
+            for the hospital at efficiency, experiences, and emotions for doctors, patients, and family
+            member and friends. </p>
 
             <p><strong>Source:</strong> <a href="http://theweek.com/articles/761108/people-keep-getting-lost-hospitals-app-wants-stop-that"
                 onclick="window.open(this.href); return false;" onkeypress="window.open(this, href)">
@@ -180,23 +195,25 @@
 
         <!-- *********************** Goal *************************** -->
         <h2 id="goal" class="tabs" >Goal</h2>
-        <section class="grid-space">
+        <section>
             <div class="grid-structure">
                 <article>
                 <h3 class="space">Control Efficiency of the Hospital</h3>
-                <p>People can get lost very easy. Especially when it’s a fast pace emergency is going on. This can
-                    cause traffic jam for the patients and doctors to show up in the right room on time.</p>
+                <p>People can get lost very easily. Especially when it’s a fast pace emergency is going on.
+                    This can cause a traffic jam for the patients and doctors to show up in the right room on time.</p>
                 </article>
         
                 <article>
                 <h3 class="space">Improve Localization</h3>
-                <p>Some people do not understand English very well or do not understand it at all. We would like </p>
+                <p>Some people do not understand English very well or do not understand it at all. We would like 
+                    to add this to break the language barrier between locals and doctors, and doctors to doctors.
+                </p>
                 </article>
 
                 <article>
                 <h3 class="space">Improve Emotion Experience</h3>
-                <p>Hospital is a controlled enviornment. So things can be very stressful very easy. We would like to
-                    improve a way to reduce stress and make people calmer.</p>
+                <p>Hospital is a controlled environment. So things can be very stressful very easy. 
+                    We would like to improve a way to reduce stress and make people calmer.  </p>
                 </article>
             </div>
         </section>
@@ -235,12 +252,10 @@
         <section>
             <h3 class="space">Google Translator</h3>
             <p>Google Translator automatically translate from one screen to another without having to type a single word
-                from one screen to another. 
-            </p>
+                from one screen to another. </p>
 
             <p>Though Google Translator is not 100% accurate. This will help the user who
-                does not speak English fluently to select their language and just hover over the numbers or words.
-            </p>
+                does not speak English fluently to select their language and just hover over the numbers or words.</p>
         </section>
         
         <figure>
@@ -250,9 +265,9 @@
         <!-- *********************** Blippar *************************** -->
         <section>
             <h3 class="space">Blippar</h3>
-            <p>Blippar is augmented reality company that deals with navigation from both indoor and outdoor. It tells the
-                accuracy of where you are suppose to go. It even has a list to know exactly where you are suppose to go.
-            </p>
+            <p>Blippar is an augmented reality company that deals with navigation from both indoor and outdoor. 
+                It tells the accuracy of where you are supposed to go. 
+                It even has a list to know exactly where you are supposed to go.</p>
         </section>
         
         <figure>
@@ -283,9 +298,9 @@
                     </tr>
                 </table>
                 
-                <p>Muon does not speak fluent English. So there are language barriers between the patient and her co-workers.
-                    In this situation, language translation doing the work may cause misunderstanding and waste of time and space. Relaying on
-                    dictionary or other tools too often; making it wasting more time than it should.
+                <p>Muon does not speak fluent English. So there are language barriers between the patient and her co-workers. 
+                    In this situation, language translation doing the work may cause misunderstanding and waste of time and space. 
+                    Relying on a dictionary or other tools too often; making it wasting more time than it should.  
                 </p>
             </section>
             
@@ -314,11 +329,11 @@
             </tr>
         </table>
         
-        <p> Sán comes in the hospital severely ill. He was called by his doctor to check what kind of illness San has.
-            However, the doctor does not know where he is going and ended up lost. The Patient
-            becomes annoyed. He tells the doctor to just find a room cause he could die at anytime.
-            But the doctor is convinced that he is going to the right direction but only to get even farther away from the
-            destination they are suppose to go. </p>
+        <p>Sán comes in the hospital severely ill. He was called by his doctor to check what kind of illness San has.
+             However, the doctor does not know where he is going and ended up lost. The Patient becomes annoyed. 
+             He tells the doctor to just find a room cause he could die at any time. 
+             But the doctor is convinced that he is going in the right direction but only to get even farther away from the 
+             destination they are supposed to go.</p>
         </section>
         
         <figure>
@@ -328,15 +343,17 @@
         <!-- *********************** Sketches *************************** -->
         <h2 id="workflow" class="tabs">Work Flow</h2>
     
-        <figure class="grid-space">
-            <figcaption>This is a blueprint of how the app is gonna go.</figcaption>
+        <section>
+            <p>This is a blueprint of how the app is gonna go.</p>
+        </section>
+
+        <figure>
             <img src="image/ui/wayfinder/map_site/mapsite.png" alt="achivement sketch">
         </figure>
         
         <!-- *********************** Sketch *************************** -->
         <h2 id="sketch" class="tabs">Sketch</h2>
 
-        <!-- *********************** 1 *************************** -->
         <section>
             <h3 class="space">Sketch Exploration</h3>
             <p>These are my sketches. These are meant for exploration for ideas of how is my UI going to
@@ -344,439 +361,223 @@
         </section>
 
         <figure>
-            <img src="image/ui/usa_today/sketch/1.png" alt="user flow" >
+            <img src="image/ui/wayfinder/sketch/Sketch.png" alt="user flow" >
         </figure>
 
         <!-- *********************** Wireframes *************************** -->
         <h2 class="tabs">Wireframes</h2>
-
-        <!-- *********************** Homepage *************************** -->
-        <h2 id="v1" class="grid-space">Version 1</h2>
-
-        <!-- *********************** Base *************************** -->
+        
         <section>
-            <h3 class="space">Base</h3>
-            <p>This page is made to be quick and efficient. Just type
-                    in the number.
-            </p>
+            <h2 id="v1" class="space">Version 1</h2>
+            <p>These are very basic wireframes. No color, and no depth.</p>
+            <p>They were meant to be made quickly and easily readable.</p>
+        </section>
 
-            <ul>
-            <li>Type in the room number.</li>
+        <div class="grid-structure">
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v1/base.png" alt="home" >
+                <figcaption>Homepage</figcaption>
+            </figure>
+
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v1/comfirm.png" alt="comfirm" >
+                <figcaption>Comfirm Page</figcaption>
+            </figure>
+
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v1/navigation.png" alt="navigation page" >
+                <figcaption>Navigation Page</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v1/almost.png" alt="almost there" >
+                <figcaption>Almost There</figcaption>
+            </figure>
+
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v1/wrong_way.png" alt="wrong way">
+                <figcaption>Wrong Way</figcaption>
+            </figure>
+
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v1/closer.png" alt="closer" >
+                <figcaption>Closer</figcaption> 
+            </figure>
+
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v1/here.png" alt="here" >
+                <figcaption>Here</figcaption>
+            </figure>
+        
+        </div>
+
+        <!-- *********************** Version 2 *************************** -->
+        
+        <section>
+            <h2 id="v2" class="space">Version 2</h2>
+            <p>Version 2 is still a beta. Meant to be made quickly but with some added depth on the wireframes.</p>
+        </section>
+
+        
+        <div class="grid-structure">
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v2/base_eng.png" alt="homepage" >
+                <figcaption>Homepage</figcaption>
+            </figure>
+
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v2/base3.png" alt="homepage" >
+                <figcaption>Homepage V2</figcaption>
+            </figure>
+
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v2/type_language.png" alt="language" >
+                <figcaption>Language Page</figcaption>
+            </figure>
             
-            <li>Room number display.</li>
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v2/other_location_eng.png" alt="other location" >
+                <figcaption>Other Location</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v2/navigation.png" alt="navigation" class="noborders">
+                <figcaption>Navigation</figcaption>
+            </figure>
+        </div>
+        
+        <!-- *********************** Version 3 *************************** -->
+        
+        <section>
+            <h2 id="v3" class="space">Version 3 - Navigation</h2>
+            <p>Version 3 is navigation only. This helps me to map out how the navigation would look like.</p>
+        </section>
+
+        <div class="grid-structure">
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v3/eng_0.png" alt="user flow" class="noborders" >
+            </figure>
             
-            <li>Find the cloest exit.</li>
-
-            <li>Delete a number.</li>
-
-            <li>Change Language.</li>
-            </ul>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v1/base.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** Comfirm *************************** -->
-        <section>
-            <h3 class="space">Comfirm Page</h3>
-            <p>This page is made to be quick and efficient. Just type in the number.</p>
-
-            <ul>
-            <li>It’s ether yes or no.</li>
-
-            <li>If the user pressed yes, than the user will continue to the next page.
-
-            <li>If the user pressed no, then the user will go back to the homepage.</li>
-            </li>
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v3/eng_3.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v3/eng_4.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v3/eng_5.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v3/eng_6.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/wireframes/v3/eng_7.png" alt="user flow" class="noborders">
+            </figure>
+        </div>
             
-            <li>Room number display.</li>
-            </ul>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v1/comfirm.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** Navigation *************************** -->
-        <section>
-            <h3 class="space">Navigation Page</h3>
-            <p>This tells the user which direction to go.</p>
-            
-            <ul>
-                <li>Tells the user which direction to go.</li>
-                <li>Arrows to tell the user to turn.</li>
-                <li>Tells the user to follow.</li>
-                <li>Map. Tells the user where to go.</li>
-            </ul>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v1/navigation.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** Almost There *************************** -->
-        <section>
-            <h3 class="space">Navigation Page - Almost There</h3>
-            <p>Tells the user that they are almost theren.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v1/almost.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** Wrong Way *************************** -->
-        <section>
-            <h3 class="space">Navigation Page - U-Turn</h3>
-            <p>This page tells the user to turn around. When the user go in a wrong direction.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v1/wrong_way.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** Closer *************************** -->
-        <section>
-            <h3 class="space">Navigation Page - Closer</h3>
-            <p>Tells the user that they are very close</p>
-
-            <p>This is “Nav Beacon”. This tells the user the exact location of where the room is located.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v1/closer.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** Here *************************** -->
-        <section>
-            <h3 class="space">Navigation Page - Here</h3>
-            <p>Tells the user that they are here.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v1/here.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** Onboard *************************** -->
-        <h2 id="v2" class="grid-space">Version 2</h2>
-
-        <!-- *********************** Homepage English ************************* -->
-        <section>
-            <h3 class="space">Homepage - English</h3>
-            <p>This new homepage allow the user to have users change their language and type in their room number
-                all in one room.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v2/base_eng.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** Changing Language *************************** -->
-        <section>
-            <h3 class="space">Homepage - Changing Language</h3>
-            <p>Type in any language and they will find the language they are looking for. This method is easier to find the
-                langauge you need than it is using the scroll method to find your language.
-            </p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v2/type_language.png" alt="user flow" style="margin-bottom: 10px;">
-        </figure>
-
-        <!-- *********************** other location *************************** -->
-        <section>
-            <h3 class="space">Homepage - Other Location</h3>
-            <p>For the rooms that are not numbered. The user can just use their finger to press and move it up and this
-                will appear.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v2/other_location_eng.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** v2 *************************** -->
-        <section>
-            <h3 class="space">Homepage - Revamp</h3>
-            <p>This is version 2 part 3 of the onboard page.</p>
-            <p>This is similar to version 1 of the onboard. But this time, this is set up like a stack of 
-                blocks. This keeps it organized and it is kept in the USA TODAY color pallettes of the topics they 
-                have already selected.
-            </p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v2/base3.png" alt="user flow" >
-        </figure>
-
-        <!-- *********************** Navigation *************************** -->
-        <section>
-            <h3 class="space">Navigation</h3>
-            <p>This is version 2 of the Navigation.</p>
-
-            <p>It's mostly the same thing. The only thing that has change is the map.</p>
-
-            <p>With the map at the bottom, the user can tell where they are without wondering why they are blindly 
-                following the dots to the nav beacon.
-            </p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v2/navigation.png" alt="user flow" class="noborders">
-        </figure>
-
-
-        <!-- *********************** Article *************************** -->
-        <h2 id="v3" class="grid-space">Version 3 Navigation</h2>
-        <!-- *********************** Naivgation ************************* -->
-        <section>
-            <h3 class="space">Navigation - Not There Yet</h3>
-           <ul>
-               <li>This tells the user how far is it there to its destination.</li>
-               <li>This is the trails of direction.</li>
-               <li>This is the map. This tells the user the current
-                    direction of their location.</li>
-           </ul>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v3/eng_0.png" alt="user flow" class="noborders" >
-        </figure>
-        
-        <!-- *********************** Naivgation Other Location ************************* -->
-        <section>
-            <h3 class="space">Navigation - Other Location</h3>
-            <p>The number of Miles have decreased as you go closer to the location.</p>
-            <p>This tells the user the room name and number.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v3/eng_3.png" alt="user flow" class="noborders">
-        </figure>
-        
-        <!-- *********************** Naivgation Almost There ************************* -->
-        <section>
-            <h3 class="space">Navigation - Almost There</h3>
-            <p>In a distance, there is an arrow from afar. This tells the user the direction they need to go.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v3/eng_4.png" alt="user flow" class="noborders">
-        </figure>
-        
-        <!-- *********************** Naivgation DO Not Enter ************************* -->
-        <section>
-            <h3 class="space">Navigation - Do Not Enter</h3>
-            <p>This tells the user to not enter to that direction.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v3/eng_5.png" alt="user flow" class="noborders">
-        </figure>
-        
-        <!-- *********************** Naivgation Nav Beacon ************************* -->
-        <section>
-            <h3 class="space">Navigation - Afar Navigation Beacon</h3>
-            <p>From a distance, there is a navigation becon. It tells the user the exact location.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v3/eng_6.png" alt="user flow" class="noborders">
-        </figure>
-        
-        <!-- *********************** Naivgation Made it ************************* -->
-        <section>
-            <h3 class="space">Navigation - Here</h3>
-            <p>The text changes to something more encouraging to the user that they did it all by themself.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/wireframes/v3/eng_7.png" alt="user flow" class="noborders">
-        </figure>
-        
 
         <!-- *********************** Main Composition *************************** -->
         <h2 id="main_comp" class="tabs">Main Composition</h2>
  
         <!-- *********************** Homepage *************************** -->
         <section>
-            <h3 class="space">Homepage - Base</h3>
-            <p>Did a refinement of the homepage. This design shoud make it simple, cool, and clean.</p>
-            <p>Though I was not the one who made the background, the microphone and the language button.
-                I did edit the homepage with the original design I had based on the first wireframe.
+            <p>This is the final version of the Composition. I did not come with this look of the homepage.
+                I did edit and animated it to fit the screen size. I actually did the navigation screen and the loading screen.  
             </p>
         </section>
 
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/1.png" alt="user flow" class="noborders">
-        </figure>
- 
-        <!-- *********************** Homepage Other Location *************************** -->
-        <section>
-            <h3 class="space">Homepage - Other Location</h3>
-            <p>If the code is set up, the “Other Location” auto corrects into the exact room.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/2.png" alt="user flow" class="noborders">
-        </figure>
- 
-        <!-- *********************** Homepage Other Location *************************** -->
-        <section>
-            <h3 class="space">Homepage - Change Language</h3>
-            <p>This is a list of languages that this user download on their phone.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/4.png" alt="user flow" class="noborders">
-            <img src="image/ui/wayfinder/main_comp/3.png" alt="user flow" class="noborders">
-        </figure>
-
-        <!-- *********************** Homepage Other Location *************************** -->
-        <section>
-            <h3 class="space">Homepage - Change Language Complete</h3>
-            <p>Once the language is selected, than all the witten part (excluding the logo)
-             of the app will become the language you selected.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/5.png" alt="user flow" class="noborders">
-        </figure>
-
-        <!-- *********************** Confirm Page *************************** -->
-        <section>
-            <h3 class="space">Comfirm Page</h3>
-            <p>This tells the user if this location is the right location the user wants to go.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/6.png" alt="user flow" class="noborders">
-        </figure>
-
-        <!-- *********************** Loading Page *************************** -->
-        <section>
-            <h3 class="space">Loading Page</h3>
-            <p>This tells the user if this location is the right location the user wants to go.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/7.png" alt="user flow" class="noborders">
-        </figure>
-
-        <!-- *********************** Loading Page *************************** -->
-        <section>
-            <h3 class="space">Loading Page - Complete</h3>
-            <p>This tells the user that the loading is complete.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/8.png" alt="user flow" class="noborders">
-        </figure>
-
-        <!-- *********************** Navigation *************************** -->
-        <section>
-            <h3 class="space">Navigation</h3>
-            <p>This is the navigation screen. Though it is a bit messy, this tells the user excat 
-                    location of where to go.</p>
-
-            <ul>
-                <li>This is the red X. This tells the user not to enter to that direction.</li>
-                <li>This is the toggle language. This turns the from current language to English.</li>
-                <li>These are the arrows that leads to the exact location to the navigation becon.</li>
-                <li>This is the map. This will let the user know their exact location.</li>
-            </ul>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/9.png" alt="user flow" class="noborders">
-        </figure>
-
-        <!-- *********************** Continue *************************** -->
-        <section>
-            <h3 class="space">Navigation Continue</h3>
-            <p>In this version, the user activated the toggle button for turning off language.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/10.png" alt="user flow" class="noborders">
-        </figure>
-
-        <!-- *********************** Continue *************************** -->
-        <section>
-            <h3 class="space">Navigation - Toggle Language Button</h3>
-            <p>In this version, the user activated the toggle button for turning off language.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/10.png" alt="user flow" class="noborders">
-        </figure>
-
-        <!-- *********************** Continue *************************** -->
-        <section>
-            <h3 class="space">Navigation - Almost There</h3>
-            <p>The navigation beacon is present. It will tell the user that this is the location they are going.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/11.png" alt="user flow" class="noborders">
-        </figure>
-
-        <!-- *********************** Here *************************** -->
-        <section>
-            <h3 class="space">Navigation - Here</h3>
-            <p>The app congratulate the user. It encourages the user that they did on their own.</p>
-        </section>
-
-        <figure class="size">
-            <img src="image/ui/wayfinder/main_comp/12.png" alt="user flow" class="noborders">
-        </figure>
-
-        <!-- *********************** Main Composition *************************** -->
-        <h2 id="final" class="tabs">Prototype</h2>
-
-        <!-- *********************** Onboard *************************** -->
- 
-        <section class="grid-space">
-            <p>This is the homepage. The user is swipping the main article.</p>
-        </section>
-        
-        <figure class="grid-space">
-            <video controls src="image/ui/wayfinder/presentation.mp4" type="video/mp4" style="width: 100%;">
-                    This video does not support your program.
-            </video>
-        </figure>
-    </div>
-
-    <footer>
-        <div class="footer_wrapper">
-            <div id="contact">
-                <h2>Contact Me:</h2>
-                <ul>
-                    <li>Phone: 207-766-6625</li>
-                    <li>Email: MiyukProduction@gmail</li>
-                </ul> 
-                <!-- <div class="icon">
-                    <a href="#"><img id="facebook" src="" /></a>
-                </div> -->
-            </div>
+        <div class="grid-structure">
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/1.png" alt="user flow" class="noborders">
+            </figure>
     
-            <div class="gallery">
-                <h2>Gallery</h2>
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/2.png" alt="user flow" class="noborders">
+            </figure>
+            
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/3.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/4.png" alt="user flow" class="noborders">
+            </figure>
+            
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/5.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/6.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/7.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/8.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/9.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/10.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/11.png" alt="user flow" class="noborders">
+            </figure>
+    
+            <figure>
+                <img src="image/ui/wayfinder/main_comp/12.png" alt="user flow" class="noborders">
+            </figure>
         
-                <div class="social_gallery">
-                        <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
-                        onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
-                    
-                        <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
-                        onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"  alt="behance"/></a>
-                    
-                        <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
-                        onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"  alt="deviantart"/></a>
-                        <!-- These image icons are made by Font Awesome --> 
-                </div>
-            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="footer_wrapper">
+        <div id="contact">
+            <h2>Contact Me:</h2>
+            <ul>
+                <li>Phone: 207-766-6625</li>
+                <li>Email: MiyukProduction@gmail</li>
+            </ul> 
+            <div class="icon">
+                <a href="https://www.facebook.com/david.zhao.73" onclick="window.open(this.href); return false;"
+                onkeypress="window.open(this, href); return false"><img id="facebook" src="fontawesome_logo/facebook-square-brands.svg" /></a>
+                <a href="https://www.linkedin.com/in/david-zhao-a27371136/" onclick="window.open(this.href); return false;"
+                onkeypress="window.open(this, href); return false"><img id="facebook" src="fontawesome_logo/linkedin-brands.svg" /></a>
+            </div> <!-- End div for Icon-->
         </div>
 
-    </footer>
+        <div class="gallery">
+            <h2>Gallery</h2>
+    
+            <div class="social_gallery">
+                    <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
+                    onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
+                
+                    <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
+                    onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"  alt="behance"/></a>
+                
+                    <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
+                    onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"  alt="deviantart"/></a>
+                    <!-- These image icons are made by Font Awesome --> 
+            </div>
+        </div>
+    </div>
+ </footer>
 
     
     
