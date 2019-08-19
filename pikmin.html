@@ -50,6 +50,15 @@
                 top: 100px;
             }
         }
+
+        /* size for mobile phones */
+        @media screen and (max-width: 415px){
+
+            .grid-structure{
+                display: block;
+            }
+        
+        }
     </style>
 </head>
 <body>
@@ -57,7 +66,7 @@
         <div id="side_sub">
             <div class="list"> 
                 <a href="#description">Description</a>
-                <a href="#titleCard">Animation</a>
+                <a href="#animation">Animation</a>
                 <a href="#antimatic">Antimatic</a>
                 <a href="#storyboard">Storyboard</a>
                 <a href="#characters">Characters</a>
@@ -112,8 +121,6 @@
 
 <div class="content" style="padding-top: 0;">
 <div class="interior_wrapper"> <!-- Wraps the whole content. -->
-
-<!-- *********************** Description *************************** -->
         <article>
             <h1>Pikmin Fan Animation</h1>
             <p><strong>Feburary 2018 - March 2018</strong></p>
@@ -129,13 +136,13 @@
     <h2 id="description" class="tabs">Description</h2>
     
     <article>
-        <p>This is a fan animation of a Nintendo Game Series named Pikmin.</p>
+        <p>This is a fan animation of a Nintendo Game Series named "Pikmin".</p>
         <p><em>The Music and original character design belong to Nintendo.</em></p>
         <p>I made the Pikmins in my style.</p>
     </article>
     
     <!-- *********************** Animation *************************** -->
-    <h2 id="titleCard" class="tabs">Animation</h2>
+    <h2 id="animation" class="tabs">Animation</h2>
     
     <figure>
         <video controls src="image/animation/pikmin_fan_animation/animation_final.mp4">
@@ -151,9 +158,9 @@
             <figcaption>This is the animatic version</figcaption>
     </figure>
 
-    <p>These are all the animatic. These are hand drawen. It makes it easier for me to remember how
-        these will be animated.
-    </p>
+    <p>These are all the animatic. These are hand-drawn. 
+        It makes it easier for me to remember how these will be animated.</p>
+
     <figure>
         <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic1.png" alt="styleframe 1">
         <img src="image/animation/pikmin_fan_animation/animatic_slides/Animatic2.png" alt="styleframe 2">
@@ -164,7 +171,7 @@
     </figure>
         
         <!-- *********************** Storyboard *************************** -->
-        <h3 id="storyboard">Storyboard</h3>
+        <h2 id="storyboard" class="tabs">Storyboard</h3>
 
         <section>
             <p>This is the stoyboard that I used to help make the animation.</p>
@@ -178,38 +185,47 @@
         <!-- *********************** Characters *************************** -->
         <h2 id="characters" class="tabs">Characters</h2>
         <section>
+            <h2 class="space">Pikmins and Spectralids</h2>
             <p>All the Pikmins and the Yellow Spectralids.</p>
+            <p>In the very first Pikmin Game, there were only three colors the red, yellow, and blue.   </p>
             <p>These are all vector drawings.</p>
         </section>
 
         <figure>
-            <img src="image/animation/pikmin_fan_animation/pikmin_assets.png" alt="Assets">
+            <img src="image/animation/pikmin_fan_animation/pikmin_assets.png" alt="Character">
         </figure>
 
         <!-- *********************** Pikmin Sketch *************************** -->
         <section>
-            <p>Sketch of the Yellow Pikmin. The Red, Yellow, and Blue Pikmin all have the
-                same body shape.</p>
+            <h2 class="space">Sketches</h2>
         </section>
 
-        <figure>
-            <img src="image/animation/pikmin_fan_animation/pikmin_sketch.png" alt="Sketch">
-        </figure>
-
-        <figure>
-                <img src="image/animation/pikmin_fan_animation/Assets.png" alt="Logo">
-        </figure>
-
-        <figure>
-            <img src="image/animation/pikmin_fan_animation/Yellow_spectralids.png" alt="Yellow Spectralids">
-        </figure>
+        <div class="grid-structure">
+            <figure>
+                <img src="image/animation/pikmin_fan_animation/pikmin_sketch.png" alt="pikmin sketch">
+                <figcaption>Pikmin Sketch</figcaption>
+            </figure>
+    
+            <figure style="grid-column: span 2">
+                <img src="image/animation/pikmin_fan_animation/Assets.png" alt="background Sketch">
+                <figcaption>Background Sketch</figcaption>
+            </figure>
+    
+            <figure style="grid-column: span 3;">
+                <img src="image/animation/pikmin_fan_animation/Yellow_spectralids.png" alt="yellow spectralids sketch">
+                <figcaption>Yellow Spectralids Sketch</figcaption>
+            </figure>
+        </div>
 
         
         <!-- *********************** Yellow Spectralids Animation *************************** -->
         <h2 id="animated" class="tabs">Character Animation</h2>
 
         <section>
-            <p>This is the animation of the Yellow Spectralids</p>
+            <p>This is the animation of Pikmins and Spectralids.</p>
+            <p><strong>Note:</strong> All the Pikmins has a similar animation. So it's only better to post the one Pikmin
+                I worked on the most.
+            </p>
         </section>
 
         <div class="grid-structure">
