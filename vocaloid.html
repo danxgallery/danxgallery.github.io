@@ -67,8 +67,49 @@
 </head>
 <body>
     <div id="top"></div>
-
     <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
+
+    <!-- **************************** CPU Navigation *************************************  -->
+    <nav id="cpu_screen" > <!-- This is the Navigation Control for the PC-->
+
+        <div class="wrapper">
+            <!-- Clicking on the Logo will lead back to the homepage-->
+            <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                                  <!-- It will also allow me to control the position of the page.-->
+                <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+            </figure> <!-- End Figure for my Logo-->
+            
+            
+            <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
+                <a href="index.html #projects">My Projects</a>
+                <a href="index.html #resume">Resume</a>
+                <a href="#contact">Contact Me</a>
+            </div> <!-- End div for nav_container -->
+        </div> <!-- End div for Wrapper -->
+    </nav> <!-- End nav for CPU-->
+
+        <!-- **************************** Mobile Navigation *************************************  -->
+    <nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
+
+        <div class="wrapper">
+            <!-- Clicking on the Logo will lead back to the homepage-->
+            <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                                  <!-- It will also allow me to control the position of the page.-->
+                <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+            </figure> <!-- End Figure for my Logo-->
+            
+            <!-- This button only exist on mobile only -->
+            <div id="hamberger_icon" onclick="nav_button()"></div>
+
+                <div class="nav_container">
+                    <a href="index.html#projects">My Projects</a>
+                    <a href="index.html#resume">Resume</a>
+                    <a href="#contact">Contact Me</a>
+                </div><!-- End div for nav container -->
+
+        </div> <!-- End div for Wrapper -->
+    </nav> <!-- End nav for mobile-->
+
     <div class="content"> <!-- Wraps the whole content with white background. -->
     <div class="interior_wrapper"> <!-- Wraps the whole content. -->
 
