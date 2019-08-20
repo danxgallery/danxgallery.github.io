@@ -30,8 +30,6 @@ body {
 .wrapper {
     max-width: 1200px; /* Max width helps reduce size when changing screen size. */
     margin: 0 auto;
-
-    height: 100%;
 }
 
 /*Always a fill size video regardless of width of the section with adjustment */
@@ -134,19 +132,22 @@ a:link, a:visited{
 ********************************************************************/
 
 #index_wrapper{
-    max-width: 1200px; /* Set the max width to 1200px */
     margin: 0 auto; /* This code will center the whole content*/
-
+    width: 100%;
     height: 800px;
+    
+    position: fixed;
+    z-index: -1;
 }
 
 /* The first image is the self image */
-#index_wrapper #image{
+#image{
     background-image: url(image/homepage/page.png); /* Cannot be searched, or copied*/
     background-size: 100%; /* always change size depending on the width and height */
     background-repeat: no-repeat;
     width: 450px;
     height: 800px;
+
 
     float: left;
 
@@ -156,7 +157,6 @@ a:link, a:visited{
 /* Seperate the section off the border */
 #index_wrapper article{
     width: 300px;
-    height: 500px;
     float: right;
     
     margin-top: 150px;
@@ -174,7 +174,8 @@ a:link, a:visited{
     height: 1000px;
     background-size: 100%;
     background-image: url(image/homepage/works.png);
-    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-position-y: -230px;
 
     font-size: 24px;
     clear: both;
@@ -182,7 +183,7 @@ a:link, a:visited{
     color: #ffffff;
 }
 
-#projects .wrapper h2   {
+#projects .wrapper h2, #skill .wrapper h2, #resume .wrapper h2   {
     padding-top: 50px;
 }
 
@@ -196,11 +197,11 @@ a:link, a:visited{
     grid-row-gap: 50px;
     margin: 0 auto;
 
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 /*This code controls the indivdual grid item images. */
-  .grid-container .grid-item img{
+.grid-container .grid-item img{
     width: 250px;  /* Set the width and height by 250px*/
     height: 250px;
     border: 10px solid #3b4653; /*Saturated Dark Blue*/
@@ -237,12 +238,34 @@ a:link, a:visited{
     height: 700px;
     background-size: 100%;
     background-image: url(image/homepage/skill.png);
+    background-repeat: no-repeat;
     background-position-y: -700px;
 
     font-size: 24px;
-    clear: both;
 
     color: #ffffff;
+}
+
+#list_skill_one, #list_skill_two{
+    padding-top: 100px;
+}
+
+/* change this list from none to circle */
+#skill .wrapper ul li{
+    list-style-type: circle;
+    padding-bottom: 30px; 
+}
+
+/* This element floats left */
+#list_skill_one{
+    float: left;
+    padding-left: 150px;
+}
+
+/* This element floats right */
+#list_skill_two{
+    float: right;
+    padding-right: 150px;
 }
 
 /* *******************************************************************************
@@ -255,6 +278,7 @@ a:link, a:visited{
     height: 600px;
     background-size: 100%;
     background-image: url(image/homepage/resume.png);
+    background-repeat: no-repeat;
     background-position-y: -250px;
 
     font-size: 24px;
@@ -263,6 +287,9 @@ a:link, a:visited{
     color: #ffffff;
 }
 
+#resume_button{
+    width: 300px;
+}
 
 /*******************************************************************
                             Footer
@@ -449,8 +476,6 @@ th, td{
 .grid-span{
     grid-column: span 3;
 }
-
-
 
 /******************************************************
                     Side Navigation
@@ -643,6 +668,79 @@ th, td{
         background-repeat: no-repeat;
     }  
     
+    /* ******************************************************************
+                            Hompage Project
+    ******************************************************************* */
+    #index_wrapper .wrapper, #projects .wrapper, #skill .wrapper, #resume .wrapper{
+        max-width: 90%;
+        padding-bottom: 30px;
+    }
+
+    .interior_wrapper{
+        max-width: 85%;
+        display: block;
+    }
+
+    /* The first image is the self image */
+    #image{
+        width: 100%;
+        height: 1000px;
+        margin-left: 0;
+
+        float: none;
+    }
+
+    #index_wrapper article{
+        text-align: center;
+        float: none;
+        margin: 0;
+        width: 100%;
+
+        padding-top: 70px;
+    }
+
+    /*******************************************************************
+                            Projects
+    ********************************************************************/
+    
+    #projects{
+        height: 100%;
+    
+        background-size: 100%;
+        background-position: 0;
+    }
+
+    /*******************************************************************
+                            Skill
+    ********************************************************************/
+
+    #skill{
+ 
+        background-size: 120%;
+    
+        background-position: -70px -100px;
+    }
+
+    #list_skill_one{
+        padding-left: 40px;
+    }
+   
+    #list_skill_two{
+        padding-right: 40px;
+    }
+
+    /*******************************************************************
+                            Resume
+    ********************************************************************/
+
+    #resume{
+        height: 100%;
+        background-size: 100%;
+        background-position: 0;
+    }
+   
+    
+
     /*******************************************************************
                             Interior Project
     ********************************************************************/
@@ -668,16 +766,19 @@ th, td{
 /* This is the Responsive Design for Ipad */
 @media screen and (max-width: 768px){
 
-/* *********************** Interior Project ********************* */
-
-    .interior_wrapper{
-        max-width: 85%;
-        display: block;
+    #projects{
+        background-size: 200%;
+        background-position: -350px -300px;
     }
 
+/* *********************** Interior Project ********************* */
     #back-to-top{
         left: 90%;
         top: 90%;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr 1fr; /* Change the column layout to one. */
     }
 
 /* **************************** Grid Structure *********************************** */
@@ -698,14 +799,75 @@ th, td{
 This is the Responsive Design for Iphone 6 and below
 *******************************************************/
 @media screen and (max-width: 415px){
+    
+/*******************************************************************
+                        Homepage Works
+********************************************************************/
+#index_wrapper{
+    height: 600px;
+}
 
+/* *******************************************************************************
+                                    Projects
+********************************************************************************* */
+
+#projects{
+    background-size: 700%;
+    background-position: -1020px -500px;
+}
+
+
+/* This is the main base of the grid layout*/
+.grid-container{
+    grid-template-columns: auto;
+    grid-row-gap: 30px;
+
+}
+
+/* *******************************************************************************
+                                    Skills
+******************************************************************************** */
+#skill{
+    height: 100%;
+    background-size: 290%;
+
+    background-position: -345px -200px;
+}
+
+#skill .wrapper ul li{
+    list-style-type: none;
+    text-align: center;
+}
+
+#list_skill_one, #list_skill_two{
+    padding-top: 30px;
+    float: none;
+}
+ #list_skill_one{
+     padding-left: 0;
+ }
+
+ #list_skill_two{
+     padding-right: 0;
+ }
+
+
+/* *******************************************************************************
+                                    Resume
+******************************************************************************** */
+/* This div is the wrapper of the whole thing.*/
+#resume{
+    height: 100%;
+    background-size: 150%;
+    background-position:-90px -20px;
+}
 
 /******************************************************
                     Interior Project
 *****************************************************/
     /* This class is an empty div that allow the background image to show in image */
     .seperation {
-        padding-bottom: 150%;
+        padding-bottom: 170%;
     }
 
 /******************************************************
@@ -752,3 +914,16 @@ This is the Responsive Design for Iphone 6 and below
     }
 
 } /* End bracket for mobile phone screen */
+
+@media screen and (max-width: 320px){
+    #projects{
+        background-size: 700%;
+        background-position: -900px -500px;
+    
+    }
+
+    #skill{   
+        background-position: -305px -150px;
+    }
+
+}

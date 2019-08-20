@@ -34,12 +34,6 @@
         
         <title>DanX Portfolio</title>
 
-        <style>
-            #cpu_screen .wrapper{
-                height: 50px;
-            }
-        </style>
-
     </head>
 
     <body>
@@ -85,27 +79,30 @@
         </div> <!-- End div for Wrapper -->
     </nav> <!-- End nav for mobile-->
 
-    
     <!-- *************************** About Me ********************************** -->
 
     <div id="index_wrapper"><!-- This div is used for containing all content that is not footer or navigation-->
-        <div id="image"></div><!-- End div for the Image -->
-
-        <article>
-            <h2>Design is the true way of the Future</h2> 
-            <p>I’m a designer. I specialize in Visual Communication, Design Strategy, and
-            User Experience. I like to create new innovative designs to share with the whole world.</p>
-        </article>
+        <div class="wrapper">
+            <article>
+                <h2>Design is the true way of the Future</h2> 
+                <p>I’m a designer. I specialize in Visual Communication, Design Strategy, and
+                    User Experience. I like to create new innovative designs to share with the whole world.</p>
+            </article>
+            <div id="image"></div><!-- End div for the Image -->
+        </div>
 
     </div> <!--End of the Wrapper-->
     
+    <div class="seperation"></div>
 
     <!-- **************************** Works *************************************  -->
     <div id="projects">
         <div class="wrapper">
         <h2>My Projects</h2>
 
-        <p style="padding-top: 16px;">These are the works I have done Previously.</p>
+        <article>
+            <p>These are the works I have done Previously.</p>
+        </article>
 
         <!-- Grid Structure -->
         <main class="grid-container">
@@ -119,7 +116,7 @@
 
                 <!-- Link for Struggle -->
                 <div class="grid-item">
-                    <a href="strggle.html">
+                    <a href="struggle.html">
                     <img src="gallery_icon/struggle_icon.svg" alt="My Courses" style="background-color: #000000;"> </br>
                     Struggle</a>
                 </div>
@@ -167,6 +164,27 @@
     <div id="skill">
         <div class="wrapper">
             <h2>Skills</h2>
+
+            <ul id="list_skill_one">
+                <li>Animation</li>                
+                <li>Storyboard</li> 
+                <li>Illustration</li>
+                <li>Character Design</li>
+                <li>Concept Art</li>
+                <li>Typography</li>
+                <li>HTML/CSS</li>
+            </ul>
+
+            <ul id="list_skill_two">
+                <li>Traditional Media</li>
+                <li>Sketching</li>
+                <li>UI Design</li>
+                <li>Web Design</li>
+                <li>Wireframes</li>
+                <li>Sitemap</li>
+                <li>User Story</li>
+            </ul>
+        </div>
             
     </div>
 
@@ -178,7 +196,7 @@
 
             <!-- This is just a placeholder -->            
             <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
-                Resume</a>
+                <img src="gallery_icon/resume_button.svg" alt="resume button" id="resume_button"></a>
         </div>
 
     </div><!-- End div for resume -->
