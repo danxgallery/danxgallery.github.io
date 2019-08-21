@@ -164,13 +164,11 @@ a:link, a:visited{
 }
 
 #social_media{
-    z-index: 2;
-    display: inline-block;
-    height: 40px;
-    width: 100px;
-    padding-top: 50px;
+    display: inline;
+}
 
-    fill: #000000;
+#social_media .icon{
+    float: right;
 }
 
 
@@ -934,6 +932,14 @@ This is the Responsive Design for Iphone 6 and below
 
     #skill{   
         background-position: -305px -150px;
+    }
+
+}
+
+/* for bigger screen size pc */
+@media screen and (max-width: 1445px){
+    .seperation{
+        padding-bottom: 55%;
     }
 
 }
