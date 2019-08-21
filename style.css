@@ -164,8 +164,13 @@ a:link, a:visited{
 }
 
 #social_media{
+    z-index: 2;
+    display: inline-block;
     height: 40px;
     width: 100px;
+    padding-top: 50px;
+
+    fill: #000000;
 }
 
 
