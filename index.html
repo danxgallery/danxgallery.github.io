@@ -34,6 +34,12 @@
         
         <title>DanX Portfolio</title>
 
+        <style>
+            .display_wrapper a{
+                display: block;
+            }
+        </style>
+
     </head>
 
     <body>
@@ -220,7 +226,7 @@
             <h2>Resume</h2>
             <p>Download my Resume Here</p>
 
-            <div style="display: block;">
+            <div class="display_wrapper">
                 <!-- PDF Resume-->            
                 <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
                     <img src="gallery_icon/resume_button.svg" alt="resume button" id="resume_button"></a>
