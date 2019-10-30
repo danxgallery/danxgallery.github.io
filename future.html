@@ -35,35 +35,17 @@
 
     <style>
         /* Change the grid layer to two */
-        .grid-structure:nth-of-type(7), .grid-structure:nth-of-type(5){
+        .grid-structure:nth-of-type(7), .grid-structure:nth-of-type(5), .grid-structure:nth-of-type(6){
             grid-template-columns: 1fr 1fr;
         }
 
-        /* Reposition the image */
-        #image_ui{
-            left: 25%;
-            top: -5px;
-
-            background-image: url(image/ui/futureui/amaterasu.svg);
-        }
-
-        @media screen and (max-width: 1024px){
-            #image_ui{
-                left: 0;
-                top: 100px;
-            }
-        }
-
-        /* size for mobile phones */
+       /* size for mobile phones */
         @media screen and (max-width: 415px){
 
-            .grid-structure:nth-of-type(7), .grid-structure:nth-of-type(5){
+            .grid-structure:nth-of-type(7), .grid-structure:nth-of-type(5), .grid-structure:nth-of-type(6){
                 grid-template-columns: 1fr;
             }
 
-            .grid-structure:nth-of-type(6){
-                display: block;
-            }
         }
 
         
@@ -83,15 +65,14 @@
                 <a href="#sketches">Sketches</a>
                 <a href="#ui">User Interface Design</a>
                 <a href="#char">Character Design</a>
-                <a href="#assets">Assets</a>
             </div> <!-- End div for list -->
     </div> <!-- End div for side_sub-->
 
     <!-- This Icon does not belong to me. This Icon belongs to "fontawesome.com" -->
     <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
     
-    <!-- **************************** CPU Navigation *************************************  -->
-    <nav id="cpu_screen" > <!-- This is the Navigation Control for the PC-->
+     <!-- **************************** Navigation *************************************  -->
+     <nav id="cpu_screen"> <!-- This is the Navigation Control for the PC-->
 
         <div class="wrapper">
             <!-- Clicking on the Logo will lead back to the homepage-->
@@ -102,15 +83,16 @@
             
             
             <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
-                <a href="index.html#projects">My Projects</a>
-                <a href="index.html#skill">Skills</a>
-                <a href="index.html#resume">Resume</a>
+                <a href="index.html">Home</a>
+                <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                        Resume</a>
+                <a href="about.html">About Me</a>
                 <a href="#contact">Contact Me</a>
             </div> <!-- End div for nav_container -->
-        </div> <!-- End div for Wrapper -->
+        </div>
     </nav> <!-- End nav for CPU-->
 
-        <!-- **************************** Mobile Navigation *************************************  -->
+    <!-- ****************************** Mobile Navigation *******************************************-->
     <nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
 
         <div class="wrapper">
@@ -124,9 +106,10 @@
             <div id="hamberger_icon" onclick="nav_button()"></div>
 
                 <div class="nav_container">
-                    <a href="index.html#projects">My Projects</a>
-                    <a href="index.html#skill">Skills</a>
-                    <a href="index.html#resume">Resume</a>
+                    <a href="index.html">Home</a>
+                    <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                        Resume</a>
+                    <a href="about.html">About Me</a>
                     <a href="#contact">Contact Me</a>
                 </div><!-- End div for nav container -->
 
@@ -140,7 +123,9 @@
     <div class="interior_wrapper"> <!-- Wraps the whole content. -->
 
         <article style="padding-bottom: 0;">
-            <h1  class="space">Future UI</h1>
+            <h1>Future UI</h1>
+            <p><strong>UI Design &bull; Animation</strong></p>
+
             <p><strong>November 2017 - December 2017</strong></p>
         </article>
 
@@ -310,15 +295,6 @@
     </section>
 
     <div class="grid-structure">
-        <figure class="grid-span">
-            <img src="image/ui/futureui/sketch/rebecca-sketch.png" alt="sketch">
-            <figcaption>Version 1</figcaption>
-        </figure>
-
-        <figure>
-            <img src="image/ui/futureui/sketch/rebecca-face-sketch.png" alt="face">
-            <figcaption>Version 1: Face</figcaption>
-        </figure>
 
         <figure>
             <img src="image/ui/futureui/sketch/rebecca_amaterasu_v1.png" alt="digital sketch">
@@ -332,98 +308,12 @@
     </div>
 
 
-    
-    <!-- *********************** Animation *************************** -->
-    <section>
-        <h3 class="space">Animation</h3>
-        <p>These are very basic animation of idle stance and her smiling.</p>
-    </section>
-    
-    <div class="grid-structure">
-        <figure>
-            <video loop autoplay src="image/ui/futureui/idle_stance.mp4">This video does not support</video>
-            <figcaption>Idle Stance</figcaption>
-        </figure>
-
-        <figure>
-            <video loop autoplay src="image/ui/futureui/smiling.mp4">This video does not support</video>
-            <figcaption>Smiling</figcaption>
-        </figure>
-    </div>
-
-    <!-- *********************** Assets *************************** -->
-    <h2 id="assets" class="tabs">Assets</h2>
-     
-    <section>
-        <h2>Base Circle</h2>
-       
-        <p>This circle was just in my imagination. I just go with the flow; letting my mind go else where.</p>
-    </section>
-
-    <div class="grid-structure">
-        <figure>
-            <img src="image/ui/futureui/assets/circle.png" alt="base circle">
-            <figcaption>Circle</figcaption>
-        </figure>
-
-        <figure>
-            <img src="image/ui/futureui/assets/surround.png" alt="line">
-            <figcaption>Line</figcaption>
-        </figure>
-
-        <figure>
-            <video loop autoplay src="image/ui/futureui/circle.mp4">This video does not work on
-                your version</video>
-            <figcaption>Circle Animation</figcaption>
-        </figure>
-    </div>
-                
-    <!-- *********************** Notification *************************** -->
-    <h2 class="grid-space">Notification</h2>
-    <section>
-        <h3 class="space">Version 1</h3>
-        <p>This is the notification. Version 1.</p>
-        <p>This notification is suppose to have similar traits as the rest of the UI.</p>
-    </section>
-
-    <figure>
-        <img src="image/ui/futureui/assets/notification_v1.png" alt="notification 1">
-    </figure>
-                
-    <!-- *********************** Notification 2 *************************** -->
-    <section>
-        <h3 class="space">Version 2</h3>
-        <p>This is the final version of the notification. 
-            Made the color red because it would pop out more instead using the same color.  
-        </p>
-    </section>
-
-    <figure>
-        <img src="image/ui/futureui/assets/notification_v2.png" alt="notification 2">
-        <img src="image/ui/futureui/assets/notification_v2_medal.png" alt="notification medal">
-    </figure>
-
-    <!-- *********************** Medal *************************** -->
-    <div class="grid-structure">
-        <section>
-            <h3 class="space">Medal</h3>
-            <p>This is just a Medal.</p>
-            <p>The design of the medal was looking at different military medals just to make more
-                simplified.
-            </p>
-        </section>
-        <figure style="grid-column: span 2; grid-column-gap: 10px;">
-            <img src="image/ui/futureui/assets/medal.png" alt="evil red queen">
-        </figure>
-    </div>
-
-                </div>
+            
         </div> <!-- End div for interior Wrapper-->
     </div> <!-- End div for content class -->
 
-    <!-- ************************************* Footer ******************************** -->
+<!-- ************************************* Footer ******************************** -->
 
-    <!-- All of footer icons do not belong to me. These icon belongs to "fontawesome.com"-->
 <!-- All of footer icons do not belong to me. These icon belongs to "fontawesome.com"-->
 <footer>
     <div class="footer_wrapper">
@@ -465,10 +355,6 @@
         </div>
     </div>
 </footer>
-
-    
-    
-
 
 </body>
 </html>

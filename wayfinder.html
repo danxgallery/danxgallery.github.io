@@ -36,15 +36,6 @@
 
     <style>
 
-        #image_ui{
-            background-image: url(image/ui/wayfinder/background.png);
-            background-color: #8abbff;
-
-
-            background-position-y: -130px;
-            background-position-x: 50%;
-            top: -10px;
-        }
 
         figure img{
             border: 5px solid #424452; /*Dark Grey Blue*/
@@ -78,17 +69,8 @@
                         <a href="#final">Prototype</a>
                         <a href="#problem">Problem</a>
                         <a href="#goal">Goal</a></h3>
-                        <a href="#research_comp">Competitive Research</a>
-                        <a href="#research_analytical">Analytical Research</a>
-                        <a href="#flow">User Flow</a>    
-                        <a href="#workflow">Work Flow</a>
                         <a href="#sketch">Sketches</a>    
-                        <div class="toggle_button"><a>Wireframes</a></div>
-                            <div class="section" style="display: none;">
-                                <a href="#v1">Version 1</a>  
-                                <a href="#v2">Version 2</a>
-                                <a href="#v3">Version 3 Navigation</a>
-                            </div>
+                        <a href="wireframe">Wireframes</a>
                         <a href="#main_comp">Main Composition</a>  
 
 
@@ -98,26 +80,28 @@
 <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
             
 <!-- **************************** CPU Navigation *************************************  -->
-<nav id="cpu_screen" > <!-- This is the Navigation Control for the PC-->
+ <!-- **************************** Navigation *************************************  -->
+ <nav id="cpu_screen"> <!-- This is the Navigation Control for the PC-->
 
     <div class="wrapper">
         <!-- Clicking on the Logo will lead back to the homepage-->
         <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
                               <!-- It will also allow me to control the position of the page.-->
-            <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+            <img src="image/Logo_v3.svg" alt="logo" />   
         </figure> <!-- End Figure for my Logo-->
         
         
         <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
-            <a href="index.html#projects">My Projects</a>
-            <a href="index.html#skill">Skills</a>
-            <a href="index.html#resume">Resume</a>
+            <a href="index.html">Home</a>
+            <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                    Resume</a>
+            <a href="about.html">About Me</a>
             <a href="#contact">Contact Me</a>
         </div> <!-- End div for nav_container -->
-    </div> <!-- End div for Wrapper -->
+    </div>
 </nav> <!-- End nav for CPU-->
 
-    <!-- **************************** Mobile Navigation *************************************  -->
+<!-- ****************************** Mobile Navigation *******************************************-->
 <nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
 
     <div class="wrapper">
@@ -131,9 +115,10 @@
         <div id="hamberger_icon" onclick="nav_button()"></div>
 
             <div class="nav_container">
-                <a href="index.html#projects">My Projects</a>
-                <a href="index.html#skill">Skills</a>
-                <a href="index.html#resume">Resume</a>
+                <a href="index.html">Home</a>
+                <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                    Resume</a>
+                <a href="about.html">About Me</a>
                 <a href="#contact">Contact Me</a>
             </div><!-- End div for nav container -->
 
@@ -146,6 +131,7 @@
 <div class="interior_wrapper">
     <article>
         <h1>Rochester Regional Hospital - Wayfinder</h1>
+        <p><strong>UI / UX Design</strong></p>
         
         <p><strong>August 2018 - November 2018</strong></p>
     </article>
@@ -223,149 +209,7 @@
             </div>
         </section>
         
-        <!-- *********************** UI Research *************************** -->
-        <h2 id="research_comp" class="tabs">Competitive Research</h2>
-        
-        <!-- *********************** Magic Leap *************************** -->
-        <section>
-            <h3 class="space">Magic Leap</h3>
-            
-            <p>Magic Leap is a company that solely design for Augmented and Virtual Reality. It shows step by step
-                of how the Augmented Reality functions.</p>
-        </section>
-    
-        <figure>
-            <img src="image/ui/wayfinder/research/leap1.png" alt="Magic Leap" >
-            <img src="image/ui/wayfinder/research/leap2.png" alt="Magic Leap" >
-            <img src="image/ui/wayfinder/research/leap3.png" alt="Magic Leap" >
-            <img src="image/ui/wayfinder/research/leap4.png" alt="Magic Leap" >
-            <img src="image/ui/wayfinder/research/leap5.png" alt="Magic Leap" >
-        </figure>
-        
-        <!-- *********************** Microsoft HoloLens *************************** -->
-        <section>
-            <h3 class="space">Microsoft HoloLens</h3>
-            
-            <p>Microsoft HoloLens allows the user to contact other professionals to help the user how to fix things that
-                the user cannot fix.</p>
-        </section>
-
-        <figure>
-            <img src="image/ui/wayfinder/research/holo1.png" alt="Microsoft HoloLens" >
-            <img src="image/ui/wayfinder/research/holo2.png" alt="Microsoft HoloLens" >
-        </figure>
-    
-        <!-- *********************** UI Research *************************** -->
-        <h2 id="research_analytical" class="tabs">Analytical Research</h2>
-
-        <!-- *********************** Google Translator *************************** -->
-        <section>
-            <h3 class="space">Google Translator</h3>
-            <p>Google Translator automatically translate from one screen to another without having to type a single word
-                from one screen to another. </p>
-
-            <p>Though Google Translator is not 100% accurate. This will help the user who
-                does not speak English fluently to select their language and just hover over the numbers or words.</p>
-        </section>
-        
-        <figure>
-            <img src="image/ui/wayfinder/research/google1.JPG" alt="google" >
-            <img src="image/ui/wayfinder/research/google2.JPG" alt="google" >
-            <img src="image/ui/wayfinder/research/google3.JPG" alt="google" >
-            <img src="image/ui/wayfinder/research/google4.JPG" alt="google" >
-        </figure>
-
-        <!-- *********************** Blippar *************************** -->
-        <section>
-            <h3 class="space">Blippar</h3>
-            <p>Blippar is an augmented reality company that deals with navigation from both indoor and outdoor. 
-                It tells the accuracy of where you are supposed to go. 
-                It even has a list to know exactly where you are supposed to go.</p>
-        </section>
-        
-        <figure>
-            <img src="image/ui/wayfinder/research/blippar1.png" alt="Blippar" >
-            <img src="image/ui/wayfinder/research/blippar2.png" alt="Blippar" >
-            <img src="image/ui/wayfinder/research/blippar3.png" alt="Blippar" >
-        </figure>
-            
-            <!-- *********************** User Flow *************************** -->
-            <h2 id="flow" class="tabs">User Flow</h2>
-            
-            <!-- *********************** Muon Shain *************************** -->
-            <section>
-                <table>
-                    <tr>
-                        <th>Name:</th>
-                        <td>Muon Sháin</td>
-                    </tr>
-                    <tr>
-                        <th>User:</th> 
-                        <td>Doctor</td>
-                    </tr>
-                    <tr> 
-                        <th>Gender:</th>
-                        <td>Female</td>
-                    </tr>
-                    <tr>
-                        <th>Age:</th>
-                        <td>35</td>
-                    </tr>
-                </table>
-                
-                <p>Muon does not speak fluent English. So there are language barriers between the patient and her co-workers. 
-                    In this situation, language translation doing the work may cause misunderstanding and waste of time and space. 
-                    Relying on a dictionary or other tools too often; making it wasting more time than it should.  
-                </p>
-            </section>
-            
-            <figure>
-            <img src="image/ui/wayfinder/user_story/muon_shain.png" alt="user flow" >
-        </figure>
-        
-        <!-- *********************** San Raiz *************************** -->
-        <section>
-        <table>
-            <tr>
-                <th>Name:</th>
-                <td>Sán Raiz</td>
-            </tr>
-            <tr>
-                <th>User:</th> 
-                <td>Patient</td>
-            </tr>
-            <tr> 
-                <th>Gender:</th>
-                <td>Male</td>
-            </tr>
-            <tr>
-                <th>Age:</th>
-                <td>20</td>
-            </tr>
-        </table>
-        
-        <p>Sán comes in the hospital severely ill. He was called by his doctor to check what kind of illness San has.
-             However, the doctor does not know where he is going and ended up lost. The Patient becomes annoyed. 
-             He tells the doctor to just find a room cause he could die at any time. 
-             But the doctor is convinced that he is going in the right direction but only to get even farther away from the 
-             destination they are supposed to go.</p>
-        </section>
-        
-        <figure>
-            <img src="image/ui/wayfinder/user_story/san_raiz.png" alt="user flow" >
-        </figure>
-        
-        <!-- *********************** Sketches *************************** -->
-        <h2 id="workflow" class="tabs">Work Flow</h2>
-    
-        <section>
-            <p>This is a blueprint of how the app is gonna go.</p>
-        </section>
-
-        <figure>
-            <img src="image/ui/wayfinder/map_site/mapsite.png" alt="achivement sketch">
-        </figure>
-        
+      
         <!-- *********************** Sketch *************************** -->
         <h2 id="sketch" class="tabs">Sketch</h2>
 
@@ -380,92 +224,12 @@
         </figure>
 
         <!-- *********************** Wireframes *************************** -->
-        <h2 class="tabs">Wireframes</h2>
-        
-        <section>
-            <h2 id="v1" class="space">Version 1</h2>
-            <p>These are very basic wireframes. No color, and no depth.</p>
-            <p>They were meant to be made quickly and easily readable.</p>
-        </section>
+        <h2 id="wireframe" class="tabs">Wireframes</h2>
 
-        <div class="grid-structure">
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v1/base.png" alt="home" >
-                <figcaption>Homepage</figcaption>
-            </figure>
-
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v1/comfirm.png" alt="comfirm" >
-                <figcaption>Comfirm Page</figcaption>
-            </figure>
-
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v1/navigation.png" alt="navigation page" >
-                <figcaption>Navigation Page</figcaption>
-            </figure>
-        
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v1/almost.png" alt="almost there" >
-                <figcaption>Almost There</figcaption>
-            </figure>
-
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v1/wrong_way.png" alt="wrong way">
-                <figcaption>Wrong Way</figcaption>
-            </figure>
-
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v1/closer.png" alt="closer" >
-                <figcaption>Closer</figcaption> 
-            </figure>
-
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v1/here.png" alt="here" >
-                <figcaption>Here</figcaption>
-            </figure>
-        
-        </div>
-
-        <!-- *********************** Version 2 *************************** -->
-        
-        <section>
-            <h2 id="v2" class="space">Version 2</h2>
-            <p>Version 2 is still a beta. Meant to be made quickly but with some added depth on the wireframes.</p>
-        </section>
-
-        
-        <div class="grid-structure">
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v2/base_eng.png" alt="homepage" >
-                <figcaption>Homepage</figcaption>
-            </figure>
-
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v2/base3.png" alt="homepage" >
-                <figcaption>Homepage V2</figcaption>
-            </figure>
-
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v2/type_language.png" alt="language" >
-                <figcaption>Language Page</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v2/other_location_eng.png" alt="other location" >
-                <figcaption>Other Location</figcaption>
-            </figure>
-    
-            <figure>
-                <img src="image/ui/wayfinder/wireframes/v2/navigation.png" alt="navigation" class="noborders">
-                <figcaption>Navigation</figcaption>
-            </figure>
-        </div>
-        
         <!-- *********************** Version 3 *************************** -->
         
         <section>
-            <h2 id="v3" class="space">Version 3 - Navigation</h2>
-            <p>Version 3 is navigation only. This helps me to map out how the navigation would look like.</p>
+            <p>This helps me to map out how the navigation would look like.</p>
         </section>
 
         <div class="grid-structure">

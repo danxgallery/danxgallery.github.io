@@ -37,13 +37,6 @@
     <title>DanX Portfolio - Struggle</title>
     
     <style>
-        #image_ui{
-            background-image: url(image/animation/struggle/logo.svg);
-            background-color: black;
-
-            background-position-y: 30px;
-            top: -10px;
-        }
 
         .grid-structure{
             grid-template-columns: 1fr 1fr;
@@ -77,9 +70,6 @@
                     <a href="#description">Description</a>
                     <a href="#animation">Animation</a>
                     <a href="#storyboard">Storyboard</a>
-                    <a href="#moodboard">Moodboard</a>
-                    <a href="#styleboard">Styleboard</a>
-                    <a href="#styleframe">Styleframe</a>
                     <a href="#characters">Characters</a>
                     <a href="#background">Background</a>
                     <a href="#assets">Assets</a>
@@ -89,8 +79,8 @@
         <!-- This is the back to top button -->
         <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
 
-    <!-- **************************** CPU Navigation *************************************  -->
-    <nav id="cpu_screen" > <!-- This is the Navigation Control for the PC-->
+    <!-- **************************** Navigation *************************************  -->
+    <nav id="cpu_screen"> <!-- This is the Navigation Control for the PC-->
 
         <div class="wrapper">
             <!-- Clicking on the Logo will lead back to the homepage-->
@@ -101,15 +91,16 @@
             
             
             <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
-                <a href="index.html#projects">My Projects</a>
-                <a href="index.html#skill">Skills</a>
-                <a href="index.html#resume">Resume</a>
+                <a href="index.html">Home</a>
+                <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                        Resume</a>
+                <a href="about.html">About Me</a>
                 <a href="#contact">Contact Me</a>
             </div> <!-- End div for nav_container -->
-        </div> <!-- End div for Wrapper -->
+        </div>
     </nav> <!-- End nav for CPU-->
 
-    <!-- **************************** Mobile Navigation *************************************  -->
+    <!-- ****************************** Mobile Navigation *******************************************-->
     <nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
 
         <div class="wrapper">
@@ -123,9 +114,10 @@
             <div id="hamberger_icon" onclick="nav_button()"></div>
 
                 <div class="nav_container">
-                    <a href="index.html#projects">My Projects</a>
-                    <a href="index.html#skill">Skills</a>
-                    <a href="index.html#resume">Resume</a>
+                    <a href="index.html">Home</a>
+                    <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                        Resume</a>
+                    <a href="about.html">About Me</a>
                     <a href="#contact">Contact Me</a>
                 </div><!-- End div for nav container -->
 
@@ -140,7 +132,8 @@
         
         <!-- *********************** Description *************************** -->
         <article style="padding-bottom: 0;">
-            <h1 class="space">Struggle</h1>
+            <h1>Struggle</h1>
+            <p><strong>Motion Graphic &bull; Animation</strong></p>
 
             <p><strong>April 2018 - May 2018</strong></p>
         </article>
@@ -188,52 +181,6 @@
             <img src="image/animation/struggle/storyboard/storyboard_5.png" alt="Storyboard">
         </figure>
 
-        <!-- *********************** Moodboard *************************** -->
-        <h3 id="moodboard" class="tabs">Moodboard</h3>
-
-        <section>
-            <p>This Moodboard has a balance of dark and light. The person would see the person struggle, alone
-                careless and vulnerable.
-            </p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/moodboard.png" alt="Storyboard">
-        </figure>
-
-        <!-- *********************** Styleboard *************************** -->
-
-        <h3 id="styleboard" class="tabs">Styleboard</h3>
-
-        <section>
-            <p>The style of this is meant to look flat but with the style of Lemony Snicket's
-                "The Series of Unfortunate Events" and my Animeish Style.
-            </p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/styleboard.png" alt="Storyboard">
-        </figure>
-
-        <!-- *********************** Styleframe *************************** -->
-        <h3 id="styleframe" class="tabs">Styleframe</h3>
-
-        <section>
-            <p>Thes are all the styleframes of "Struggle"</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/styleframe/styleframe_1.png" alt="styleframe 1">
-            <img src="image/animation/struggle/styleframe/styleframe_2.png" alt="styleframe 2">
-            <img src="image/animation/struggle/styleframe/styleframe_3.png" alt="styleframe 3">
-            <img src="image/animation/struggle/styleframe/styleframe_4.png" alt="styleframe 4">
-            <img src="image/animation/struggle/styleframe/styleframe_5.png" alt="styleframe 5">
-            <img src="image/animation/struggle/styleframe/styleframe_6.png" alt="styleframe 6">
-            <img src="image/animation/struggle/styleframe/styleframe_7.png" alt="styleframe 7">
-            <img src="image/animation/struggle/styleframe/styleframe_10.png" alt="styleframe 8">
-            <img src="image/animation/struggle/styleframe/styleframe_11.png" alt="styleframe 9  ">
-        </figure>
-
         <!-- *********************** Characters *************************** -->
 
         <h3 id="characters" class="tabs">Characters</h3>
@@ -258,23 +205,6 @@
         
         <figure>
             <img src="image/animation/struggle/main_character_blueprint.png" alt="Main Character">
-        </figure>
-        
-        <!-- *********************** Main Character SKetch *************************** -->
-
-
-        
-
-        <!-- *********************** Cellphone *************************** -->
-        <section>
-            <h3 class="space">Phone</h3>
-            <p>Main Character holding a phone.</p>
-            <p>This tells the main character where it has to go at this time.</p>
-            <p>It was modeled after the phone I have.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/cellphone.png" alt="cellphone">
         </figure>
 
         <!-- *********************** Fear *************************** -->
@@ -303,39 +233,8 @@
             <img src="image/animation/struggle/fast_food_assets/fast_food.png" alt="Assets">
         </figure>
 
-        <!-- *********************** Character SKetches *************************** -->
-        <section>
-            <h3 class="space">Sketch</h3>
-            <p>This is just a rough sketch of all of the characters</p>
-        </section>
-    
-        <div class="grid-structure">
-            <figure>
-                <img src="image/animation/struggle/main_sketches.png" alt="Assets">
-            </figure>
-    
-            <figure>
-                <img src="image/animation/struggle/sketch_running.png" alt="Logo">
-            </figure>
-            <figure style="grid-column: span 2;">
-                <img src="image/animation/struggle/characer_sketches.png" alt="Logo">
-            </figure>
-        </div>
-        
-
         <!-- *********************** Background *************************** -->
         <h2 id="background" class="tabs">Background</h2>
-
-        <!-- *********************** School *************************** -->
-        <section>
-            <h3 class="space">School</h3>
-            <p>This is the final rendering of the school area.</p>
-            <p>This school area is modeled after the James Booth Building in Rochester Insitute of Technology.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/school.png" alt="Logo">
-        </figure>
 
         <!-- *********************** Office *************************** -->
         <section>
@@ -347,59 +246,6 @@
             <img src="image/animation/struggle/office.png" alt="Logo">
         </figure>
 
-        <!-- *********************** Office SKetch *************************** -->
-        <section>
-            <h3 class="space">Sketch</h3>
-            <p>This is the first draft of the dreaded office.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/office_sketch.png" alt="Logo">
-        </figure>
-
-        <!-- *********************** New Media Room *************************** -->
-        <section>
-            <h3 class="space">New Media Room</h3>
-            <p>New Media Room without any other assets.</p>
-            <p>This room represents isolation from everyone.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/new_media.png" alt="Logo">
-        </figure>
-
-        <!-- *********************** New Media Close Up *************************** -->
-
-        <section>
-            <h3 class="space">CPU</h3>
-            <p>Close up of the computers.</p>
-            <p>There are references on the screen.</p>
-        </section>
-        
-        <figure>
-            <img src="image/animation/struggle/new_media_closeup.png" alt="Logo">
-        </figure>
-
-        <!-- *********************** New Media Otherside *************************** -->
-        <section>
-            <h3 class="space">CPU</h3>
-            <p>Otherside of the computers.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/new_media_otherside.png" alt="Logo">
-        </figure>
-
-        <!-- *********************** Mist *************************** -->
-        <section>
-                <h3 class="space">Mist</h3>
-            <p>This mist us used to cloud around the darken area.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/mist.png" alt="Logo">
-        </figure>
-        
         <!-- *********************** Final Scene *************************** -->
         <section>
             <h3 class="space">Darkness</h3>
@@ -417,70 +263,6 @@
         <figure>
             <img src="image/animation/struggle/final_scene.png" alt="Logo">
         </figure>
-
-        <!-- *********************** Final Scene Sketch *************************** -->
-        <section>
-            <h3 class="space">Pre-Render</h3>
-            <p>This is the pre-render of this scene.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/final_scene_draft.png" alt="Logo">
-        </figure>
-
-        <!-- *********************** Final Scene Blueprint *************************** -->
-        <section>
-            <h3 class="space">Blueprint</h3>
-            <p>This is the blueprint of this area.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/final_scene_blueprint.png" alt="Logo">
-        </figure>
-
-        <!-- *********************** Assets *************************** -->
-        <h2 id="assets" class="tabs">Assets</h2>
-
-        <!-- *********************** Brain *************************** -->
-        <section>
-            <h3 class="space">Brain</h3>
-            <p>The brain represents sight of illustion of the main character.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/brains.png" alt="Logo">
-        </figure>
-
-        <!-- *********************** Brain SKetch *************************** -->
-        <section>
-            <h3 class="space">Sketch of the Brain</h3>
-            <p>This is the sketch of the brain</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/brain_sktech.png" alt="Logo">
-        </figure>
-
-        <!-- *********************** Keychain *************************** -->
-        <section>
-            <h3 class="space">Miku Keychain</h3>
-            <p>This is the Miku Keychain. It does not represent anything. I'm just a fan of Vocaloid.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/keychain.png" alt="Logo">
-        </figure>
-
-        <!-- *********************** Keychain Sketch *************************** -->
-        <section>
-            <h3 class="space">Sketch of Keychain</h3>
-            <p>A sketch of the keychain.</p>
-        </section>
-
-        <figure>
-            <img src="image/animation/struggle/keychain_sketch.png" alt="Logo">
-        </figure>  
-        </div>
     </div>
 
 <!-- All of footer icons do not belong to me. These icon belongs to "fontawesome.com"-->

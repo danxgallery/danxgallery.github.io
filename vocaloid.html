@@ -35,12 +35,7 @@
     <script src="js/customscript.js"></script>
 
     <style>
-        #image_ui{
-            background-image: url(image/illustation/vocaloid/sand_planet.png);
-            background-size: 100%;
 
-            top: -5px;
-        }
 
         @media screen and (max-width: 1024px){
             #image_ui{
@@ -69,8 +64,8 @@
     <div id="top"></div>
     <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
 
-    <!-- **************************** CPU Navigation *************************************  -->
-    <nav id="cpu_screen" > <!-- This is the Navigation Control for the PC-->
+    <!-- **************************** Navigation *************************************  -->
+    <nav id="cpu_screen"> <!-- This is the Navigation Control for the PC-->
 
         <div class="wrapper">
             <!-- Clicking on the Logo will lead back to the homepage-->
@@ -81,15 +76,16 @@
             
             
             <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
-                <a href="index.html#projects">My Projects</a>
-                <a href="index.html#skill">Skills</a>
-                <a href="index.html#resume">Resume</a>
+                <a href="index.html">Home</a>
+                <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                        Resume</a>
+                <a href="about.html">About Me</a>
                 <a href="#contact">Contact Me</a>
             </div> <!-- End div for nav_container -->
-        </div> <!-- End div for Wrapper -->
+        </div>
     </nav> <!-- End nav for CPU-->
 
-        <!-- **************************** Mobile Navigation *************************************  -->
+    <!-- ****************************** Mobile Navigation *******************************************-->
     <nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
 
         <div class="wrapper">
@@ -103,9 +99,10 @@
             <div id="hamberger_icon" onclick="nav_button()"></div>
 
                 <div class="nav_container">
-                    <a href="index.html#projects">My Projects</a>
-                    <a href="index.html#skill">Skills</a>
-                    <a href="index.html#resume">Resume</a>
+                    <a href="index.html">Home</a>
+                    <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                        Resume</a>
+                    <a href="about.html">About Me</a>
                     <a href="#contact">Contact Me</a>
                 </div><!-- End div for nav container -->
 
@@ -116,7 +113,8 @@
     <div class="interior_wrapper"> <!-- Wraps the whole content. -->
 
         <article style="padding-bottom: 0;">
-            <h1  class="space">Vocaloid Fan Art</h1>
+            <h1>Vocaloid Fan Art</h1>
+            <p><strong>Illustration</strong></p>
         </article>
 
     </div> <!-- End div for Interior Wrapper -->
@@ -173,17 +171,6 @@
             <figcaption>Made in <em>January 2018</em></figcaption>
         </figure>
 
-        <section>
-            <h3 class="space">Sketch Version</h3>
-            <p>Sketch of Sand Planet.</p>
-            <p>I just like the song. It wanted me to do a drawing of this.</p>
-        </section>
-        
-        <figure>
-            <img src="image/illustation/vocaloid/sand_planet_sketch.png" alt="sand_planet">
-            <figcaption>Made in <em>December 2017</em></figcaption>
-        </figure>
-
         <!-- *********************** Chinese New Year *************************** -->
         <section>
             <h3 class="space">Happy Chinese New Year</h3>
@@ -220,21 +207,6 @@
             <figcaption>Made in <em>January 2017</em></figcaption>
         </figure>
 
-        <!-- *********************** Magical Kitty Len Len *************************** -->
-        <section>
-            <h3 class="space">Magical Kitty Len Len</h3>
-            <p>Kagamine Len dressed up as a girl.</p>
-            <p>Magical Kitty Len Len orginated by OwataP.</p>
-            
-            <h4 class="space">Translation</h4>
-            <p>Take This! Magical Banana Attack!</p>
-            <p>.... It didn't work.</p>
-        </section>
-
-        <figure>
-            <img src="image/illustation/vocaloid/lenlen_again.jpg" alt="Len Len">
-            <figcaption>Made in <em>April 2, 2016</em></figcaption>
-        </figure>
 
         <!-- *********************** Miku *************************** -->
         <section>
@@ -295,16 +267,7 @@
             <figcaption>Made in <em>August 29, 2015</em></figcaption>
         </figure>
 
-        <!-- *********************** Troupe Gramerye Miku *************************** -->
-        <section>
-            <h3 class="space">Troupe Gramerye Miku</h3>
-            <p>Hatsune Miku in a Troupe Gramarye Outfit from "Apollo Justice, Ace Attorney".</p>
-        </section>
-        
-        <figure>
-            <img src="image/illustation/vocaloid/troupegramarye.png" alt="Troupe Gramerye">
-            <figcaption>Made in <em>May 17, 2015</em>.</figcaption>
-        </figure>
+
 
         </div> 
     </div>
