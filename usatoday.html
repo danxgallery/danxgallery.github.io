@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- This code is made by Liep Nguyen
+        Source: https://stackoverflow.com/questions/41611741/uncaught-referenceerror-is-not-defined-at-popup-js1 -->
+    <script src="js/customscript.js"></script>
+
+    <style>
+        figure img{
+            border: 5px solid #424452; /*Dark Grey Blue*/
+        }
+
+        .size img{
+            width: 50%;
+        }
+
+        .grid-structure:nth-of-type(2){
+            grid-template-columns: 1fr 1fr;
+            padding-top: 16px;
+        }
+    </style>
+    
+    <title>DanX Portfolio - MyCourses</title>
+</head>
+<body>
+        <div id="top"></div>
+        <div id="side_sub">
+
+                <div class="list"> 
+                    <!-- <button id="back_button" onclick="back()"></button>-->
+                    <!-- Tried to use the back button but it does not want to work-->
+                    <h3><a href="#description">Description</a></h3>
+                    <h3><a href="#titleCard">Animation</a></h3>
+                    <h3><a href="#sketches">Sketches</a></h3>
+                    <h3><a href="#ui">User Interface Design</a></h3>
+                    <h3><a href="#rebecca">Rebecca Amaterasu</a></h3>
+                    <h3><a href="#assets">Assets</a></h3>    
+                </div>
+        </div>
+
+        <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
+ <!-- **************************** Navigation *************************************  -->
+ <nav id="cpu_screen"> <!-- This is the Navigation Control for the PC-->
+
+    <div class="wrapper">
+        <!-- Clicking on the Logo will lead back to the homepage-->
+        <figure class="logo" > <!-- With this figure tag, it will allow me to control the size of the image -->
+                              <!-- It will also allow me to control the position of the page.-->
+            <img src="image/Logo_v3.svg" alt="logo" style="border: none;"/>
+        </figure> <!-- End Figure for my Logo-->
+        
+        
+        <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
+            <a href="index.html">Home</a>
+            <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                    Resume</a>
+            <a href="about.html">About Me</a>
+            <a href="#contact">Contact Me</a>
+        </div> <!-- End div for nav_container -->
+    </div>
+</nav> <!-- End nav for CPU-->
+
+<!-- ****************************** Mobile Navigation *******************************************-->
+<nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
+
+    <div class="wrapper">
+        <!-- Clicking on the Logo will lead back to the homepage-->
+        <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                              <!-- It will also allow me to control the position of the page.-->
+            <a href="index.html"><img src="image/Logo_v3.svg" alt="logo" /></a>   
+        </figure> <!-- End Figure for my Logo-->
+        
+        <!-- This button only exist on mobile only -->
+        <div id="hamberger_icon" onclick="nav_button()"></div>
+
+            <div class="nav_container">
+                <a href="index.html">Home</a>
+                <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                    Resume</a>
+                <a href="about.html">About Me</a>
+                <a href="#contact">Contact Me</a>
+            </div><!-- End div for nav container -->
+
+    </div> <!-- End div for Wrapper -->
+</nav> <!-- End nav for mobile-->
+
+        
+    <div class="interior_wrapper">
+        <article>
+            <h1 >App Design: USA Today</h1>
+            <p><strong>UI / UX Design</strong></p>
+            
+            <p><strong>August 2016 - November 2016</strong></p>
+            
+        
+        <h2 id="description" class="tabs">Summary</h2>
+            <p>This team project was to rework the mobile version of USA Today. I'm was a part of "Team Glasses" with 
+            a partner. We thought of ideas in order to make this version of the app. There were no teams competing against each other. 
+            It is really everyone colaborating to make different flows that have been broken into different teams.</p>
+
+        </article>
+
+        <p><a href="https://docs.google.com/presentation/d/1hA_gIfCYoZRB7IPI9CaXzpeJyfxDiGJ_mon6Ee2nRcs/edit?usp=sharing" 
+        onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+        <strong>Click here to see the presentation slides</strong></a></p> 
+        
+
+        <h2 id="actions" class="tabs">Actions</h2>
+        <div class="grid-structure">
+            <figure>
+                <video controls src="image/ui/usa_today/swipe.mp4">
+                This video does not support your browser.</video>
+                <figcaption>Swipe</figcaption>
+            </figure>
+
+            <figure>
+                <video controls src="image/ui/usa_today/tag.mp4">
+                This video does not support your browser.</video>
+                <figcaption>Tagging System</figcaption>
+            </figure>
+
+            <figure>
+                <video controls src="image/ui/usa_today/search.mp4">
+                This video does not support your browser.</video>
+                <figcaption>Search</figcaption>
+            </figure>
+        </div>
+
+        <h2 id="comps" class="tabs">Main Composition</h2>
+        <div class="grid-structure">
+                <figure>
+                    <img src="image/ui/usa_today/v5.png" alt="home">
+                    <figcaption>Homepage</figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="image/ui/usa_today/v15.png" alt="article">
+                    <figcaption>Article Page</figcaption>
+                </figure>
+            </div>
+    
+    </div>
+    <footer>
+        <div class="footer_wrapper">
+            <div id="contact">
+                <h2>Contact Me:</h2>
+                <ul>
+                    <li>Phone: 207-766-6625</li>
+                    <li>Email: MiyukProduction@gmail</li>
+                </ul> 
+                <!-- <div class="icon">
+                    <a href="#"><img id="facebook" src="" /></a>
+                </div> -->
+            </div>
+    
+            <div class="gallery">
+                <h2>Gallery</h2>
+        
+                <div class="social_gallery">
+                        <a href="https://www.youtube.com/channel/UCTFvc0N-rI3c49-UnhYSPww?" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img src="fontawesome_logo/youtube-brands.svg" alt="youtube"/></a>
+
+                        <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
+                    
+                        <a href="https://www.behance.net/Rampagebea5e05" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="behance" src="fontawesome_logo/behance-brands.svg"  alt="behance"/></a>
+                    
+                        <a href="https://www.deviantart.com/danxgallery" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img id="deviant" src="fontawesome_logo/deviantart-brands.svg"  alt="deviantart"/></a>
+                        <!-- These image icons are made by Font Awesome --> 
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    
+    
+
+
+</body>
+</html>
