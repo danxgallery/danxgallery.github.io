@@ -69,8 +69,11 @@ a:link, a:visited{
     color: #000000; /* Pure Black*/
 }
 
+/* Remove borders from image with this specific class.*/
+.noborders{
+    border: none;
+}
 
-    
 /*******************************************************************
                             Navigation
 ********************************************************************/
