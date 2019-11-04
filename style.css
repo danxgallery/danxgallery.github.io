@@ -134,24 +134,17 @@ a:link, a:visited{
 #index_wrapper{
     margin: 0 auto; /* This code will center the whole content*/
     width: 100%;
-    height: 800px;
-    
-    position: fixed;
-    z-index: -1;
 }
 
 /* The first image is the self image */
 #image{
-    background-image: url(image/homepage/page.png); /* Cannot be searched, or copied*/
-    background-size: 100%; /* always change size depending on the width and height */
-    background-repeat: no-repeat;
-    width: 450px;
-    height: 800px;
-
+    max-width: 450px;
 
     float: left;
+}
 
-    margin-left: 12px;
+#image img{
+    width: 100%;
 }
 
 /* Seperate the section off the border */
@@ -163,144 +156,87 @@ a:link, a:visited{
     margin-right: 150px;
 }
 
-#social_media{
-    display: inline;
-}
-
-#social_media .icon{
-    float: right;
-}
-
 
 /*******************************************************************
                         Homepage Works
 ********************************************************************/
 
 /* This div is the wrapper of the whole thing.*/
-#projects {
-    width: 100%;
-    height: 1000px;
-    background-size: 100%;
-    background-image: url(image/homepage/works.png);
-    background-repeat: no-repeat;
-    background-position-y: -230px;
-
+#project {
+    max-width: 1200px;
     font-size: 24px;
     clear: both;
 
+    color: #000000;
+} 
+  
+/* This is used for seeing title and type of work.*/
+.grid-container .text {
+    font-size: 20px;
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    text-align: center;
     color: #ffffff;
+    margin-top: 16px;
+
+    opacity: 0;
+    background-color: rgba(14, 76, 97, 0.89);
+    transition: .2s ease;
 }
 
-#projects .wrapper h2, #skill .wrapper h2, #resume .wrapper h2   {
-    padding-top: 50px;
+.text h3{
+    position: absolute;
+    top: 90px;
+    left: 60px;
 }
 
-.grid-container h3{
-    grid-column: span 3;
+.text p{
+    position: absolute;
+    top: 120px;
+    left: 60px;
 }
+
+.text_mobile{
+    display: none;
+}
+
 /* This is the main base of the grid layout*/
 .grid-container{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-row-gap: 50px;
-    margin: 0 auto;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-gap: 30px;
 
-    margin-top: 30px;
+    margin-left: 50px;
 }
 
 /*This code controls the indivdual grid item images. */
 .grid-container .grid-item img{
     width: 250px;  /* Set the width and height by 250px*/
     height: 250px;
-    border: 10px solid #3b4653; /*Saturated Dark Blue*/
-}
 
-.grid-container .grid-item{
-    padding-bottom: 16px;
-    text-align: center;
+    outline: 10px solid #3b4653; /*Saturated Dark Blue*/
 
+    margin: 16px 0;
+
+    
     z-index: 1;
-}
-
-/* Add animation of hovering a link */
-.grid-item img{
     transition: all .2s ease-in-out;
 }
 
 /* Add animation of hovering a link */
-.grid-item img:hover{
-    transform: scale(1.1);
+.grid-item:hover .text{
+    opacity: 1;
 }
 
 .grid-item a:link, .grid-item a:visited{
     color: #ffffff;
 }
 
-/* *******************************************************************************
-                                    Skills
-********************************************************************************* /
-
-/* This div is the wrapper of the whole thing.*/
-#skill{
-    width: 100%;
-    height: 700px;
-    background-size: 100%;
-    background-image: url(image/homepage/skill.png);
-    background-repeat: no-repeat;
-    background-position-y: -700px;
-
-    font-size: 24px;
-
-    color: #ffffff;
-}
-
-#list_skill_one, #list_skill_two{
-    padding-top: 100px;
-}
-
-/* change this list from none to circle */
-#skill .wrapper ul li{
-    list-style-type: circle;
-    padding-bottom: 30px; 
-}
-
-/* This element floats left */
-#list_skill_one{
-    float: left;
-    padding-left: 150px;
-}
-
-/* This element floats right */
-#list_skill_two{
-    float: right;
-    padding-right: 150px;
-}
-
-/* *******************************************************************************
-                                    Resume
-********************************************************************************* /
-
-/* This div is the wrapper of the whole thing.*/
-#resume{
-    width: 100%;
-    height: 600px;
-    background-size: 100%;
-    background-image: url(image/homepage/resume.png);
-    background-repeat: no-repeat;
-    background-position-y: -250px;
-
-    font-size: 24px;
-    clear: both;
-
-    color: #ffffff;
-}
-
-#resume_button{
-    width: 300px;
-}
-
 /*******************************************************************
-                            Footer
+                        Footer
 ********************************************************************/
 
 /* This content is footer only */
@@ -395,10 +331,10 @@ footer{
 }
 
 /* This class is an empty div that allow the background image to show in image */
-.seperation {
+/* .seperation {
     width: 100%;
     padding-bottom: 75%;
-}
+} */
 
 /* The div is the wrapper for the interior wrapper just for the background color */
 .content{
@@ -597,6 +533,9 @@ th, td{
     /******************************************************
                     Navigation
     *****************************************************/
+    #index_wrapper{
+        padding-top: 70px;
+    }
 
     /* This navigation does not exist. */
     #cpu_screen{
@@ -615,6 +554,19 @@ th, td{
         z-index: 3; /* Layer is higher by 3 */
 
         background-color: #ffffff; /* White */
+    }
+
+    .text h3{
+        display: none;
+    }
+    
+    .text p{
+        display: none;
+    }
+
+    .text_mobile{
+        display: block;
+        text-align: center;
     }
 
     /* This is the dropdown menu when the hamberger menu icon is pressed */
@@ -679,75 +631,26 @@ th, td{
     /* ******************************************************************
                             Hompage Project
     ******************************************************************* */
-    #index_wrapper .wrapper, #projects .wrapper, #skill .wrapper, #resume .wrapper{
-        max-width: 90%;
-        padding-bottom: 30px;
-    }
 
     .interior_wrapper{
         max-width: 85%;
         display: block;
     }
 
-    /* The first image is the self image */
-    #image{
-        width: 100%;
-        height: 1000px;
-        margin-left: 0;
-
-        float: none;
-    }
-
-    #index_wrapper article{
-        text-align: center;
-        float: none;
-        margin: 0;
-        width: 100%;
-
-        padding-top: 70px;
-    }
-
     /*******************************************************************
                             Projects
     ********************************************************************/
-    
-    #projects{
-        height: 100%;
-    
-        background-size: 100%;
-        background-position: 0;
+    #projects .wrapper{
+        padding-bottom: 30px;
+
+        padding-top: 70px;
+        margin-left: 60px;
     }
 
-    /*******************************************************************
-                            Skill
-    ********************************************************************/
-
-    #skill{
+    .grid-container{
+        grid-template-columns: 250px 250px 250px;
+    }
  
-        background-size: 120%;
-    
-        background-position: -70px -100px;
-    }
-
-    #list_skill_one{
-        padding-left: 40px;
-    }
-   
-    #list_skill_two{
-        padding-right: 40px;
-    }
-
-    /*******************************************************************
-                            Resume
-    ********************************************************************/
-
-    #resume{
-        height: 100%;
-        background-size: 100%;
-        background-position: 0;
-    }
-   
-    
 
     /*******************************************************************
                             Interior Project
@@ -757,9 +660,9 @@ th, td{
     }
 
     /* This class is an empty div that allow the background image to show in image */
-    .seperation {
+    /* .seperation {
         padding-bottom: 110%;
-    }
+    } */
 
     /*******************************************************************
                             Footer
@@ -771,12 +674,19 @@ th, td{
     }
 }/* End Bracket for screen width for the Ipad Pro */
 
+
 /* This is the Responsive Design for Ipad */
 @media screen and (max-width: 768px){
+    .grid-container{
+        margin-left: 0;
+    }
 
-    #projects{
-        background-size: 200%;
-        background-position: -350px -300px;
+    #index_wrapper article{
+        text-align: left;
+        float: right;
+
+        margin-right: 0;
+        padding-top: 70px;
     }
 
 /* *********************** Interior Project ********************* */
@@ -786,7 +696,8 @@ th, td{
     }
 
     .grid-container{
-        grid-template-columns: 1fr 1fr; /* Change the column layout to one. */
+        grid-template-columns: 250px 250px; /* Change the column layout to one. */
+        margin-left: 60px;
     }
 
 /* **************************** Grid Structure *********************************** */
@@ -811,72 +722,29 @@ This is the Responsive Design for Iphone 6 and below
 /*******************************************************************
                         Homepage Works
 ********************************************************************/
-#index_wrapper{
-    height: 600px;
-}
+
 
 /* *******************************************************************************
                                     Projects
 ********************************************************************************* */
 
-#projects{
-    background-size: 700%;
-    background-position: -1020px -500px;
-}
-
-
 /* This is the main base of the grid layout*/
 .grid-container{
-    grid-template-columns: auto;
+    grid-template-columns: 250px;
     grid-row-gap: 30px;
+    margin-left: 0;
+
+    margin: 0 auto;
 
 }
 
-/* *******************************************************************************
-                                    Skills
-******************************************************************************** */
-#skill{
-    height: 100%;
-    background-size: 290%;
-
-    background-position: -345px -200px;
-}
-
-#skill .wrapper ul li{
-    list-style-type: none;
+#index_wrapper article{
     text-align: center;
-}
-
-#list_skill_one, #list_skill_two{
-    padding-top: 30px;
     float: none;
+    margin: 0 auto;
+
+    padding-top: 70px;
 }
- #list_skill_one{
-     padding-left: 0;
- }
-
- #list_skill_two{
-     padding-right: 0;
- }
-
-
-/* *******************************************************************************
-                                    Resume
-******************************************************************************** */
-/* This div is the wrapper of the whole thing.*/
-#resume{
-    height: 100%;
-    background-size: 150%;
-    background-position:-90px -20px;
-}
-
-/******************************************************
-                    Interior Project
-*****************************************************/
-    /* This class is an empty div that allow the background image to show in image */
-    .seperation {
-        padding-bottom: 170%;
-    }
 
 /******************************************************
                     Sub Navigation
@@ -922,24 +790,3 @@ This is the Responsive Design for Iphone 6 and below
     }
 
 } /* End bracket for mobile phone screen */
-
-@media screen and (max-width: 320px){
-    #projects{
-        background-size: 700%;
-        background-position: -900px -500px;
-    
-    }
-
-    #skill{   
-        background-position: -305px -150px;
-    }
-
-}
-
-/* for bigger screen size pc */
-@media screen and (max-width: 1445px){
-    .seperation{
-        padding-bottom: 55%;
-    }
-
-}

@@ -65,87 +65,60 @@
                 <div class="list"> 
                     <!-- <button id="back_button" onclick="back()"></button>-->
                     <!-- Tried to use the back button but it does not want to work-->
-                    <a href="#description">Description</a>
-                    <a href="#problem">Problem</a>
+                    <a href="#description">Summery</a>
                     <a href="#goal">Goal</a></h3>
-                    <a href="#taxnolomy">Taxnolomy</a>
-                    <a href="#research_comp">Competitive Research</a>
-                    <a href="#research_analytical">Analytical Research</a>
-                    <a href="#flow">User Flow</a>    
+                    <a href="#prototype">Prototype</a>
                     <a href="#sketch">Sketches</a>    
-                    <div class="toggle_button"><a>Hi-Fi Wireframes</a></div>
-                        <div class="section" style="display: none;">
-                            <a href="#home1">Homepage</a>  
-                            <a href="#gui1">Graphics UI Page</a>  
-                            <a href="#utility1">Utility</a>  
-                            <a href="#communication1">Main Communication</a>  
-                        </div> 
-                    <div class="toggle_button"><a>Main Design</a></div>    
-                        <div class="section" style="display: none;">
-                            <a href="#home2">Homepage</a>  
-                            <a href="#gui2">Graphics UI Page</a>  
-                            <a href="#utility2">Utility</a>  
-                            <a href="#communication2">Main Communication</a>  
-                        </div>
-                    <a href="#final">Final Product</a> 
+                    <a href="main">Main Design</a>  
                 </div>
         </div>
 
         <a href="#top"><img src="fontawesome_logo/arrow-alt-circle-up-solid.svg" id="back-to-top" alt="back-to-top" ></a>
-<div class="wrapper">
 
-        <nav id="cpu">
-            <figure class="logo">
-                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-            </figure>
-            
-            <!-- To be used on PC -->
-            <div class="nav_container">
-                    <div class="cpu_nav">
-                        <div class="dropdown" >
-                            <a class="indicator">Works</a>
-                            <div class="subnav">
-                                <a href="animation.html">Animation / Motion Graphic</a>
-                                <a href="illustration.html">Illustration</a>
-                                <a href="ui.html">UI Design</a>
-                            </div>
-                        </div>
-                        
-                        <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
-                            <a href="about.html">About Me</a>
-                            <a href="resume.html">Resume</a>
-                            <a href="#contact">Contact Me</a>
-                            
-                        </div>
-                    </div>
-            </nav>
+    <nav id="cpu_screen" > <!-- This is the Navigation Control for the PC-->
 
-            <!-- To Be used on mobile and tablet -->  
-            <nav id="mobile">
-            <figure class="logo">
-                <a href="index.html"><img src="image/Logo_small.svg" alt="logo" /></a>   
-            </figure>
-            <button id="hamberger_button" type="button" onclick="nav_button()"></button>
-
-            <div class="mobile_nav" style="display: none;">
-                    <button id="mobile_button">Works</button>
-                    <div id="subnav_mobile" style="display: none;">
-                    <a href="animation.html">Animation / Motion Graphic</a>
-                    <a href="illustation.html">Illustration</a>
-                    <a href="ui.html">UI Design</a>
-                </div>
-        
-                <div class="nav-wrapper"> <!-- This Navigation is an empty div that prevents padding to move position -->
+        <div class="wrapper">
+                <!-- Clicking on the Logo will lead back to the homepage-->
+                <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                                      <!-- It will also allow me to control the position of the page.-->
+                    <img src="image/Logo_v3.svg" alt="logo" class="noborders"/></a>   
+                </figure> <!-- End Figure for my Logo-->
+                
+                
+                <div class="nav_container"> <!-- This div seperates from the logo to the main Navigation -->
+                    <a href="index.html">Homes</a>
+                    <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                            Resume</a>
                     <a href="about.html">About Me</a>
-                    <a href="resume.html">Resume</a>
                     <a href="#contact">Contact Me</a>
-                    
-                </div>
-            </div>
-            
+                </div> <!-- End div for nav_container -->
+            </div> <!-- End div for Wrapper -->
+        </nav> <!-- End nav for CPU-->
         
-            </div>
-        </nav>
+            <!-- **************************** Mobile Navigation *************************************  -->
+        <nav id="mobile_screen"> <!-- This is the Navigation Control for the PC-->
+        
+            <div class="wrapper">
+                <!-- Clicking on the Logo will lead back to the homepage-->
+                <figure class="logo"> <!-- With this figure tag, it will allow me to control the size of the image -->
+                                      <!-- It will also allow me to control the position of the page.-->
+                    <img src="image/Logo_v3.svg" alt="logo" class="noborders"/>
+                </figure> <!-- End Figure for my Logo-->
+                
+                <!-- This button only exist on mobile only -->
+                <div id="hamberger_icon" onclick="nav_button()"></div>
+        
+                    <div class="nav_container">
+                        <a href="index.html">Homes</a>
+                        <a href="resume.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this, href); return false">
+                                Resume</a>
+                        <a href="about.html">About Me</a>
+                        <a href="#contact">Contact Me</a>
+                    </div><!-- End div for nav container -->
+        
+            </div> <!-- End div for Wrapper -->
+        </nav> <!-- End nav for mobile-->
+        
 </div>
 
         
@@ -157,45 +130,25 @@
                         <p><strong>August 2017 - November 2017</strong></p>
                     
                         <h2 class="space">Summary</h2>
-                        <p>The summary of this project is to improve MyCourses. However, this project is 
-                            mainly focus on two pages of Mycourses, the Homepage, and the GUI page. Some students
-                             do not like the overall design of the Mycourses and other functions that are in MyCourses.</p>
+                        <p>The summary of this project is to improve MyCourses. This project was focus on use of utilities and communication. 
+                           This project also focus on layout design.</p>
                     </article>
                    
-                    <h2 id="problem" class="tabs">Problems</h2>
+                    <h2 id="prototype" class="tabs">Prototype</h2>
 
-                    <!-- *********************** Problem *************************** -->
-                         <section class="grid-space">
-                            <p>The problem is MyCourses is a disorganized. The layout with poor, utilities are rarly used and 
-                                communication is non-existance </p>
-                        </section>
-                            
-                        <figure class="grid-space">
-                                <img src="image/ui/mycoursesremake/main/image2.png" alt="user flow" class="noborders" >
-                                <figcaption class="space">This is the Homepage of MyCourses.</figcaption>
+                    <figure>
+                        <video controls src="image/ui/mycoursesremake/main/prototype.mp4" type="video/mp4">
+                            This video does not support your browser.
+                        </video>
+                    </figure>
 
-                                <img src="image/ui/mycoursesremake/main/image3.png" alt="user flow" class="noborders" >
-                                <figcaption class="space">This is the extented part of the Homepage.</figcaption>
-
-                                <img src="image/ui/mycoursesremake/main/image4.png" alt="user flow" class="noborders" >
-                                <figcaption class="space">This is the Tech Support of part of the Homepage.</figcaption>
-                                
-                                <img src="image/ui/mycoursesremake/main/image.png" alt="user flow" class="noborders" >
-                                <figcaption class="space">This is the Graphic UI MyCourses Page.</figcaption>
-                        </figure>
-                        
                     <!-- *********************** Title Card *************************** -->
                     <h2 id="goal" class="tabs" >Goal</h2>
-                    <section class="grid-space">
+                    <section>
                         <div class="grid-structure">
                             <article>
                             <h3 class="space">Communication</h3>
                             <p>Make communication easier between students to professors, and students to other student.</p>
-                            </article>
-        
-                            <article>
-                            <h3 class="space">Navigation</h3>
-                            <p>Users has a hard time finding their ways to navigate their destination.</p>
                             </article>
         
                             <article>
@@ -211,191 +164,9 @@
                         </div>
                     </section>
 
-
-                    <!-- *********************** Sketches *************************** -->
-                    <h2 id="taxnolomy" class="tabs">Taxnolomy</h2>
-                    <section class="grid-space">
-                        <p>This is the flow of MyCourses Currently.</p>
-                    </section>
-                    <figure class="grid-space">
-                        <img src="image/ui/mycoursesremake/taxnolomy/taxnolomy-current.png" alt="sketch 1">
-                    </figure>
-
-                    <section class="grid-space">
-                        <p>This is my version of MyCourses.</p>
-                    </section>
-                    <figure class="grid-space">
-                        <img src="image/ui/mycoursesremake/taxnolomy/taxnolomy-now.png" alt="achivement sketch">
-                    </figure>
-
-                    <!-- *********************** UI Research *************************** -->
-                    <h2 id="research_comp" class="tabs">Competitive Research</h2>
-
-                    <!-- *********************** Facebook *************************** -->
-                    <section>
-                    <h3 class="space">Facebook Messanger</h3>
-                 
-                    <p>Facebook is a social media that post images, comment on post, and message to
-                    other users in the Facebook community. With the Facebook Messenger, and
-                    the layout of the Facebook page, it would help the users in MyCourses to make 
-                    an easy communication between students to other students and students to
-                    professors.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/research/facebook.png" alt="facebook" >
-                    </figure>
-                    
-                    <!-- *********************** Twitter *************************** -->
-                    <section>
-                    <h3 class="space">Twitter</h3>
-                        <p>Twitter has a better layout than Facebook, but the message system in Twitter
-                        can be useful as well. Because of the full screen of the messenger if the user
-                        wants to. Their navigation system is also easy to use and understand.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/research/twitter.png" alt="facebook" >
-                    </figure>
-
-                
-                    <!-- *********************** UI Research *************************** -->
-                    <h2 id="research_analytical" class="tabs">Analytical Research</h2>
-
-                    <!-- *********************** Dropbox Paper *************************** -->
-                    <section>
-                    <h3 class="space">Dropbox Paper</h3>
-                        <p>Dropbox Paper has a unique comment system. This comment system
-                        allows the user to comment a whole section, to a sentence to just one word.</p>
-                    </section>
-                            
-                    <figure>
-                        <img src="image/ui/mycoursesremake/research/dropbox.png" alt="facebook" >
-                    </figure>
-                    
-                    <!-- *********************** Stack *************************** -->
-                    <section>
-                        <h3 class="space">Slack</h3>
-                        <p>Slack allows the user to message people in a more buisness way. Allowing the users to group
-                            other people to work on one project.</p>
-                    </section>
-                            
-                    <figure>
-                        <img src="image/ui/mycoursesremake/research/slack.png" alt="facebook" >
-                    </figure>
-
-                    <!-- *********************** User Flow *************************** -->
-                    <h2 id="flow" class="tabs">User Flow</h2>
-
-                    <!-- *********************** Manov *************************** -->
-                    <section>
-                        <table>
-                            <tr>
-                                <th>Name:</th>
-                                <td>Manov Mistrees</td>
-                            </tr>
-                            <tr>
-                                <th>User:</th> 
-                                <td>Casual User</td>
-                            </tr>
-                            <tr> 
-                                <th>Gender:</th>
-                                <td>Male</td>
-                            </tr>
-                            <tr>
-                                <th>Age:</th>
-                                <td>18</td>
-                            </tr>
-                        </table>
-                        
-                        <p>Manov Mistrees is a casual user. He would normally go to MyCourses just to check
-                        on content, look at the notification, check on homework assignment and looking up on quizzes.
-                        He would quickly get the quizzes and homework over with as quickly as possible.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/user_flow/manov.png" alt="user flow" >
-                    </figure>
-
-                    <!-- *********************** Elizabeth *************************** -->
-                    <section>
-                        <table>
-                            <tr>
-                                <th>Name:</th>
-                                <td>Elizabeth Doodletones</td>
-                            </tr>
-                            <tr>
-                                <th>User:</th> 
-                                <td>Casual User</td>
-                            </tr>
-                            <tr> 
-                                <th>Gender:</th>
-                                <td>Female</td>
-                            </tr>
-                            <tr>
-                                <th>Age:</th>
-                                <td>19</td>
-                            </tr>
-                        </table>
-                        
-                        <p>Elizabeth Doodletones hate the design layout every time she logs in. She have a hard time locating her classes when she log in. When she looks
-                        for her content, she will get angry that the teacher would either not give the right content, being too vague to understand or not posting any
-                        content at all. When she needs help she needs to ether get out of the way by emailing to the professors, or posting it at the discussion page. The
-                        problem with the discussion page is that all of her professors never checks on that page. With email, if she did not log in or did log in but quit the
-                        Internet program, she would have to log in which frustrates her even more. She wants an easier way of to communicate with her professors.</p>
-                    </section>
-                    
-                    <figure>
-                        <img src="image/ui/mycoursesremake/user_flow/doddletones.png" alt="user flow" >
-                    </figure>
-                    
-                    <!-- *********************** Manga *************************** -->
-                    <section>
-                        <table>
-                            <tr>
-                                <th>Name:</th>
-                                <td>Manga Kamen</td>
-                            </tr>
-                            <tr>
-                                <th>User:</th> 
-                                <td>Power User</td>
-                            </tr>
-                            <tr> 
-                                <th>Gender:</th>
-                                <td>Male</td>
-                            </tr>
-                            <tr>
-                                <th>Age:</th>
-                                <td>24</td>
-                            </tr>
-                        </table>
-                        
-                        <p>Manga Kaman likes the new design of the MyCourses. What he likes about the new design of the MyCourses is: refined notification system, the
-                        Starfish App, and the Calendar App. With the refined notification system, he abuses it by looking at the first thing when he log in. He would check
-                        on it to see if his professors post any new content, assignments that will be due soon, and any past post on the notification system. With Starfish,
-                        he would make an appointment with his advisor. With the Calendar, he can make important dates for events and assignment.</p>
-                       
-                        <p>But he does have a hard time finding his own classes in the Navigation system because all the images look the same and it does not fit in the
-                        theme of the classes. Other than that, he does not really have much problems with the new MyCourses</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/user_flow/manov.png" alt="user flow" >
-                    </figure>
-
                     
                     <!-- *********************** Sketch *************************** -->
                     <h2 id="sketch" class="tabs">Sketch</h2>
-
-                    <!-- *********************** 1 *************************** -->
-                    <section>
-                        <h3 class="space">Exploration Sketches</h3>
-                        <p>These are the very first sketches of rework MyCourses.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/sketch/first_sketch.png" alt="user flow" >
-                    </figure>
 
                     <!-- *********************** 2 *************************** -->
                     <section>
@@ -416,235 +187,8 @@
                         <img src="image/ui/mycoursesremake/sketch/mycourses_GUI.png" alt="user flow" >
                     </figure>
                     
-                    <!-- *********************** Wireframe *************************** -->
-                    <h2 class="tabs">Hi-Fi Wireframe</h2>
-
-                    <!-- *********************** Homepage *************************** -->
-                    <h2 id="home1" class="grid-space">Homepage</h2>
-                    <section>
-                    <h3 class="space">Version 1</h3>
-                        <p>This is the first version of the homepage. 
-                        There will be some diagnal borders. So it will let 
-                        the user know that there are more content at the bottom.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/homepage_v1_scren_size.png" alt="user flow" >
-                    </figure>
-
-                    <!-- *********************** Homepage Fullpage *************************** -->
-                    <section>
-                        <p>This is the full page of the homepage</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/homepage_v1_full.png" alt="user flow" >
-                    </figure>
-
-                    <!-- *********************** V2 *************************** -->
-                    <section>
-                        <h3 class="space">Version 2</h3>
-                        <p>This is the second version for the home screen. With this version, all the unnessary
-                            information is not in this site. Everything looks more clean than the previous one.
-                            The only thing that is there is the utility and the class selection.
-                        </p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v2/homepage1.png" alt="user flow" >
-                    </figure>
-
-                    <!-- *********************** GUI *************************** -->
-                    <h2 id="gui1" class="grid-space">Graphic UI Page (GUI)</h2>
-     
-                    <!-- *********************** v1 *************************** -->
-                    <section>
-                        <h3 class="space">Version 1</h3>
-                        <p>On the right side of the screen, there is a utility section. This allows the
-                            user to message other students in the same class as you, chat in groups without
-                            relaying on outside source to contact each other.
-                        </p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/gui_page.png" alt="user flow" >
-                    </figure>
-     
-                    <!-- *********************** v2 *************************** -->
-                    <section>
-                        <h3 class="space">Version 2</h3>
-                        <p>On the right side of the screen, there is a utility section. This allows the
-                            user to message other students in the same class as you, chat in groups without
-                            relaying on outside source to contact each other.
-                        </p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v2/GUI_page.png" alt="user flow" >
-                    </figure>
-
-                    <!-- *********************** Utility *************************** -->
-                    <h2 id="utility1" class="grid-space">Utility</h2>
-     
-                    <section>
-                        <h3 class="space">Location</h3>
-                        <p>On the right side of the screen, there is a utility section. This allows the
-                            user to message other students in the same class as you, chat in groups without
-                            relaying on outside source to contact each other.
-                        </p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/utility_1.png" alt="user flow" >
-                    </figure>
-                    
-                    <!-- *********************** Utility *************************** -->
-                    <section>
-                        <h3 class="space">Location</h3>
-                        <p>This is the open version of the utility Bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/utility_1_open.png" alt="user flow" >
-                    </figure>
-            
-                    <!-- *********************** Utility *************************** -->
-                    <section>
-                        <h3 class="space">Indept</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure class="size">
-                        <img src="image/ui/mycoursesremake/hi-fi-v2/homepage2_utility_both.png" alt="user flow" class="noborders" >
-                    </figure>
-
-                    <!-- *********************** Upload *************************** -->
-                    <h2 id="communication1" class="grid-space">Communication Section</h2>
-
-                    <!-- *********************** Messagner Single *************************** -->
-                    <section>
-                        <h3 class="space">Messanger - Single Person</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/message.png" alt="user flow" class="noborders" >
-                    </figure>
-
-                    <!-- *********************** Messagner Group *************************** -->
-                    <section>
-                        <h3 class="space">Messanger - Group</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/team_project.png" alt="user flow" class="noborders" >
-                    </figure>
-                    
-                    <!-- *********************** main *************************** -->
-                    <section>
-                        <h3 class="space">Main Screen</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/upload_screen.png" alt="user flow" class="noborders" >
-                    </figure>
-
-                    <!-- *********************** google drive *************************** -->
-                    <section>
-                        <h3 class="space">Google Drive</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/google_drive.png" alt="user flow" class="noborders" >
-                    </figure>
-
-                    <!-- *********************** Locker *************************** -->
-                    <section>
-                        <h3 class="space">Locker</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/locker.png" alt="user flow" class="noborders" >
-                    </figure>
-
-                    <!-- *********************** upload CPU *************************** -->
-                    <section>
-                        <h3 class="space">Upload From CPU</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/drap_2.png" alt="user flow" class="noborders" >
-                    </figure>
-
-                    <!-- *********************** upload CPU - messanger *************************** -->
-                    <section>
-                        <h3 class="space">Upload From CPU - To Messanger</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v1/drag_1.png" alt="user flow" class="noborders" >
-                    </figure>            
-
-                    <!-- *********************** Location *************************** -->
-                    <section>
-                        <h3 class="space">Location</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v2/importing_files_complete.png" alt="user flow" >
-                    </figure>
-
-                    <!-- *********************** Create a group *************************** -->
-                    <section>
-                        <h3 class="space">Create a Group</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v2/group.png" alt="user flow" >
-                    </figure>
-
-                    <!-- *********************** CPU *************************** -->
-                    <section>
-                        <h3 class="space">Commenting</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v2/comment1.png" alt="user flow" >
-                    </figure>
-
-                    <!-- *********************** CPU *************************** -->
-                    <section>
-                        <h3 class="space">Comment Created</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-
-                    <figure>
-                        <img src="image/ui/mycoursesremake/hi-fi-v2/comment2.png" alt="user flow" >
-                    </figure>
-                    
                     <!-- *********************** Main *************************** -->
-                    <h2 class="tabs">Main Design</h2>
+                    <h2 id="main" class="tabs">Main Design</h2>
                     
                     <!-- *********************** Homepage *************************** -->
                     <h2 id="home2" class="grid-space">Homepage</h2>
@@ -668,163 +212,6 @@
                         <img src="image/ui/mycoursesremake/main/main_gui.png" alt="user flow" >
                     </figure>
                     
-                    <!-- *********************** Utility *************************** -->
-                    <h2 id="utility2" class="grid-space">Utility</h2>
-                    
-                    <!-- *********************** Classmates *************************** -->
-                    <section>
-                        <h3 class="space">Navigation</h3>
-                        <p>The naviation is just used as just an Icon for the Main Navigation.</p>
-                    </section>
-    
-                    <figure>
-                        <img src="image/ui/mycoursesremake/main/navigation.png" alt="user flow" class="noborders" >
-                        <figcaption class="space">Main Navigation</figcaption>
-
-                        <img src="image/ui/mycoursesremake/main/sub_navigation.png" alt="user flow" class="noborders" >
-                        <figcaption>GUI Navigation</figcaption>
-                    </figure>
-
-                    <!-- *********************** Classmates *************************** -->
-                    <section>
-                        <h3 class="space">Search Classmates / professors</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-    
-                    <figure class="size">
-                        <img src="image/ui/mycoursesremake/main/search_classmate.png" alt="user flow" class="noborders" >
-                    </figure>
-                    
-                    <!-- *********************** Utility closed *************************** -->
-                    <section>
-                        <h3 class="space">Closed</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-    
-                    <figure>
-                        <img src="image/ui/mycoursesremake/main/side_bar_closed.png" alt="user flow" class="noborders" >
-                    </figure>
-                    
-                    <!-- *********************** Utility open *************************** -->
-                    <section>
-                        <h3 class="space">Open</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-    
-                    <figure>
-                        <img src="image/ui/mycoursesremake/main/side_bar_open.png" alt="user flow" class="noborders" >
-                    </figure>
-                    
-                    <!-- *********************** Communication*************************** -->
-                    <h2 id="communication2" class="grid-space">Main Communication</h2>
-
-                    <!-- *********************** Commenting *************************** -->
-                    <section>
-                        <h3 class="space">Commenting</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-    
-                    <figure>
-                        <img src="image/ui/mycoursesremake/main/gui_comment.png" alt="user flow" >
-                    </figure>
-                    
-                    <!-- *********************** Commenting 2 *************************** -->
-                    <section>
-                        <h3 class="space">Commenting 2</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-    
-                    <figure>
-                        <img src="image/ui/mycoursesremake/main/comment.png" alt="user flow" >
-                    </figure>
-                    
-                    <!-- *********************** Commenting 2 *************************** -->
-                    <section>
-                        <h3 class="space">Messanger</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-    
-                    <figure>
-                        <img src="image/ui/mycoursesremake/main/messanger.png" alt="user flow" class="noborders" >
-                    </figure>
-                    
-                    <!-- *********************** Commenting *************************** -->
-                    <h2 class="grid-space">Upload</h2>
-
-                    <!-- *********************** Main Page *************************** -->
-                    <section>
-                        <h3 class="space">Main Page</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-    
-                    <figure>
-                        <img src="image/ui/mycoursesremake/main/upload_main.png" alt="user flow" class="noborders" >
-                    </figure>
-                    
-                    <!-- *********************** Google Drive *************************** -->
-                    <section>
-                        <h3 class="space">Google Drive</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-    
-                    <figure>
-                        <img src="image/ui/mycoursesremake/main/upload_google_drive_horizontal.png" alt="user flow" class="noborders" >
-                    </figure>
-                    
-                    <!-- *********************** Locker *************************** -->
-                    <section>
-                        <h3 class="space">Locker</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-    
-                    <figure>
-                        <img src="image/ui/mycoursesremake/main/upload_locker.png" alt="user flow" class="noborders" >
-                    </figure>
-                    
-                    <!-- *********************** CPU Upload *************************** -->
-                    <section>
-                        <h3 class="space">CPU Upload</h3>
-                        <p>This is the second version of the utlity bar at the. Made the selection stick out so
-                            it looks like a tags hanging outside of the bar.</p>
-                    </section>
-    
-                    <figure>
-                        <img src="image/ui/mycoursesremake/main/upload_drag.png" alt="user flow" class="noborders" >
-                    </figure>
-
-                    <h2 id="final" class="tabs">Final Product</h2>
-                    
-                    <!-- *********************** CPU Upload *************************** -->
-                    <section class="grid-space">
-                        <h3 class="space">Full Screen - Homepage</h3>
-                        <p>This is the full version of the Homepae.</p>
-                    </section>
-    
-                    <figure class="grid-space">
-                        <img src="image/ui/mycoursesremake/main/Main_Homepage_utility.png" alt="user flow">
-                    </figure>
-
-                    <!-- *********************** CPU Upload *************************** -->
-                    <section class="grid-space">
-                        <h3 class="space">Full Screen - GUI</h3>
-                        <p>This is full version of GUI Page without the comment section.</p>
-                    </section>
-    
-                    <figure class="grid-space">
-                        <img src="image/ui/mycoursesremake/main/main_gui_utility.png" alt="user flow">
-                    </figure>
-                    
-
-    
 
                 </div>
                 <footer>
@@ -844,6 +231,9 @@
                 <h2>Gallery</h2>
         
                 <div class="social_gallery">
+                        <a href="https://www.youtube.com/channel/UCTFvc0N-rI3c49-UnhYSPww?" onclick="window.open(this.href); return false;"
+                        onkeypress="window.open(this, href); return false"><img src="fontawesome_logo/youtube-brands.svg" alt="youtube"/></a>
+
                         <a href="https://www.instagram.com/danxgallery/?hl=en" onclick="window.open(this.href); return false;"
                         onkeypress="window.open(this, href); return false"><img id="instagram" src="fontawesome_logo/instagram-brands.svg" alt="instagram"/></a>
                     
