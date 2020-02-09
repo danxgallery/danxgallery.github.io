@@ -35,15 +35,15 @@ body {
 /*Always a fill size video regardless of width of the section with adjustment */
 video{
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 0; /* Giving some room in between the borders */
 }
 
-/*Always a fill size image regardless of width of the section with adjustment */
+/*Always a fill the image size regardless of width of the section with adjustment */
 figure img{
     width: 100%;
 }
 
-
+/* This CSS only effects li tags */
 li {
     list-style-type: none; /* Remove all the list style type to none. */
     padding-bottom: 16px; /* Seperate the list by 16px at the bottom*/
@@ -51,114 +51,106 @@ li {
     line-height: 24px; /* Seperate the line height on a single li tag by 24px */
 }
 
-
+/* This CSS only effects p tags */
 p {
     padding-bottom: 16px; /*all p tags will have a bottom padding of 16px*/
     line-height: 34px; /* give the space of each gap by 24px */
 }
 
-/*all non-specific a tags will have a highlight color of blue and make them bold*/
+/*all non-specific a tags will have a highlight color of blue and make the text bold*/
 p a:hover{
     color: #3c60af; /*light Blue*/
     font-weight: bold;
 }
 
-/* This effects all of the a tags */
+/* This effects all of the a tags that are links or already pressed before */
 a:link, a:visited{
     text-decoration: none; /*Remove underline*/
     color: #000000; /* Pure Black*/
 }
 
-/* Remove borders from image with this specific class.*/
-.noborders{
-    border: none;
-}
 
 /*******************************************************************
                             Navigation
 ********************************************************************/
 
 /* ------------------------- CPU Screen Navigation ------------------------ */
-/* This only applie to Navigation for CPU */
+/* This only apply to the Navigation for CPU */
 #cpu_screen {
-    width: 100%; /* This is nessessary becasue the navigation to fit the max-width of 1200px*/
+    width: 100%; /* This code is nessessary because every content in the navigation will fit the max-width of 1200px*/
     height: 70px;
 
     z-index: 3; /* Change position of the layer */
 
-    background-color: #ffffff;
+    background-color: #ffffff; /* White */
     transition: .3s ease-out; /*This effects my animation scrolling*/
 }
 
-/* This class holds all the option in the navigation.*/
-/* This also seperate the logo and the navigation */
+/* This class holds all the navigation a tags. Not the logo. */
 .nav_container {
-    float: right;
+    float: right; /* Move all the text to the right side */
 
     font-size: 18px; /* Change the font size to 18px */
 
-    padding-top: 25px;
+    padding-top: 25px; /* Giving space for the top navigation. */
     padding-right: 20px;
 }
 
-/* This class controls the position of individual options in the navigation */
+/* This class controls the position of a tags in the navigation */
 .nav_container a{
-    padding: 24px 25px;    
+    padding: 24px 25px; /* give space on all sides of the a tags */
 }
 
+/* This class does the animation fade color animaiton when hovering the a tags on the Navigation */
 .nav_container a:hover{
-    animation: subHover .2s linear both;
+    animation: subHover .2s linear both; /* Name of keyframe, number of seconds, style of animation, direction */
 }
-/*------------------- Logo -----------------------------*/
-/* - this will set the logo to the left side
-   - Set the width and height to 120px x 100px
-   - Set the padding left by 10px*/
-   .logo img{
-    float: left;
 
-    width: 70px;
+/*------------------ Navigation Animation --------------------*/
+
+/* This is the animation for the Sub Navigation in some of my works */
+   @keyframes subHover{
+    /* Start with black text and white background */
+    from {
+        background-color: #ffffff; /*White*/
+          color: #000000; /*Black*/
+        }
+
+    /* End with white text and light blue background */
+    to {
+        background-color: #80a3d8; /*Light Blue*/
+        color: #ffffff /*White*/
+        }
+}
+
+/*------------------- Logo -----------------------------*/
+/* This class only effects on the logo in the Navigation*/
+   .logo img{
+    float: left; /* Float to the left side */
+
+    width: 70px; /* Size of width 70px and height of 50px */
     height: 50px; 
 
-    padding-top: 10px;
+    padding-top: 10px; /* adds space for the top and left side of the logo */
     padding-left: 10px;
 }
 
 /*----------------- Mobile Navigation ------------------ */
 
-/* - The mobile version of navigation will not show up on CPU Screen*/
+/* This id only effects the mobile version of the navigation */
 #mobile_screen{
-    display: none;
+    display: none; /* The mobile version of navigation will not show up on CPU Screen*/
 }
 
 /*******************************************************************
                             HomePage
 ********************************************************************/
 
+/* This id holds all the content */
 #index_wrapper{
     margin: 0 auto; /* This code will center the whole content*/
     width: 100%;
 }
-
-/* The first image is the self image */
-#image{
-    max-width: 450px;
-
-    float: left;
-}
-
-#image img{
-    width: 100%;
-}
-
-/* Seperate the section off the border */
-#index_wrapper article{
-    width: 300px;
-    float: right;
-    
-    margin-top: 150px;
-    margin-right: 150px;
-}
-
 
 /*******************************************************************
                         Homepage Works
@@ -238,6 +230,11 @@ a:link, a:visited{
     color: #ffffff;
 }
 
+/* Remove borders from image with this specific class.*/
+.noborders{
+    border: none;
+}
+
 /*******************************************************************
                         Footer
 ********************************************************************/
@@ -289,27 +286,19 @@ footer{
     padding-right: 20px;
 }
 
+/*******************************************************************
+                            About
+********************************************************************/
 
-/* *******************************************************************************
-                                    Animation
-********************************************************************************* /
-
-/* This is the animation for the Sub Navigation
-   - From white background to light blue background
-   - Font gose from black to white */
-@keyframes subHover{
-    from {background-color: #ffffff;
-          color: #000000;}
-    to {background-color: #80a3d8;
-        color: #ffffff}
+/* Seperate the section off the border */
+#index_wrapper article{
+    width: 300px;
+    float: right;
+    
+    margin-top: 150px;
+    margin-right: 150px;
 }
 
-/* This keyframe animation is only used on the dropdown menu on screen; not on mobile
-   - This animation starts the opacity from 0 to 100% */
-@keyframes opacityAnimation {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
 
 /*******************************************************************
                         Projects Interior
