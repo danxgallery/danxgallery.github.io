@@ -217,7 +217,7 @@ a:link, a:visited{
     margin: 16px 0;
 
     
-    z-index: 1;
+    z-index: 1; /* Move the whole layer by one layer over. */
     transition: all .2s ease-in-out;
 }
 
@@ -784,6 +784,7 @@ This is the Responsive Design for Iphone 6 and below
         grid-template-columns: 1fr; /* Change the column layout to one. */
     }
 
+    /* Move the back to top button to these coordinates. */
     #back-to-top{
         left: 80%;
         top: 85%;
